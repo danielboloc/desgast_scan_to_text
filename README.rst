@@ -27,15 +27,28 @@ Desgast dental recollida de dades a text
 * Documentation: https://desgast-scan-to-text.readthedocs.io.
 
 
-Features
---------
-
-* Dependencies
+Dependencies
+------------
 
 - Install in Ubuntu `pdftk` (`sudo apt install pdftk`) to manipulate PDFs (specially to cut pages)
 - Install `tox`, `cookiecutter`,`jinja2`
 - Template from: https://github.com/audreyfeldroy/cookiecutter-pypackage
 - Possible another template: https://github.com/ionelmc/cookiecutter-pylibrary
+
+Linux packages
+--------------
+
+In order to separate certain pages from a full PDF:
+
+```
+pdftk input.pdf cat 1-10 output output.pdf
+```
+
+To extract all pages from a PDF to images (the output name needs to be improved):
+
+```
+pdfimages -j output.pdf ./
+```
 
 Credits
 -------
