@@ -153,24 +153,25 @@ with open(azure_vision_json) as json_file:
             # get 'SI' box bounderies
             SI_box = words[idx+2]['boundingBox']
             Cantidad_box = words[idx+3]['boundingBox']
+            diaria_box = words[idx+4]['boundingBox']
 
             # a ------ b
             # |        |
             # d ------ c
             # example [ 1093, 987, 1228, 984, 1229, 1019, 1094, 1023 ]
             #             ax   ay    bx   by   cx    cy    dx    dy
-            ax = NO_box[0]
+            ax = NO_box[0] - 20 # some buffer
             ay = NO_box[1]
-            bx = NO_box[2]
+            bx = NO_box[2] + 20
             by = NO_box[3]
             cx = NO_box[4]
             cy = NO_box[5]
             dx = NO_box[6]
             dy = NO_box[7]
 
-            ax_si = SI_box[0]
+            ax_si = SI_box[0] - 20 
             ay_si = SI_box[1]
-            bx_si = SI_box[2]
+            bx_si = SI_box[2] + 20
             by_si = SI_box[3]
             cx_si = SI_box[4]
             cy_si = SI_box[5]
@@ -183,6 +184,40 @@ with open(azure_vision_json) as json_file:
             print("NO box:", ax, " - ", bx)
             print("SI box:", ax_si, " - ", bx_si)
             print("Cantidad box:", ax_cant, " - ", bx_cant)
+
+            alcohol = words[idx+5]['content']
+            alcohol_response = words[idx+6]['content']
+            alcohol_box = words[idx+6]['boundingBox']
+            if ax <= alcohol_box[0] <= bx:
+                GRAL["Q10"] = 0
+            elif ax_si <= alcohol_box[0] <= bx_si:
+                GRAL["Q10"] = 1
+
+        # Q11, Tabaco
+        if word['content'] == "Tabaco":
+            print("Tabaco: ", words[idx+1]['content'])
+            Q11 = words[idx+1]['content']
+
+            tabaco_response = words[idx+1]['content']
+            tabaco_box = words[idx+1]['boundingBox']
+            if ax <= tabaco_box[0] <= bx:
+                GRAL["Q11"] = 0
+            elif ax_si <= tabaco_box[0] <= bx_si:
+                GRAL["Q11"] = 1
+
+        # Q12, Otras drogas
+        if word['content'] == "Otras" and \
+            words[idx+1]['content'] == "drogas":
+
+            print("Otras drogas: ", words[idx+2]['content'])
+            Q12 = words[idx+2]['content']
+
+            drogas_response = words[idx+2]['content']
+            drogas_box = words[idx+2]['boundingBox']
+            if ax <= drogas_box[0] <= bx:
+                GRAL["Q12"] = 0
+            elif ax_si <= drogas_box[0] <= bx_si:
+                GRAL["Q12"] = 1
 
 print("GRAL: ", GRAL)
 
