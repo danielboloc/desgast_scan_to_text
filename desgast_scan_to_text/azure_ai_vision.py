@@ -219,6 +219,164 @@ with open(azure_vision_json) as json_file:
             elif ax_si <= drogas_box[0] <= bx_si:
                 GRAL["Q12"] = 1
 
+        # Q13, GERD (to be reviewed)
+        # Q14, TCA (to be reviewed)
+        # Q15, JOC (to be reviewed)
+        # Q16, Bso (to be reviewed)
+        # Q17, Bdi (to be reviewed)
+        # It is calculated as 0,1,2,3, there's no 1.5 or 4 or 2.5
+        # From the first part of the table: "Alguna vez ha sufrido..."
+        if word['content'] == "Alguna" and \
+            words[idx+1]['content'] == "vez" and \
+            words[idx+2]['content'] == "ha" and \
+            words[idx+3]['content'] == "sufrido" and \
+            words[idx+4]['content'] == "...":
+
+            # Only the 0 and 2 indexes for these
+            NO_alguna_vez_sufrido_box = words[idx+5]['boundingBox']
+            SI_alguna_vez_sufrido_box = words[idx+6]['boundingBox']
+            # there are '|' in between
+            AFECTACION_LIGERA_alguna_vez_box = words[idx+7]['boundingBox']
+            AFECTACION_MODERADA_alguna_vez_box = words[idx+9]['boundingBox']
+            AFECTACION_SEVERA_alguna_vez_box = words[idx+11]['boundingBox']
+
+            # idx + 12 -> LIGERA
+            # idx + 13 -> MODERADA
+            # idx + 14 -> SEVERA
+            # idx + 15 -> Regurgitacion/quemazon
+
+            # Q13, GERD
+            # print("Regurgitacion/quemazon: ", words[idx+16]['content'])
+            # Q13_response = words[idx+16]['content']
+            # Q13_box = words[idx+16]['boundingBox']
+            # if (NO_alguna_vez_sufrido_box[0] - 20) <= Q13_box[0] <= (NO_alguna_vez_sufrido_box[2] + 20):
+            #     GRAL["Q13"] = 0
+            # elif (SI_alguna_vez_sufrido_box[0] - 20) <= Q13_box[0] <= (SI_alguna_vez_sufrido_box[2] + 20):
+            #     GRAL["Q13"] = 1
+            for i in range(1,60):
+                # matches the next question
+                if words[idx+i]['content'] == "Regurgitación/quemazón":
+                    # get the 'X' and box of the match
+                    print("Regurgitacion/quemazon: ", words[idx+i+1]['content'])
+                    Q13_response = words[idx+i+1]['content']
+                    Q13_box = words[idx+i+1]['boundingBox']
+                    if (NO_alguna_vez_sufrido_box[0] - 20) <= Q13_box[0] <= (NO_alguna_vez_sufrido_box[2] + 20):
+                        GRAL["Q13"] = 0
+                    elif (SI_alguna_vez_sufrido_box[0] - 20) <= Q13_box[0] <= (SI_alguna_vez_sufrido_box[2] + 20):
+                        Q13_box_afectacion = words[idx+i+2]['boundingBox']
+                        if (AFECTACION_LIGERA_alguna_vez_box[0] - 20) <= Q13_box_afectacion[0] <= (AFECTACION_LIGERA_alguna_vez_box[2] + 20):
+                            GRAL["Q13"] = 1
+                        if (AFECTACION_MODERADA_alguna_vez_box[0] - 20) <= Q13_box_afectacion[0] <= (AFECTACION_MODERADA_alguna_vez_box[2] + 20):
+                            GRAL["Q13"] = 2
+                        if (AFECTACION_SEVERA_alguna_vez_box[0] - 20) <= Q13_box_afectacion[0] <= (AFECTACION_SEVERA_alguna_vez_box[2] + 20):
+                            GRAL["Q13"] = 3
+                    
+                    break
+            
+            # idx + 17 -> 'Anorexia/'
+            # idx + 18 -> 'Bulimia'
+            # idx + 19 -> 'con'
+            # idx + 20 -> 'vomito'
+            # idx + 21 -> 'X'
+            # Q14, TCA
+            # print("Anorexia/Bulimia con vomito: ", words[idx+21]['content'])
+            # Q14_response = words[idx+21]['content']
+            # Q14_box = words[idx+21]['boundingBox']
+            # if (NO_alguna_vez_sufrido_box[0] - 20) <= Q14_box[0] <= (NO_alguna_vez_sufrido_box[2] + 20):
+            #     GRAL["Q14"] = 0
+            #     idx_for_next_row = 21
+            # elif (SI_alguna_vez_sufrido_box[0] - 20) <= Q14_box[0] <= (SI_alguna_vez_sufrido_box[2] + 20):
+            #     if (AFECTACION_LIGERA_alguna_vez_box[0] - 20) <= Q14_box[0] <= (AFECTACION_LIGERA_alguna_vez_box[2] + 20):
+            #         GRAL["Q14"] = 1
+            #     if (AFECTACION_MODERADA_alguna_vez_box[0] - 20) <= Q14_box[0] <= (AFECTACION_MODERADA_alguna_vez_box[2] + 20):
+            #         GRAL["Q14"] = 2
+            #     if (AFECTACION_SEVERA_alguna_vez_box[0] - 20) <= Q14_box[0] <= (AFECTACION_SEVERA_alguna_vez_box[2] + 20):
+            #         GRAL["Q14"] = 3
+            #     idx_for_next_row = 22
+            for i in range(1,60):
+                # matches the next question
+                if words[idx+i]['content'] == "Anorexia/" and \
+                    words[idx+i+1]['content'] == "Bulimia" and \
+                    words[idx+i+2]['content'] == "con" and \
+                    words[idx+i+3]['content'] == "vómito":
+                    # get the 'X' and box of the match
+                    print("Anorexia/ Bulimia con vomito: ", words[idx+i+4]['content'])
+                    Q14_response = words[idx+i+4]['content']
+                    Q14_box = words[idx+i+4]['boundingBox']
+                    if (NO_alguna_vez_sufrido_box[0] - 20) <= Q14_box[0] <= (NO_alguna_vez_sufrido_box[2] + 20):
+                        GRAL["Q14"] = 0
+                    elif (SI_alguna_vez_sufrido_box[0] - 20) <= Q14_box[0] <= (SI_alguna_vez_sufrido_box[2] + 20):
+                        Q14_box_afectacion = words[idx+i+5]['boundingBox']
+                        if (AFECTACION_LIGERA_alguna_vez_box[0] - 20) <= Q14_box_afectacion[0] <= (AFECTACION_LIGERA_alguna_vez_box[2] + 20):
+                            GRAL["Q14"] = 1
+                        if (AFECTACION_MODERADA_alguna_vez_box[0] - 20) <= Q14_box_afectacion[0] <= (AFECTACION_MODERADA_alguna_vez_box[2] + 20):
+                            GRAL["Q14"] = 2
+                        if (AFECTACION_SEVERA_alguna_vez_box[0] - 20) <= Q14_box_afectacion[0] <= (AFECTACION_SEVERA_alguna_vez_box[2] + 20):
+                            GRAL["Q14"] = 3
+                    break
+
+            # idx + idx_for_next_row -> Juego
+            # idx + idx_for_next_row + 1 -> patológico
+            # idx + idx_for_next_row + 2 -> y
+            # idx + idx_for_next_row + 3 -> bruxismo
+            # idx + idx_for_next_row + 3 -> diurno
+            # idx + idx_for_next_row + 3 -> X
+            # Q15, JOC
+            # idx_for_next_row += 5
+            # print("Juego patologico y bruxismo diurno: ", words[idx+idx_for_next_row]['content'])
+            # Q15_response = words[idx+idx_for_next_row]['content']
+            # Q15_box = words[idx+idx_for_next_row]['boundingBox']
+            # if (NO_alguna_vez_sufrido_box[0] - 20) <= Q15_box[0] <= (NO_alguna_vez_sufrido_box[2] + 20):
+            #     GRAL["Q15"] = 0
+            #     idx_for_next_row = 17
+            # elif (SI_alguna_vez_sufrido_box[0] - 20) <= Q15_box[0] <= (SI_alguna_vez_sufrido_box[2] + 20):
+            #     if (AFECTACION_LIGERA_alguna_vez_box[0] - 20) <= Q15_box[0] <= (AFECTACION_LIGERA_alguna_vez_box[2] + 20):
+            #         GRAL["Q15"] = 1
+            #     if (AFECTACION_MODERADA_alguna_vez_box[0] - 20) <= Q15_box[0] <= (AFECTACION_MODERADA_alguna_vez_box[2] + 20):
+            #         GRAL["Q15"] = 2
+            #     if (AFECTACION_SEVERA_alguna_vez_box[0] - 20) <= Q15_box[0] <= (AFECTACION_SEVERA_alguna_vez_box[2] + 20):
+            #         GRAL["Q15"] = 3
+            #     idx_for_next_row = 18
+            for i in range(1,60):
+                # matches the next question
+                if words[idx+i]['content'] == "Juego" and \
+                    words[idx+i+1]['content'] == "patológico" and \
+                    words[idx+i+2]['content'] == "y" and \
+                    words[idx+i+3]['content'] == "bruxismo" and \
+                    words[idx+i+4]['content'] == "diurno":
+
+                    # get the 'X' and box of the match
+                    print("Juego patologico y bruxismo diurno: ", words[idx+i+5]['content'])
+                    Q15_response = words[idx+i+5]['content']
+                    Q15_box = words[idx+i+5]['boundingBox']
+                    if (NO_alguna_vez_sufrido_box[0] - 20) <= Q15_box[0] <= (NO_alguna_vez_sufrido_box[2] + 20):
+                        GRAL["Q15"] = 0
+                    elif (SI_alguna_vez_sufrido_box[0] - 20) <= Q15_box[0] <= (SI_alguna_vez_sufrido_box[2] + 20):
+                        Q15_box_afectacion = words[idx+i+6]['boundingBox']
+                        if (AFECTACION_LIGERA_alguna_vez_box[0] - 20) <= Q15_box_afectacion[0] <= (AFECTACION_LIGERA_alguna_vez_box[2] + 20):
+                            GRAL["Q15"] = 1
+                        if (AFECTACION_MODERADA_alguna_vez_box[0] - 20) <= Q15_box_afectacion[0] <= (AFECTACION_MODERADA_alguna_vez_box[2] + 20):
+                            GRAL["Q15"] = 2
+                        if (AFECTACION_SEVERA_alguna_vez_box[0] - 20) <= Q15_box_afectacion[0] <= (AFECTACION_SEVERA_alguna_vez_box[2] + 20):
+                            GRAL["Q15"] = 3
+                    break
+
+        if word['content'] == "En" and \
+            words[idx+1]['content'] == "el" and \
+            words[idx+2]['content'] == "último" and \
+            words[idx+3]['content'] == "mes" and \
+            words[idx+4]['content'] == "ha" and \
+            words[idx+5]['content'] == "sufrido" and \
+            words[idx+6]['content'] == "...":
+
+            # Only the 0 and 2 indexes for these
+            NO_ultimo_mes_sufrido_box = words[idx+7]['boundingBox']
+            SI_ultimo_mes_sufrido_box = words[idx+8]['boundingBox']
+            # there are '|' in between
+            AFECTACION_LIGERA_ultimo_mes_box = words[idx+9]['boundingBox']
+            AFECTACION_MODERADA_ultimo_mes_box = words[idx+11]['boundingBox']
+            AFECTACION_SEVERA_ultimo_mes_box = words[idx+13]['boundingBox']
+
 print("GRAL: ", GRAL)
 
 
