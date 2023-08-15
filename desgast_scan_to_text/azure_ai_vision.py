@@ -4,6 +4,7 @@ import re
 
 azure_vision_json = "/home/daniel_master/workspace/softprojects/desgast_scan_to_text/data/azure_ai_vision_studio/test_case_1.json"
 azure_page_3_json = "/home/daniel_master/workspace/softprojects/desgast_scan_to_text/data/azure_ai_vision_studio/test_case_page_3.json"
+azure_page_4_json = "/home/daniel_master/workspace/softprojects/desgast_scan_to_text/data/azure_ai_vision_studio/test_case_page_4.json"
 
 
 def get_next_words(words, idx, pattern):
@@ -76,6 +77,18 @@ def determine_afectacion(
                 ):
                     return 3
             break
+
+def lookahead_and_get_index(words, idx, pattern):
+    index_when_matched = 0
+    # take the whole range of the words list
+    for i in range(1, len(words)):
+        # if it matches the next question stop
+        if words[idx + i]["content"] == pattern:
+            index_when_matched = idx + i
+            break
+
+    # return the index
+    return index_when_matched
 
 # give an id code, starting with 38
 current_n = 38
@@ -578,8 +591,133 @@ def read_and_extract_page_three(azure_page_3_json):
             # Q31, Blanqueamiento dientes
             GRAL["Q31"] = "CANNOT_MAP_DATA"
 
+            # Q25, Cepillo manual
+            historia_dental = ["Tratamiento","dental:"]
+            if words[idx]["content"] == "Tratamiento":
+                res = all(
+                    words[idx + index]["content"] == element
+                    for index,element in enumerate(historia_dental)
+                )
+                if res:
+                    #print(" ".join(historia_dental), words[idx + len(historia_dental)]["content"])
+                    NO_box = words[idx + len(historia_dental)]["boundingBox"]
+                    SI_box = words[idx + len(historia_dental) + 2]["boundingBox"]
+
+                    conservador = words[idx + len(historia_dental) + 7]["boundingBox"] # box of 'X'
+                    conservador_full_text = get_next_words(words, idx + len(historia_dental) + 7, "Ortodóntico") # words in 'Cual:'
+                    GRAL["conservador_full_text"] = conservador_full_text
+
+                    # since conservador can have a lot of text, look for the index of the next word
+                    ortodontico_idx = lookahead_and_get_index(words, idx, "Ortodóntico")
+                    ortodontico = words[ortodontico_idx + 1]["boundingBox"] # box of 'X'
+                    ortodontico_full_text = get_next_words(words, ortodontico_idx + 1, "Quirúrgico") # words in 'Cual:'
+                    GRAL["ortodontico_full_text"] = ortodontico_full_text
+
+                    quirurjico_idx = lookahead_and_get_index(words, idx, "etc)")
+                    quirurjico = words[quirurjico_idx + 1]["boundingBox"] # box of 'X'
+                    quirurjico_full_text = get_next_words(words, quirurjico_idx + 1, "Periodontal") # words in 'Cual:'
+                    GRAL["quirurjico_full_text"] = quirurjico_full_text
+
+                    periodontal_idx = lookahead_and_get_index(words, idx, "Periodontal")
+                    periodontal = words[periodontal_idx + 1]["boundingBox"] # box of 'X'
+                    periodontal_full_text = get_next_words(words, periodontal_idx + 1, "Protésico") # words in 'Cual:'
+                    GRAL["periodontal_full_text"] = periodontal_full_text
+
+                    protesico_idx = lookahead_and_get_index(words, idx, "Protésico")
+                    protesico = words[protesico_idx + 1]["boundingBox"] # box of 'X'
+                    try:
+                        protesico_full_text = get_next_words(words, protesico_idx + 1, "") # words in 'Cual:'
+                        GRAL["protesico_full_text"] = protesico_full_text
+                    except IndexError:
+                        GRAL["protesico_full_text"] = ""
+
+                    if NO_box[0] - 20 <= conservador[0] <= NO_box[2] + 20:
+                        GRAL["conservador"] = 0
+                    elif SI_box[0] - 20 <= conservador[0] <= SI_box[2] + 20:
+                        GRAL["conservador"] = 1
+
+                    if NO_box[0] - 20 <= ortodontico[0] <= NO_box[2] + 20:
+                        GRAL["ortodontico"] = 0
+                    elif SI_box[0] - 20 <= ortodontico[0] <= SI_box[2] + 20:
+                        GRAL["ortodontico"] = 1
+
+                    if NO_box[0] - 20 <= quirurjico[0] <= NO_box[2] + 20:
+                        GRAL["quirurjico"] = 0
+                    elif SI_box[0] - 20 <= quirurjico[0] <= SI_box[2] + 20:
+                        GRAL["quirurjico"] = 1
+
+                    if NO_box[0] - 20 <= periodontal[0] <= NO_box[2] + 20:
+                        GRAL["periodontal"] = 0
+                    elif SI_box[0] - 20 <= periodontal[0] <= SI_box[2] + 20:
+                        GRAL["periodontal"] = 1
+
+                    if NO_box[0] - 20 <= protesico[0] <= NO_box[2] + 20:
+                        GRAL["protesico"] = 0
+                    elif SI_box[0] - 20 <= protesico[0] <= SI_box[2] + 20:
+                        GRAL["protesico"] = 1                      
+
+def read_and_extract_page_four(azure_page_4_json):
+    with open(azure_page_4_json) as json_file:
+        data = json.load(json_file)
+
+        words = data["words"]
+        lines = data["lines"]
+
+        print("Type:", type(data))
+        print("Type:", type(words))
+        print("Type:", type(lines))
+
+        # Extract all "X" occurrences in order of appearance and then map them
+        # It is easier and faster that trying to match every text.
+        bebidas = ["Q33", "Q34", "Q35", "Q36", "Q37", "Q38"]
+        x_appearences = []
+        for i,x in enumerate(words):
+            if words[i]["content"] == 'x' or words[i]["content"] == "X":
+                x_appearences.append(words[i]["boundingBox"])
+        
+        bebidas_with_boxes = dict(zip(bebidas, x_appearences))
+
+        nunca_box = []
+        veces_sem_1_2 = []
+        veces_sem_3_4 = []
+        veces_sem_5_6 = []
+        for idx, word in enumerate(words):
+
+            # Q32, Dieta crudivegana
+            crudivegana = ["¿Sigue","una","dieta","crudivegana?"]
+            if words[idx]["content"] == "¿Sigue":
+                res = all(
+                    words[idx + index]["content"] == element
+                    for index,element in enumerate(crudivegana)
+                )
+                print(res)
+                if res:
+                    print(" ".join(crudivegana), words[idx + len(crudivegana)]["content"])
+                    Q32 = words[idx + len(crudivegana)]["content"]
+
+                    GRAL["Q32"] = check_yes_no(Q32)
+
+
+            if words[idx]["content"] == "Nunca":
+                nunca_box = words[idx]["boundingBox"]
+                veces_sem_1_2 = words[idx + 1]["boundingBox"]
+                veces_sem_3_4 = words[idx + 2]["boundingBox"]
+                veces_sem_5_6 = words[idx + 4]["boundingBox"]
+
+        for q,x in bebidas_with_boxes.items():
+            if nunca_box[0] - 20 <= x[0] <= nunca_box[2] + 20:
+                GRAL[q] = 0
+            elif veces_sem_1_2[0] - 20 <= x[0] <= veces_sem_1_2[2] + 20:
+                GRAL[q] = 1
+            elif veces_sem_3_4[0] - 20 <= x[0] <= veces_sem_3_4[2] + 20:
+                GRAL[q] = 2
+            elif veces_sem_5_6[0] - 20 <= x[0] <= veces_sem_5_6[2] + 20:
+                GRAL[q] = 3
+            else:
+                GRAL[q] = 4
 
 #read_and_extract_page_two(azure_vision_json)
-read_and_extract_page_three(azure_page_3_json)
+#read_and_extract_page_three(azure_page_3_json)
+read_and_extract_page_four(azure_page_4_json)
 
 print("GRAL: ", GRAL)
