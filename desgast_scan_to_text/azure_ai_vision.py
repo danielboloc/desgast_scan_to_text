@@ -373,7 +373,12 @@ with open(azure_vision_json) as json_file:
                             max_lookahead=60,
                             )
 
-            GRAL["Q16"] = determine_afectacion(
+            # Q17, Bdi
+            # To be reviewed
+            GRAL["Q17_Bdi"] = GRAL["Q15"]
+
+            # Q16, Bso
+            GRAL["Q16_Bso"] = determine_afectacion(
                             NO_alguna_vez_sufrido_box,
                             SI_alguna_vez_sufrido_box,
                             AFECTACION_LIGERA_alguna_vez_box,
@@ -385,7 +390,7 @@ with open(azure_vision_json) as json_file:
                             min_lookahead=1,
                             max_lookahead=60,
                             )
-  
+
         if (
             word["content"] == "En"
             and words[idx + 1]["content"] == "el"
@@ -402,5 +407,55 @@ with open(azure_vision_json) as json_file:
             AFECTACION_LIGERA_ultimo_mes_box = words[idx + 9]["boundingBox"]
             AFECTACION_MODERADA_ultimo_mes_box = words[idx + 11]["boundingBox"]
             AFECTACION_SEVERA_ultimo_mes_box = words[idx + 13]["boundingBox"]
+
+            # Q17, GERD
+            GRAL["Q17"] = GRAL["Q13"]
+            # Q18, TCA
+            GRAL["Q17"] = GRAL["Q14"]
+            # Q19, JOC
+            GRAL["Q17"] = GRAL["Q15"]
+            # Q20, Bdo
+            GRAL["Q20"] = GRAL["Q16_Bso"]
+
+        # Q21, Entusiasta deporte
+        if (
+            word["content"] == "Es"
+            and words[idx + 1]["content"] == "un"
+            and words[idx + 2]["content"] == "entusiasta"
+            and words[idx + 3]["content"] == "de"
+            and words[idx + 4]["content"] == "la"
+            and words[idx + 5]["content"] == "activada"
+            and words[idx + 6]["content"] == "física"
+            and words[idx + 7]["content"] == "(realiza"
+            and words[idx + 8]["content"] == "deporte"
+            and words[idx + 9]["content"] == "un"
+            and words[idx + 10]["content"] == "mínimo"
+            and words[idx + 11]["content"] == "de"
+            and words[idx + 12]["content"] == "3"
+            and words[idx + 13]["content"] == "veces"
+            and words[idx + 14]["content"] == "a"
+            and words[idx + 15]["content"] == "la"
+            and words[idx + 16]["content"] == "semana)?"
+        ):
+            print("Entusiasta deporte: ", words[idx + 17]["content"])
+            Q21 = words[idx + 17]["content"]
+
+            GRAL["Q21"] = check_yes_no(Q21)
+            GRAL["Q21_full_text"] = get_next_words(words, idx + 17, "Es")
+
+        # Q22, Nadador Profesional
+        nadador_pro = ["Es","o","ha","sido","nadador/a","profesional","o","ha",
+                       "practicado","deportes","acuáticos","frecuentemente?"]
+        if words[idx]["content"] == "Es":
+            res = all(
+                words[idx + index]["content"] == element
+                for index,element in enumerate(nadador_pro)
+            )
+            if res:
+                print("Entusiasta deporte: ", words[idx + len(nadador_pro)]["content"])
+                Q22 = words[idx + len(nadador_pro)]["content"]
+
+                GRAL["Q22"] = check_yes_no(Q22)
+                GRAL["Q22_full_text"] = get_next_words(words, idx + len(nadador_pro), "(indicar")
 
 print("GRAL: ", GRAL)
