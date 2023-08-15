@@ -3,6 +3,7 @@ import re
 
 
 azure_vision_json = "/home/daniel_master/workspace/softprojects/desgast_scan_to_text/data/azure_ai_vision_studio/test_case_1.json"
+azure_page_3_json = "/home/daniel_master/workspace/softprojects/desgast_scan_to_text/data/azure_ai_vision_studio/test_case_page_3.json"
 
 
 def get_next_words(words, idx, pattern):
@@ -458,6 +459,127 @@ def read_and_extract_page_two(azure_vision_json):
                     GRAL["Q22"] = check_yes_no(Q22)
                     GRAL["Q22_full_text"] = get_next_words(words, idx + len(nadador_pro), "(indicar")
 
-read_and_extract_page_two(azure_vision_json)
+def read_and_extract_page_three(azure_page_3_json):
+    with open(azure_page_3_json) as json_file:
+        data = json.load(json_file)
+
+        words = data["words"]
+        lines = data["lines"]
+
+        print("Type:", type(data))
+        print("Type:", type(words))
+        print("Type:", type(lines))
+
+        for idx, word in enumerate(words):
+            # print("CONTENT: ", word['content'])
+
+            # Q23, Dormir posicion
+            posicion_dormir = ["En","qué","posición","suele","dormir","con","más", "frecuencia?"]
+            if words[idx]["content"] == "En":
+                res = all(
+                    words[idx + index]["content"] == element
+                    for index,element in enumerate(posicion_dormir)
+                )
+                if res:
+                    boca_arriba_box = words[idx + len(posicion_dormir)]["boundingBox"]
+                    boca_abajo_box = words[idx + len(posicion_dormir) + 1]["boundingBox"]
+                    # "Lado"
+                    lado_derecho_lado_box = words[idx + len(posicion_dormir) + 2]["boundingBox"]
+                    # "derecho"
+                    lado_derecho_derecho_box = words[idx + len(posicion_dormir) + 3]["boundingBox"]
+                    # "Lado"
+                    lado_izquierdo_lado_box = words[idx + len(posicion_dormir) + 4]["boundingBox"]
+                    # "izquierdo"
+                    lado_izquierdo_izquierda_box = words[idx + len(posicion_dormir) + 5]["boundingBox"]
+
+                    cabeza = words[idx + len(posicion_dormir) + 7]["boundingBox"]
+                    cuerpo = words[idx + len(posicion_dormir) + 9]["boundingBox"]
+                    
+                    if (boca_arriba_box[0] - 20) <= cabeza[0] <= (boca_arriba_box[2] + 20):
+                        Q23 = 1
+                    elif (boca_abajo_box[0] - 20) <= cabeza[0] <= (boca_abajo_box[2] + 20):
+                        Q23 = 2
+                    elif (lado_derecho_lado_box[0] - 20) <= cabeza[0] <= (lado_derecho_derecho_box[2] + 20):
+                        Q23 = 3
+                    elif (lado_izquierdo_lado_box[0] - 20) <= cabeza[0] <= (lado_izquierdo_izquierda_box[2] + 20):
+                        Q23 = 4
+                    print("Posicion dormir, cabeza: ", Q23)
+                    GRAL["Q23_posB"] = Q23
+
+                    if (boca_arriba_box[0] - 20) <= cuerpo[0] <= (boca_arriba_box[2] + 20):
+                        GRAL["Q23_posH"] = 1
+                    elif (boca_abajo_box[0] - 20) <= cuerpo[0] <= (boca_abajo_box[2] + 20):
+                        GRAL["Q23_posH"] = 2
+                    elif (lado_derecho_lado_box[0] - 20) <= cuerpo[0] <= (lado_derecho_derecho_box[2] + 20):
+                        GRAL["Q23_posH"] = 3
+                    elif (lado_izquierdo_lado_box[0] - 20) <= cuerpo[0] <= (lado_izquierdo_izquierda_box[2] + 20):
+                        GRAL["Q23_posH"] = 4
+                    print("Posicion dormir, cuerpo: ", GRAL["Q23_posH"])
+
+            # Q24, Higiene oral
+            cepillar_dientes = ["¿Cuántas","veces","al","día","se","cepilla","los", "dientes?"]
+            if words[idx]["content"] == "¿Cuántas":
+                res = all(
+                    words[idx + index]["content"] == element
+                    for index,element in enumerate(cepillar_dientes)
+                )
+                if res:
+                    print("Cuantas veces cepilla dientes: ", words[idx + len(cepillar_dientes)]["content"])
+                    GRAL["Q24"] = words[idx + len(cepillar_dientes)]["content"]
+
+            # Q25, Cepillo manual
+            cepillo_manual = ["¿Utiliza","cepillo","manual","o","eléctrico?"]
+            if words[idx]["content"] == "¿Utiliza":
+                res = all(
+                    words[idx + index]["content"] == element
+                    for index,element in enumerate(cepillo_manual)
+                )
+                if res:
+                    print(" ".join(cepillo_manual), words[idx + len(cepillo_manual)]["content"])
+                    Q25 = words[idx + len(cepillo_manual)]["content"]
+
+                    if re.search("manual", Q25, re.IGNORECASE):
+                        GRAL["Q25"] = 0
+                    elif re.search("ambos", Q25, re.IGNORECASE):
+                        GRAL["Q25"] = "0,5"
+                    elif re.search("ctrico", Q25, re.IGNORECASE):
+                        GRAL["Q25"] = 1
+
+            # Q26, Blandas, medias o duras
+            cerdas = ["¿Utiliza","un","cepillo","de","cerdas","blandas,","medias","o","duras?"]
+            if words[idx]["content"] == "¿Utiliza":
+                res = all(
+                    words[idx + index]["content"] == element
+                    for index,element in enumerate(cerdas)
+                )
+                if res:
+                    print(" ".join(cerdas), words[idx + len(cerdas)]["content"])
+                    Q26 = words[idx + len(cerdas)]["content"]
+
+                    if re.search("blandas", Q26, re.IGNORECASE):
+                        GRAL["Q26"] = 0
+                    elif re.search("medias", Q26, re.IGNORECASE):
+                        GRAL["Q26"] = 1
+                    elif re.search("duras", Q26, re.IGNORECASE):
+                        GRAL["Q26"] = 2
+ 
+            # Q27, Presion
+            GRAL["Q27"] = "CANNOT_MAP_DATA"
+
+            # Q28, Mano cepillar dientes
+            GRAL["Q28"] = "CANNOT_MAP_DATA"
+
+            # Q29, Lado masticar
+            GRAL["Q29"] = "CANNOT_MAP_DATA"
+
+            # Q30, Que pasta dientes
+            GRAL["Q30"] = "CANNOT_MAP_DATA"
+
+            # Q31, Blanqueamiento dientes
+            GRAL["Q31"] = "CANNOT_MAP_DATA"
+
+
+#read_and_extract_page_two(azure_vision_json)
+read_and_extract_page_three(azure_page_3_json)
 
 print("GRAL: ", GRAL)
