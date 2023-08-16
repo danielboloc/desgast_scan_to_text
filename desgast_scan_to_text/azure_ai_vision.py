@@ -6,6 +6,8 @@ azure_vision_json = "/home/daniel_master/workspace/softprojects/desgast_scan_to_
 azure_page_3_json = "/home/daniel_master/workspace/softprojects/desgast_scan_to_text/data/azure_ai_vision_studio/test_case_page_3.json"
 azure_page_4_json = "/home/daniel_master/workspace/softprojects/desgast_scan_to_text/data/azure_ai_vision_studio/test_case_page_4.json"
 azure_page_6_json = "/home/daniel_master/workspace/softprojects/desgast_scan_to_text/data/azure_ai_vision_studio/test_case_page_6.json"
+azure_page_7_json = "/home/daniel_master/workspace/softprojects/desgast_scan_to_text/data/azure_ai_vision_studio/test_case_page_7.json"
+azure_page_10_json = "/home/daniel_master/workspace/softprojects/desgast_scan_to_text/data/azure_ai_vision_studio/test_case_page_10.json"
 
 
 def get_next_words(words, idx, pattern):
@@ -733,6 +735,7 @@ def read_and_extract_page_six(azure_page_6_json):
         actividades = ["Q39", "Q40", "Q41", "Q42", "Q43", "Q44", "Q45","Q46","Q47","Q48","Q49","Q50","Q51","Q52","Q53","Q54","Q55","Q56","Q57","Q58","Q59"]
         x_appearences = []
         for i,x in enumerate(words):
+            # Be in alert of the tiny 'x' which is not 'x' nor 'X'!!
             if words[i]["content"] == "×" or words[i]["content"] == "X" or words[i]["content"] == "x":
                 x_appearences.append(words[i]["boundingBox"])
         
@@ -778,9 +781,100 @@ def read_and_extract_page_six(azure_page_6_json):
             elif noches_4_7[0] - 20 <= x[0] <= noches_4_7_semana[2] + 20:
                 GRAL[q] = 4
 
+def read_and_extract_page_seven(azure_page_7_json):
+    with open(azure_page_7_json) as json_file:
+        data = json.load(json_file)
+
+        words = data["words"]
+        lines = data["lines"]
+
+        print("Type:", type(data))
+        print("Type:", type(words))
+        print("Type:", type(lines))
+
+        # Extract all "X" occurrences in order of appearance and then map them
+        # It is easier and faster that trying to match every text.
+        stress = ["Q60", "Q61", "Q62", "Q63", "Q64", "Q65", "Q66","Q67","Q68","Q69","Q70","Q71","Q72","Q73"]
+        x_appearences = []
+        for i,x in enumerate(words):
+            # Be in alert of the tiny 'x' which is not 'x' nor 'X'!!
+            if words[i]["content"] == "×" or words[i]["content"] == "X" or words[i]["content"] == "x":
+                x_appearences.append(words[i]["boundingBox"])
+        
+        actividades_with_boxes = dict(zip(stress, x_appearences))
+
+        nunca_box = []
+        casi_nunca = []
+        de_vez = []
+        en_cuando = []
+        a_ = []
+        menudo = []
+        muy = []
+        _a = []
+        for idx, word in enumerate(words):
+
+            if words[idx]["content"] == "Nunca":
+                nunca_box = words[idx]["boundingBox"]
+            
+            if words[idx]["content"] == "nunca":
+                casi_nunca = words[idx]["boundingBox"]
+
+            if words[idx]["content"] == "De"\
+                and words[idx + 1]["content"] == "vez"\
+                and words[idx + 2]["content"] == "en":
+                # "De"
+                de_vez = words[idx]["boundingBox"]
+                # "en"
+                en_cuando = words[idx + 2]["boundingBox"]
+
+            if words[idx]["content"] == "A"\
+                and words[idx + 1]["content"] == "menudo":
+                # "A"
+                a_ = words[idx]["boundingBox"]
+                # "menudo"
+                menudo = words[idx + 1]["boundingBox"]
+
+            if words[idx]["content"] == "Muy"\
+                and words[idx + 1]["content"] == "a":
+                # "menudo"
+                muy = words[idx]["boundingBox"]
+                _a = words[idx + 1]["boundingBox"]
+
+        for q,x in actividades_with_boxes.items():
+            if nunca_box[0] - 20 <= x[0] <= nunca_box[2] + 20:
+                GRAL[q] = 0
+            elif casi_nunca[0] - 20 <= x[0] <= casi_nunca[2] + 20:
+                GRAL[q] = 1
+            elif de_vez[0] - 20 <= x[0] <= en_cuando[2] + 20:
+                GRAL[q] = 2
+            elif a_[0] - 20 <= x[0] <= menudo[2] + 20:
+                GRAL[q] = 3
+            elif muy[0] - 50 <= x[0] <= _a[2] + 50: # add more because the box is smaller
+                GRAL[q] = 4
+
+def read_and_extract_page_ten(azure_page_10_json):
+    with open(azure_page_10_json) as json_file:
+        data = json.load(json_file)
+
+        words = data["words"]
+        lines = data["lines"]
+
+        print("Type:", type(data))
+        print("Type:", type(words))
+        print("Type:", type(lines))
+
+        l = []
+        for idx,word in enumerate(words):
+
+            if re.match("\d+[,./]\d+", words[idx]["content"]):
+                print(words[idx]["content"])
+                l.append(words[idx]["content"])
+        print("len: ", len(l))
 #read_and_extract_page_two(azure_vision_json)
 #read_and_extract_page_three(azure_page_3_json)
 #read_and_extract_page_four(azure_page_4_json)
-read_and_extract_page_six(azure_page_6_json)
+#read_and_extract_page_six(azure_page_6_json)
+#read_and_extract_page_seven(azure_page_7_json)
+read_and_extract_page_ten(azure_page_10_json)
 
 print("GRAL: ", GRAL)
