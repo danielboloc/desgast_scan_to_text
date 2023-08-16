@@ -5,6 +5,7 @@ import re
 azure_vision_json = "/home/daniel_master/workspace/softprojects/desgast_scan_to_text/data/azure_ai_vision_studio/test_case_1.json"
 azure_page_3_json = "/home/daniel_master/workspace/softprojects/desgast_scan_to_text/data/azure_ai_vision_studio/test_case_page_3.json"
 azure_page_4_json = "/home/daniel_master/workspace/softprojects/desgast_scan_to_text/data/azure_ai_vision_studio/test_case_page_4.json"
+azure_page_6_json = "/home/daniel_master/workspace/softprojects/desgast_scan_to_text/data/azure_ai_vision_studio/test_case_page_6.json"
 
 
 def get_next_words(words, idx, pattern):
@@ -672,7 +673,7 @@ def read_and_extract_page_four(azure_page_4_json):
         bebidas = ["Q33", "Q34", "Q35", "Q36", "Q37", "Q38"]
         x_appearences = []
         for i,x in enumerate(words):
-            if words[i]["content"] == 'x' or words[i]["content"] == "X":
+            if words[i]["content"] == "×" or words[i]["content"] == "X" or words[i]["content"] == "x":
                 x_appearences.append(words[i]["boundingBox"])
         
         bebidas_with_boxes = dict(zip(bebidas, x_appearences))
@@ -716,8 +717,70 @@ def read_and_extract_page_four(azure_page_4_json):
             else:
                 GRAL[q] = 4
 
+def read_and_extract_page_six(azure_page_6_json):
+    with open(azure_page_6_json) as json_file:
+        data = json.load(json_file)
+
+        words = data["words"]
+        lines = data["lines"]
+
+        print("Type:", type(data))
+        print("Type:", type(words))
+        print("Type:", type(lines))
+
+        # Extract all "X" occurrences in order of appearance and then map them
+        # It is easier and faster that trying to match every text.
+        actividades = ["Q39", "Q40", "Q41", "Q42", "Q43", "Q44", "Q45","Q46","Q47","Q48","Q49","Q50","Q51","Q52","Q53","Q54","Q55","Q56","Q57","Q58","Q59"]
+        x_appearences = []
+        for i,x in enumerate(words):
+            if words[i]["content"] == "×" or words[i]["content"] == "X" or words[i]["content"] == "x":
+                x_appearences.append(words[i]["boundingBox"])
+        
+        actividades_with_boxes = dict(zip(actividades, x_appearences))
+
+        ninguna_box = []
+        less_one = []
+        noches_less_one = []
+        noches_1_3 = []
+        noches_1_3_mes = []
+        noches_1_3_number = []
+        noches_1_3_semana = []
+        noches_4_7 = []
+        noches_4_7_semana = []
+        for idx, word in enumerate(words):
+
+            if words[idx]["content"] == "Ninguna":
+                ninguna_box = words[idx]["boundingBox"]
+                less_one = words[idx + 1]["boundingBox"]
+                noches_less_one = words[idx + 2]["boundingBox"]
+            
+            if words[idx]["content"] == "|1-3":
+                noches_1_3 = words[idx]["boundingBox"]
+                noches_1_3_mes = words[idx + 1]["boundingBox"]
+
+            if words[idx]["content"] == "1-3":
+                noches_1_3_number = words[idx]["boundingBox"]
+                noches_1_3_semana = words[idx + 1]["boundingBox"]
+
+            if words[idx]["content"] == "4-7":
+                noches_4_7 = words[idx]["boundingBox"]
+                noches_4_7_semana = words[idx + 1]["boundingBox"]
+
+        for q,x in actividades_with_boxes.items():
+            if ninguna_box[0] - 20 <= x[0] <= ninguna_box[2] + 20:
+                GRAL[q] = 0
+            elif less_one[0] - 20 <= x[0] <= noches_less_one[2] + 20:
+                GRAL[q] = 1
+            elif noches_1_3[0] - 20 <= x[0] <= noches_1_3_mes[2] + 20:
+                GRAL[q] = 2
+            elif noches_1_3_number[0] - 20 <= x[0] <= noches_1_3_semana[2] + 20:
+                GRAL[q] = 3
+            elif noches_4_7[0] - 20 <= x[0] <= noches_4_7_semana[2] + 20:
+                GRAL[q] = 4
+
 #read_and_extract_page_two(azure_vision_json)
 #read_and_extract_page_three(azure_page_3_json)
-read_and_extract_page_four(azure_page_4_json)
+#read_and_extract_page_four(azure_page_4_json)
+read_and_extract_page_six(azure_page_6_json)
 
 print("GRAL: ", GRAL)
