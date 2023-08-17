@@ -10,10 +10,10 @@ azure_page_7_json = "/home/daniel_master/workspace/softprojects/desgast_scan_to_
 azure_page_10_json = "/home/daniel_master/workspace/softprojects/desgast_scan_to_text/data/azure_ai_vision_studio/test_case_page_10.json"
 
 
-def get_next_words(words, idx, pattern):
+def get_next_words(words, idx, pattern, range_length=10):
     l_of_words = []
     # give a certain range (will capture the max next 10 words, which is enough)
-    for i in range(1, 10):
+    for i in range(1, range_length):
         # if it matches the next question stop
         if words[idx + i]["content"] == pattern:
             break
@@ -859,17 +859,151 @@ def read_and_extract_page_ten(azure_page_10_json):
         words = data["words"]
         lines = data["lines"]
 
-        print("Type:", type(data))
-        print("Type:", type(words))
-        print("Type:", type(lines))
+        print("\n PAGE 10 \n")
 
-        l = []
+        numbers_info = {}
         for idx,word in enumerate(words):
 
-            if re.match("\d+[,./]\d+", words[idx]["content"]):
-                print(words[idx]["content"])
-                l.append(words[idx]["content"])
-        print("len: ", len(l))
+            if re.match("\d+[,./]\d+", words[idx]["content"])\
+                or re.match("\w=\d+[,.]", words[idx]["content"])\
+                or re.match("\d{3,}", words[idx]["content"]):
+
+                change_point_for_comma = re.sub("\.", ",", words[idx]["content"])
+                remove_words = re.sub("\w+\s*=\s*", "", change_point_for_comma)
+                change_slash_for_comma = re.sub("/", ",", remove_words)
+                change_one_for_comma = re.sub(r"(\d)(\d)1(\d)", r"\1\2,\3", change_slash_for_comma)
+
+                print(f"original: {words[idx]['content']}", f"filtered: {change_one_for_comma}")
+
+                numbers_info[words[idx]["content"]] = {
+                    "filtered_number": change_one_for_comma,
+                    "box": words[idx]["boundingBox"]
+                }
+
+        print("numbers_info: ", numbers_info)
+        print("numbers_info len: ", len(numbers_info.keys()))
+
+        manbibular_idx = 0
+        for idx,word in enumerate(words):
+
+            if words[idx]["content"] == "mandibular":
+                manbibular_idx = idx
+                print("manbibular_idx", manbibular_idx)
+                break
+
+        buccal_was_hit = False
+        occlusal_was_hit = False
+        palatial_was_hit = False
+        lingual_was_hit = False
+        occlusal_second_time_was_hit = False
+        buccal_second_time_was_hit = False
+        maxillary_was_hit = False
+        sixteen_was_hit = []
+        thirteen_was_hit = []
+        twenty_three_was_hit = []
+        twenty_six_was_hit = []        
+        buccal_box = []
+        occlusal_box = []
+        palatinal_box = []
+        lingual_box = []
+        occlusal_second_box = []
+        buccal_second_box = []
+        sixteen_box = []
+        thirteen_box = []
+        twenty_three_box = []
+        twenty_six_box = []
+        for idx,word in enumerate(words):
+
+            if words[idx]["content"] == "buccal" and not buccal_was_hit:
+                buccal_was_hit = True
+                buccal_box = words[idx]["boundingBox"]
+                print("Buccal box: ", buccal_box)
+
+            if words[idx]["content"] == "occlusal/incisal" and not occlusal_was_hit:
+                occlusal_was_hit = True
+                occlusal_box = words[idx]["boundingBox"]
+                print("occlusal box: ", occlusal_box)
+
+            if words[idx]["content"] == "palatinal" and not palatial_was_hit:
+                palatial_was_hit = True
+                palatinal_box = words[idx]["boundingBox"]
+                print("palatinal box: ", palatinal_box)
+
+            if words[idx]["content"] == "lingual" and not lingual_was_hit:
+                lingual_was_hit = True
+                lingual_box = words[idx]["boundingBox"]
+                print("lingual box: ", lingual_box)
+
+            if words[idx]["content"] == "occlusal/incisal" \
+                and not occlusal_second_time_was_hit and idx > manbibular_idx:
+                occlusal_second_time_was_hit = True
+                occlusal_second_box = words[idx]["boundingBox"]
+                print("occlusal_second_box: ", occlusal_second_box)
+
+            if words[idx]["content"] == "buccal" \
+                and not buccal_second_time_was_hit and idx > manbibular_idx:
+                buccal_second_time_was_hit = True
+                buccal_second_box = words[idx]["boundingBox"]
+                print("buccal_second_box: ", buccal_second_box)
+
+            if words[idx]["content"] == "maxillary"\
+                and words[idx + 1]["content"] == "teeth" and not maxillary_was_hit:
+
+                maxillary_was_hit = True
+
+                if not sixteen_was_hit:
+                    sixteen_box = words[idx + 2]["boundingBox"]
+                    print("sixteen_box: ", sixteen_box)
+                if not thirteen_was_hit:
+                    thirteen_box = words[idx + 3]["boundingBox"]
+                    print("thirteen_box: ", thirteen_box)
+                if not twenty_three_was_hit:
+                    twenty_three_box = words[idx + 4]["boundingBox"]
+                    print("twenty_three_box: ", twenty_three_box)
+                if not twenty_six_was_hit:
+                    twenty_six_box = words[idx + 5]["boundingBox"]
+                    print("twenty_six_box: ", twenty_six_box)
+                
+        for number in numbers_info.keys():
+
+            # print("number", numbers_info[number]["filtered_number"])
+            # print("number box", numbers_info[number]["box"])
+            # print("buccal box", buccal_box)
+            # print("sixteen_box box", sixteen_box)
+            # break
+            #print(numbers_info[number]["box"])
+            # buccal upper left
+            # use the height of the number box vs the word
+            # L= number
+            if (numbers_info[number]["box"][7] > buccal_box[1] \
+                or numbers_info[number]["box"][5] > buccal_box[1]) \
+                and (numbers_info[number]["box"][7] < buccal_box[5] \
+                or numbers_info[number]["box"][5] < buccal_box[5]) \
+                and sixteen_box[0] - 100 <= numbers_info[number]["box"][0] <= sixteen_box[0] + 100:
+                GRAL["C16V-L"] = numbers_info[number]["filtered_number"]
+
+            # b= number
+            if (numbers_info[number]["box"][1] < buccal_box[5] \
+                or numbers_info[number]["box"][3] < buccal_box[5]) \
+                and (numbers_info[number]["box"][1] > buccal_box[1] \
+                or numbers_info[number]["box"][3] > buccal_box[1]) \
+                and sixteen_box[0] - 100 <= numbers_info[number]["box"][0] <= sixteen_box[0] + 100:
+                GRAL["C16V-B"] = numbers_info[number]["filtered_number"]
+
+            if (numbers_info[number]["box"][7] > buccal_box[1] \
+                or numbers_info[number]["box"][5] > buccal_box[1]) \
+                and (numbers_info[number]["box"][7] < buccal_box[5] \
+                or numbers_info[number]["box"][5] < buccal_box[5]) \
+                and thirteen_box[0] - 100 <= numbers_info[number]["box"][0] <= thirteen_box[0] + 100:
+                GRAL["C13V-L"] = numbers_info[number]["filtered_number"]
+
+            if (numbers_info[number]["box"][1] < buccal_box[5] \
+                or numbers_info[number]["box"][3] < buccal_box[5]) \
+                and (numbers_info[number]["box"][1] > buccal_box[1] \
+                or numbers_info[number]["box"][3] > buccal_box[1]) \
+                and thirteen_box[0] - 100 <= numbers_info[number]["box"][0] <= thirteen_box[0] + 100:
+                GRAL["C13V-B"] = numbers_info[number]["filtered_number"]
+
 #read_and_extract_page_two(azure_vision_json)
 #read_and_extract_page_three(azure_page_3_json)
 #read_and_extract_page_four(azure_page_4_json)
