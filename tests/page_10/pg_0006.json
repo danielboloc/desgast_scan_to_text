@@ -1,0 +1,6017 @@
+  {
+    "height": 2420,
+    "width": 1688,
+    "angle": -0.4341,
+    "pageNumber": 1,
+    "words": [
+      {
+        "content": "020",
+        "boundingBox": [
+          57,
+          54,
+          128,
+          51,
+          130,
+          92,
+          60,
+          95
+        ],
+        "confidence": 0.981,
+        "span": {
+          "offset": 0,
+          "length": 3
+        }
+      },
+      {
+        "content": "-",
+        "boundingBox": [
+          1640,
+          84,
+          1653,
+          86,
+          1649,
+          106,
+          1636,
+          103
+        ],
+        "confidence": 0.836,
+        "span": {
+          "offset": 4,
+          "length": 1
+        }
+      },
+      {
+        "content": "RECOLLIDA",
+        "boundingBox": [
+          307,
+          314,
+          474,
+          311,
+          474,
+          348,
+          306,
+          351
+        ],
+        "confidence": 0.993,
+        "span": {
+          "offset": 6,
+          "length": 9
+        }
+      },
+      {
+        "content": "DE",
+        "boundingBox": [
+          481,
+          311,
+          523,
+          310,
+          523,
+          347,
+          481,
+          348
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 16,
+          "length": 2
+        }
+      },
+      {
+        "content": "DADES",
+        "boundingBox": [
+          531,
+          310,
+          634,
+          308,
+          634,
+          345,
+          530,
+          347
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 19,
+          "length": 5
+        }
+      },
+      {
+        "content": "DEL",
+        "boundingBox": [
+          641,
+          308,
+          698,
+          307,
+          698,
+          344,
+          641,
+          345
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 25,
+          "length": 3
+        }
+      },
+      {
+        "content": "COLOR",
+        "boundingBox": [
+          705,
+          307,
+          810,
+          304,
+          810,
+          343,
+          705,
+          344
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 29,
+          "length": 5
+        }
+      },
+      {
+        "content": "DENTS",
+        "boundingBox": [
+          818,
+          304,
+          924,
+          302,
+          924,
+          341,
+          818,
+          343
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 35,
+          "length": 5
+        }
+      },
+      {
+        "content": "#15",
+        "boundingBox": [
+          471,
+          385,
+          553,
+          382,
+          554,
+          423,
+          473,
+          426
+        ],
+        "confidence": 0.751,
+        "span": {
+          "offset": 41,
+          "length": 3
+        }
+      },
+      {
+        "content": "sextant",
+        "boundingBox": [
+          784,
+          434,
+          871,
+          430,
+          869,
+          457,
+          784,
+          460
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 45,
+          "length": 7
+        }
+      },
+      {
+        "content": "2",
+        "boundingBox": [
+          876,
+          430,
+          891,
+          429,
+          890,
+          457,
+          875,
+          457
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 53,
+          "length": 1
+        }
+      },
+      {
+        "content": "L=",
+        "boundingBox": [
+          445,
+          485,
+          471,
+          484,
+          473,
+          515,
+          445,
+          516
+        ],
+        "confidence": 0.924,
+        "span": {
+          "offset": 55,
+          "length": 2
+        }
+      },
+      {
+        "content": "64,9",
+        "boundingBox": [
+          489,
+          476,
+          561,
+          474,
+          562,
+          513,
+          490,
+          515
+        ],
+        "confidence": 0.886,
+        "span": {
+          "offset": 58,
+          "length": 4
+        }
+      },
+      {
+        "content": "L=",
+        "boundingBox": [
+          644,
+          482,
+          668,
+          481,
+          669,
+          513,
+          645,
+          512
+        ],
+        "confidence": 0.954,
+        "span": {
+          "offset": 63,
+          "length": 2
+        }
+      },
+      {
+        "content": "7725",
+        "boundingBox": [
+          683,
+          480,
+          826,
+          473,
+          827,
+          513,
+          684,
+          514
+        ],
+        "confidence": 0.407,
+        "span": {
+          "offset": 66,
+          "length": 4
+        }
+      },
+      {
+        "content": "L=6217747",
+        "boundingBox": [
+          834,
+          473,
+          1032,
+          463,
+          1033,
+          498,
+          835,
+          513
+        ],
+        "confidence": 0.669,
+        "span": {
+          "offset": 71,
+          "length": 9
+        }
+      },
+      {
+        "content": "L=",
+        "boundingBox": [
+          1042,
+          477,
+          1072,
+          474,
+          1073,
+          506,
+          1043,
+          509
+        ],
+        "confidence": 0.963,
+        "span": {
+          "offset": 81,
+          "length": 2
+        }
+      },
+      {
+        "content": "64'7",
+        "boundingBox": [
+          1090,
+          472,
+          1170,
+          466,
+          1171,
+          499,
+          1090,
+          504
+        ],
+        "confidence": 0.842,
+        "span": {
+          "offset": 84,
+          "length": 4
+        }
+      },
+      {
+        "content": "buccal",
+        "boundingBox": [
+          361,
+          508,
+          434,
+          509,
+          435,
+          533,
+          362,
+          533
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 89,
+          "length": 6
+        }
+      },
+      {
+        "content": "b=",
+        "boundingBox": [
+          445,
+          521,
+          474,
+          521,
+          474,
+          554,
+          444,
+          553
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 96,
+          "length": 2
+        }
+      },
+      {
+        "content": "17,8",
+        "boundingBox": [
+          495,
+          520,
+          572,
+          520,
+          574,
+          563,
+          495,
+          556
+        ],
+        "confidence": 0.757,
+        "span": {
+          "offset": 99,
+          "length": 4
+        }
+      },
+      {
+        "content": "b=",
+        "boundingBox": [
+          641,
+          520,
+          671,
+          520,
+          671,
+          545,
+          641,
+          544
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 104,
+          "length": 2
+        }
+      },
+      {
+        "content": "29'5",
+        "boundingBox": [
+          727,
+          519,
+          805,
+          518,
+          805,
+          553,
+          727,
+          553
+        ],
+        "confidence": 0.656,
+        "span": {
+          "offset": 107,
+          "length": 4
+        }
+      },
+      {
+        "content": "b=",
+        "boundingBox": [
+          835,
+          517,
+          874,
+          516,
+          874,
+          553,
+          835,
+          553
+        ],
+        "confidence": 0.921,
+        "span": {
+          "offset": 112,
+          "length": 2
+        }
+      },
+      {
+        "content": "=",
+        "boundingBox": [
+          899,
+          515,
+          923,
+          514,
+          923,
+          553,
+          899,
+          553
+        ],
+        "confidence": 0.058,
+        "span": {
+          "offset": 115,
+          "length": 1
+        }
+      },
+      {
+        "content": "311",
+        "boundingBox": [
+          958,
+          512,
+          1016,
+          509,
+          1016,
+          551,
+          958,
+          552
+        ],
+        "confidence": 0.322,
+        "span": {
+          "offset": 117,
+          "length": 3
+        }
+      },
+      {
+        "content": "b=",
+        "boundingBox": [
+          1040,
+          515,
+          1077,
+          513,
+          1078,
+          548,
+          1040,
+          547
+        ],
+        "confidence": 0.989,
+        "span": {
+          "offset": 121,
+          "length": 2
+        }
+      },
+      {
+        "content": "156",
+        "boundingBox": [
+          1092,
+          513,
+          1172,
+          511,
+          1172,
+          549,
+          1092,
+          549
+        ],
+        "confidence": 0.936,
+        "span": {
+          "offset": 124,
+          "length": 3
+        }
+      },
+      {
+        "content": "buccal",
+        "boundingBox": [
+          1242,
+          496,
+          1321,
+          494,
+          1321,
+          521,
+          1242,
+          522
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 128,
+          "length": 6
+        }
+      },
+      {
+        "content": "occlusal/incisal",
+        "boundingBox": [
+          263,
+          606,
+          443,
+          601,
+          441,
+          631,
+          263,
+          629
+        ],
+        "confidence": 0.388,
+        "span": {
+          "offset": 135,
+          "length": 16
+        }
+      },
+      {
+        "content": "al",
+        "boundingBox": [
+          423,
+          588,
+          428,
+          587,
+          424,
+          627,
+          419,
+          628
+        ],
+        "confidence": 0.941,
+        "span": {
+          "offset": 152,
+          "length": 2
+        }
+      },
+      {
+        "content": "L=",
+        "boundingBox": [
+          434,
+          587,
+          476,
+          582,
+          474,
+          622,
+          430,
+          627
+        ],
+        "confidence": 0.888,
+        "span": {
+          "offset": 155,
+          "length": 2
+        }
+      },
+      {
+        "content": "5814",
+        "boundingBox": [
+          488,
+          581,
+          568,
+          574,
+          568,
+          618,
+          486,
+          621
+        ],
+        "confidence": 0.66,
+        "span": {
+          "offset": 158,
+          "length": 4
+        }
+      },
+      {
+        "content": "b=",
+        "boundingBox": [
+          439,
+          613,
+          477,
+          614,
+          476,
+          656,
+          438,
+          653
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 163,
+          "length": 2
+        }
+      },
+      {
+        "content": "16/6",
+        "boundingBox": [
+          489,
+          615,
+          569,
+          618,
+          569,
+          659,
+          488,
+          657
+        ],
+        "confidence": 0.673,
+        "span": {
+          "offset": 166,
+          "length": 4
+        }
+      },
+      {
+        "content": "L=",
+        "boundingBox": [
+          1041,
+          574,
+          1069,
+          572,
+          1069,
+          608,
+          1041,
+          609
+        ],
+        "confidence": 0.945,
+        "span": {
+          "offset": 171,
+          "length": 2
+        }
+      },
+      {
+        "content": "62'7",
+        "boundingBox": [
+          1089,
+          570,
+          1169,
+          566,
+          1169,
+          603,
+          1089,
+          607
+        ],
+        "confidence": 0.848,
+        "span": {
+          "offset": 174,
+          "length": 4
+        }
+      },
+      {
+        "content": "b=",
+        "boundingBox": [
+          1038,
+          613,
+          1073,
+          614,
+          1073,
+          652,
+          1037,
+          650
+        ],
+        "confidence": 0.991,
+        "span": {
+          "offset": 179,
+          "length": 2
+        }
+      },
+      {
+        "content": "12%",
+        "boundingBox": [
+          1089,
+          614,
+          1163,
+          611,
+          1163,
+          650,
+          1088,
+          653
+        ],
+        "confidence": 0.683,
+        "span": {
+          "offset": 182,
+          "length": 3
+        }
+      },
+      {
+        "content": "occlusal/incisal",
+        "boundingBox": [
+          1241,
+          599,
+          1419,
+          592,
+          1418,
+          623,
+          1240,
+          624
+        ],
+        "confidence": 0.504,
+        "span": {
+          "offset": 186,
+          "length": 16
+        }
+      },
+      {
+        "content": "L=",
+        "boundingBox": [
+          442,
+          682,
+          476,
+          678,
+          476,
+          714,
+          442,
+          714
+        ],
+        "confidence": 0.939,
+        "span": {
+          "offset": 203,
+          "length": 2
+        }
+      },
+      {
+        "content": "7212",
+        "boundingBox": [
+          491,
+          677,
+          558,
+          671,
+          560,
+          712,
+          492,
+          714
+        ],
+        "confidence": 0.78,
+        "span": {
+          "offset": 206,
+          "length": 4
+        }
+      },
+      {
+        "content": "L=",
+        "boundingBox": [
+          642,
+          682,
+          673,
+          681,
+          674,
+          707,
+          643,
+          708
+        ],
+        "confidence": 0.971,
+        "span": {
+          "offset": 211,
+          "length": 2
+        }
+      },
+      {
+        "content": "6212",
+        "boundingBox": [
+          712,
+          668,
+          780,
+          664,
+          782,
+          696,
+          714,
+          699
+        ],
+        "confidence": 0.629,
+        "span": {
+          "offset": 214,
+          "length": 4
+        }
+      },
+      {
+        "content": "palatinal",
+        "boundingBox": [
+          334,
+          703,
+          438,
+          699,
+          437,
+          726,
+          336,
+          728
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 219,
+          "length": 9
+        }
+      },
+      {
+        "content": "24'9",
+        "boundingBox": [
+          697,
+          708,
+          769,
+          706,
+          770,
+          742,
+          698,
+          744
+        ],
+        "confidence": 0.678,
+        "span": {
+          "offset": 229,
+          "length": 4
+        }
+      },
+      {
+        "content": "L=",
+        "boundingBox": [
+          840,
+          679,
+          869,
+          675,
+          871,
+          707,
+          843,
+          708
+        ],
+        "confidence": 0.971,
+        "span": {
+          "offset": 234,
+          "length": 2
+        }
+      },
+      {
+        "content": "7012",
+        "boundingBox": [
+          890,
+          673,
+          964,
+          669,
+          964,
+          701,
+          891,
+          706
+        ],
+        "confidence": 0.756,
+        "span": {
+          "offset": 237,
+          "length": 4
+        }
+      },
+      {
+        "content": "b=",
+        "boundingBox": [
+          839,
+          709,
+          872,
+          708,
+          873,
+          741,
+          841,
+          742
+        ],
+        "confidence": 0.993,
+        "span": {
+          "offset": 242,
+          "length": 2
+        }
+      },
+      {
+        "content": "L=",
+        "boundingBox": [
+          1037,
+          678,
+          1068,
+          675,
+          1068,
+          708,
+          1038,
+          710
+        ],
+        "confidence": 0.964,
+        "span": {
+          "offset": 245,
+          "length": 2
+        }
+      },
+      {
+        "content": "7611",
+        "boundingBox": [
+          1094,
+          672,
+          1155,
+          668,
+          1155,
+          702,
+          1095,
+          707
+        ],
+        "confidence": 0.261,
+        "span": {
+          "offset": 248,
+          "length": 4
+        }
+      },
+      {
+        "content": "b=",
+        "boundingBox": [
+          444,
+          716,
+          475,
+          717,
+          476,
+          755,
+          445,
+          753
+        ],
+        "confidence": 0.982,
+        "span": {
+          "offset": 253,
+          "length": 2
+        }
+      },
+      {
+        "content": "2711",
+        "boundingBox": [
+          486,
+          717,
+          558,
+          716,
+          560,
+          758,
+          487,
+          756
+        ],
+        "confidence": 0.607,
+        "span": {
+          "offset": 256,
+          "length": 4
+        }
+      },
+      {
+        "content": "b=",
+        "boundingBox": [
+          647,
+          713,
+          674,
+          712,
+          675,
+          743,
+          647,
+          744
+        ],
+        "confidence": 0.956,
+        "span": {
+          "offset": 261,
+          "length": 2
+        }
+      },
+      {
+        "content": "3212",
+        "boundingBox": [
+          890,
+          714,
+          971,
+          713,
+          971,
+          751,
+          891,
+          752
+        ],
+        "confidence": 0.602,
+        "span": {
+          "offset": 264,
+          "length": 4
+        }
+      },
+      {
+        "content": "b=",
+        "boundingBox": [
+          1037,
+          710,
+          1069,
+          710,
+          1071,
+          749,
+          1039,
+          745
+        ],
+        "confidence": 0.978,
+        "span": {
+          "offset": 269,
+          "length": 2
+        }
+      },
+      {
+        "content": "367",
+        "boundingBox": [
+          1091,
+          710,
+          1180,
+          712,
+          1182,
+          755,
+          1093,
+          751
+        ],
+        "confidence": 0.93,
+        "span": {
+          "offset": 272,
+          "length": 3
+        }
+      },
+      {
+        "content": "palatinal",
+        "boundingBox": [
+          1238,
+          696,
+          1344,
+          694,
+          1343,
+          722,
+          1238,
+          724
+        ],
+        "confidence": 0.993,
+        "span": {
+          "offset": 276,
+          "length": 9
+        }
+      },
+      {
+        "content": "maxillary",
+        "boundingBox": [
+          266,
+          773,
+          368,
+          770,
+          367,
+          799,
+          265,
+          798
+        ],
+        "confidence": 0.985,
+        "span": {
+          "offset": 286,
+          "length": 9
+        }
+      },
+      {
+        "content": "teeth",
+        "boundingBox": [
+          374,
+          770,
+          437,
+          770,
+          437,
+          800,
+          373,
+          799
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 296,
+          "length": 5
+        }
+      },
+      {
+        "content": "13",
+        "boundingBox": [
+          726,
+          771,
+          753,
+          770,
+          754,
+          797,
+          727,
+          798
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 302,
+          "length": 2
+        }
+      },
+      {
+        "content": "23",
+        "boundingBox": [
+          921,
+          770,
+          951,
+          769,
+          951,
+          797,
+          922,
+          798
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 305,
+          "length": 2
+        }
+      },
+      {
+        "content": "26",
+        "boundingBox": [
+          1121,
+          767,
+          1148,
+          766,
+          1149,
+          794,
+          1121,
+          795
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 308,
+          "length": 2
+        }
+      },
+      {
+        "content": "maxillary",
+        "boundingBox": [
+          1241,
+          770,
+          1338,
+          767,
+          1337,
+          794,
+          1239,
+          796
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 311,
+          "length": 9
+        }
+      },
+      {
+        "content": "teeth",
+        "boundingBox": [
+          1343,
+          767,
+          1407,
+          767,
+          1406,
+          794,
+          1342,
+          794
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 321,
+          "length": 5
+        }
+      },
+      {
+        "content": "mandibular",
+        "boundingBox": [
+          240,
+          816,
+          368,
+          816,
+          367,
+          844,
+          239,
+          844
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 327,
+          "length": 10
+        }
+      },
+      {
+        "content": "teeth",
+        "boundingBox": [
+          373,
+          816,
+          439,
+          815,
+          438,
+          845,
+          373,
+          844
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 338,
+          "length": 5
+        }
+      },
+      {
+        "content": "40",
+        "boundingBox": [
+          530,
+          811,
+          557,
+          811,
+          558,
+          842,
+          531,
+          842
+        ],
+        "confidence": 0.601,
+        "span": {
+          "offset": 344,
+          "length": 2
+        }
+      },
+      {
+        "content": "43",
+        "boundingBox": [
+          726,
+          815,
+          755,
+          815,
+          755,
+          841,
+          726,
+          841
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 347,
+          "length": 2
+        }
+      },
+      {
+        "content": "33",
+        "boundingBox": [
+          921,
+          816,
+          949,
+          814,
+          951,
+          839,
+          923,
+          841
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 350,
+          "length": 2
+        }
+      },
+      {
+        "content": "36",
+        "boundingBox": [
+          1117,
+          812,
+          1151,
+          811,
+          1152,
+          842,
+          1118,
+          841
+        ],
+        "confidence": 0.912,
+        "span": {
+          "offset": 353,
+          "length": 2
+        }
+      },
+      {
+        "content": "37",
+        "boundingBox": [
+          1164,
+          811,
+          1205,
+          811,
+          1207,
+          846,
+          1165,
+          842
+        ],
+        "confidence": 0.988,
+        "span": {
+          "offset": 356,
+          "length": 2
+        }
+      },
+      {
+        "content": "mandibular",
+        "boundingBox": [
+          1235,
+          816,
+          1362,
+          811,
+          1361,
+          839,
+          1235,
+          841
+        ],
+        "confidence": 0.991,
+        "span": {
+          "offset": 359,
+          "length": 10
+        }
+      },
+      {
+        "content": "teeth",
+        "boundingBox": [
+          1367,
+          811,
+          1431,
+          811,
+          1429,
+          840,
+          1367,
+          839
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 370,
+          "length": 5
+        }
+      },
+      {
+        "content": "lingual",
+        "boundingBox": [
+          356,
+          887,
+          439,
+          887,
+          438,
+          913,
+          359,
+          912
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 376,
+          "length": 7
+        }
+      },
+      {
+        "content": "L=",
+        "boundingBox": [
+          445,
+          870,
+          474,
+          866,
+          475,
+          897,
+          445,
+          896
+        ],
+        "confidence": 0.981,
+        "span": {
+          "offset": 384,
+          "length": 2
+        }
+      },
+      {
+        "content": "631",
+        "boundingBox": [
+          509,
+          862,
+          572,
+          857,
+          573,
+          892,
+          510,
+          896
+        ],
+        "confidence": 0.78,
+        "span": {
+          "offset": 387,
+          "length": 3
+        }
+      },
+      {
+        "content": "=",
+        "boundingBox": [
+          651,
+          869,
+          670,
+          868,
+          670,
+          897,
+          651,
+          897
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 391,
+          "length": 1
+        }
+      },
+      {
+        "content": "6.99",
+        "boundingBox": [
+          690,
+          866,
+          757,
+          864,
+          757,
+          895,
+          691,
+          897
+        ],
+        "confidence": 0.706,
+        "span": {
+          "offset": 393,
+          "length": 4
+        }
+      },
+      {
+        "content": "L=",
+        "boundingBox": [
+          1038,
+          866,
+          1064,
+          865,
+          1065,
+          898,
+          1039,
+          897
+        ],
+        "confidence": 0.925,
+        "span": {
+          "offset": 398,
+          "length": 2
+        }
+      },
+      {
+        "content": "5616",
+        "boundingBox": [
+          1090,
+          865,
+          1163,
+          864,
+          1164,
+          898,
+          1091,
+          898
+        ],
+        "confidence": 0.641,
+        "span": {
+          "offset": 401,
+          "length": 4
+        }
+      },
+      {
+        "content": "b=",
+        "boundingBox": [
+          448,
+          904,
+          479,
+          904,
+          479,
+          928,
+          448,
+          928
+        ],
+        "confidence": 0.985,
+        "span": {
+          "offset": 406,
+          "length": 2
+        }
+      },
+      {
+        "content": "172",
+        "boundingBox": [
+          507,
+          900,
+          588,
+          897,
+          589,
+          931,
+          508,
+          934
+        ],
+        "confidence": 0.717,
+        "span": {
+          "offset": 409,
+          "length": 3
+        }
+      },
+      {
+        "content": "b=",
+        "boundingBox": [
+          645,
+          904,
+          676,
+          903,
+          676,
+          937,
+          645,
+          935
+        ],
+        "confidence": 0.993,
+        "span": {
+          "offset": 413,
+          "length": 2
+        }
+      },
+      {
+        "content": "17'7",
+        "boundingBox": [
+          685,
+          903,
+          765,
+          903,
+          765,
+          938,
+          686,
+          937
+        ],
+        "confidence": 0.844,
+        "span": {
+          "offset": 416,
+          "length": 4
+        }
+      },
+      {
+        "content": ":",
+        "boundingBox": [
+          859,
+          868,
+          873,
+          867,
+          872,
+          902,
+          858,
+          903
+        ],
+        "confidence": 0.218,
+        "span": {
+          "offset": 421,
+          "length": 1
+        }
+      },
+      {
+        "content": "708.",
+        "boundingBox": [
+          896,
+          866,
+          967,
+          864,
+          969,
+          897,
+          896,
+          901
+        ],
+        "confidence": 0.721,
+        "span": {
+          "offset": 423,
+          "length": 4
+        }
+      },
+      {
+        "content": "b=",
+        "boundingBox": [
+          840,
+          905,
+          873,
+          904,
+          874,
+          929,
+          841,
+          930
+        ],
+        "confidence": 0.986,
+        "span": {
+          "offset": 428,
+          "length": 2
+        }
+      },
+      {
+        "content": "16'2",
+        "boundingBox": [
+          890,
+          908,
+          975,
+          905,
+          975,
+          940,
+          891,
+          942
+        ],
+        "confidence": 0.889,
+        "span": {
+          "offset": 431,
+          "length": 4
+        }
+      },
+      {
+        "content": "b=",
+        "boundingBox": [
+          1033,
+          900,
+          1069,
+          903,
+          1069,
+          937,
+          1033,
+          933
+        ],
+        "confidence": 0.973,
+        "span": {
+          "offset": 436,
+          "length": 2
+        }
+      },
+      {
+        "content": "2118",
+        "boundingBox": [
+          1097,
+          903,
+          1169,
+          900,
+          1168,
+          936,
+          1097,
+          938
+        ],
+        "confidence": 0.632,
+        "span": {
+          "offset": 439,
+          "length": 4
+        }
+      },
+      {
+        "content": "lingual",
+        "boundingBox": [
+          1233,
+          884,
+          1314,
+          884,
+          1313,
+          910,
+          1231,
+          911
+        ],
+        "confidence": 0.991,
+        "span": {
+          "offset": 444,
+          "length": 7
+        }
+      },
+      {
+        "content": "occlusal/incisal",
+        "boundingBox": [
+          265,
+          984,
+          445,
+          983,
+          443,
+          1009,
+          265,
+          1008
+        ],
+        "confidence": 0.489,
+        "span": {
+          "offset": 452,
+          "length": 16
+        }
+      },
+      {
+        "content": "L=",
+        "boundingBox": [
+          445,
+          966,
+          474,
+          965,
+          475,
+          993,
+          445,
+          994
+        ],
+        "confidence": 0.955,
+        "span": {
+          "offset": 469,
+          "length": 2
+        }
+      },
+      {
+        "content": "66'5",
+        "boundingBox": [
+          502,
+          964,
+          578,
+          964,
+          578,
+          998,
+          502,
+          998
+        ],
+        "confidence": 0.969,
+        "span": {
+          "offset": 472,
+          "length": 4
+        }
+      },
+      {
+        "content": "L=",
+        "boundingBox": [
+          1034,
+          962,
+          1062,
+          960,
+          1063,
+          990,
+          1034,
+          992
+        ],
+        "confidence": 0.97,
+        "span": {
+          "offset": 477,
+          "length": 2
+        }
+      },
+      {
+        "content": "6814",
+        "boundingBox": [
+          1083,
+          958,
+          1153,
+          954,
+          1152,
+          987,
+          1084,
+          989
+        ],
+        "confidence": 0.64,
+        "span": {
+          "offset": 480,
+          "length": 4
+        }
+      },
+      {
+        "content": "b=",
+        "boundingBox": [
+          445,
+          998,
+          480,
+          1000,
+          479,
+          1033,
+          444,
+          1027
+        ],
+        "confidence": 0.972,
+        "span": {
+          "offset": 485,
+          "length": 2
+        }
+      },
+      {
+        "content": "1618",
+        "boundingBox": [
+          503,
+          1001,
+          572,
+          1004,
+          572,
+          1038,
+          502,
+          1036
+        ],
+        "confidence": 0.622,
+        "span": {
+          "offset": 488,
+          "length": 4
+        }
+      },
+      {
+        "content": "b=",
+        "boundingBox": [
+          1034,
+          996,
+          1067,
+          995,
+          1067,
+          1030,
+          1033,
+          1029
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 493,
+          "length": 2
+        }
+      },
+      {
+        "content": "15'5",
+        "boundingBox": [
+          1077,
+          995,
+          1156,
+          994,
+          1157,
+          1032,
+          1077,
+          1030
+        ],
+        "confidence": 0.915,
+        "span": {
+          "offset": 496,
+          "length": 4
+        }
+      },
+      {
+        "content": "occlusal/incisal",
+        "boundingBox": [
+          1228,
+          980,
+          1406,
+          976,
+          1405,
+          1006,
+          1229,
+          1008
+        ],
+        "confidence": 0.664,
+        "span": {
+          "offset": 501,
+          "length": 16
+        }
+      },
+      {
+        "content": "buccal",
+        "boundingBox": [
+          366,
+          1079,
+          441,
+          1080,
+          439,
+          1103,
+          365,
+          1102
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 518,
+          "length": 6
+        }
+      },
+      {
+        "content": "L=",
+        "boundingBox": [
+          442,
+          1059,
+          475,
+          1057,
+          476,
+          1093,
+          443,
+          1093
+        ],
+        "confidence": 0.949,
+        "span": {
+          "offset": 525,
+          "length": 2
+        }
+      },
+      {
+        "content": "8016",
+        "boundingBox": [
+          508,
+          1056,
+          583,
+          1052,
+          585,
+          1089,
+          510,
+          1091
+        ],
+        "confidence": 0.436,
+        "span": {
+          "offset": 528,
+          "length": 4
+        }
+      },
+      {
+        "content": "L=",
+        "boundingBox": [
+          645,
+          1062,
+          672,
+          1059,
+          672,
+          1086,
+          645,
+          1087
+        ],
+        "confidence": 0.957,
+        "span": {
+          "offset": 533,
+          "length": 2
+        }
+      },
+      {
+        "content": "81'4",
+        "boundingBox": [
+          694,
+          1057,
+          758,
+          1055,
+          758,
+          1086,
+          694,
+          1086
+        ],
+        "confidence": 0.857,
+        "span": {
+          "offset": 536,
+          "length": 4
+        }
+      },
+      {
+        "content": "L=",
+        "boundingBox": [
+          840,
+          1057,
+          867,
+          1055,
+          867,
+          1089,
+          840,
+          1089
+        ],
+        "confidence": 0.961,
+        "span": {
+          "offset": 541,
+          "length": 2
+        }
+      },
+      {
+        "content": "81'5",
+        "boundingBox": [
+          886,
+          1054,
+          958,
+          1052,
+          955,
+          1089,
+          885,
+          1088
+        ],
+        "confidence": 0.714,
+        "span": {
+          "offset": 544,
+          "length": 4
+        }
+      },
+      {
+        "content": "L=",
+        "boundingBox": [
+          1034,
+          1056,
+          1062,
+          1057,
+          1061,
+          1087,
+          1034,
+          1086
+        ],
+        "confidence": 0.971,
+        "span": {
+          "offset": 549,
+          "length": 2
+        }
+      },
+      {
+        "content": "740",
+        "boundingBox": [
+          1090,
+          1052,
+          1164,
+          1048,
+          1166,
+          1081,
+          1092,
+          1085
+        ],
+        "confidence": 0.698,
+        "span": {
+          "offset": 552,
+          "length": 3
+        }
+      },
+      {
+        "content": "b=",
+        "boundingBox": [
+          447,
+          1092,
+          479,
+          1092,
+          479,
+          1119,
+          447,
+          1119
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 556,
+          "length": 2
+        }
+      },
+      {
+        "content": "25'5",
+        "boundingBox": [
+          514,
+          1092,
+          595,
+          1092,
+          595,
+          1128,
+          514,
+          1128
+        ],
+        "confidence": 0.841,
+        "span": {
+          "offset": 559,
+          "length": 4
+        }
+      },
+      {
+        "content": "b=",
+        "boundingBox": [
+          639,
+          1093,
+          675,
+          1093,
+          674,
+          1123,
+          639,
+          1121
+        ],
+        "confidence": 0.971,
+        "span": {
+          "offset": 564,
+          "length": 2
+        }
+      },
+      {
+        "content": "306",
+        "boundingBox": [
+          699,
+          1093,
+          763,
+          1091,
+          762,
+          1125,
+          699,
+          1123
+        ],
+        "confidence": 0.992,
+        "span": {
+          "offset": 567,
+          "length": 3
+        }
+      },
+      {
+        "content": "b=",
+        "boundingBox": [
+          837,
+          1094,
+          870,
+          1094,
+          870,
+          1123,
+          838,
+          1121
+        ],
+        "confidence": 0.97,
+        "span": {
+          "offset": 571,
+          "length": 2
+        }
+      },
+      {
+        "content": "334",
+        "boundingBox": [
+          891,
+          1094,
+          960,
+          1094,
+          959,
+          1128,
+          891,
+          1125
+        ],
+        "confidence": 0.939,
+        "span": {
+          "offset": 574,
+          "length": 3
+        }
+      },
+      {
+        "content": "b=",
+        "boundingBox": [
+          1035,
+          1090,
+          1066,
+          1090,
+          1065,
+          1121,
+          1034,
+          1120
+        ],
+        "confidence": 0.98,
+        "span": {
+          "offset": 578,
+          "length": 2
+        }
+      },
+      {
+        "content": "2414",
+        "boundingBox": [
+          1098,
+          1090,
+          1177,
+          1089,
+          1176,
+          1127,
+          1097,
+          1123
+        ],
+        "confidence": 0.809,
+        "span": {
+          "offset": 581,
+          "length": 4
+        }
+      },
+      {
+        "content": "buccal",
+        "boundingBox": [
+          1229,
+          1074,
+          1305,
+          1074,
+          1304,
+          1101,
+          1228,
+          1099
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 586,
+          "length": 6
+        }
+      },
+      {
+        "content": "sextant",
+        "boundingBox": [
+          783,
+          1147,
+          867,
+          1146,
+          867,
+          1169,
+          783,
+          1170
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 593,
+          "length": 7
+        }
+      },
+      {
+        "content": "5",
+        "boundingBox": [
+          872,
+          1145,
+          885,
+          1145,
+          884,
+          1169,
+          871,
+          1169
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 601,
+          "length": 1
+        }
+      },
+      {
+        "content": "RECOLLIDA",
+        "boundingBox": [
+          315,
+          1324,
+          477,
+          1321,
+          478,
+          1355,
+          316,
+          1356
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 603,
+          "length": 9
+        }
+      },
+      {
+        "content": "DE",
+        "boundingBox": [
+          485,
+          1321,
+          526,
+          1321,
+          526,
+          1355,
+          485,
+          1355
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 613,
+          "length": 2
+        }
+      },
+      {
+        "content": "DADES",
+        "boundingBox": [
+          533,
+          1321,
+          634,
+          1320,
+          634,
+          1355,
+          533,
+          1355
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 616,
+          "length": 5
+        }
+      },
+      {
+        "content": "DE",
+        "boundingBox": [
+          641,
+          1320,
+          682,
+          1319,
+          682,
+          1355,
+          641,
+          1355
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 622,
+          "length": 2
+        }
+      },
+      {
+        "content": "ESCANER",
+        "boundingBox": [
+          689,
+          1319,
+          825,
+          1319,
+          824,
+          1355,
+          689,
+          1355
+        ],
+        "confidence": 0.667,
+        "span": {
+          "offset": 625,
+          "length": 7
+        }
+      },
+      {
+        "content": "INTRAORAL:",
+        "boundingBox": [
+          832,
+          1319,
+          1014,
+          1318,
+          1013,
+          1355,
+          831,
+          1355
+        ],
+        "confidence": 0.949,
+        "span": {
+          "offset": 633,
+          "length": 10
+        }
+      },
+      {
+        "content": "sextant",
+        "boundingBox": [
+          514,
+          1495,
+          586,
+          1493,
+          584,
+          1516,
+          514,
+          1518
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 644,
+          "length": 7
+        }
+      },
+      {
+        "content": "1",
+        "boundingBox": [
+          591,
+          1493,
+          603,
+          1492,
+          601,
+          1516,
+          589,
+          1516
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 652,
+          "length": 1
+        }
+      },
+      {
+        "content": "sextant",
+        "boundingBox": [
+          802,
+          1492,
+          873,
+          1492,
+          872,
+          1515,
+          802,
+          1514
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 654,
+          "length": 7
+        }
+      },
+      {
+        "content": "2",
+        "boundingBox": [
+          878,
+          1492,
+          891,
+          1492,
+          890,
+          1516,
+          877,
+          1515
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 662,
+          "length": 1
+        }
+      },
+      {
+        "content": "sextant",
+        "boundingBox": [
+          1107,
+          1491,
+          1176,
+          1491,
+          1176,
+          1515,
+          1105,
+          1513
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 664,
+          "length": 7
+        }
+      },
+      {
+        "content": "3",
+        "boundingBox": [
+          1180,
+          1491,
+          1194,
+          1491,
+          1194,
+          1515,
+          1180,
+          1515
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 672,
+          "length": 1
+        }
+      },
+      {
+        "content": "buccal",
+        "boundingBox": [
+          346,
+          1531,
+          410,
+          1530,
+          411,
+          1553,
+          346,
+          1555
+        ],
+        "confidence": 0.802,
+        "span": {
+          "offset": 674,
+          "length": 6
+        }
+      },
+      {
+        "content": "buccal",
+        "boundingBox": [
+          1295,
+          1527,
+          1364,
+          1526,
+          1362,
+          1550,
+          1295,
+          1550
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 681,
+          "length": 6
+        }
+      },
+      {
+        "content": "occlusal/incisal",
+        "boundingBox": [
+          258,
+          1574,
+          413,
+          1571,
+          412,
+          1597,
+          260,
+          1599
+        ],
+        "confidence": 0.991,
+        "span": {
+          "offset": 688,
+          "length": 16
+        }
+      },
+      {
+        "content": "occlusal/incisal",
+        "boundingBox": [
+          1299,
+          1566,
+          1444,
+          1564,
+          1444,
+          1589,
+          1298,
+          1589
+        ],
+        "confidence": 0.991,
+        "span": {
+          "offset": 705,
+          "length": 16
+        }
+      },
+      {
+        "content": "palatinal",
+        "boundingBox": [
+          324,
+          1614,
+          415,
+          1611,
+          415,
+          1637,
+          325,
+          1638
+        ],
+        "confidence": 0.993,
+        "span": {
+          "offset": 722,
+          "length": 9
+        }
+      },
+      {
+        "content": "palatinal",
+        "boundingBox": [
+          1293,
+          1608,
+          1386,
+          1606,
+          1384,
+          1629,
+          1292,
+          1631
+        ],
+        "confidence": 0.992,
+        "span": {
+          "offset": 732,
+          "length": 9
+        }
+      },
+      {
+        "content": "maxillary",
+        "boundingBox": [
+          264,
+          1658,
+          350,
+          1658,
+          350,
+          1682,
+          264,
+          1681
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 742,
+          "length": 9
+        }
+      },
+      {
+        "content": "teeth",
+        "boundingBox": [
+          355,
+          1658,
+          409,
+          1656,
+          409,
+          1681,
+          354,
+          1682
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 752,
+          "length": 5
+        }
+      },
+      {
+        "content": "18",
+        "boundingBox": [
+          435,
+          1657,
+          458,
+          1656,
+          459,
+          1677,
+          436,
+          1678
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 758,
+          "length": 2
+        }
+      },
+      {
+        "content": "17",
+        "boundingBox": [
+          487,
+          1658,
+          514,
+          1657,
+          515,
+          1681,
+          488,
+          1682
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 761,
+          "length": 2
+        }
+      },
+      {
+        "content": "16",
+        "boundingBox": [
+          543,
+          1654,
+          571,
+          1654,
+          570,
+          1680,
+          543,
+          1679
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 764,
+          "length": 2
+        }
+      },
+      {
+        "content": "'15",
+        "boundingBox": [
+          593,
+          1651,
+          625,
+          1652,
+          624,
+          1678,
+          593,
+          1677
+        ],
+        "confidence": 0.961,
+        "span": {
+          "offset": 767,
+          "length": 3
+        }
+      },
+      {
+        "content": "14",
+        "boundingBox": [
+          652,
+          1652,
+          677,
+          1653,
+          676,
+          1678,
+          651,
+          1677
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 771,
+          "length": 2
+        }
+      },
+      {
+        "content": "13",
+        "boundingBox": [
+          706,
+          1652,
+          731,
+          1652,
+          731,
+          1676,
+          706,
+          1676
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 774,
+          "length": 2
+        }
+      },
+      {
+        "content": "12",
+        "boundingBox": [
+          761,
+          1653,
+          785,
+          1653,
+          785,
+          1678,
+          761,
+          1677
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 777,
+          "length": 2
+        }
+      },
+      {
+        "content": "'11",
+        "boundingBox": [
+          808,
+          1650,
+          838,
+          1650,
+          838,
+          1676,
+          808,
+          1675
+        ],
+        "confidence": 0.849,
+        "span": {
+          "offset": 780,
+          "length": 3
+        }
+      },
+      {
+        "content": "21",
+        "boundingBox": [
+          864,
+          1650,
+          892,
+          1651,
+          891,
+          1676,
+          863,
+          1675
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 784,
+          "length": 2
+        }
+      },
+      {
+        "content": "22",
+        "boundingBox": [
+          918,
+          1651,
+          946,
+          1652,
+          945,
+          1676,
+          917,
+          1675
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 787,
+          "length": 2
+        }
+      },
+      {
+        "content": "23",
+        "boundingBox": [
+          971,
+          1650,
+          999,
+          1650,
+          999,
+          1676,
+          971,
+          1676
+        ],
+        "confidence": 0.992,
+        "span": {
+          "offset": 790,
+          "length": 2
+        }
+      },
+      {
+        "content": "24",
+        "boundingBox": [
+          1028,
+          1651,
+          1052,
+          1651,
+          1052,
+          1676,
+          1028,
+          1676
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 793,
+          "length": 2
+        }
+      },
+      {
+        "content": "25",
+        "boundingBox": [
+          1078,
+          1650,
+          1106,
+          1650,
+          1106,
+          1675,
+          1078,
+          1675
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 796,
+          "length": 2
+        }
+      },
+      {
+        "content": "26",
+        "boundingBox": [
+          1133,
+          1650,
+          1159,
+          1649,
+          1160,
+          1675,
+          1133,
+          1676
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 799,
+          "length": 2
+        }
+      },
+      {
+        "content": "27",
+        "boundingBox": [
+          1186,
+          1650,
+          1212,
+          1650,
+          1212,
+          1675,
+          1186,
+          1675
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 802,
+          "length": 2
+        }
+      },
+      {
+        "content": "28",
+        "boundingBox": [
+          1239,
+          1647,
+          1267,
+          1647,
+          1266,
+          1673,
+          1239,
+          1672
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 805,
+          "length": 2
+        }
+      },
+      {
+        "content": "maxillary",
+        "boundingBox": [
+          1294,
+          1653,
+          1382,
+          1652,
+          1383,
+          1676,
+          1293,
+          1676
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 808,
+          "length": 9
+        }
+      },
+      {
+        "content": "teeth",
+        "boundingBox": [
+          1387,
+          1651,
+          1442,
+          1650,
+          1442,
+          1676,
+          1387,
+          1676
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 818,
+          "length": 5
+        }
+      },
+      {
+        "content": "mandibular",
+        "boundingBox": [
+          237,
+          1698,
+          350,
+          1696,
+          349,
+          1721,
+          237,
+          1722
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 824,
+          "length": 10
+        }
+      },
+      {
+        "content": "teeth",
+        "boundingBox": [
+          355,
+          1696,
+          410,
+          1696,
+          409,
+          1721,
+          354,
+          1721
+        ],
+        "confidence": 0.97,
+        "span": {
+          "offset": 835,
+          "length": 5
+        }
+      },
+      {
+        "content": "48",
+        "boundingBox": [
+          434,
+          1696,
+          460,
+          1695,
+          461,
+          1718,
+          435,
+          1719
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 841,
+          "length": 2
+        }
+      },
+      {
+        "content": "47",
+        "boundingBox": [
+          492,
+          1694,
+          515,
+          1693,
+          516,
+          1718,
+          492,
+          1719
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 844,
+          "length": 2
+        }
+      },
+      {
+        "content": "46",
+        "boundingBox": [
+          548,
+          1694,
+          568,
+          1694,
+          568,
+          1716,
+          548,
+          1716
+        ],
+        "confidence": 0.97,
+        "span": {
+          "offset": 847,
+          "length": 2
+        }
+      },
+      {
+        "content": "45",
+        "boundingBox": [
+          601,
+          1695,
+          621,
+          1695,
+          621,
+          1716,
+          601,
+          1716
+        ],
+        "confidence": 0.955,
+        "span": {
+          "offset": 850,
+          "length": 2
+        }
+      },
+      {
+        "content": "44",
+        "boundingBox": [
+          652,
+          1694,
+          677,
+          1695,
+          676,
+          1715,
+          651,
+          1713
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 853,
+          "length": 2
+        }
+      },
+      {
+        "content": "43",
+        "boundingBox": [
+          708,
+          1694,
+          729,
+          1694,
+          729,
+          1713,
+          708,
+          1713
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 856,
+          "length": 2
+        }
+      },
+      {
+        "content": "42",
+        "boundingBox": [
+          758,
+          1693,
+          782,
+          1693,
+          782,
+          1712,
+          758,
+          1711
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 859,
+          "length": 2
+        }
+      },
+      {
+        "content": "41",
+        "boundingBox": [
+          814,
+          1694,
+          836,
+          1694,
+          836,
+          1713,
+          814,
+          1713
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 862,
+          "length": 2
+        }
+      },
+      {
+        "content": "31",
+        "boundingBox": [
+          864,
+          1686,
+          893,
+          1686,
+          893,
+          1712,
+          864,
+          1712
+        ],
+        "confidence": 0.993,
+        "span": {
+          "offset": 865,
+          "length": 2
+        }
+      },
+      {
+        "content": "32",
+        "boundingBox": [
+          918,
+          1686,
+          946,
+          1686,
+          946,
+          1712,
+          918,
+          1713
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 868,
+          "length": 2
+        }
+      },
+      {
+        "content": "33",
+        "boundingBox": [
+          971,
+          1687,
+          997,
+          1686,
+          998,
+          1710,
+          971,
+          1711
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 871,
+          "length": 2
+        }
+      },
+      {
+        "content": "34",
+        "boundingBox": [
+          1024,
+          1686,
+          1054,
+          1686,
+          1054,
+          1710,
+          1024,
+          1710
+        ],
+        "confidence": 0.992,
+        "span": {
+          "offset": 874,
+          "length": 2
+        }
+      },
+      {
+        "content": "35",
+        "boundingBox": [
+          1077,
+          1686,
+          1107,
+          1685,
+          1107,
+          1711,
+          1078,
+          1712
+        ],
+        "confidence": 0.993,
+        "span": {
+          "offset": 877,
+          "length": 2
+        }
+      },
+      {
+        "content": "36",
+        "boundingBox": [
+          1134,
+          1690,
+          1158,
+          1689,
+          1159,
+          1713,
+          1134,
+          1714
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 880,
+          "length": 2
+        }
+      },
+      {
+        "content": "37",
+        "boundingBox": [
+          1186,
+          1686,
+          1215,
+          1687,
+          1214,
+          1713,
+          1185,
+          1712
+        ],
+        "confidence": 0.992,
+        "span": {
+          "offset": 883,
+          "length": 2
+        }
+      },
+      {
+        "content": "38",
+        "boundingBox": [
+          1241,
+          1692,
+          1265,
+          1692,
+          1265,
+          1712,
+          1241,
+          1712
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 886,
+          "length": 2
+        }
+      },
+      {
+        "content": "mandibular",
+        "boundingBox": [
+          1296,
+          1692,
+          1405,
+          1691,
+          1406,
+          1716,
+          1297,
+          1717
+        ],
+        "confidence": 0.993,
+        "span": {
+          "offset": 889,
+          "length": 10
+        }
+      },
+      {
+        "content": "teeth",
+        "boundingBox": [
+          1410,
+          1691,
+          1465,
+          1691,
+          1465,
+          1717,
+          1411,
+          1716
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 900,
+          "length": 5
+        }
+      },
+      {
+        "content": "lingual",
+        "boundingBox": [
+          343,
+          1736,
+          408,
+          1736,
+          408,
+          1761,
+          343,
+          1760
+        ],
+        "confidence": 0.992,
+        "span": {
+          "offset": 906,
+          "length": 7
+        }
+      },
+      {
+        "content": "lingual",
+        "boundingBox": [
+          1297,
+          1728,
+          1363,
+          1730,
+          1362,
+          1756,
+          1296,
+          1753
+        ],
+        "confidence": 0.991,
+        "span": {
+          "offset": 914,
+          "length": 7
+        }
+      },
+      {
+        "content": "occlusal/incisal",
+        "boundingBox": [
+          261,
+          1773,
+          410,
+          1771,
+          409,
+          1797,
+          260,
+          1795
+        ],
+        "confidence": 0.986,
+        "span": {
+          "offset": 922,
+          "length": 16
+        }
+      },
+      {
+        "content": ".",
+        "boundingBox": [
+          787,
+          1774,
+          796,
+          1774,
+          796,
+          1788,
+          787,
+          1788
+        ],
+        "confidence": 0.703,
+        "span": {
+          "offset": 939,
+          "length": 1
+        }
+      },
+      {
+        "content": "occlusal/incisal",
+        "boundingBox": [
+          1295,
+          1765,
+          1443,
+          1764,
+          1442,
+          1793,
+          1293,
+          1792
+        ],
+        "confidence": 0.961,
+        "span": {
+          "offset": 941,
+          "length": 16
+        }
+      },
+      {
+        "content": "buccal",
+        "boundingBox": [
+          345,
+          1814,
+          408,
+          1813,
+          408,
+          1836,
+          345,
+          1837
+        ],
+        "confidence": 0.955,
+        "span": {
+          "offset": 958,
+          "length": 6
+        }
+      },
+      {
+        "content": "buccal",
+        "boundingBox": [
+          1295,
+          1807,
+          1362,
+          1807,
+          1361,
+          1832,
+          1295,
+          1831
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 965,
+          "length": 6
+        }
+      },
+      {
+        "content": "sextant",
+        "boundingBox": [
+          509,
+          1854,
+          578,
+          1852,
+          579,
+          1876,
+          508,
+          1876
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 972,
+          "length": 7
+        }
+      },
+      {
+        "content": "6",
+        "boundingBox": [
+          583,
+          1852,
+          596,
+          1852,
+          598,
+          1877,
+          584,
+          1877
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 980,
+          "length": 1
+        }
+      },
+      {
+        "content": "sextant",
+        "boundingBox": [
+          798,
+          1850,
+          870,
+          1850,
+          868,
+          1874,
+          797,
+          1873
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 982,
+          "length": 7
+        }
+      },
+      {
+        "content": "5",
+        "boundingBox": [
+          875,
+          1850,
+          888,
+          1850,
+          886,
+          1875,
+          873,
+          1874
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 990,
+          "length": 1
+        }
+      },
+      {
+        "content": "sextant",
+        "boundingBox": [
+          1106,
+          1851,
+          1177,
+          1849,
+          1176,
+          1873,
+          1106,
+          1874
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 992,
+          "length": 7
+        }
+      },
+      {
+        "content": "4",
+        "boundingBox": [
+          1181,
+          1849,
+          1195,
+          1849,
+          1194,
+          1873,
+          1181,
+          1873
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 1000,
+          "length": 1
+        }
+      }
+    ],
+    "spans": [
+      {
+        "offset": 0,
+        "length": 1001
+      }
+    ],
+    "lines": [
+      {
+        "content": "020",
+        "boundingBox": [
+          46,
+          56,
+          132,
+          51,
+          134,
+          92,
+          48,
+          96
+        ],
+        "spans": [
+          {
+            "offset": 0,
+            "length": 3
+          }
+        ]
+      },
+      {
+        "content": "-",
+        "boundingBox": [
+          1616,
+          80,
+          1663,
+          88,
+          1659,
+          108,
+          1613,
+          99
+        ],
+        "spans": [
+          {
+            "offset": 4,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "RECOLLIDA DE DADES DEL COLOR DENTS",
+        "boundingBox": [
+          304,
+          312,
+          924,
+          301,
+          925,
+          340,
+          304,
+          351
+        ],
+        "spans": [
+          {
+            "offset": 6,
+            "length": 34
+          }
+        ]
+      },
+      {
+        "content": "#15",
+        "boundingBox": [
+          466,
+          386,
+          556,
+          382,
+          557,
+          423,
+          468,
+          426
+        ],
+        "spans": [
+          {
+            "offset": 41,
+            "length": 3
+          }
+        ]
+      },
+      {
+        "content": "sextant 2",
+        "boundingBox": [
+          782,
+          433,
+          900,
+          429,
+          901,
+          455,
+          782,
+          460
+        ],
+        "spans": [
+          {
+            "offset": 45,
+            "length": 9
+          }
+        ]
+      },
+      {
+        "content": "L=",
+        "boundingBox": [
+          445,
+          485,
+          480,
+          484,
+          480,
+          515,
+          445,
+          517
+        ],
+        "spans": [
+          {
+            "offset": 55,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "64,9",
+        "boundingBox": [
+          484,
+          477,
+          563,
+          474,
+          564,
+          513,
+          484,
+          514
+        ],
+        "spans": [
+          {
+            "offset": 58,
+            "length": 4
+          }
+        ]
+      },
+      {
+        "content": "L= 7725 L=6217747",
+        "boundingBox": [
+          643,
+          479,
+          1034,
+          462,
+          1036,
+          503,
+          645,
+          514
+        ],
+        "spans": [
+          {
+            "offset": 63,
+            "length": 17
+          }
+        ]
+      },
+      {
+        "content": "L= 64'7",
+        "boundingBox": [
+          1042,
+          476,
+          1172,
+          465,
+          1174,
+          497,
+          1043,
+          509
+        ],
+        "spans": [
+          {
+            "offset": 81,
+            "length": 7
+          }
+        ]
+      },
+      {
+        "content": "buccal",
+        "boundingBox": [
+          359,
+          507,
+          434,
+          508,
+          434,
+          533,
+          359,
+          532
+        ],
+        "spans": [
+          {
+            "offset": 89,
+            "length": 6
+          }
+        ]
+      },
+      {
+        "content": "b= 17,8",
+        "boundingBox": [
+          445,
+          520,
+          575,
+          520,
+          574,
+          562,
+          444,
+          556
+        ],
+        "spans": [
+          {
+            "offset": 96,
+            "length": 7
+          }
+        ]
+      },
+      {
+        "content": "b=",
+        "boundingBox": [
+          640,
+          520,
+          678,
+          521,
+          678,
+          545,
+          640,
+          545
+        ],
+        "spans": [
+          {
+            "offset": 104,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "29'5 b= = 311",
+        "boundingBox": [
+          726,
+          515,
+          1017,
+          508,
+          1018,
+          550,
+          726,
+          553
+        ],
+        "spans": [
+          {
+            "offset": 107,
+            "length": 13
+          }
+        ]
+      },
+      {
+        "content": "b= 156",
+        "boundingBox": [
+          1039,
+          511,
+          1171,
+          510,
+          1171,
+          548,
+          1039,
+          549
+        ],
+        "spans": [
+          {
+            "offset": 121,
+            "length": 6
+          }
+        ]
+      },
+      {
+        "content": "buccal",
+        "boundingBox": [
+          1240,
+          495,
+          1322,
+          494,
+          1322,
+          520,
+          1240,
+          522
+        ],
+        "spans": [
+          {
+            "offset": 128,
+            "length": 6
+          }
+        ]
+      },
+      {
+        "content": "occlusal/incisal",
+        "boundingBox": [
+          263,
+          602,
+          452,
+          600,
+          452,
+          630,
+          263,
+          631
+        ],
+        "spans": [
+          {
+            "offset": 135,
+            "length": 16
+          }
+        ]
+      },
+      {
+        "content": "al L= 5814",
+        "boundingBox": [
+          418,
+          587,
+          569,
+          574,
+          570,
+          616,
+          419,
+          628
+        ],
+        "spans": [
+          {
+            "offset": 152,
+            "length": 10
+          }
+        ]
+      },
+      {
+        "content": "b= 16/6",
+        "boundingBox": [
+          439,
+          612,
+          574,
+          618,
+          573,
+          659,
+          437,
+          654
+        ],
+        "spans": [
+          {
+            "offset": 163,
+            "length": 7
+          }
+        ]
+      },
+      {
+        "content": "L= 62'7",
+        "boundingBox": [
+          1040,
+          573,
+          1168,
+          566,
+          1169,
+          602,
+          1040,
+          609
+        ],
+        "spans": [
+          {
+            "offset": 171,
+            "length": 7
+          }
+        ]
+      },
+      {
+        "content": "b= 12%",
+        "boundingBox": [
+          1037,
+          612,
+          1163,
+          610,
+          1163,
+          651,
+          1037,
+          653
+        ],
+        "spans": [
+          {
+            "offset": 179,
+            "length": 6
+          }
+        ]
+      },
+      {
+        "content": "occlusal/incisal",
+        "boundingBox": [
+          1240,
+          596,
+          1418,
+          592,
+          1419,
+          622,
+          1240,
+          625
+        ],
+        "spans": [
+          {
+            "offset": 186,
+            "length": 16
+          }
+        ]
+      },
+      {
+        "content": "L= 7212",
+        "boundingBox": [
+          442,
+          678,
+          558,
+          671,
+          561,
+          711,
+          442,
+          714
+        ],
+        "spans": [
+          {
+            "offset": 203,
+            "length": 7
+          }
+        ]
+      },
+      {
+        "content": "L=",
+        "boundingBox": [
+          642,
+          682,
+          677,
+          681,
+          678,
+          706,
+          643,
+          708
+        ],
+        "spans": [
+          {
+            "offset": 211,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "6212",
+        "boundingBox": [
+          704,
+          669,
+          785,
+          664,
+          786,
+          696,
+          706,
+          700
+        ],
+        "spans": [
+          {
+            "offset": 214,
+            "length": 4
+          }
+        ]
+      },
+      {
+        "content": "palatinal",
+        "boundingBox": [
+          331,
+          702,
+          438,
+          699,
+          439,
+          726,
+          332,
+          728
+        ],
+        "spans": [
+          {
+            "offset": 219,
+            "length": 9
+          }
+        ]
+      },
+      {
+        "content": "24'9",
+        "boundingBox": [
+          693,
+          709,
+          770,
+          706,
+          771,
+          742,
+          693,
+          744
+        ],
+        "spans": [
+          {
+            "offset": 229,
+            "length": 4
+          }
+        ]
+      },
+      {
+        "content": "L= 7012",
+        "boundingBox": [
+          840,
+          676,
+          966,
+          669,
+          968,
+          700,
+          842,
+          708
+        ],
+        "spans": [
+          {
+            "offset": 234,
+            "length": 7
+          }
+        ]
+      },
+      {
+        "content": "b=",
+        "boundingBox": [
+          838,
+          710,
+          883,
+          708,
+          884,
+          741,
+          841,
+          742
+        ],
+        "spans": [
+          {
+            "offset": 242,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "L= 7611",
+        "boundingBox": [
+          1037,
+          677,
+          1157,
+          667,
+          1158,
+          700,
+          1037,
+          710
+        ],
+        "spans": [
+          {
+            "offset": 245,
+            "length": 7
+          }
+        ]
+      },
+      {
+        "content": "b= 2711",
+        "boundingBox": [
+          444,
+          715,
+          567,
+          715,
+          566,
+          758,
+          443,
+          753
+        ],
+        "spans": [
+          {
+            "offset": 253,
+            "length": 7
+          }
+        ]
+      },
+      {
+        "content": "b=",
+        "boundingBox": [
+          647,
+          714,
+          683,
+          712,
+          683,
+          743,
+          647,
+          744
+        ],
+        "spans": [
+          {
+            "offset": 261,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "3212",
+        "boundingBox": [
+          885,
+          715,
+          971,
+          713,
+          972,
+          751,
+          887,
+          751
+        ],
+        "spans": [
+          {
+            "offset": 264,
+            "length": 4
+          }
+        ]
+      },
+      {
+        "content": "b= 367",
+        "boundingBox": [
+          1037,
+          709,
+          1182,
+          712,
+          1181,
+          755,
+          1037,
+          747
+        ],
+        "spans": [
+          {
+            "offset": 269,
+            "length": 6
+          }
+        ]
+      },
+      {
+        "content": "palatinal",
+        "boundingBox": [
+          1237,
+          695,
+          1347,
+          693,
+          1347,
+          721,
+          1237,
+          723
+        ],
+        "spans": [
+          {
+            "offset": 276,
+            "length": 9
+          }
+        ]
+      },
+      {
+        "content": "maxillary teeth",
+        "boundingBox": [
+          264,
+          770,
+          439,
+          770,
+          439,
+          799,
+          264,
+          799
+        ],
+        "spans": [
+          {
+            "offset": 286,
+            "length": 15
+          }
+        ]
+      },
+      {
+        "content": "13",
+        "boundingBox": [
+          726,
+          771,
+          758,
+          770,
+          758,
+          797,
+          726,
+          798
+        ],
+        "spans": [
+          {
+            "offset": 302,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "23",
+        "boundingBox": [
+          917,
+          770,
+          957,
+          769,
+          956,
+          797,
+          917,
+          798
+        ],
+        "spans": [
+          {
+            "offset": 305,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "26",
+        "boundingBox": [
+          1118,
+          767,
+          1158,
+          766,
+          1158,
+          794,
+          1118,
+          795
+        ],
+        "spans": [
+          {
+            "offset": 308,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "maxillary teeth",
+        "boundingBox": [
+          1239,
+          769,
+          1410,
+          766,
+          1411,
+          794,
+          1239,
+          796
+        ],
+        "spans": [
+          {
+            "offset": 311,
+            "length": 15
+          }
+        ]
+      },
+      {
+        "content": "mandibular teeth",
+        "boundingBox": [
+          236,
+          815,
+          439,
+          815,
+          439,
+          844,
+          236,
+          844
+        ],
+        "spans": [
+          {
+            "offset": 327,
+            "length": 16
+          }
+        ]
+      },
+      {
+        "content": "40",
+        "boundingBox": [
+          528,
+          811,
+          560,
+          811,
+          559,
+          841,
+          527,
+          842
+        ],
+        "spans": [
+          {
+            "offset": 344,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "43",
+        "boundingBox": [
+          726,
+          815,
+          756,
+          815,
+          756,
+          841,
+          726,
+          841
+        ],
+        "spans": [
+          {
+            "offset": 347,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "33",
+        "boundingBox": [
+          920,
+          816,
+          951,
+          814,
+          950,
+          840,
+          920,
+          842
+        ],
+        "spans": [
+          {
+            "offset": 350,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "36 37",
+        "boundingBox": [
+          1117,
+          810,
+          1208,
+          811,
+          1207,
+          845,
+          1117,
+          841
+        ],
+        "spans": [
+          {
+            "offset": 353,
+            "length": 5
+          }
+        ]
+      },
+      {
+        "content": "mandibular teeth",
+        "boundingBox": [
+          1234,
+          813,
+          1435,
+          810,
+          1436,
+          839,
+          1235,
+          841
+        ],
+        "spans": [
+          {
+            "offset": 359,
+            "length": 16
+          }
+        ]
+      },
+      {
+        "content": "lingual",
+        "boundingBox": [
+          356,
+          886,
+          439,
+          886,
+          439,
+          913,
+          356,
+          912
+        ],
+        "spans": [
+          {
+            "offset": 376,
+            "length": 7
+          }
+        ]
+      },
+      {
+        "content": "L= 631",
+        "boundingBox": [
+          444,
+          866,
+          574,
+          856,
+          576,
+          891,
+          445,
+          897
+        ],
+        "spans": [
+          {
+            "offset": 384,
+            "length": 6
+          }
+        ]
+      },
+      {
+        "content": "= 6.99",
+        "boundingBox": [
+          650,
+          866,
+          759,
+          864,
+          760,
+          894,
+          650,
+          897
+        ],
+        "spans": [
+          {
+            "offset": 391,
+            "length": 6
+          }
+        ]
+      },
+      {
+        "content": "L= 5616",
+        "boundingBox": [
+          1038,
+          864,
+          1164,
+          863,
+          1164,
+          897,
+          1038,
+          897
+        ],
+        "spans": [
+          {
+            "offset": 398,
+            "length": 7
+          }
+        ]
+      },
+      {
+        "content": "b=",
+        "boundingBox": [
+          446,
+          904,
+          486,
+          904,
+          484,
+          928,
+          444,
+          928
+        ],
+        "spans": [
+          {
+            "offset": 406,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "172",
+        "boundingBox": [
+          494,
+          902,
+          590,
+          897,
+          590,
+          932,
+          494,
+          935
+        ],
+        "spans": [
+          {
+            "offset": 409,
+            "length": 3
+          }
+        ]
+      },
+      {
+        "content": "b= 17'7",
+        "boundingBox": [
+          644,
+          903,
+          769,
+          903,
+          768,
+          938,
+          644,
+          937
+        ],
+        "spans": [
+          {
+            "offset": 413,
+            "length": 7
+          }
+        ]
+      },
+      {
+        "content": ": 708.",
+        "boundingBox": [
+          858,
+          868,
+          967,
+          863,
+          969,
+          896,
+          858,
+          902
+        ],
+        "spans": [
+          {
+            "offset": 421,
+            "length": 6
+          }
+        ]
+      },
+      {
+        "content": "b=",
+        "boundingBox": [
+          837,
+          906,
+          881,
+          904,
+          881,
+          929,
+          838,
+          930
+        ],
+        "spans": [
+          {
+            "offset": 428,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "16'2",
+        "boundingBox": [
+          866,
+          907,
+          979,
+          905,
+          980,
+          939,
+          867,
+          942
+        ],
+        "spans": [
+          {
+            "offset": 431,
+            "length": 4
+          }
+        ]
+      },
+      {
+        "content": "b= 2118",
+        "boundingBox": [
+          1032,
+          899,
+          1168,
+          899,
+          1168,
+          938,
+          1032,
+          937
+        ],
+        "spans": [
+          {
+            "offset": 436,
+            "length": 7
+          }
+        ]
+      },
+      {
+        "content": "lingual",
+        "boundingBox": [
+          1230,
+          883,
+          1313,
+          883,
+          1314,
+          910,
+          1230,
+          911
+        ],
+        "spans": [
+          {
+            "offset": 444,
+            "length": 7
+          }
+        ]
+      },
+      {
+        "content": "occlusal/incisal",
+        "boundingBox": [
+          263,
+          982,
+          446,
+          982,
+          446,
+          1008,
+          263,
+          1009
+        ],
+        "spans": [
+          {
+            "offset": 452,
+            "length": 16
+          }
+        ]
+      },
+      {
+        "content": "L=",
+        "boundingBox": [
+          444,
+          966,
+          489,
+          965,
+          487,
+          993,
+          442,
+          994
+        ],
+        "spans": [
+          {
+            "offset": 469,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "66'5",
+        "boundingBox": [
+          492,
+          965,
+          579,
+          964,
+          579,
+          998,
+          492,
+          997
+        ],
+        "spans": [
+          {
+            "offset": 472,
+            "length": 4
+          }
+        ]
+      },
+      {
+        "content": "L= 6814",
+        "boundingBox": [
+          1033,
+          961,
+          1152,
+          954,
+          1153,
+          986,
+          1034,
+          992
+        ],
+        "spans": [
+          {
+            "offset": 477,
+            "length": 7
+          }
+        ]
+      },
+      {
+        "content": "b= 1618",
+        "boundingBox": [
+          445,
+          998,
+          574,
+          1003,
+          573,
+          1038,
+          443,
+          1031
+        ],
+        "spans": [
+          {
+            "offset": 485,
+            "length": 7
+          }
+        ]
+      },
+      {
+        "content": "b= 15'5",
+        "boundingBox": [
+          1033,
+          994,
+          1159,
+          994,
+          1158,
+          1031,
+          1033,
+          1030
+        ],
+        "spans": [
+          {
+            "offset": 493,
+            "length": 7
+          }
+        ]
+      },
+      {
+        "content": "occlusal/incisal",
+        "boundingBox": [
+          1226,
+          979,
+          1405,
+          976,
+          1405,
+          1005,
+          1227,
+          1008
+        ],
+        "spans": [
+          {
+            "offset": 501,
+            "length": 16
+          }
+        ]
+      },
+      {
+        "content": "buccal",
+        "boundingBox": [
+          364,
+          1078,
+          442,
+          1079,
+          441,
+          1102,
+          364,
+          1102
+        ],
+        "spans": [
+          {
+            "offset": 518,
+            "length": 6
+          }
+        ]
+      },
+      {
+        "content": "L= 8016",
+        "boundingBox": [
+          441,
+          1057,
+          583,
+          1052,
+          584,
+          1088,
+          443,
+          1093
+        ],
+        "spans": [
+          {
+            "offset": 525,
+            "length": 7
+          }
+        ]
+      },
+      {
+        "content": "L= 81'4",
+        "boundingBox": [
+          645,
+          1058,
+          757,
+          1054,
+          758,
+          1085,
+          645,
+          1087
+        ],
+        "spans": [
+          {
+            "offset": 533,
+            "length": 7
+          }
+        ]
+      },
+      {
+        "content": "L= 81'5",
+        "boundingBox": [
+          839,
+          1055,
+          965,
+          1051,
+          966,
+          1088,
+          840,
+          1089
+        ],
+        "spans": [
+          {
+            "offset": 541,
+            "length": 7
+          }
+        ]
+      },
+      {
+        "content": "L=",
+        "boundingBox": [
+          1034,
+          1056,
+          1074,
+          1057,
+          1074,
+          1087,
+          1034,
+          1086
+        ],
+        "spans": [
+          {
+            "offset": 549,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "740",
+        "boundingBox": [
+          1077,
+          1053,
+          1167,
+          1048,
+          1168,
+          1080,
+          1078,
+          1086
+        ],
+        "spans": [
+          {
+            "offset": 552,
+            "length": 3
+          }
+        ]
+      },
+      {
+        "content": "b=",
+        "boundingBox": [
+          443,
+          1093,
+          486,
+          1092,
+          488,
+          1119,
+          445,
+          1119
+        ],
+        "spans": [
+          {
+            "offset": 556,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "25'5",
+        "boundingBox": [
+          504,
+          1092,
+          599,
+          1092,
+          600,
+          1128,
+          506,
+          1128
+        ],
+        "spans": [
+          {
+            "offset": 559,
+            "length": 4
+          }
+        ]
+      },
+      {
+        "content": "b= 306",
+        "boundingBox": [
+          638,
+          1091,
+          766,
+          1091,
+          766,
+          1124,
+          638,
+          1123
+        ],
+        "spans": [
+          {
+            "offset": 564,
+            "length": 6
+          }
+        ]
+      },
+      {
+        "content": "b= 334",
+        "boundingBox": [
+          837,
+          1093,
+          962,
+          1093,
+          961,
+          1127,
+          837,
+          1123
+        ],
+        "spans": [
+          {
+            "offset": 571,
+            "length": 6
+          }
+        ]
+      },
+      {
+        "content": "b= 2414",
+        "boundingBox": [
+          1035,
+          1089,
+          1182,
+          1089,
+          1181,
+          1126,
+          1034,
+          1123
+        ],
+        "spans": [
+          {
+            "offset": 578,
+            "length": 7
+          }
+        ]
+      },
+      {
+        "content": "buccal",
+        "boundingBox": [
+          1228,
+          1073,
+          1304,
+          1073,
+          1304,
+          1100,
+          1227,
+          1099
+        ],
+        "spans": [
+          {
+            "offset": 586,
+            "length": 6
+          }
+        ]
+      },
+      {
+        "content": "sextant 5",
+        "boundingBox": [
+          780,
+          1146,
+          889,
+          1144,
+          889,
+          1168,
+          780,
+          1170
+        ],
+        "spans": [
+          {
+            "offset": 593,
+            "length": 9
+          }
+        ]
+      },
+      {
+        "content": "RECOLLIDA DE DADES DE ESCANER INTRAORAL:",
+        "boundingBox": [
+          315,
+          1321,
+          1013,
+          1318,
+          1013,
+          1354,
+          315,
+          1356
+        ],
+        "spans": [
+          {
+            "offset": 603,
+            "length": 40
+          }
+        ]
+      },
+      {
+        "content": "sextant 1",
+        "boundingBox": [
+          513,
+          1494,
+          602,
+          1492,
+          603,
+          1515,
+          513,
+          1517
+        ],
+        "spans": [
+          {
+            "offset": 644,
+            "length": 9
+          }
+        ]
+      },
+      {
+        "content": "sextant 2",
+        "boundingBox": [
+          801,
+          1491,
+          894,
+          1491,
+          894,
+          1516,
+          801,
+          1515
+        ],
+        "spans": [
+          {
+            "offset": 654,
+            "length": 9
+          }
+        ]
+      },
+      {
+        "content": "sextant 3",
+        "boundingBox": [
+          1105,
+          1490,
+          1201,
+          1490,
+          1200,
+          1514,
+          1105,
+          1514
+        ],
+        "spans": [
+          {
+            "offset": 664,
+            "length": 9
+          }
+        ]
+      },
+      {
+        "content": "buccal",
+        "boundingBox": [
+          345,
+          1532,
+          411,
+          1530,
+          410,
+          1554,
+          345,
+          1555
+        ],
+        "spans": [
+          {
+            "offset": 674,
+            "length": 6
+          }
+        ]
+      },
+      {
+        "content": "buccal",
+        "boundingBox": [
+          1295,
+          1527,
+          1364,
+          1525,
+          1364,
+          1549,
+          1295,
+          1551
+        ],
+        "spans": [
+          {
+            "offset": 681,
+            "length": 6
+          }
+        ]
+      },
+      {
+        "content": "occlusal/incisal",
+        "boundingBox": [
+          256,
+          1571,
+          413,
+          1569,
+          413,
+          1596,
+          257,
+          1599
+        ],
+        "spans": [
+          {
+            "offset": 688,
+            "length": 16
+          }
+        ]
+      },
+      {
+        "content": "occlusal/incisal",
+        "boundingBox": [
+          1297,
+          1564,
+          1443,
+          1564,
+          1443,
+          1588,
+          1297,
+          1589
+        ],
+        "spans": [
+          {
+            "offset": 705,
+            "length": 16
+          }
+        ]
+      },
+      {
+        "content": "palatinal",
+        "boundingBox": [
+          323,
+          1613,
+          415,
+          1611,
+          416,
+          1636,
+          324,
+          1638
+        ],
+        "spans": [
+          {
+            "offset": 722,
+            "length": 9
+          }
+        ]
+      },
+      {
+        "content": "palatinal",
+        "boundingBox": [
+          1291,
+          1607,
+          1385,
+          1606,
+          1386,
+          1629,
+          1292,
+          1631
+        ],
+        "spans": [
+          {
+            "offset": 732,
+            "length": 9
+          }
+        ]
+      },
+      {
+        "content": "maxillary teeth",
+        "boundingBox": [
+          263,
+          1656,
+          412,
+          1656,
+          412,
+          1681,
+          263,
+          1682
+        ],
+        "spans": [
+          {
+            "offset": 742,
+            "length": 15
+          }
+        ]
+      },
+      {
+        "content": "18",
+        "boundingBox": [
+          437,
+          1657,
+          468,
+          1656,
+          467,
+          1677,
+          435,
+          1679
+        ],
+        "spans": [
+          {
+            "offset": 758,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "17",
+        "boundingBox": [
+          490,
+          1658,
+          517,
+          1657,
+          514,
+          1681,
+          487,
+          1682
+        ],
+        "spans": [
+          {
+            "offset": 761,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "16",
+        "boundingBox": [
+          542,
+          1654,
+          576,
+          1654,
+          575,
+          1680,
+          542,
+          1679
+        ],
+        "spans": [
+          {
+            "offset": 764,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "'15",
+        "boundingBox": [
+          594,
+          1651,
+          628,
+          1652,
+          627,
+          1678,
+          593,
+          1677
+        ],
+        "spans": [
+          {
+            "offset": 767,
+            "length": 3
+          }
+        ]
+      },
+      {
+        "content": "14",
+        "boundingBox": [
+          649,
+          1652,
+          678,
+          1653,
+          676,
+          1678,
+          649,
+          1677
+        ],
+        "spans": [
+          {
+            "offset": 771,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "13",
+        "boundingBox": [
+          707,
+          1652,
+          733,
+          1652,
+          731,
+          1676,
+          705,
+          1676
+        ],
+        "spans": [
+          {
+            "offset": 774,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "12",
+        "boundingBox": [
+          761,
+          1653,
+          795,
+          1653,
+          793,
+          1678,
+          761,
+          1677
+        ],
+        "spans": [
+          {
+            "offset": 777,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "'11",
+        "boundingBox": [
+          809,
+          1650,
+          842,
+          1651,
+          841,
+          1676,
+          808,
+          1676
+        ],
+        "spans": [
+          {
+            "offset": 780,
+            "length": 3
+          }
+        ]
+      },
+      {
+        "content": "21",
+        "boundingBox": [
+          863,
+          1650,
+          895,
+          1651,
+          893,
+          1676,
+          863,
+          1675
+        ],
+        "spans": [
+          {
+            "offset": 784,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "22",
+        "boundingBox": [
+          917,
+          1651,
+          949,
+          1652,
+          948,
+          1676,
+          915,
+          1675
+        ],
+        "spans": [
+          {
+            "offset": 787,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "23",
+        "boundingBox": [
+          970,
+          1650,
+          1000,
+          1650,
+          999,
+          1676,
+          970,
+          1676
+        ],
+        "spans": [
+          {
+            "offset": 790,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "24",
+        "boundingBox": [
+          1029,
+          1651,
+          1059,
+          1651,
+          1057,
+          1676,
+          1028,
+          1676
+        ],
+        "spans": [
+          {
+            "offset": 793,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "25",
+        "boundingBox": [
+          1075,
+          1650,
+          1107,
+          1650,
+          1107,
+          1675,
+          1075,
+          1675
+        ],
+        "spans": [
+          {
+            "offset": 796,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "26",
+        "boundingBox": [
+          1133,
+          1650,
+          1165,
+          1649,
+          1165,
+          1675,
+          1134,
+          1676
+        ],
+        "spans": [
+          {
+            "offset": 799,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "27",
+        "boundingBox": [
+          1186,
+          1650,
+          1219,
+          1650,
+          1217,
+          1675,
+          1185,
+          1675
+        ],
+        "spans": [
+          {
+            "offset": 802,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "28",
+        "boundingBox": [
+          1238,
+          1647,
+          1269,
+          1648,
+          1268,
+          1673,
+          1238,
+          1673
+        ],
+        "spans": [
+          {
+            "offset": 805,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "maxillary teeth",
+        "boundingBox": [
+          1291,
+          1651,
+          1446,
+          1650,
+          1446,
+          1675,
+          1291,
+          1676
+        ],
+        "spans": [
+          {
+            "offset": 808,
+            "length": 15
+          }
+        ]
+      },
+      {
+        "content": "mandibular teeth",
+        "boundingBox": [
+          235,
+          1696,
+          413,
+          1695,
+          413,
+          1721,
+          235,
+          1722
+        ],
+        "spans": [
+          {
+            "offset": 824,
+            "length": 16
+          }
+        ]
+      },
+      {
+        "content": "48",
+        "boundingBox": [
+          436,
+          1696,
+          463,
+          1695,
+          462,
+          1718,
+          434,
+          1719
+        ],
+        "spans": [
+          {
+            "offset": 841,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "47",
+        "boundingBox": [
+          493,
+          1694,
+          517,
+          1693,
+          514,
+          1719,
+          492,
+          1720
+        ],
+        "spans": [
+          {
+            "offset": 844,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "46",
+        "boundingBox": [
+          548,
+          1694,
+          569,
+          1694,
+          569,
+          1716,
+          548,
+          1716
+        ],
+        "spans": [
+          {
+            "offset": 847,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "45",
+        "boundingBox": [
+          603,
+          1695,
+          629,
+          1695,
+          625,
+          1716,
+          601,
+          1716
+        ],
+        "spans": [
+          {
+            "offset": 850,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "44",
+        "boundingBox": [
+          652,
+          1694,
+          679,
+          1696,
+          677,
+          1715,
+          650,
+          1714
+        ],
+        "spans": [
+          {
+            "offset": 853,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "43",
+        "boundingBox": [
+          709,
+          1694,
+          735,
+          1694,
+          732,
+          1713,
+          708,
+          1713
+        ],
+        "spans": [
+          {
+            "offset": 856,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "42",
+        "boundingBox": [
+          758,
+          1693,
+          791,
+          1693,
+          788,
+          1712,
+          756,
+          1711
+        ],
+        "spans": [
+          {
+            "offset": 859,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "41",
+        "boundingBox": [
+          813,
+          1694,
+          841,
+          1694,
+          840,
+          1712,
+          813,
+          1713
+        ],
+        "spans": [
+          {
+            "offset": 862,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "31",
+        "boundingBox": [
+          861,
+          1686,
+          893,
+          1686,
+          890,
+          1712,
+          858,
+          1712
+        ],
+        "spans": [
+          {
+            "offset": 865,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "32",
+        "boundingBox": [
+          917,
+          1686,
+          948,
+          1686,
+          946,
+          1712,
+          915,
+          1713
+        ],
+        "spans": [
+          {
+            "offset": 868,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "33",
+        "boundingBox": [
+          970,
+          1687,
+          1001,
+          1686,
+          998,
+          1710,
+          967,
+          1711
+        ],
+        "spans": [
+          {
+            "offset": 871,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "34",
+        "boundingBox": [
+          1023,
+          1686,
+          1058,
+          1686,
+          1055,
+          1710,
+          1021,
+          1710
+        ],
+        "spans": [
+          {
+            "offset": 874,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "35",
+        "boundingBox": [
+          1072,
+          1686,
+          1110,
+          1685,
+          1107,
+          1711,
+          1070,
+          1712
+        ],
+        "spans": [
+          {
+            "offset": 877,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "36",
+        "boundingBox": [
+          1135,
+          1691,
+          1170,
+          1689,
+          1168,
+          1713,
+          1134,
+          1714
+        ],
+        "spans": [
+          {
+            "offset": 880,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "37",
+        "boundingBox": [
+          1183,
+          1686,
+          1217,
+          1688,
+          1217,
+          1713,
+          1182,
+          1712
+        ],
+        "spans": [
+          {
+            "offset": 883,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "38",
+        "boundingBox": [
+          1241,
+          1692,
+          1272,
+          1692,
+          1269,
+          1712,
+          1240,
+          1712
+        ],
+        "spans": [
+          {
+            "offset": 886,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "mandibular teeth",
+        "boundingBox": [
+          1295,
+          1690,
+          1469,
+          1690,
+          1469,
+          1717,
+          1295,
+          1716
+        ],
+        "spans": [
+          {
+            "offset": 889,
+            "length": 16
+          }
+        ]
+      },
+      {
+        "content": "lingual",
+        "boundingBox": [
+          344,
+          1736,
+          409,
+          1736,
+          408,
+          1761,
+          343,
+          1760
+        ],
+        "spans": [
+          {
+            "offset": 906,
+            "length": 7
+          }
+        ]
+      },
+      {
+        "content": "lingual",
+        "boundingBox": [
+          1297,
+          1728,
+          1364,
+          1730,
+          1361,
+          1756,
+          1296,
+          1752
+        ],
+        "spans": [
+          {
+            "offset": 914,
+            "length": 7
+          }
+        ]
+      },
+      {
+        "content": "occlusal/incisal",
+        "boundingBox": [
+          260,
+          1770,
+          410,
+          1770,
+          410,
+          1796,
+          260,
+          1796
+        ],
+        "spans": [
+          {
+            "offset": 922,
+            "length": 16
+          }
+        ]
+      },
+      {
+        "content": ".",
+        "boundingBox": [
+          785,
+          1774,
+          799,
+          1774,
+          796,
+          1788,
+          783,
+          1788
+        ],
+        "spans": [
+          {
+            "offset": 939,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "occlusal/incisal",
+        "boundingBox": [
+          1292,
+          1764,
+          1443,
+          1764,
+          1443,
+          1792,
+          1292,
+          1792
+        ],
+        "spans": [
+          {
+            "offset": 941,
+            "length": 16
+          }
+        ]
+      },
+      {
+        "content": "buccal",
+        "boundingBox": [
+          345,
+          1814,
+          409,
+          1813,
+          407,
+          1836,
+          344,
+          1837
+        ],
+        "spans": [
+          {
+            "offset": 958,
+            "length": 6
+          }
+        ]
+      },
+      {
+        "content": "buccal",
+        "boundingBox": [
+          1297,
+          1807,
+          1363,
+          1807,
+          1362,
+          1832,
+          1295,
+          1831
+        ],
+        "spans": [
+          {
+            "offset": 965,
+            "length": 6
+          }
+        ]
+      },
+      {
+        "content": "sextant 6",
+        "boundingBox": [
+          507,
+          1852,
+          603,
+          1852,
+          603,
+          1876,
+          507,
+          1876
+        ],
+        "spans": [
+          {
+            "offset": 972,
+            "length": 9
+          }
+        ]
+      },
+      {
+        "content": "sextant 5",
+        "boundingBox": [
+          795,
+          1849,
+          892,
+          1849,
+          892,
+          1874,
+          795,
+          1874
+        ],
+        "spans": [
+          {
+            "offset": 982,
+            "length": 9
+          }
+        ]
+      },
+      {
+        "content": "sextant 4",
+        "boundingBox": [
+          1106,
+          1850,
+          1199,
+          1849,
+          1200,
+          1872,
+          1106,
+          1874
+        ],
+        "spans": [
+          {
+            "offset": 992,
+            "length": 9
+          }
+        ]
+      }
+    ]
+  }
