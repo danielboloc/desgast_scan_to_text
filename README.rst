@@ -50,6 +50,11 @@ To extract all pages from a PDF to images (the output name needs to be improved)
 pdfimages -j output.pdf ./
 ```
 
+Tests
+-----
+
+	python -m pytest -v --disable-warnings
+
 Credits
 -------
 
