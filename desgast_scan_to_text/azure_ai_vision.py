@@ -854,11 +854,12 @@ def read_and_extract_page_seven(azure_page_7_json):
 
 def get_number_upper_row(numbers_info, number, teeth_box, sextant_n):
     """"L= number"""
-    if (numbers_info[number]["box"][7] > teeth_box[1] \
-        or numbers_info[number]["box"][5] > teeth_box[1]) \
-        and (numbers_info[number]["box"][7] < teeth_box[5] \
-        or numbers_info[number]["box"][5] < teeth_box[5]) \
-        and sextant_n[0] - 100 <= numbers_info[number]["box"][0] <= sextant_n[0] + 100:
+    # padding to the teeth box can be changed
+    if (numbers_info[number]["box"][7] > teeth_box[1] - 20\
+        or numbers_info[number]["box"][5] > teeth_box[1] - 20) \
+        and (numbers_info[number]["box"][7] < teeth_box[5] + 20 \
+        or numbers_info[number]["box"][5] < teeth_box[5] + 20) \
+        and sextant_n[0] - 110 <= numbers_info[number]["box"][0] <= sextant_n[0] + 110:
 
         return True
     else:
@@ -866,18 +867,18 @@ def get_number_upper_row(numbers_info, number, teeth_box, sextant_n):
 
 def get_number_lower_row(numbers_info, number, teeth_box, sextant_n):
     """"b= number"""
-    if (numbers_info[number]["box"][1] < teeth_box[5] \
-        or numbers_info[number]["box"][3] < teeth_box[5]) \
-        and (numbers_info[number]["box"][1] > teeth_box[1] \
-        or numbers_info[number]["box"][3] > teeth_box[1]) \
-        and sextant_n[0] - 100 <= numbers_info[number]["box"][0] <= sextant_n[0] + 100:
+    if (numbers_info[number]["box"][1] < teeth_box[5] + 20\
+        or numbers_info[number]["box"][3] < teeth_box[5] + 20) \
+        and (numbers_info[number]["box"][1] > teeth_box[1] - 20 \
+        or numbers_info[number]["box"][3] > teeth_box[1] - 20) \
+        and sextant_n[0] - 110 <= numbers_info[number]["box"][0] <= sextant_n[0] + 110:
 
         return True
     else:
         return False
 
-def read_and_extract_page_ten(azure_page_10_json):
-    with open(azure_page_10_json) as json_file:
+def read_and_extract_page_ten(azure_page_10):
+    with open(azure_page_10) as json_file:
         data = json.load(json_file)
 
         words = data["words"]
@@ -888,8 +889,14 @@ def read_and_extract_page_ten(azure_page_10_json):
         numbers_info = {}
         for idx,word in enumerate(words):
 
+            # check in this order:
+            # digits with comma or dot, e.g. 78,2 or 73.2
+            # L= or L = or b=56,6
+            # 83 and previous matches either 'L=' or 'b= '
+            # 8314, where 1 is mapped to a comma later
             if re.match("\d+[,./]\d+", words[idx]["content"])\
                 or re.match("\w=\d+[,.]", words[idx]["content"])\
+                or (re.match("\d{2,}", words[idx]["content"]) and (words[idx-1]["content"] == 'b=' or words[idx-1]["content"] == 'L='))\
                 or re.match("\d{3,}", words[idx]["content"]):
 
                 change_point_for_comma = re.sub("\.", ",", words[idx]["content"])
@@ -899,10 +906,19 @@ def read_and_extract_page_ten(azure_page_10_json):
 
                 print(f"original: {words[idx]['content']}", f"filtered: {change_one_for_comma}")
 
-                numbers_info[words[idx]["content"]] = {
-                    "filtered_number": change_one_for_comma,
-                    "box": words[idx]["boundingBox"]
-                }
+                # better handle duplicated numbers, add '_dup' to key
+                # also add confidence and print them red in final excel
+                if numbers_info.get(words[idx]["content"]) is not None:
+                    numbers_info[f"{words[idx]['content']}_dup"] = {
+                        "filtered_number": change_one_for_comma,
+                        "box": words[idx]["boundingBox"],
+                        "confidence": words[idx]["confidence"]
+                    }
+                else:
+                    numbers_info[words[idx]["content"]] = {
+                        "filtered_number": change_one_for_comma,
+                        "box": words[idx]["boundingBox"]
+                    }
 
         print("numbers_info: ", numbers_info)
         print("numbers_info len: ", len(numbers_info.keys()))
@@ -987,7 +1003,15 @@ def read_and_extract_page_ten(azure_page_10_json):
                 if not twenty_six_was_hit:
                     twenty_six_box = words[idx + 5]["boundingBox"]
                     print("twenty_six_box: ", twenty_six_box)
-                
+
+        GRAL.update({"C16V-L": None, "C16V-B": None, "C13V-L": None, "C13V-B": None, "C23V-L": None,
+                     "C23V-B": None, "C26V-L": None, "C26V-B": None, "C16O-L": None, "C16O-B": None,
+                     "C26O-L": None, "C26O-B": None, "C16P-L": None, "C16P-B": None, "C13P-L": None,
+                     "C13P-B": None, "C23P-L": None, "C23P-B": None, "C26P-L": None, "C26P-B": None,
+                     "C46P-L": None, "C46P-B": None, "C43P-L": None, "C43P-B": None, "C33P-L": None,
+                     "C33P-B": None, "C36P-L": None, "C36P-B": None, "C46O-L": None, "C46O-B": None,
+                     "C36O-L": None, "C36O-B": None, "C46V-L": None, "C46V-B": None, "C43V-L": None,
+                     "C43V-B": None, "C33V-L": None, "C33V-B": None, "C36V-L": None, "C36V-B": None})
         for number in numbers_info.keys():
 
             # buccal
@@ -1123,6 +1147,7 @@ def read_and_extract_page_ten(azure_page_10_json):
             if get_number_lower_row(numbers_info, number, buccal_second_box, twenty_six_box):
                 GRAL["C36V-B"] = numbers_info[number]["filtered_number"]
 
+        return GRAL
 #read_and_extract_page_two(azure_vision_json)
 #read_and_extract_page_three(azure_page_3_json)
 #read_and_extract_page_four(azure_page_4_json)
@@ -1130,4 +1155,6 @@ def read_and_extract_page_ten(azure_page_10_json):
 #read_and_extract_page_seven(azure_page_7_json)
 read_and_extract_page_ten(azure_page_10_json)
 
+
 print("GRAL: ", GRAL)
+print("GRAL length: ", len(GRAL.keys())-1) # remove the N
