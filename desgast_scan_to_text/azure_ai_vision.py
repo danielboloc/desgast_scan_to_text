@@ -852,6 +852,30 @@ def read_and_extract_page_seven(azure_page_7_json):
             elif muy[0] - 50 <= x[0] <= _a[2] + 50: # add more because the box is smaller
                 GRAL[q] = 4
 
+def get_number_upper_row(numbers_info, number, teeth_box, sextant_n):
+    """"L= number"""
+    if (numbers_info[number]["box"][7] > teeth_box[1] \
+        or numbers_info[number]["box"][5] > teeth_box[1]) \
+        and (numbers_info[number]["box"][7] < teeth_box[5] \
+        or numbers_info[number]["box"][5] < teeth_box[5]) \
+        and sextant_n[0] - 100 <= numbers_info[number]["box"][0] <= sextant_n[0] + 100:
+
+        return True
+    else:
+        return False
+
+def get_number_lower_row(numbers_info, number, teeth_box, sextant_n):
+    """"b= number"""
+    if (numbers_info[number]["box"][1] < teeth_box[5] \
+        or numbers_info[number]["box"][3] < teeth_box[5]) \
+        and (numbers_info[number]["box"][1] > teeth_box[1] \
+        or numbers_info[number]["box"][3] > teeth_box[1]) \
+        and sextant_n[0] - 100 <= numbers_info[number]["box"][0] <= sextant_n[0] + 100:
+
+        return True
+    else:
+        return False
+
 def read_and_extract_page_ten(azure_page_10_json):
     with open(azure_page_10_json) as json_file:
         data = json.load(json_file)
@@ -966,43 +990,138 @@ def read_and_extract_page_ten(azure_page_10_json):
                 
         for number in numbers_info.keys():
 
-            # print("number", numbers_info[number]["filtered_number"])
-            # print("number box", numbers_info[number]["box"])
-            # print("buccal box", buccal_box)
-            # print("sixteen_box box", sixteen_box)
-            # break
-            #print(numbers_info[number]["box"])
-            # buccal upper left
+            # buccal
             # use the height of the number box vs the word
-            # L= number
-            if (numbers_info[number]["box"][7] > buccal_box[1] \
-                or numbers_info[number]["box"][5] > buccal_box[1]) \
-                and (numbers_info[number]["box"][7] < buccal_box[5] \
-                or numbers_info[number]["box"][5] < buccal_box[5]) \
-                and sixteen_box[0] - 100 <= numbers_info[number]["box"][0] <= sixteen_box[0] + 100:
+            # L= number; 76,5 for first sample
+            if get_number_upper_row(numbers_info, number, buccal_box, sixteen_box):
                 GRAL["C16V-L"] = numbers_info[number]["filtered_number"]
-
-            # b= number
-            if (numbers_info[number]["box"][1] < buccal_box[5] \
-                or numbers_info[number]["box"][3] < buccal_box[5]) \
-                and (numbers_info[number]["box"][1] > buccal_box[1] \
-                or numbers_info[number]["box"][3] > buccal_box[1]) \
-                and sixteen_box[0] - 100 <= numbers_info[number]["box"][0] <= sixteen_box[0] + 100:
+            # b= number; 26,8
+            if get_number_lower_row(numbers_info, number, buccal_box, sixteen_box):
                 GRAL["C16V-B"] = numbers_info[number]["filtered_number"]
-
-            if (numbers_info[number]["box"][7] > buccal_box[1] \
-                or numbers_info[number]["box"][5] > buccal_box[1]) \
-                and (numbers_info[number]["box"][7] < buccal_box[5] \
-                or numbers_info[number]["box"][5] < buccal_box[5]) \
-                and thirteen_box[0] - 100 <= numbers_info[number]["box"][0] <= thirteen_box[0] + 100:
+            # L= number; 69,9
+            if get_number_upper_row(numbers_info, number, buccal_box, thirteen_box):
                 GRAL["C13V-L"] = numbers_info[number]["filtered_number"]
-
-            if (numbers_info[number]["box"][1] < buccal_box[5] \
-                or numbers_info[number]["box"][3] < buccal_box[5]) \
-                and (numbers_info[number]["box"][1] > buccal_box[1] \
-                or numbers_info[number]["box"][3] > buccal_box[1]) \
-                and thirteen_box[0] - 100 <= numbers_info[number]["box"][0] <= thirteen_box[0] + 100:
+            # b= number; 25,8
+            if get_number_lower_row(numbers_info, number, buccal_box, thirteen_box):
                 GRAL["C13V-B"] = numbers_info[number]["filtered_number"]
+            # L= number; 74,0
+            if get_number_upper_row(numbers_info, number, buccal_box, twenty_three_box):
+                GRAL["C23V-L"] = numbers_info[number]["filtered_number"]
+            # b= number; 29,2
+            if get_number_lower_row(numbers_info, number, buccal_box, twenty_three_box):
+                GRAL["C23V-B"] = numbers_info[number]["filtered_number"]
+            # L= number; 66,8
+            if get_number_upper_row(numbers_info, number, buccal_box, twenty_six_box):
+                GRAL["C26V-L"] = numbers_info[number]["filtered_number"]
+            # b= number; 20,1
+            if get_number_lower_row(numbers_info, number, buccal_box, twenty_six_box):
+                GRAL["C26V-B"] = numbers_info[number]["filtered_number"]
+
+            # occlusal/incisal
+            # L= number; 57,0 for first sample
+            if get_number_upper_row(numbers_info, number, occlusal_box, sixteen_box):
+                GRAL["C16O-L"] = numbers_info[number]["filtered_number"]
+            # b= number; 7,9
+            if get_number_lower_row(numbers_info, number, occlusal_box, sixteen_box):
+                GRAL["C16O-B"] = numbers_info[number]["filtered_number"]
+            # L= number; 62,2
+            if get_number_upper_row(numbers_info, number, occlusal_box, twenty_six_box):
+                GRAL["C26O-L"] = numbers_info[number]["filtered_number"]
+            # b= number; 6,9
+            if get_number_lower_row(numbers_info, number, occlusal_box, twenty_six_box):
+                GRAL["C26O-B"] = numbers_info[number]["filtered_number"]
+
+            # palatinal
+            # L= number; 74,6 for first sample
+            if get_number_upper_row(numbers_info, number, palatinal_box, sixteen_box):
+                GRAL["C16P-L"] = numbers_info[number]["filtered_number"]
+            # b= number; 20,3
+            if get_number_lower_row(numbers_info, number, palatinal_box, sixteen_box):
+                GRAL["C16P-B"] = numbers_info[number]["filtered_number"]
+            # L= number; 75,0 (it reads it as 95)
+            if get_number_upper_row(numbers_info, number, palatinal_box, thirteen_box):
+                GRAL["C13P-L"] = numbers_info[number]["filtered_number"]
+            # b= number; 27,1
+            if get_number_lower_row(numbers_info, number, palatinal_box, thirteen_box):
+                GRAL["C13P-B"] = numbers_info[number]["filtered_number"]
+            # L= number; 74,9 (it reads it as 94,9)
+            if get_number_upper_row(numbers_info, number, palatinal_box, twenty_three_box):
+                GRAL["C23P-L"] = numbers_info[number]["filtered_number"]
+            # b= number; 26,6
+            if get_number_lower_row(numbers_info, number, palatinal_box, twenty_three_box):
+                GRAL["C23P-B"] = numbers_info[number]["filtered_number"]
+            # L= number; 68,0
+            if get_number_upper_row(numbers_info, number, palatinal_box, twenty_six_box):
+                GRAL["C26P-L"] = numbers_info[number]["filtered_number"]
+            # b= number; 15,1
+            if get_number_lower_row(numbers_info, number, palatinal_box, twenty_six_box):
+                GRAL["C26P-B"] = numbers_info[number]["filtered_number"]
+
+            # lingual
+            # L= number; 77,3 for first sample
+            if get_number_upper_row(numbers_info, number, lingual_box, sixteen_box):
+                GRAL["C46P-L"] = numbers_info[number]["filtered_number"]
+            # b= number; 18,7
+            if get_number_lower_row(numbers_info, number, lingual_box, sixteen_box):
+                GRAL["C46P-B"] = numbers_info[number]["filtered_number"]
+            # L= number; 63,2
+            if get_number_upper_row(numbers_info, number, lingual_box, thirteen_box):
+                GRAL["C43P-L"] = numbers_info[number]["filtered_number"]
+            # b= number; 22,3
+            if get_number_lower_row(numbers_info, number, lingual_box, thirteen_box):
+                GRAL["C43P-B"] = numbers_info[number]["filtered_number"]
+            # L= number; 63,1
+            if get_number_upper_row(numbers_info, number, lingual_box, twenty_three_box):
+                GRAL["C33P-L"] = numbers_info[number]["filtered_number"]
+            # b= number; 19,9
+            if get_number_lower_row(numbers_info, number, lingual_box, twenty_three_box):
+                GRAL["C33P-B"] = numbers_info[number]["filtered_number"]
+            # L= number; 65,4
+            if get_number_upper_row(numbers_info, number, lingual_box, twenty_six_box):
+                GRAL["C36P-L"] = numbers_info[number]["filtered_number"]
+            # b= number; 17,0
+            if get_number_lower_row(numbers_info, number, lingual_box, twenty_six_box):
+                GRAL["C36P-B"] = numbers_info[number]["filtered_number"]
+
+            # occlusal/incisal second part
+            # L= number; 65,5 for first sample
+            if get_number_upper_row(numbers_info, number, occlusal_second_box, sixteen_box):
+                GRAL["C46O-L"] = numbers_info[number]["filtered_number"]
+            # b= number; 8,7
+            if get_number_lower_row(numbers_info, number, occlusal_second_box, sixteen_box):
+                GRAL["C46O-B"] = numbers_info[number]["filtered_number"]
+            # L= number; 60,6
+            if get_number_upper_row(numbers_info, number, occlusal_second_box, twenty_six_box):
+                GRAL["C36O-L"] = numbers_info[number]["filtered_number"]
+            # b= number; 10,6
+            if get_number_lower_row(numbers_info, number, occlusal_second_box, twenty_six_box):
+                GRAL["C36O-B"] = numbers_info[number]["filtered_number"]
+
+            # buccal second part
+            # L= number; 82,3 for first sample
+            if get_number_upper_row(numbers_info, number, buccal_second_box, sixteen_box):
+                GRAL["C46V-L"] = numbers_info[number]["filtered_number"]
+            # b= number; 23,0
+            if get_number_lower_row(numbers_info, number, buccal_second_box, sixteen_box):
+                GRAL["C46V-B"] = numbers_info[number]["filtered_number"]
+            # L= number; 79,8
+            if get_number_upper_row(numbers_info, number, buccal_second_box, thirteen_box):
+                GRAL["C43V-L"] = numbers_info[number]["filtered_number"]
+            # b= number; 27,8
+            if get_number_lower_row(numbers_info, number, buccal_second_box, thirteen_box):
+                GRAL["C43V-B"] = numbers_info[number]["filtered_number"]
+            # L= number; 80,6
+            if get_number_upper_row(numbers_info, number, buccal_second_box, twenty_three_box):
+                GRAL["C33V-L"] = numbers_info[number]["filtered_number"]
+            # b= number; 28,1
+            if get_number_lower_row(numbers_info, number, buccal_second_box, twenty_three_box):
+                GRAL["C33V-B"] = numbers_info[number]["filtered_number"]
+            # L= number; 75,8
+            if get_number_upper_row(numbers_info, number, buccal_second_box, twenty_six_box):
+                GRAL["C36V-L"] = numbers_info[number]["filtered_number"]
+            # b= number; 20,6
+            if get_number_lower_row(numbers_info, number, buccal_second_box, twenty_six_box):
+                GRAL["C36V-B"] = numbers_info[number]["filtered_number"]
 
 #read_and_extract_page_two(azure_vision_json)
 #read_and_extract_page_three(azure_page_3_json)
