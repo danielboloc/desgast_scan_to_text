@@ -1,0 +1,5936 @@
+  {
+    "height": 2500,
+    "width": 1812,
+    "angle": -0.0461,
+    "pageNumber": 1,
+    "words": [
+      {
+        "content": "021",
+        "boundingBox": [
+          202,
+          55,
+          272,
+          55,
+          272,
+          96,
+          202,
+          96
+        ],
+        "confidence": 0.761,
+        "span": {
+          "offset": 0,
+          "length": 3
+        }
+      },
+      {
+        "content": "comprimido",
+        "boundingBox": [
+          1690,
+          100,
+          1770,
+          92,
+          1773,
+          113,
+          1692,
+          120
+        ],
+        "confidence": 0.982,
+        "span": {
+          "offset": 4,
+          "length": 10
+        }
+      },
+      {
+        "content": "CEUTICA",
+        "boundingBox": [
+          1704,
+          119,
+          1769,
+          111,
+          1771,
+          135,
+          1705,
+          140
+        ],
+        "confidence": 0.582,
+        "span": {
+          "offset": 15,
+          "length": 7
+        }
+      },
+      {
+        "content": "aciones",
+        "boundingBox": [
+          1711,
+          141,
+          1772,
+          138,
+          1772,
+          156,
+          1712,
+          160
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 23,
+          "length": 7
+        }
+      },
+      {
+        "content": "blecida,",
+        "boundingBox": [
+          1722,
+          168,
+          1773,
+          167,
+          1771,
+          184,
+          1722,
+          185
+        ],
+        "confidence": 0.599,
+        "span": {
+          "offset": 31,
+          "length": 8
+        }
+      },
+      {
+        "content": "ogia",
+        "boundingBox": [
+          1741,
+          190,
+          1774,
+          189,
+          1775,
+          205,
+          1742,
+          207
+        ],
+        "confidence": 0.788,
+        "span": {
+          "offset": 40,
+          "length": 4
+        }
+      },
+      {
+        "content": "orse",
+        "boundingBox": [
+          1749,
+          209,
+          1777,
+          209,
+          1777,
+          226,
+          1749,
+          226
+        ],
+        "confidence": 0.442,
+        "span": {
+          "offset": 45,
+          "length": 4
+        }
+      },
+      {
+        "content": "Cuestionario.",
+        "boundingBox": [
+          300,
+          252,
+          524,
+          251,
+          524,
+          292,
+          300,
+          292
+        ],
+        "confidence": 0.991,
+        "span": {
+          "offset": 50,
+          "length": 13
+        }
+      },
+      {
+        "content": "Bloque",
+        "boundingBox": [
+          532,
+          251,
+          652,
+          250,
+          652,
+          292,
+          533,
+          292
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 64,
+          "length": 6
+        }
+      },
+      {
+        "content": "4.",
+        "boundingBox": [
+          660,
+          249,
+          692,
+          249,
+          692,
+          292,
+          661,
+          292
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 71,
+          "length": 2
+        }
+      },
+      {
+        "content": "PSS",
+        "boundingBox": [
+          700,
+          249,
+          760,
+          249,
+          760,
+          292,
+          700,
+          292
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 74,
+          "length": 3
+        }
+      },
+      {
+        "content": "Escala",
+        "boundingBox": [
+          768,
+          248,
+          874,
+          247,
+          874,
+          292,
+          769,
+          292
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 78,
+          "length": 6
+        }
+      },
+      {
+        "content": "de",
+        "boundingBox": [
+          882,
+          247,
+          925,
+          247,
+          925,
+          292,
+          883,
+          292
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 85,
+          "length": 2
+        }
+      },
+      {
+        "content": "percepción",
+        "boundingBox": [
+          933,
+          247,
+          1121,
+          245,
+          1122,
+          290,
+          934,
+          292
+        ],
+        "confidence": 0.993,
+        "span": {
+          "offset": 88,
+          "length": 10
+        }
+      },
+      {
+        "content": "de",
+        "boundingBox": [
+          1129,
+          245,
+          1172,
+          244,
+          1173,
+          290,
+          1130,
+          290
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 99,
+          "length": 2
+        }
+      },
+      {
+        "content": "estrés:",
+        "boundingBox": [
+          1181,
+          244,
+          1304,
+          243,
+          1304,
+          289,
+          1181,
+          290
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 102,
+          "length": 7
+        }
+      },
+      {
+        "content": "Las",
+        "boundingBox": [
+          301,
+          305,
+          349,
+          305,
+          350,
+          337,
+          302,
+          336
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 110,
+          "length": 3
+        }
+      },
+      {
+        "content": "preguntas",
+        "boundingBox": [
+          357,
+          304,
+          508,
+          303,
+          508,
+          339,
+          357,
+          337
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 114,
+          "length": 9
+        }
+      },
+      {
+        "content": "en",
+        "boundingBox": [
+          516,
+          303,
+          556,
+          303,
+          556,
+          340,
+          516,
+          340
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 124,
+          "length": 2
+        }
+      },
+      {
+        "content": "esta",
+        "boundingBox": [
+          567,
+          303,
+          635,
+          302,
+          636,
+          341,
+          567,
+          340
+        ],
+        "confidence": 0.988,
+        "span": {
+          "offset": 127,
+          "length": 4
+        }
+      },
+      {
+        "content": "escala",
+        "boundingBox": [
+          644,
+          302,
+          738,
+          301,
+          738,
+          341,
+          644,
+          341
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 132,
+          "length": 6
+        }
+      },
+      {
+        "content": "hacen",
+        "boundingBox": [
+          746,
+          301,
+          838,
+          300,
+          838,
+          341,
+          747,
+          341
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 139,
+          "length": 5
+        }
+      },
+      {
+        "content": "referencia",
+        "boundingBox": [
+          846,
+          300,
+          999,
+          299,
+          999,
+          341,
+          846,
+          341
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 145,
+          "length": 10
+        }
+      },
+      {
+        "content": "a",
+        "boundingBox": [
+          1008,
+          299,
+          1030,
+          298,
+          1030,
+          341,
+          1008,
+          341
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 156,
+          "length": 1
+        }
+      },
+      {
+        "content": "sus",
+        "boundingBox": [
+          1038,
+          298,
+          1092,
+          298,
+          1092,
+          340,
+          1038,
+          341
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 158,
+          "length": 3
+        }
+      },
+      {
+        "content": "sentimientos",
+        "boundingBox": [
+          1100,
+          298,
+          1297,
+          296,
+          1296,
+          338,
+          1100,
+          340
+        ],
+        "confidence": 0.992,
+        "span": {
+          "offset": 162,
+          "length": 12
+        }
+      },
+      {
+        "content": "y",
+        "boundingBox": [
+          1305,
+          296,
+          1327,
+          296,
+          1327,
+          337,
+          1304,
+          338
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 175,
+          "length": 1
+        }
+      },
+      {
+        "content": "pensamientos",
+        "boundingBox": [
+          1336,
+          296,
+          1546,
+          294,
+          1546,
+          333,
+          1335,
+          337
+        ],
+        "confidence": 0.992,
+        "span": {
+          "offset": 177,
+          "length": 12
+        }
+      },
+      {
+        "content": "durante",
+        "boundingBox": [
+          305,
+          350,
+          412,
+          351,
+          411,
+          387,
+          304,
+          384
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 190,
+          "length": 7
+        }
+      },
+      {
+        "content": "el",
+        "boundingBox": [
+          420,
+          351,
+          445,
+          351,
+          444,
+          387,
+          419,
+          387
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 198,
+          "length": 2
+        }
+      },
+      {
+        "content": "último",
+        "boundingBox": [
+          452,
+          351,
+          565,
+          352,
+          564,
+          389,
+          452,
+          387
+        ],
+        "confidence": 0.95,
+        "span": {
+          "offset": 201,
+          "length": 6
+        }
+      },
+      {
+        "content": "mes.",
+        "boundingBox": [
+          573,
+          352,
+          653,
+          352,
+          652,
+          391,
+          572,
+          389
+        ],
+        "confidence": 0.987,
+        "span": {
+          "offset": 208,
+          "length": 4
+        }
+      },
+      {
+        "content": "En",
+        "boundingBox": [
+          660,
+          352,
+          696,
+          352,
+          695,
+          391,
+          660,
+          391
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 213,
+          "length": 2
+        }
+      },
+      {
+        "content": "cada",
+        "boundingBox": [
+          703,
+          352,
+          771,
+          353,
+          770,
+          392,
+          703,
+          391
+        ],
+        "confidence": 0.989,
+        "span": {
+          "offset": 216,
+          "length": 4
+        }
+      },
+      {
+        "content": "caso,",
+        "boundingBox": [
+          778,
+          353,
+          851,
+          353,
+          851,
+          392,
+          778,
+          392
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 221,
+          "length": 5
+        }
+      },
+      {
+        "content": "por",
+        "boundingBox": [
+          859,
+          353,
+          906,
+          352,
+          906,
+          392,
+          858,
+          392
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 227,
+          "length": 3
+        }
+      },
+      {
+        "content": "favor",
+        "boundingBox": [
+          914,
+          352,
+          986,
+          352,
+          986,
+          392,
+          913,
+          392
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 231,
+          "length": 5
+        }
+      },
+      {
+        "content": "indique",
+        "boundingBox": [
+          994,
+          352,
+          1102,
+          352,
+          1101,
+          391,
+          994,
+          392
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 237,
+          "length": 7
+        }
+      },
+      {
+        "content": "con",
+        "boundingBox": [
+          1109,
+          351,
+          1162,
+          351,
+          1162,
+          391,
+          1109,
+          391
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 245,
+          "length": 3
+        }
+      },
+      {
+        "content": "una",
+        "boundingBox": [
+          1169,
+          351,
+          1225,
+          351,
+          1224,
+          390,
+          1169,
+          391
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 249,
+          "length": 3
+        }
+      },
+      {
+        "content": "\"X\"",
+        "boundingBox": [
+          1232,
+          350,
+          1280,
+          350,
+          1280,
+          389,
+          1232,
+          390
+        ],
+        "confidence": 0.901,
+        "span": {
+          "offset": 253,
+          "length": 3
+        }
+      },
+      {
+        "content": "cómo",
+        "boundingBox": [
+          1287,
+          350,
+          1367,
+          349,
+          1367,
+          388,
+          1287,
+          389
+        ],
+        "confidence": 0.884,
+        "span": {
+          "offset": 257,
+          "length": 4
+        }
+      },
+      {
+        "content": "usted",
+        "boundingBox": [
+          1375,
+          349,
+          1455,
+          348,
+          1455,
+          386,
+          1375,
+          388
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 262,
+          "length": 5
+        }
+      },
+      {
+        "content": "se",
+        "boundingBox": [
+          1463,
+          347,
+          1495,
+          347,
+          1495,
+          385,
+          1463,
+          386
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 268,
+          "length": 2
+        }
+      },
+      {
+        "content": "ha",
+        "boundingBox": [
+          1503,
+          347,
+          1545,
+          346,
+          1545,
+          384,
+          1503,
+          385
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 271,
+          "length": 2
+        }
+      },
+      {
+        "content": "sentido",
+        "boundingBox": [
+          301,
+          398,
+          405,
+          399,
+          405,
+          434,
+          301,
+          433
+        ],
+        "confidence": 0.992,
+        "span": {
+          "offset": 274,
+          "length": 7
+        }
+      },
+      {
+        "content": "o",
+        "boundingBox": [
+          412,
+          399,
+          432,
+          399,
+          432,
+          434,
+          411,
+          434
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 282,
+          "length": 1
+        }
+      },
+      {
+        "content": "ha",
+        "boundingBox": [
+          439,
+          399,
+          476,
+          399,
+          476,
+          434,
+          439,
+          434
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 284,
+          "length": 2
+        }
+      },
+      {
+        "content": "pensado",
+        "boundingBox": [
+          483,
+          399,
+          606,
+          400,
+          605,
+          435,
+          483,
+          434
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 287,
+          "length": 7
+        }
+      },
+      {
+        "content": "en",
+        "boundingBox": [
+          613,
+          400,
+          647,
+          400,
+          647,
+          436,
+          612,
+          435
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 295,
+          "length": 2
+        }
+      },
+      {
+        "content": "cada",
+        "boundingBox": [
+          654,
+          400,
+          721,
+          401,
+          721,
+          436,
+          654,
+          436
+        ],
+        "confidence": 0.989,
+        "span": {
+          "offset": 298,
+          "length": 4
+        }
+      },
+      {
+        "content": "situación",
+        "boundingBox": [
+          728,
+          401,
+          860,
+          403,
+          859,
+          438,
+          728,
+          437
+        ],
+        "confidence": 0.991,
+        "span": {
+          "offset": 303,
+          "length": 9
+        }
+      },
+      {
+        "content": "Casi",
+        "boundingBox": [
+          1073,
+          510,
+          1125,
+          510,
+          1125,
+          537,
+          1073,
+          537
+        ],
+        "confidence": 0.966,
+        "span": {
+          "offset": 313,
+          "length": 4
+        }
+      },
+      {
+        "content": "De",
+        "boundingBox": [
+          1183,
+          509,
+          1221,
+          510,
+          1221,
+          541,
+          1183,
+          543
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 318,
+          "length": 2
+        }
+      },
+      {
+        "content": "vez",
+        "boundingBox": [
+          1227,
+          510,
+          1276,
+          511,
+          1276,
+          540,
+          1227,
+          540
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 321,
+          "length": 3
+        }
+      },
+      {
+        "content": "en",
+        "boundingBox": [
+          1282,
+          512,
+          1317,
+          512,
+          1317,
+          542,
+          1282,
+          541
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 325,
+          "length": 2
+        }
+      },
+      {
+        "content": "m",
+        "boundingBox": [
+          221,
+          543,
+          239,
+          543,
+          238,
+          575,
+          221,
+          575
+        ],
+        "confidence": 0.936,
+        "span": {
+          "offset": 328,
+          "length": 1
+        }
+      },
+      {
+        "content": "En",
+        "boundingBox": [
+          248,
+          543,
+          280,
+          543,
+          279,
+          576,
+          248,
+          575
+        ],
+        "confidence": 1,
+        "span": {
+          "offset": 330,
+          "length": 2
+        }
+      },
+      {
+        "content": "el",
+        "boundingBox": [
+          286,
+          543,
+          314,
+          543,
+          313,
+          576,
+          286,
+          576
+        ],
+        "confidence": 1,
+        "span": {
+          "offset": 333,
+          "length": 2
+        }
+      },
+      {
+        "content": "último",
+        "boundingBox": [
+          320,
+          543,
+          413,
+          544,
+          413,
+          577,
+          320,
+          576
+        ],
+        "confidence": 1,
+        "span": {
+          "offset": 336,
+          "length": 6
+        }
+      },
+      {
+        "content": "mes,",
+        "boundingBox": [
+          422,
+          544,
+          484,
+          545,
+          483,
+          578,
+          422,
+          577
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 343,
+          "length": 4
+        }
+      },
+      {
+        "content": "¿",
+        "boundingBox": [
+          491,
+          545,
+          497,
+          545,
+          496,
+          578,
+          490,
+          578
+        ],
+        "confidence": 1,
+        "span": {
+          "offset": 348,
+          "length": 1
+        }
+      },
+      {
+        "content": "con",
+        "boundingBox": [
+          503,
+          546,
+          552,
+          546,
+          551,
+          579,
+          503,
+          578
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 350,
+          "length": 3
+        }
+      },
+      {
+        "content": "que",
+        "boundingBox": [
+          559,
+          547,
+          608,
+          548,
+          607,
+          580,
+          558,
+          579
+        ],
+        "confidence": 0.99,
+        "span": {
+          "offset": 354,
+          "length": 3
+        }
+      },
+      {
+        "content": "frecuencia",
+        "boundingBox": [
+          614,
+          548,
+          748,
+          552,
+          747,
+          584,
+          613,
+          581
+        ],
+        "confidence": 1,
+        "span": {
+          "offset": 358,
+          "length": 10
+        }
+      },
+      {
+        "content": "...",
+        "boundingBox": [
+          755,
+          552,
+          793,
+          553,
+          791,
+          585,
+          753,
+          584
+        ],
+        "confidence": 1,
+        "span": {
+          "offset": 369,
+          "length": 3
+        }
+      },
+      {
+        "content": "Nunca",
+        "boundingBox": [
+          906,
+          532,
+          990,
+          535,
+          989,
+          562,
+          905,
+          560
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 373,
+          "length": 5
+        }
+      },
+      {
+        "content": "A",
+        "boundingBox": [
+          1334,
+          532,
+          1352,
+          532,
+          1352,
+          561,
+          1334,
+          562
+        ],
+        "confidence": 0.991,
+        "span": {
+          "offset": 379,
+          "length": 1
+        }
+      },
+      {
+        "content": "menudo",
+        "boundingBox": [
+          1359,
+          531,
+          1473,
+          530,
+          1474,
+          559,
+          1359,
+          561
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 381,
+          "length": 6
+        }
+      },
+      {
+        "content": "Muy",
+        "boundingBox": [
+          1512,
+          508,
+          1577,
+          508,
+          1577,
+          539,
+          1512,
+          538
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 388,
+          "length": 3
+        }
+      },
+      {
+        "content": "a",
+        "boundingBox": [
+          1583,
+          508,
+          1601,
+          507,
+          1601,
+          538,
+          1583,
+          539
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 392,
+          "length": 1
+        }
+      },
+      {
+        "content": "nunca",
+        "boundingBox": [
+          1062,
+          558,
+          1139,
+          558,
+          1139,
+          582,
+          1062,
+          583
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 394,
+          "length": 5
+        }
+      },
+      {
+        "content": "cuando",
+        "boundingBox": [
+          1202,
+          558,
+          1299,
+          555,
+          1300,
+          583,
+          1203,
+          584
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 400,
+          "length": 6
+        }
+      },
+      {
+        "content": "menudo",
+        "boundingBox": [
+          1498,
+          555,
+          1611,
+          553,
+          1610,
+          581,
+          1499,
+          582
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 407,
+          "length": 6
+        }
+      },
+      {
+        "content": "1",
+        "boundingBox": [
+          214,
+          625,
+          226,
+          624,
+          228,
+          645,
+          216,
+          646
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 414,
+          "length": 1
+        }
+      },
+      {
+        "content": "¿Ha",
+        "boundingBox": [
+          248,
+          607,
+          287,
+          607,
+          287,
+          635,
+          248,
+          634
+        ],
+        "confidence": 0.96,
+        "span": {
+          "offset": 416,
+          "length": 3
+        }
+      },
+      {
+        "content": "estado",
+        "boundingBox": [
+          292,
+          607,
+          371,
+          606,
+          371,
+          636,
+          292,
+          635
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 420,
+          "length": 6
+        }
+      },
+      {
+        "content": "afectado",
+        "boundingBox": [
+          377,
+          606,
+          478,
+          606,
+          478,
+          637,
+          377,
+          636
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 427,
+          "length": 8
+        }
+      },
+      {
+        "content": "por",
+        "boundingBox": [
+          484,
+          606,
+          521,
+          607,
+          521,
+          638,
+          484,
+          638
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 436,
+          "length": 3
+        }
+      },
+      {
+        "content": "algo",
+        "boundingBox": [
+          527,
+          607,
+          577,
+          607,
+          577,
+          639,
+          527,
+          638
+        ],
+        "confidence": 0.989,
+        "span": {
+          "offset": 440,
+          "length": 4
+        }
+      },
+      {
+        "content": "que",
+        "boundingBox": [
+          582,
+          607,
+          624,
+          608,
+          624,
+          639,
+          582,
+          639
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 445,
+          "length": 3
+        }
+      },
+      {
+        "content": "ha",
+        "boundingBox": [
+          630,
+          608,
+          657,
+          608,
+          657,
+          639,
+          630,
+          639
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 449,
+          "length": 2
+        }
+      },
+      {
+        "content": "ocurrido",
+        "boundingBox": [
+          663,
+          608,
+          761,
+          611,
+          761,
+          640,
+          663,
+          639
+        ],
+        "confidence": 0.993,
+        "span": {
+          "offset": 452,
+          "length": 8
+        }
+      },
+      {
+        "content": "inesperadamente?",
+        "boundingBox": [
+          248,
+          641,
+          458,
+          642,
+          456,
+          669,
+          249,
+          668
+        ],
+        "confidence": 0.956,
+        "span": {
+          "offset": 461,
+          "length": 16
+        }
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          935,
+          622,
+          975,
+          622,
+          974,
+          683,
+          935,
+          682
+        ],
+        "confidence": 0.605,
+        "span": {
+          "offset": 478,
+          "length": 1
+        }
+      },
+      {
+        "content": "2",
+        "boundingBox": [
+          214,
+          734,
+          227,
+          733,
+          228,
+          755,
+          215,
+          756
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 480,
+          "length": 1
+        }
+      },
+      {
+        "content": "¿Se",
+        "boundingBox": [
+          246,
+          717,
+          284,
+          717,
+          283,
+          746,
+          245,
+          746
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 482,
+          "length": 3
+        }
+      },
+      {
+        "content": "ha",
+        "boundingBox": [
+          290,
+          717,
+          319,
+          717,
+          318,
+          746,
+          289,
+          746
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 486,
+          "length": 2
+        }
+      },
+      {
+        "content": "sentido",
+        "boundingBox": [
+          325,
+          717,
+          409,
+          718,
+          409,
+          748,
+          324,
+          747
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 489,
+          "length": 7
+        }
+      },
+      {
+        "content": "incapaz",
+        "boundingBox": [
+          415,
+          718,
+          502,
+          719,
+          501,
+          749,
+          415,
+          748
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 497,
+          "length": 7
+        }
+      },
+      {
+        "content": "de",
+        "boundingBox": [
+          508,
+          719,
+          537,
+          719,
+          536,
+          749,
+          507,
+          749
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 505,
+          "length": 2
+        }
+      },
+      {
+        "content": "controlar",
+        "boundingBox": [
+          542,
+          719,
+          643,
+          721,
+          642,
+          751,
+          542,
+          749
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 508,
+          "length": 9
+        }
+      },
+      {
+        "content": "las",
+        "boundingBox": [
+          648,
+          721,
+          683,
+          722,
+          683,
+          751,
+          648,
+          751
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 518,
+          "length": 3
+        }
+      },
+      {
+        "content": "cosas",
+        "boundingBox": [
+          689,
+          722,
+          755,
+          724,
+          755,
+          752,
+          689,
+          751
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 522,
+          "length": 5
+        }
+      },
+      {
+        "content": "importantes",
+        "boundingBox": [
+          245,
+          752,
+          384,
+          754,
+          382,
+          783,
+          245,
+          780
+        ],
+        "confidence": 0.991,
+        "span": {
+          "offset": 528,
+          "length": 11
+        }
+      },
+      {
+        "content": "en",
+        "boundingBox": [
+          389,
+          754,
+          418,
+          754,
+          416,
+          783,
+          388,
+          783
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 540,
+          "length": 2
+        }
+      },
+      {
+        "content": "su",
+        "boundingBox": [
+          424,
+          754,
+          450,
+          754,
+          448,
+          783,
+          421,
+          783
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 543,
+          "length": 2
+        }
+      },
+      {
+        "content": "vida?",
+        "boundingBox": [
+          456,
+          754,
+          517,
+          755,
+          514,
+          783,
+          453,
+          783
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 546,
+          "length": 5
+        }
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          930,
+          736,
+          969,
+          736,
+          970,
+          795,
+          932,
+          795
+        ],
+        "confidence": 0.668,
+        "span": {
+          "offset": 552,
+          "length": 1
+        }
+      },
+      {
+        "content": "3",
+        "boundingBox": [
+          214,
+          847,
+          227,
+          846,
+          229,
+          869,
+          216,
+          870
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 554,
+          "length": 1
+        }
+      },
+      {
+        "content": "¿Se",
+        "boundingBox": [
+          246,
+          844,
+          286,
+          845,
+          286,
+          874,
+          246,
+          874
+        ],
+        "confidence": 0.979,
+        "span": {
+          "offset": 556,
+          "length": 3
+        }
+      },
+      {
+        "content": "ha",
+        "boundingBox": [
+          291,
+          845,
+          319,
+          845,
+          319,
+          875,
+          291,
+          874
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 560,
+          "length": 2
+        }
+      },
+      {
+        "content": "sentido",
+        "boundingBox": [
+          325,
+          845,
+          413,
+          847,
+          413,
+          876,
+          325,
+          875
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 563,
+          "length": 7
+        }
+      },
+      {
+        "content": "nervioso",
+        "boundingBox": [
+          419,
+          847,
+          516,
+          849,
+          516,
+          877,
+          418,
+          876
+        ],
+        "confidence": 0.991,
+        "span": {
+          "offset": 571,
+          "length": 8
+        }
+      },
+      {
+        "content": "o",
+        "boundingBox": [
+          522,
+          849,
+          537,
+          849,
+          536,
+          877,
+          521,
+          877
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 580,
+          "length": 1
+        }
+      },
+      {
+        "content": "estresado?",
+        "boundingBox": [
+          542,
+          849,
+          670,
+          851,
+          670,
+          879,
+          542,
+          877
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 582,
+          "length": 10
+        }
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          1251,
+          843,
+          1292,
+          843,
+          1292,
+          905,
+          1251,
+          905
+        ],
+        "confidence": 0.827,
+        "span": {
+          "offset": 593,
+          "length": 1
+        }
+      },
+      {
+        "content": "4",
+        "boundingBox": [
+          217,
+          960,
+          228,
+          959,
+          229,
+          978,
+          218,
+          979
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 595,
+          "length": 1
+        }
+      },
+      {
+        "content": "¿Ha",
+        "boundingBox": [
+          247,
+          941,
+          291,
+          941,
+          292,
+          970,
+          249,
+          969
+        ],
+        "confidence": 0.989,
+        "span": {
+          "offset": 597,
+          "length": 3
+        }
+      },
+      {
+        "content": "manejado",
+        "boundingBox": [
+          296,
+          941,
+          411,
+          942,
+          412,
+          972,
+          298,
+          970
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 601,
+          "length": 8
+        }
+      },
+      {
+        "content": "con",
+        "boundingBox": [
+          417,
+          942,
+          459,
+          942,
+          459,
+          973,
+          418,
+          972
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 610,
+          "length": 3
+        }
+      },
+      {
+        "content": "éxito",
+        "boundingBox": [
+          465,
+          942,
+          522,
+          943,
+          522,
+          974,
+          465,
+          973
+        ],
+        "confidence": 0.609,
+        "span": {
+          "offset": 614,
+          "length": 5
+        }
+      },
+      {
+        "content": "los",
+        "boundingBox": [
+          528,
+          943,
+          562,
+          944,
+          561,
+          975,
+          528,
+          974
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 620,
+          "length": 3
+        }
+      },
+      {
+        "content": "pequeños",
+        "boundingBox": [
+          568,
+          944,
+          678,
+          946,
+          677,
+          977,
+          567,
+          975
+        ],
+        "confidence": 0.899,
+        "span": {
+          "offset": 624,
+          "length": 8
+        }
+      },
+      {
+        "content": "problemas",
+        "boundingBox": [
+          684,
+          947,
+          805,
+          951,
+          804,
+          981,
+          683,
+          978
+        ],
+        "confidence": 0.991,
+        "span": {
+          "offset": 633,
+          "length": 9
+        }
+      },
+      {
+        "content": "irritantes",
+        "boundingBox": [
+          248,
+          975,
+          354,
+          976,
+          353,
+          1005,
+          249,
+          1002
+        ],
+        "confidence": 0.991,
+        "span": {
+          "offset": 643,
+          "length": 10
+        }
+      },
+      {
+        "content": "de",
+        "boundingBox": [
+          359,
+          976,
+          390,
+          976,
+          388,
+          1006,
+          359,
+          1005
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 654,
+          "length": 2
+        }
+      },
+      {
+        "content": "la",
+        "boundingBox": [
+          395,
+          976,
+          418,
+          976,
+          416,
+          1006,
+          394,
+          1006
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 657,
+          "length": 2
+        }
+      },
+      {
+        "content": "vida?",
+        "boundingBox": [
+          424,
+          976,
+          486,
+          978,
+          484,
+          1007,
+          422,
+          1006
+        ],
+        "confidence": 0.976,
+        "span": {
+          "offset": 660,
+          "length": 5
+        }
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          1381,
+          960,
+          1416,
+          961,
+          1415,
+          1015,
+          1380,
+          1014
+        ],
+        "confidence": 0.757,
+        "span": {
+          "offset": 666,
+          "length": 1
+        }
+      },
+      {
+        "content": "¿Ha",
+        "boundingBox": [
+          251,
+          1031,
+          292,
+          1032,
+          292,
+          1062,
+          251,
+          1062
+        ],
+        "confidence": 0.958,
+        "span": {
+          "offset": 668,
+          "length": 3
+        }
+      },
+      {
+        "content": "sentido",
+        "boundingBox": [
+          298,
+          1032,
+          385,
+          1033,
+          385,
+          1063,
+          298,
+          1062
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 672,
+          "length": 7
+        }
+      },
+      {
+        "content": "que",
+        "boundingBox": [
+          391,
+          1034,
+          434,
+          1034,
+          434,
+          1064,
+          391,
+          1063
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 680,
+          "length": 3
+        }
+      },
+      {
+        "content": "ha",
+        "boundingBox": [
+          440,
+          1034,
+          470,
+          1035,
+          469,
+          1064,
+          440,
+          1064
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 684,
+          "length": 2
+        }
+      },
+      {
+        "content": "afrontado",
+        "boundingBox": [
+          476,
+          1035,
+          586,
+          1037,
+          586,
+          1066,
+          475,
+          1064
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 687,
+          "length": 9
+        }
+      },
+      {
+        "content": "efectivamente",
+        "boundingBox": [
+          592,
+          1037,
+          754,
+          1039,
+          753,
+          1070,
+          592,
+          1066
+        ],
+        "confidence": 0.992,
+        "span": {
+          "offset": 697,
+          "length": 13
+        }
+      },
+      {
+        "content": "los",
+        "boundingBox": [
+          760,
+          1039,
+          798,
+          1040,
+          797,
+          1072,
+          759,
+          1071
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 711,
+          "length": 3
+        }
+      },
+      {
+        "content": "5",
+        "boundingBox": [
+          221,
+          1070,
+          237,
+          1070,
+          237,
+          1091,
+          221,
+          1091
+        ],
+        "confidence": 0.942,
+        "span": {
+          "offset": 715,
+          "length": 1
+        }
+      },
+      {
+        "content": "cambios",
+        "boundingBox": [
+          249,
+          1067,
+          346,
+          1069,
+          345,
+          1099,
+          248,
+          1097
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 717,
+          "length": 7
+        }
+      },
+      {
+        "content": "importantes",
+        "boundingBox": [
+          352,
+          1069,
+          490,
+          1072,
+          489,
+          1102,
+          350,
+          1099
+        ],
+        "confidence": 0.993,
+        "span": {
+          "offset": 725,
+          "length": 11
+        }
+      },
+      {
+        "content": "que",
+        "boundingBox": [
+          496,
+          1072,
+          539,
+          1073,
+          537,
+          1102,
+          495,
+          1102
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 737,
+          "length": 3
+        }
+      },
+      {
+        "content": "han",
+        "boundingBox": [
+          544,
+          1073,
+          589,
+          1074,
+          587,
+          1103,
+          543,
+          1102
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 741,
+          "length": 3
+        }
+      },
+      {
+        "content": "estado",
+        "boundingBox": [
+          595,
+          1074,
+          670,
+          1075,
+          668,
+          1104,
+          593,
+          1103
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 745,
+          "length": 6
+        }
+      },
+      {
+        "content": "ocurriendo",
+        "boundingBox": [
+          676,
+          1075,
+          795,
+          1077,
+          793,
+          1105,
+          674,
+          1104
+        ],
+        "confidence": 0.981,
+        "span": {
+          "offset": 752,
+          "length": 10
+        }
+      },
+      {
+        "content": "en",
+        "boundingBox": [
+          801,
+          1077,
+          830,
+          1077,
+          828,
+          1106,
+          799,
+          1105
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 763,
+          "length": 2
+        }
+      },
+      {
+        "content": "su",
+        "boundingBox": [
+          836,
+          1077,
+          864,
+          1078,
+          862,
+          1106,
+          833,
+          1106
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 766,
+          "length": 2
+        }
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          1239,
+          1057,
+          1293,
+          1056,
+          1295,
+          1140,
+          1241,
+          1141
+        ],
+        "confidence": 0.814,
+        "span": {
+          "offset": 769,
+          "length": 1
+        }
+      },
+      {
+        "content": "vida?",
+        "boundingBox": [
+          249,
+          1101,
+          316,
+          1100,
+          317,
+          1128,
+          250,
+          1129
+        ],
+        "confidence": 0.991,
+        "span": {
+          "offset": 771,
+          "length": 5
+        }
+      },
+      {
+        "content": "6",
+        "boundingBox": [
+          218,
+          1184,
+          229,
+          1184,
+          229,
+          1204,
+          218,
+          1204
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 777,
+          "length": 1
+        }
+      },
+      {
+        "content": "¿Ha",
+        "boundingBox": [
+          252,
+          1165,
+          293,
+          1165,
+          293,
+          1194,
+          252,
+          1193
+        ],
+        "confidence": 0.979,
+        "span": {
+          "offset": 779,
+          "length": 3
+        }
+      },
+      {
+        "content": "estado",
+        "boundingBox": [
+          299,
+          1165,
+          379,
+          1165,
+          378,
+          1195,
+          299,
+          1194
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 783,
+          "length": 6
+        }
+      },
+      {
+        "content": "seguro",
+        "boundingBox": [
+          385,
+          1165,
+          462,
+          1165,
+          461,
+          1196,
+          384,
+          1195
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 790,
+          "length": 6
+        }
+      },
+      {
+        "content": "sobre",
+        "boundingBox": [
+          468,
+          1165,
+          534,
+          1166,
+          533,
+          1197,
+          467,
+          1196
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 797,
+          "length": 5
+        }
+      },
+      {
+        "content": "su",
+        "boundingBox": [
+          540,
+          1166,
+          566,
+          1166,
+          564,
+          1197,
+          539,
+          1197
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 803,
+          "length": 2
+        }
+      },
+      {
+        "content": "capacidad",
+        "boundingBox": [
+          572,
+          1166,
+          689,
+          1168,
+          687,
+          1198,
+          570,
+          1197
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 806,
+          "length": 9
+        }
+      },
+      {
+        "content": "para",
+        "boundingBox": [
+          695,
+          1168,
+          745,
+          1168,
+          743,
+          1199,
+          693,
+          1199
+        ],
+        "confidence": 0.987,
+        "span": {
+          "offset": 816,
+          "length": 4
+        }
+      },
+      {
+        "content": "manejar",
+        "boundingBox": [
+          751,
+          1168,
+          849,
+          1170,
+          846,
+          1201,
+          749,
+          1199
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 821,
+          "length": 7
+        }
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          1233,
+          1167,
+          1279,
+          1168,
+          1278,
+          1239,
+          1232,
+          1238
+        ],
+        "confidence": 0.746,
+        "span": {
+          "offset": 829,
+          "length": 1
+        }
+      },
+      {
+        "content": "sus",
+        "boundingBox": [
+          248,
+          1201,
+          289,
+          1200,
+          289,
+          1230,
+          249,
+          1230
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 831,
+          "length": 3
+        }
+      },
+      {
+        "content": "problemas",
+        "boundingBox": [
+          294,
+          1200,
+          419,
+          1200,
+          417,
+          1230,
+          295,
+          1230
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 835,
+          "length": 9
+        }
+      },
+      {
+        "content": "personales?",
+        "boundingBox": [
+          424,
+          1200,
+          566,
+          1202,
+          562,
+          1230,
+          423,
+          1230
+        ],
+        "confidence": 0.991,
+        "span": {
+          "offset": 845,
+          "length": 11
+        }
+      },
+      {
+        "content": "7",
+        "boundingBox": [
+          218,
+          1296,
+          229,
+          1296,
+          231,
+          1315,
+          219,
+          1316
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 857,
+          "length": 1
+        }
+      },
+      {
+        "content": "¿con",
+        "boundingBox": [
+          252,
+          1278,
+          302,
+          1277,
+          302,
+          1306,
+          252,
+          1306
+        ],
+        "confidence": 0.884,
+        "span": {
+          "offset": 859,
+          "length": 4
+        }
+      },
+      {
+        "content": "qué",
+        "boundingBox": [
+          308,
+          1277,
+          351,
+          1277,
+          351,
+          1306,
+          308,
+          1306
+        ],
+        "confidence": 0.621,
+        "span": {
+          "offset": 864,
+          "length": 3
+        }
+      },
+      {
+        "content": "frecuencia",
+        "boundingBox": [
+          357,
+          1277,
+          479,
+          1276,
+          478,
+          1306,
+          356,
+          1306
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 868,
+          "length": 10
+        }
+      },
+      {
+        "content": "ha",
+        "boundingBox": [
+          485,
+          1276,
+          516,
+          1276,
+          515,
+          1307,
+          484,
+          1306
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 879,
+          "length": 2
+        }
+      },
+      {
+        "content": "sentido",
+        "boundingBox": [
+          522,
+          1276,
+          607,
+          1277,
+          606,
+          1307,
+          521,
+          1307
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 882,
+          "length": 7
+        }
+      },
+      {
+        "content": "que",
+        "boundingBox": [
+          613,
+          1277,
+          655,
+          1277,
+          654,
+          1308,
+          612,
+          1307
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 890,
+          "length": 3
+        }
+      },
+      {
+        "content": "las",
+        "boundingBox": [
+          661,
+          1277,
+          694,
+          1278,
+          693,
+          1308,
+          660,
+          1308
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 894,
+          "length": 3
+        }
+      },
+      {
+        "content": "cosas",
+        "boundingBox": [
+          700,
+          1278,
+          764,
+          1279,
+          763,
+          1309,
+          699,
+          1308
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 898,
+          "length": 5
+        }
+      },
+      {
+        "content": "le",
+        "boundingBox": [
+          770,
+          1279,
+          791,
+          1280,
+          790,
+          1309,
+          768,
+          1309
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 904,
+          "length": 2
+        }
+      },
+      {
+        "content": "van",
+        "boundingBox": [
+          797,
+          1280,
+          841,
+          1281,
+          839,
+          1310,
+          795,
+          1309
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 907,
+          "length": 3
+        }
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          1367,
+          1281,
+          1409,
+          1281,
+          1408,
+          1345,
+          1366,
+          1344
+        ],
+        "confidence": 0.837,
+        "span": {
+          "offset": 911,
+          "length": 1
+        }
+      },
+      {
+        "content": "bien?",
+        "boundingBox": [
+          252,
+          1310,
+          317,
+          1312,
+          316,
+          1340,
+          251,
+          1337
+        ],
+        "confidence": 0.993,
+        "span": {
+          "offset": 913,
+          "length": 5
+        }
+      },
+      {
+        "content": "¿Ha",
+        "boundingBox": [
+          252,
+          1390,
+          294,
+          1390,
+          294,
+          1419,
+          251,
+          1419
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 919,
+          "length": 3
+        }
+      },
+      {
+        "content": "sentido",
+        "boundingBox": [
+          300,
+          1390,
+          387,
+          1389,
+          387,
+          1419,
+          299,
+          1419
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 923,
+          "length": 7
+        }
+      },
+      {
+        "content": "que",
+        "boundingBox": [
+          393,
+          1389,
+          438,
+          1389,
+          437,
+          1419,
+          392,
+          1419
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 931,
+          "length": 3
+        }
+      },
+      {
+        "content": "no",
+        "boundingBox": [
+          444,
+          1389,
+          473,
+          1389,
+          472,
+          1418,
+          443,
+          1419
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 935,
+          "length": 2
+        }
+      },
+      {
+        "content": "podía",
+        "boundingBox": [
+          478,
+          1389,
+          544,
+          1388,
+          543,
+          1418,
+          478,
+          1418
+        ],
+        "confidence": 0.889,
+        "span": {
+          "offset": 938,
+          "length": 5
+        }
+      },
+      {
+        "content": "afrontar",
+        "boundingBox": [
+          550,
+          1388,
+          641,
+          1388,
+          640,
+          1418,
+          549,
+          1418
+        ],
+        "confidence": 0.981,
+        "span": {
+          "offset": 944,
+          "length": 8
+        }
+      },
+      {
+        "content": "todas",
+        "boundingBox": [
+          647,
+          1388,
+          709,
+          1388,
+          708,
+          1418,
+          646,
+          1418
+        ],
+        "confidence": 0.993,
+        "span": {
+          "offset": 953,
+          "length": 5
+        }
+      },
+      {
+        "content": "las",
+        "boundingBox": [
+          715,
+          1388,
+          748,
+          1388,
+          747,
+          1418,
+          714,
+          1418
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 959,
+          "length": 3
+        }
+      },
+      {
+        "content": "cosas",
+        "boundingBox": [
+          753,
+          1388,
+          819,
+          1389,
+          819,
+          1418,
+          753,
+          1418
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 963,
+          "length": 5
+        }
+      },
+      {
+        "content": "que",
+        "boundingBox": [
+          825,
+          1389,
+          869,
+          1389,
+          868,
+          1418,
+          824,
+          1418
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 969,
+          "length": 3
+        }
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          934,
+          1382,
+          989,
+          1381,
+          992,
+          1465,
+          937,
+          1467
+        ],
+        "confidence": 0.602,
+        "span": {
+          "offset": 973,
+          "length": 1
+        }
+      },
+      {
+        "content": "8",
+        "boundingBox": [
+          219,
+          1409,
+          229,
+          1409,
+          230,
+          1427,
+          219,
+          1427
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 975,
+          "length": 1
+        }
+      },
+      {
+        "content": "tenía",
+        "boundingBox": [
+          254,
+          1423,
+          310,
+          1424,
+          309,
+          1454,
+          253,
+          1454
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 977,
+          "length": 5
+        }
+      },
+      {
+        "content": "que",
+        "boundingBox": [
+          316,
+          1424,
+          359,
+          1424,
+          358,
+          1454,
+          315,
+          1454
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 983,
+          "length": 3
+        }
+      },
+      {
+        "content": "hacer?",
+        "boundingBox": [
+          365,
+          1424,
+          449,
+          1425,
+          447,
+          1454,
+          364,
+          1454
+        ],
+        "confidence": 0.97,
+        "span": {
+          "offset": 987,
+          "length": 6
+        }
+      },
+      {
+        "content": "9",
+        "boundingBox": [
+          220,
+          1518,
+          232,
+          1518,
+          233,
+          1540,
+          220,
+          1540
+        ],
+        "confidence": 0.848,
+        "span": {
+          "offset": 994,
+          "length": 1
+        }
+      },
+      {
+        "content": "¿Ha",
+        "boundingBox": [
+          253,
+          1518,
+          296,
+          1517,
+          296,
+          1549,
+          253,
+          1549
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 996,
+          "length": 3
+        }
+      },
+      {
+        "content": "podido",
+        "boundingBox": [
+          302,
+          1517,
+          382,
+          1517,
+          381,
+          1547,
+          302,
+          1548
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 1000,
+          "length": 6
+        }
+      },
+      {
+        "content": "controlar",
+        "boundingBox": [
+          387,
+          1516,
+          491,
+          1516,
+          490,
+          1546,
+          387,
+          1547
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 1007,
+          "length": 9
+        }
+      },
+      {
+        "content": "las",
+        "boundingBox": [
+          497,
+          1516,
+          532,
+          1516,
+          531,
+          1545,
+          496,
+          1546
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 1017,
+          "length": 3
+        }
+      },
+      {
+        "content": "dificultades",
+        "boundingBox": [
+          538,
+          1516,
+          672,
+          1515,
+          671,
+          1544,
+          537,
+          1545
+        ],
+        "confidence": 0.992,
+        "span": {
+          "offset": 1021,
+          "length": 12
+        }
+      },
+      {
+        "content": "de",
+        "boundingBox": [
+          678,
+          1515,
+          705,
+          1515,
+          704,
+          1544,
+          677,
+          1544
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 1034,
+          "length": 2
+        }
+      },
+      {
+        "content": "su",
+        "boundingBox": [
+          711,
+          1515,
+          738,
+          1515,
+          737,
+          1543,
+          710,
+          1544
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 1037,
+          "length": 2
+        }
+      },
+      {
+        "content": "vida?",
+        "boundingBox": [
+          744,
+          1515,
+          807,
+          1515,
+          805,
+          1543,
+          743,
+          1543
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 1040,
+          "length": 5
+        }
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          1230,
+          1505,
+          1281,
+          1502,
+          1286,
+          1580,
+          1235,
+          1584
+        ],
+        "confidence": 0.669,
+        "span": {
+          "offset": 1046,
+          "length": 1
+        }
+      },
+      {
+        "content": "10",
+        "boundingBox": [
+          216,
+          1628,
+          245,
+          1629,
+          245,
+          1654,
+          215,
+          1653
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 1048,
+          "length": 2
+        }
+      },
+      {
+        "content": "¿con",
+        "boundingBox": [
+          254,
+          1632,
+          306,
+          1631,
+          306,
+          1661,
+          254,
+          1661
+        ],
+        "confidence": 0.983,
+        "span": {
+          "offset": 1051,
+          "length": 4
+        }
+      },
+      {
+        "content": "qué",
+        "boundingBox": [
+          312,
+          1631,
+          354,
+          1631,
+          353,
+          1660,
+          312,
+          1661
+        ],
+        "confidence": 0.993,
+        "span": {
+          "offset": 1056,
+          "length": 3
+        }
+      },
+      {
+        "content": "frecuencia",
+        "boundingBox": [
+          360,
+          1631,
+          482,
+          1629,
+          481,
+          1659,
+          359,
+          1660
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 1060,
+          "length": 10
+        }
+      },
+      {
+        "content": "se",
+        "boundingBox": [
+          488,
+          1629,
+          515,
+          1629,
+          515,
+          1659,
+          487,
+          1659
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 1071,
+          "length": 2
+        }
+      },
+      {
+        "content": "ha",
+        "boundingBox": [
+          521,
+          1629,
+          551,
+          1628,
+          550,
+          1658,
+          521,
+          1659
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 1074,
+          "length": 2
+        }
+      },
+      {
+        "content": "sentido",
+        "boundingBox": [
+          557,
+          1628,
+          641,
+          1627,
+          641,
+          1657,
+          556,
+          1658
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 1077,
+          "length": 7
+        }
+      },
+      {
+        "content": "al",
+        "boundingBox": [
+          647,
+          1627,
+          669,
+          1627,
+          668,
+          1657,
+          647,
+          1657
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 1085,
+          "length": 2
+        }
+      },
+      {
+        "content": "control",
+        "boundingBox": [
+          675,
+          1627,
+          754,
+          1625,
+          753,
+          1656,
+          674,
+          1657
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 1088,
+          "length": 7
+        }
+      },
+      {
+        "content": "de",
+        "boundingBox": [
+          760,
+          1625,
+          789,
+          1625,
+          788,
+          1656,
+          759,
+          1656
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 1096,
+          "length": 2
+        }
+      },
+      {
+        "content": "todo?",
+        "boundingBox": [
+          795,
+          1625,
+          863,
+          1624,
+          862,
+          1655,
+          794,
+          1655
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 1099,
+          "length": 5
+        }
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          1218,
+          1611,
+          1275,
+          1610,
+          1278,
+          1697,
+          1221,
+          1699
+        ],
+        "confidence": 0.64,
+        "span": {
+          "offset": 1105,
+          "length": 1
+        }
+      },
+      {
+        "content": "11",
+        "boundingBox": [
+          217,
+          1744,
+          243,
+          1744,
+          243,
+          1769,
+          217,
+          1768
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 1107,
+          "length": 2
+        }
+      },
+      {
+        "content": "¿Ha",
+        "boundingBox": [
+          254,
+          1729,
+          297,
+          1728,
+          297,
+          1757,
+          254,
+          1758
+        ],
+        "confidence": 0.841,
+        "span": {
+          "offset": 1110,
+          "length": 3
+        }
+      },
+      {
+        "content": "estado",
+        "boundingBox": [
+          303,
+          1728,
+          382,
+          1725,
+          382,
+          1756,
+          303,
+          1757
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 1114,
+          "length": 6
+        }
+      },
+      {
+        "content": "enfadado",
+        "boundingBox": [
+          388,
+          1725,
+          496,
+          1723,
+          496,
+          1755,
+          388,
+          1756
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 1121,
+          "length": 8
+        }
+      },
+      {
+        "content": "porque",
+        "boundingBox": [
+          502,
+          1723,
+          581,
+          1723,
+          581,
+          1754,
+          502,
+          1754
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 1130,
+          "length": 6
+        }
+      },
+      {
+        "content": "las",
+        "boundingBox": [
+          587,
+          1723,
+          622,
+          1722,
+          622,
+          1753,
+          587,
+          1753
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 1137,
+          "length": 3
+        }
+      },
+      {
+        "content": "cosas",
+        "boundingBox": [
+          628,
+          1722,
+          693,
+          1722,
+          693,
+          1752,
+          628,
+          1753
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 1141,
+          "length": 5
+        }
+      },
+      {
+        "content": "que",
+        "boundingBox": [
+          699,
+          1722,
+          741,
+          1723,
+          741,
+          1752,
+          699,
+          1752
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 1147,
+          "length": 3
+        }
+      },
+      {
+        "content": "le",
+        "boundingBox": [
+          747,
+          1723,
+          768,
+          1723,
+          768,
+          1752,
+          747,
+          1752
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 1151,
+          "length": 2
+        }
+      },
+      {
+        "content": "han",
+        "boundingBox": [
+          774,
+          1723,
+          819,
+          1723,
+          819,
+          1752,
+          774,
+          1752
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 1154,
+          "length": 3
+        }
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          1245,
+          1711,
+          1299,
+          1714,
+          1296,
+          1797,
+          1242,
+          1794
+        ],
+        "confidence": 0.768,
+        "span": {
+          "offset": 1158,
+          "length": 1
+        }
+      },
+      {
+        "content": "ocurrido",
+        "boundingBox": [
+          259,
+          1764,
+          348,
+          1763,
+          347,
+          1791,
+          257,
+          1792
+        ],
+        "confidence": 0.993,
+        "span": {
+          "offset": 1160,
+          "length": 8
+        }
+      },
+      {
+        "content": "estaban",
+        "boundingBox": [
+          354,
+          1763,
+          447,
+          1762,
+          445,
+          1789,
+          352,
+          1791
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 1169,
+          "length": 7
+        }
+      },
+      {
+        "content": "fuera",
+        "boundingBox": [
+          453,
+          1762,
+          514,
+          1762,
+          513,
+          1789,
+          451,
+          1789
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 1177,
+          "length": 5
+        }
+      },
+      {
+        "content": "de",
+        "boundingBox": [
+          519,
+          1762,
+          548,
+          1761,
+          547,
+          1788,
+          518,
+          1789
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 1183,
+          "length": 2
+        }
+      },
+      {
+        "content": "su",
+        "boundingBox": [
+          553,
+          1761,
+          582,
+          1761,
+          581,
+          1788,
+          552,
+          1788
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 1186,
+          "length": 2
+        }
+      },
+      {
+        "content": "control?",
+        "boundingBox": [
+          588,
+          1761,
+          678,
+          1760,
+          677,
+          1788,
+          587,
+          1788
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 1189,
+          "length": 8
+        }
+      },
+      {
+        "content": "12",
+        "boundingBox": [
+          220,
+          1858,
+          246,
+          1858,
+          244,
+          1886,
+          218,
+          1886
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 1198,
+          "length": 2
+        }
+      },
+      {
+        "content": "¿Ha",
+        "boundingBox": [
+          256,
+          1858,
+          299,
+          1857,
+          297,
+          1886,
+          254,
+          1886
+        ],
+        "confidence": 0.955,
+        "span": {
+          "offset": 1201,
+          "length": 3
+        }
+      },
+      {
+        "content": "pensado",
+        "boundingBox": [
+          305,
+          1857,
+          402,
+          1857,
+          401,
+          1886,
+          303,
+          1886
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 1205,
+          "length": 7
+        }
+      },
+      {
+        "content": "sobre",
+        "boundingBox": [
+          408,
+          1857,
+          472,
+          1856,
+          471,
+          1886,
+          406,
+          1886
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 1213,
+          "length": 5
+        }
+      },
+      {
+        "content": "las",
+        "boundingBox": [
+          478,
+          1856,
+          512,
+          1856,
+          512,
+          1885,
+          477,
+          1886
+        ],
+        "confidence": 0.981,
+        "span": {
+          "offset": 1219,
+          "length": 3
+        }
+      },
+      {
+        "content": "cosas",
+        "boundingBox": [
+          518,
+          1856,
+          584,
+          1855,
+          584,
+          1885,
+          517,
+          1885
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 1223,
+          "length": 5
+        }
+      },
+      {
+        "content": "que",
+        "boundingBox": [
+          590,
+          1855,
+          633,
+          1855,
+          632,
+          1885,
+          589,
+          1885
+        ],
+        "confidence": 0.976,
+        "span": {
+          "offset": 1229,
+          "length": 3
+        }
+      },
+      {
+        "content": "le",
+        "boundingBox": [
+          639,
+          1855,
+          662,
+          1854,
+          662,
+          1884,
+          638,
+          1885
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 1233,
+          "length": 2
+        }
+      },
+      {
+        "content": "quedan",
+        "boundingBox": [
+          668,
+          1854,
+          751,
+          1853,
+          751,
+          1884,
+          667,
+          1884
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 1236,
+          "length": 6
+        }
+      },
+      {
+        "content": "por",
+        "boundingBox": [
+          757,
+          1853,
+          794,
+          1852,
+          794,
+          1883,
+          757,
+          1883
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 1243,
+          "length": 3
+        }
+      },
+      {
+        "content": "lograr?",
+        "boundingBox": [
+          800,
+          1852,
+          884,
+          1851,
+          884,
+          1882,
+          800,
+          1883
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 1247,
+          "length": 7
+        }
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          1251,
+          1832,
+          1300,
+          1830,
+          1304,
+          1905,
+          1255,
+          1907
+        ],
+        "confidence": 0.822,
+        "span": {
+          "offset": 1255,
+          "length": 1
+        }
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          1421,
+          1927,
+          1475,
+          1925,
+          1478,
+          2007,
+          1424,
+          2010
+        ],
+        "confidence": 0.792,
+        "span": {
+          "offset": 1257,
+          "length": 1
+        }
+      },
+      {
+        "content": "13",
+        "boundingBox": [
+          219,
+          1970,
+          247,
+          1970,
+          246,
+          1998,
+          218,
+          1997
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 1259,
+          "length": 2
+        }
+      },
+      {
+        "content": "¿Ha",
+        "boundingBox": [
+          257,
+          1970,
+          301,
+          1969,
+          301,
+          1998,
+          256,
+          1998
+        ],
+        "confidence": 0.987,
+        "span": {
+          "offset": 1262,
+          "length": 3
+        }
+      },
+      {
+        "content": "podido",
+        "boundingBox": [
+          307,
+          1969,
+          383,
+          1968,
+          383,
+          1999,
+          307,
+          1999
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 1266,
+          "length": 6
+        }
+      },
+      {
+        "content": "controlar",
+        "boundingBox": [
+          389,
+          1968,
+          493,
+          1968,
+          493,
+          1999,
+          389,
+          1999
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 1273,
+          "length": 9
+        }
+      },
+      {
+        "content": "la",
+        "boundingBox": [
+          498,
+          1968,
+          520,
+          1967,
+          521,
+          1999,
+          499,
+          1999
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 1283,
+          "length": 2
+        }
+      },
+      {
+        "content": "forma",
+        "boundingBox": [
+          526,
+          1967,
+          594,
+          1967,
+          595,
+          1999,
+          527,
+          1999
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 1286,
+          "length": 5
+        }
+      },
+      {
+        "content": "de",
+        "boundingBox": [
+          600,
+          1967,
+          628,
+          1967,
+          629,
+          1999,
+          601,
+          1999
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 1292,
+          "length": 2
+        }
+      },
+      {
+        "content": "pasar",
+        "boundingBox": [
+          634,
+          1967,
+          698,
+          1967,
+          699,
+          1998,
+          635,
+          1999
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 1295,
+          "length": 5
+        }
+      },
+      {
+        "content": "el",
+        "boundingBox": [
+          704,
+          1967,
+          726,
+          1966,
+          727,
+          1998,
+          705,
+          1998
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 1301,
+          "length": 2
+        }
+      },
+      {
+        "content": "tiempo?",
+        "boundingBox": [
+          732,
+          1966,
+          828,
+          1966,
+          830,
+          1996,
+          733,
+          1998
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 1304,
+          "length": 7
+        }
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          1100,
+          2041,
+          1149,
+          2041,
+          1148,
+          2117,
+          1099,
+          2117
+        ],
+        "confidence": 0.743,
+        "span": {
+          "offset": 1312,
+          "length": 1
+        }
+      },
+      {
+        "content": "14",
+        "boundingBox": [
+          222,
+          2084,
+          246,
+          2085,
+          245,
+          2107,
+          221,
+          2106
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 1314,
+          "length": 2
+        }
+      },
+      {
+        "content": "¿Ha",
+        "boundingBox": [
+          262,
+          2066,
+          301,
+          2066,
+          301,
+          2096,
+          262,
+          2097
+        ],
+        "confidence": 0.906,
+        "span": {
+          "offset": 1317,
+          "length": 3
+        }
+      },
+      {
+        "content": "sentido",
+        "boundingBox": [
+          306,
+          2066,
+          393,
+          2065,
+          393,
+          2094,
+          306,
+          2096
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 1321,
+          "length": 7
+        }
+      },
+      {
+        "content": "que",
+        "boundingBox": [
+          399,
+          2065,
+          440,
+          2064,
+          440,
+          2093,
+          398,
+          2094
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 1329,
+          "length": 3
+        }
+      },
+      {
+        "content": "las",
+        "boundingBox": [
+          446,
+          2064,
+          481,
+          2064,
+          481,
+          2093,
+          445,
+          2093
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 1333,
+          "length": 3
+        }
+      },
+      {
+        "content": "dificultades",
+        "boundingBox": [
+          487,
+          2064,
+          621,
+          2063,
+          620,
+          2091,
+          487,
+          2092
+        ],
+        "confidence": 0.992,
+        "span": {
+          "offset": 1337,
+          "length": 12
+        }
+      },
+      {
+        "content": "se",
+        "boundingBox": [
+          626,
+          2063,
+          655,
+          2063,
+          654,
+          2091,
+          626,
+          2091
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 1350,
+          "length": 2
+        }
+      },
+      {
+        "content": "acumulan",
+        "boundingBox": [
+          660,
+          2063,
+          771,
+          2062,
+          771,
+          2090,
+          660,
+          2091
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 1353,
+          "length": 8
+        }
+      },
+      {
+        "content": "tanto",
+        "boundingBox": [
+          777,
+          2062,
+          837,
+          2062,
+          837,
+          2091,
+          776,
+          2090
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 1362,
+          "length": 5
+        }
+      },
+      {
+        "content": "que",
+        "boundingBox": [
+          843,
+          2062,
+          888,
+          2062,
+          887,
+          2091,
+          842,
+          2091
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 1368,
+          "length": 3
+        }
+      },
+      {
+        "content": "no",
+        "boundingBox": [
+          260,
+          2102,
+          285,
+          2102,
+          286,
+          2132,
+          261,
+          2131
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 1372,
+          "length": 2
+        }
+      },
+      {
+        "content": "puede",
+        "boundingBox": [
+          291,
+          2102,
+          362,
+          2102,
+          362,
+          2133,
+          292,
+          2132
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 1375,
+          "length": 5
+        }
+      },
+      {
+        "content": "superarlas?",
+        "boundingBox": [
+          368,
+          2102,
+          503,
+          2100,
+          502,
+          2130,
+          368,
+          2133
+        ],
+        "confidence": 0.991,
+        "span": {
+          "offset": 1381,
+          "length": 11
+        }
+      }
+    ],
+    "spans": [
+      {
+        "offset": 0,
+        "length": 1392
+      }
+    ],
+    "lines": [
+      {
+        "content": "021",
+        "boundingBox": [
+          185,
+          56,
+          273,
+          55,
+          274,
+          96,
+          185,
+          95
+        ],
+        "spans": [
+          {
+            "offset": 0,
+            "length": 3
+          }
+        ]
+      },
+      {
+        "content": "comprimido",
+        "boundingBox": [
+          1687,
+          99,
+          1772,
+          91,
+          1774,
+          113,
+          1689,
+          120
+        ],
+        "spans": [
+          {
+            "offset": 4,
+            "length": 10
+          }
+        ]
+      },
+      {
+        "content": "CEUTICA",
+        "boundingBox": [
+          1699,
+          118,
+          1772,
+          110,
+          1774,
+          134,
+          1701,
+          141
+        ],
+        "spans": [
+          {
+            "offset": 15,
+            "length": 7
+          }
+        ]
+      },
+      {
+        "content": "aciones",
+        "boundingBox": [
+          1706,
+          140,
+          1775,
+          137,
+          1776,
+          157,
+          1707,
+          161
+        ],
+        "spans": [
+          {
+            "offset": 23,
+            "length": 7
+          }
+        ]
+      },
+      {
+        "content": "blecida,",
+        "boundingBox": [
+          1721,
+          168,
+          1772,
+          166,
+          1773,
+          183,
+          1721,
+          185
+        ],
+        "spans": [
+          {
+            "offset": 31,
+            "length": 8
+          }
+        ]
+      },
+      {
+        "content": "ogia",
+        "boundingBox": [
+          1741,
+          190,
+          1774,
+          189,
+          1775,
+          205,
+          1743,
+          207
+        ],
+        "spans": [
+          {
+            "offset": 40,
+            "length": 4
+          }
+        ]
+      },
+      {
+        "content": "orse",
+        "boundingBox": [
+          1748,
+          209,
+          1779,
+          209,
+          1781,
+          226,
+          1751,
+          226
+        ],
+        "spans": [
+          {
+            "offset": 45,
+            "length": 4
+          }
+        ]
+      },
+      {
+        "content": "Cuestionario. Bloque 4. PSS Escala de percepción de estrés:",
+        "boundingBox": [
+          299,
+          249,
+          1304,
+          242,
+          1304,
+          288,
+          299,
+          292
+        ],
+        "spans": [
+          {
+            "offset": 50,
+            "length": 59
+          }
+        ]
+      },
+      {
+        "content": "Las preguntas en esta escala hacen referencia a sus sentimientos y pensamientos",
+        "boundingBox": [
+          301,
+          301,
+          1545,
+          294,
+          1546,
+          337,
+          301,
+          341
+        ],
+        "spans": [
+          {
+            "offset": 110,
+            "length": 79
+          }
+        ]
+      },
+      {
+        "content": "durante el último mes. En cada caso, por favor indique con una \"X\" cómo usted se ha",
+        "boundingBox": [
+          304,
+          347,
+          1546,
+          346,
+          1546,
+          390,
+          304,
+          392
+        ],
+        "spans": [
+          {
+            "offset": 190,
+            "length": 83
+          }
+        ]
+      },
+      {
+        "content": "sentido o ha pensado en cada situación",
+        "boundingBox": [
+          301,
+          398,
+          866,
+          402,
+          866,
+          437,
+          301,
+          432
+        ],
+        "spans": [
+          {
+            "offset": 274,
+            "length": 38
+          }
+        ]
+      },
+      {
+        "content": "Casi",
+        "boundingBox": [
+          1073,
+          510,
+          1125,
+          510,
+          1126,
+          537,
+          1074,
+          537
+        ],
+        "spans": [
+          {
+            "offset": 313,
+            "length": 4
+          }
+        ]
+      },
+      {
+        "content": "De vez en",
+        "boundingBox": [
+          1175,
+          509,
+          1320,
+          510,
+          1320,
+          543,
+          1175,
+          542
+        ],
+        "spans": [
+          {
+            "offset": 318,
+            "length": 9
+          }
+        ]
+      },
+      {
+        "content": "m En el último mes, ¿ con que frecuencia ...",
+        "boundingBox": [
+          221,
+          542,
+          794,
+          550,
+          793,
+          584,
+          221,
+          574
+        ],
+        "spans": [
+          {
+            "offset": 328,
+            "length": 44
+          }
+        ]
+      },
+      {
+        "content": "Nunca",
+        "boundingBox": [
+          906,
+          531,
+          996,
+          534,
+          995,
+          562,
+          905,
+          559
+        ],
+        "spans": [
+          {
+            "offset": 373,
+            "length": 5
+          }
+        ]
+      },
+      {
+        "content": "A menudo",
+        "boundingBox": [
+          1333,
+          531,
+          1477,
+          529,
+          1477,
+          558,
+          1333,
+          561
+        ],
+        "spans": [
+          {
+            "offset": 379,
+            "length": 8
+          }
+        ]
+      },
+      {
+        "content": "Muy a",
+        "boundingBox": [
+          1510,
+          507,
+          1602,
+          507,
+          1602,
+          539,
+          1510,
+          539
+        ],
+        "spans": [
+          {
+            "offset": 388,
+            "length": 5
+          }
+        ]
+      },
+      {
+        "content": "nunca",
+        "boundingBox": [
+          1061,
+          558,
+          1143,
+          558,
+          1143,
+          581,
+          1061,
+          582
+        ],
+        "spans": [
+          {
+            "offset": 394,
+            "length": 5
+          }
+        ]
+      },
+      {
+        "content": "cuando",
+        "boundingBox": [
+          1201,
+          555,
+          1304,
+          554,
+          1304,
+          582,
+          1201,
+          583
+        ],
+        "spans": [
+          {
+            "offset": 400,
+            "length": 6
+          }
+        ]
+      },
+      {
+        "content": "menudo",
+        "boundingBox": [
+          1497,
+          554,
+          1617,
+          552,
+          1617,
+          580,
+          1498,
+          582
+        ],
+        "spans": [
+          {
+            "offset": 407,
+            "length": 6
+          }
+        ]
+      },
+      {
+        "content": "1",
+        "boundingBox": [
+          211,
+          625,
+          231,
+          624,
+          232,
+          644,
+          213,
+          646
+        ],
+        "spans": [
+          {
+            "offset": 414,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "¿Ha estado afectado por algo que ha ocurrido",
+        "boundingBox": [
+          247,
+          606,
+          766,
+          608,
+          766,
+          639,
+          247,
+          635
+        ],
+        "spans": [
+          {
+            "offset": 416,
+            "length": 44
+          }
+        ]
+      },
+      {
+        "content": "inesperadamente?",
+        "boundingBox": [
+          247,
+          641,
+          458,
+          642,
+          458,
+          669,
+          247,
+          668
+        ],
+        "spans": [
+          {
+            "offset": 461,
+            "length": 16
+          }
+        ]
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          910,
+          622,
+          990,
+          622,
+          990,
+          683,
+          912,
+          681
+        ],
+        "spans": [
+          {
+            "offset": 478,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "2",
+        "boundingBox": [
+          210,
+          734,
+          233,
+          733,
+          233,
+          755,
+          211,
+          756
+        ],
+        "spans": [
+          {
+            "offset": 480,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "¿Se ha sentido incapaz de controlar las cosas",
+        "boundingBox": [
+          243,
+          716,
+          755,
+          722,
+          754,
+          751,
+          243,
+          745
+        ],
+        "spans": [
+          {
+            "offset": 482,
+            "length": 45
+          }
+        ]
+      },
+      {
+        "content": "importantes en su vida?",
+        "boundingBox": [
+          245,
+          751,
+          518,
+          754,
+          517,
+          783,
+          245,
+          780
+        ],
+        "spans": [
+          {
+            "offset": 528,
+            "length": 23
+          }
+        ]
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          906,
+          737,
+          976,
+          736,
+          976,
+          794,
+          907,
+          796
+        ],
+        "spans": [
+          {
+            "offset": 552,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "3",
+        "boundingBox": [
+          212,
+          847,
+          235,
+          846,
+          236,
+          868,
+          213,
+          870
+        ],
+        "spans": [
+          {
+            "offset": 554,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "¿Se ha sentido nervioso o estresado?",
+        "boundingBox": [
+          244,
+          843,
+          670,
+          850,
+          670,
+          879,
+          244,
+          873
+        ],
+        "spans": [
+          {
+            "offset": 556,
+            "length": 36
+          }
+        ]
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          1242,
+          843,
+          1302,
+          843,
+          1302,
+          905,
+          1242,
+          905
+        ],
+        "spans": [
+          {
+            "offset": 593,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "4",
+        "boundingBox": [
+          215,
+          960,
+          236,
+          959,
+          237,
+          978,
+          215,
+          980
+        ],
+        "spans": [
+          {
+            "offset": 595,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "¿Ha manejado con éxito los pequeños problemas",
+        "boundingBox": [
+          237,
+          941,
+          806,
+          948,
+          806,
+          980,
+          237,
+          969
+        ],
+        "spans": [
+          {
+            "offset": 597,
+            "length": 45
+          }
+        ]
+      },
+      {
+        "content": "irritantes de la vida?",
+        "boundingBox": [
+          246,
+          975,
+          486,
+          977,
+          485,
+          1006,
+          246,
+          1003
+        ],
+        "spans": [
+          {
+            "offset": 643,
+            "length": 22
+          }
+        ]
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          1366,
+          960,
+          1422,
+          961,
+          1422,
+          1015,
+          1365,
+          1013
+        ],
+        "spans": [
+          {
+            "offset": 666,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "¿Ha sentido que ha afrontado efectivamente los",
+        "boundingBox": [
+          251,
+          1031,
+          797,
+          1040,
+          797,
+          1071,
+          251,
+          1061
+        ],
+        "spans": [
+          {
+            "offset": 668,
+            "length": 46
+          }
+        ]
+      },
+      {
+        "content": "5",
+        "boundingBox": [
+          215,
+          1070,
+          238,
+          1070,
+          238,
+          1091,
+          217,
+          1091
+        ],
+        "spans": [
+          {
+            "offset": 715,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "cambios importantes que han estado ocurriendo en su",
+        "boundingBox": [
+          247,
+          1067,
+          867,
+          1076,
+          866,
+          1106,
+          247,
+          1097
+        ],
+        "spans": [
+          {
+            "offset": 717,
+            "length": 51
+          }
+        ]
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          1228,
+          1057,
+          1298,
+          1056,
+          1302,
+          1140,
+          1228,
+          1142
+        ],
+        "spans": [
+          {
+            "offset": 769,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "vida?",
+        "boundingBox": [
+          243,
+          1102,
+          318,
+          1100,
+          318,
+          1128,
+          243,
+          1129
+        ],
+        "spans": [
+          {
+            "offset": 771,
+            "length": 5
+          }
+        ]
+      },
+      {
+        "content": "6",
+        "boundingBox": [
+          214,
+          1184,
+          236,
+          1184,
+          234,
+          1204,
+          214,
+          1204
+        ],
+        "spans": [
+          {
+            "offset": 777,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "¿Ha estado seguro sobre su capacidad para manejar",
+        "boundingBox": [
+          251,
+          1164,
+          849,
+          1169,
+          849,
+          1200,
+          251,
+          1193
+        ],
+        "spans": [
+          {
+            "offset": 779,
+            "length": 49
+          }
+        ]
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          1224,
+          1167,
+          1287,
+          1168,
+          1285,
+          1239,
+          1221,
+          1238
+        ],
+        "spans": [
+          {
+            "offset": 829,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "sus problemas personales?",
+        "boundingBox": [
+          246,
+          1199,
+          566,
+          1200,
+          566,
+          1230,
+          246,
+          1229
+        ],
+        "spans": [
+          {
+            "offset": 831,
+            "length": 25
+          }
+        ]
+      },
+      {
+        "content": "7",
+        "boundingBox": [
+          217,
+          1296,
+          235,
+          1296,
+          236,
+          1314,
+          218,
+          1316
+        ],
+        "spans": [
+          {
+            "offset": 857,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "¿con qué frecuencia ha sentido que las cosas le van",
+        "boundingBox": [
+          252,
+          1276,
+          845,
+          1278,
+          845,
+          1309,
+          252,
+          1305
+        ],
+        "spans": [
+          {
+            "offset": 859,
+            "length": 51
+          }
+        ]
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          1349,
+          1281,
+          1413,
+          1281,
+          1416,
+          1345,
+          1352,
+          1343
+        ],
+        "spans": [
+          {
+            "offset": 911,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "bien?",
+        "boundingBox": [
+          252,
+          1310,
+          319,
+          1313,
+          315,
+          1340,
+          251,
+          1338
+        ],
+        "spans": [
+          {
+            "offset": 913,
+            "length": 5
+          }
+        ]
+      },
+      {
+        "content": "¿Ha sentido que no podía afrontar todas las cosas que",
+        "boundingBox": [
+          249,
+          1388,
+          870,
+          1388,
+          870,
+          1417,
+          249,
+          1418
+        ],
+        "spans": [
+          {
+            "offset": 919,
+            "length": 53
+          }
+        ]
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          912,
+          1384,
+          995,
+          1381,
+          997,
+          1465,
+          913,
+          1468
+        ],
+        "spans": [
+          {
+            "offset": 973,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "8",
+        "boundingBox": [
+          216,
+          1409,
+          236,
+          1409,
+          234,
+          1426,
+          216,
+          1427
+        ],
+        "spans": [
+          {
+            "offset": 975,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "tenía que hacer?",
+        "boundingBox": [
+          252,
+          1423,
+          448,
+          1423,
+          448,
+          1454,
+          252,
+          1453
+        ],
+        "spans": [
+          {
+            "offset": 977,
+            "length": 16
+          }
+        ]
+      },
+      {
+        "content": "9",
+        "boundingBox": [
+          217,
+          1519,
+          246,
+          1518,
+          243,
+          1540,
+          216,
+          1540
+        ],
+        "spans": [
+          {
+            "offset": 994,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "¿Ha podido controlar las dificultades de su vida?",
+        "boundingBox": [
+          247,
+          1517,
+          807,
+          1515,
+          808,
+          1544,
+          247,
+          1548
+        ],
+        "spans": [
+          {
+            "offset": 996,
+            "length": 49
+          }
+        ]
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          1211,
+          1507,
+          1286,
+          1502,
+          1292,
+          1580,
+          1213,
+          1585
+        ],
+        "spans": [
+          {
+            "offset": 1046,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "10",
+        "boundingBox": [
+          213,
+          1628,
+          246,
+          1629,
+          245,
+          1654,
+          212,
+          1653
+        ],
+        "spans": [
+          {
+            "offset": 1048,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "¿con qué frecuencia se ha sentido al control de todo?",
+        "boundingBox": [
+          253,
+          1631,
+          862,
+          1623,
+          862,
+          1654,
+          253,
+          1661
+        ],
+        "spans": [
+          {
+            "offset": 1051,
+            "length": 53
+          }
+        ]
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          1195,
+          1613,
+          1280,
+          1610,
+          1282,
+          1697,
+          1196,
+          1700
+        ],
+        "spans": [
+          {
+            "offset": 1105,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "11",
+        "boundingBox": [
+          216,
+          1744,
+          246,
+          1745,
+          246,
+          1769,
+          216,
+          1769
+        ],
+        "spans": [
+          {
+            "offset": 1107,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "¿Ha estado enfadado porque las cosas que le han",
+        "boundingBox": [
+          250,
+          1726,
+          828,
+          1722,
+          828,
+          1751,
+          250,
+          1757
+        ],
+        "spans": [
+          {
+            "offset": 1110,
+            "length": 47
+          }
+        ]
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          1222,
+          1711,
+          1303,
+          1715,
+          1303,
+          1797,
+          1220,
+          1794
+        ],
+        "spans": [
+          {
+            "offset": 1158,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "ocurrido estaban fuera de su control?",
+        "boundingBox": [
+          257,
+          1764,
+          678,
+          1759,
+          678,
+          1787,
+          257,
+          1791
+        ],
+        "spans": [
+          {
+            "offset": 1160,
+            "length": 37
+          }
+        ]
+      },
+      {
+        "content": "12 ¿Ha pensado sobre las cosas que le quedan por lograr?",
+        "boundingBox": [
+          217,
+          1856,
+          884,
+          1850,
+          884,
+          1882,
+          217,
+          1886
+        ],
+        "spans": [
+          {
+            "offset": 1198,
+            "length": 56
+          }
+        ]
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          1226,
+          1835,
+          1306,
+          1830,
+          1309,
+          1905,
+          1224,
+          1909
+        ],
+        "spans": [
+          {
+            "offset": 1255,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          1390,
+          1929,
+          1478,
+          1925,
+          1479,
+          2008,
+          1390,
+          2012
+        ],
+        "spans": [
+          {
+            "offset": 1257,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "13 ¿Ha podido controlar la forma de pasar el tiempo?",
+        "boundingBox": [
+          216,
+          1968,
+          829,
+          1966,
+          829,
+          1997,
+          216,
+          1999
+        ],
+        "spans": [
+          {
+            "offset": 1259,
+            "length": 52
+          }
+        ]
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          1082,
+          2041,
+          1161,
+          2042,
+          1158,
+          2117,
+          1078,
+          2117
+        ],
+        "spans": [
+          {
+            "offset": 1312,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "14",
+        "boundingBox": [
+          221,
+          2084,
+          247,
+          2086,
+          247,
+          2106,
+          221,
+          2106
+        ],
+        "spans": [
+          {
+            "offset": 1314,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "¿Ha sentido que las dificultades se acumulan tanto que",
+        "boundingBox": [
+          261,
+          2065,
+          892,
+          2062,
+          892,
+          2091,
+          261,
+          2096
+        ],
+        "spans": [
+          {
+            "offset": 1317,
+            "length": 54
+          }
+        ]
+      },
+      {
+        "content": "no puede superarlas?",
+        "boundingBox": [
+          260,
+          2101,
+          503,
+          2100,
+          503,
+          2131,
+          260,
+          2132
+        ],
+        "spans": [
+          {
+            "offset": 1372,
+            "length": 20
+          }
+        ]
+      }
+    ]
+  }
