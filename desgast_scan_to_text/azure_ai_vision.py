@@ -97,6 +97,7 @@ def lookahead_and_get_index(words, idx, pattern):
 current_n = 38
 
 # data to recover as we progress through the words/lines
+# dangerous for tests, because values will be overwritten, so create multiple for different sections
 GRAL = {
     "N": current_n,
 }
@@ -782,15 +783,11 @@ def read_and_extract_page_six(azure_page_6_json):
                 GRAL[q] = 4
 
 def read_and_extract_page_seven(azure_page_7_json):
+    GRAL_page_7 = {}
     with open(azure_page_7_json) as json_file:
         data = json.load(json_file)
 
         words = data["words"]
-        lines = data["lines"]
-
-        print("Type:", type(data))
-        print("Type:", type(words))
-        print("Type:", type(lines))
 
         # Extract all "X" occurrences in order of appearance and then map them
         # It is easier and faster that trying to match every text.
@@ -842,24 +839,30 @@ def read_and_extract_page_seven(azure_page_7_json):
 
         for q,x in actividades_with_boxes.items():
             if nunca_box[0] - 20 <= x[0] <= nunca_box[2] + 20:
-                GRAL[q] = 0
+                GRAL_page_7[q] = 0
             elif casi_nunca[0] - 20 <= x[0] <= casi_nunca[2] + 20:
-                GRAL[q] = 1
+                GRAL_page_7[q] = 1
             elif de_vez[0] - 20 <= x[0] <= en_cuando[2] + 20:
-                GRAL[q] = 2
+                GRAL_page_7[q] = 2
             elif a_[0] - 20 <= x[0] <= menudo[2] + 20:
-                GRAL[q] = 3
+                GRAL_page_7[q] = 3
             elif muy[0] - 50 <= x[0] <= _a[2] + 50: # add more because the box is smaller
-                GRAL[q] = 4
+                GRAL_page_7[q] = 4
+
+        return GRAL_page_7
+
+GRAL_page_7 = read_and_extract_page_seven(azure_page_7_json)
+print(GRAL_page_7)
+
 
 def get_number_upper_row(numbers_info, number, teeth_box, sextant_n):
     """"L= number"""
     # padding to the teeth box can be changed
-    if (numbers_info[number]["box"][7] > teeth_box[1] - 20\
-        or numbers_info[number]["box"][5] > teeth_box[1] - 20) \
-        and (numbers_info[number]["box"][7] < teeth_box[5] + 20 \
-        or numbers_info[number]["box"][5] < teeth_box[5] + 20) \
-        and sextant_n[0] - 110 <= numbers_info[number]["box"][0] <= sextant_n[0] + 110:
+    if (numbers_info[number]["box"][7] >= teeth_box[1] - 10\
+        or numbers_info[number]["box"][5] >= teeth_box[1] - 10) \
+        and (numbers_info[number]["box"][7] <= teeth_box[5] + 10 \
+        or numbers_info[number]["box"][5] <= teeth_box[5] + 10) \
+        and sextant_n - 103 <= numbers_info[number]["box"][0] <= sextant_n + 103:
 
         return True
     else:
@@ -867,17 +870,18 @@ def get_number_upper_row(numbers_info, number, teeth_box, sextant_n):
 
 def get_number_lower_row(numbers_info, number, teeth_box, sextant_n):
     """"b= number"""
-    if (numbers_info[number]["box"][1] < teeth_box[5] + 20\
-        or numbers_info[number]["box"][3] < teeth_box[5] + 20) \
-        and (numbers_info[number]["box"][1] > teeth_box[1] - 20 \
-        or numbers_info[number]["box"][3] > teeth_box[1] - 20) \
-        and sextant_n[0] - 110 <= numbers_info[number]["box"][0] <= sextant_n[0] + 110:
+    if (numbers_info[number]["box"][1] <= teeth_box[5] + 10\
+        or numbers_info[number]["box"][3] <= teeth_box[5] + 10) \
+        and (numbers_info[number]["box"][1] >= teeth_box[1] - 10 \
+        or numbers_info[number]["box"][3] >= teeth_box[1] - 10) \
+        and sextant_n - 100 <= numbers_info[number]["box"][0] <= sextant_n + 100:
 
         return True
     else:
         return False
 
 def read_and_extract_page_ten(azure_page_10):
+    GRAL_color_dents = {}
     with open(azure_page_10) as json_file:
         data = json.load(json_file)
 
@@ -897,27 +901,45 @@ def read_and_extract_page_ten(azure_page_10):
             if re.match("\d+[,./]\d+", words[idx]["content"])\
                 or re.match("\w=\d+[,.]", words[idx]["content"])\
                 or (re.match("\d{2,}", words[idx]["content"]) and (words[idx-1]["content"] == 'b=' or words[idx-1]["content"] == 'L='))\
+                or re.match("'\d{2,}", words[idx]["content"])\
                 or re.match("\d{3,}", words[idx]["content"]):
 
                 change_point_for_comma = re.sub("\.", ",", words[idx]["content"])
                 remove_words = re.sub("\w+\s*=\s*", "", change_point_for_comma)
                 change_slash_for_comma = re.sub("/", ",", remove_words)
-                change_one_for_comma = re.sub(r"(\d)(\d)1(\d)", r"\1\2,\3", change_slash_for_comma)
+                # change 64'7 for 64,7
+                change_quote_for_comma = re.sub(r"(\d)(\d)'(\d)", r"\1\2,\3", change_slash_for_comma)
+                # change 12% for 12,1
+                change_percent_for_comma = re.sub("%", ",1", change_quote_for_comma)
+                remove_quote = re.sub("'", "", change_percent_for_comma)
+                change_dolla_for_nine = re.sub(",\$", ",9", remove_quote)
+                # for example 7725, to 72,5 -> only 1 decimal they have so that's why it can be done
+                # avoid the ones that have '1' in thirs place
+                change_one_for_comma = re.sub(r"(\d)(\d)1(\d)", r"\1\2,\3", change_dolla_for_nine)
+                change_four_digits_for_comma = re.sub(r"(\d)(\d)(\d)(\d)", r"\2\3,\4", change_one_for_comma)
+                # change 123 for 12,3
+                # see test 6
+                change_three_digits_for_comma = re.sub(r"(\d)(\d)(\d)", r"\1\2,\3", change_four_digits_for_comma)
 
-                print(f"original: {words[idx]['content']}", f"filtered: {change_one_for_comma}")
+                print(f"original: {words[idx]['content']}", f"filtered: {change_three_digits_for_comma}")
 
                 # better handle duplicated numbers, add '_dup' to key
                 # also add confidence and print them red in final excel
                 if numbers_info.get(words[idx]["content"]) is not None:
-                    numbers_info[f"{words[idx]['content']}_dup"] = {
-                        "filtered_number": change_one_for_comma,
+                    numbers_info[f"{words[idx]['content']}_dup_{words[idx]['boundingBox'][0]}"] = {
+                        "filtered_number": change_three_digits_for_comma,
                         "box": words[idx]["boundingBox"],
-                        "confidence": words[idx]["confidence"]
+                        "confidence": words[idx]["confidence"],
+                        "idx": idx,
+                        "previous_letter": words[idx-1]['content'] # lookback for 'L' or 'b'
                     }
                 else:
                     numbers_info[words[idx]["content"]] = {
-                        "filtered_number": change_one_for_comma,
-                        "box": words[idx]["boundingBox"]
+                        "filtered_number": change_three_digits_for_comma,
+                        "box": words[idx]["boundingBox"],
+                        "confidence": words[idx]["confidence"],
+                        "idx": idx,
+                        "previous_letter": words[idx-1]['content'] # lookback for 'L' or 'b'
                     }
 
         print("numbers_info: ", numbers_info)
@@ -990,171 +1012,205 @@ def read_and_extract_page_ten(azure_page_10):
                 and words[idx + 1]["content"] == "teeth" and not maxillary_was_hit:
 
                 maxillary_was_hit = True
+                # get the coordinate where 'teeth' box ends (upper right)
+                maxillary_teeth = words[idx + 1]["boundingBox"][2]
 
-                if not sixteen_was_hit:
-                    sixteen_box = words[idx + 2]["boundingBox"]
-                    print("sixteen_box: ", sixteen_box)
-                if not thirteen_was_hit:
-                    thirteen_box = words[idx + 3]["boundingBox"]
-                    print("thirteen_box: ", thirteen_box)
-                if not twenty_three_was_hit:
-                    twenty_three_box = words[idx + 4]["boundingBox"]
-                    print("twenty_three_box: ", twenty_three_box)
-                if not twenty_six_was_hit:
-                    twenty_six_box = words[idx + 5]["boundingBox"]
-                    print("twenty_six_box: ", twenty_six_box)
+                maxillary_second_idx = lookahead_and_get_index(words, idx, "maxillary")
+                # get the coordinate where second 'maxillary' box starts (upper left)
+                maxillary_second_teeth = words[maxillary_second_idx]["boundingBox"][0]
 
-        GRAL.update({"C16V-L": None, "C16V-B": None, "C13V-L": None, "C13V-B": None, "C23V-L": None,
-                     "C23V-B": None, "C26V-L": None, "C26V-B": None, "C16O-L": None, "C16O-B": None,
-                     "C26O-L": None, "C26O-B": None, "C16P-L": None, "C16P-B": None, "C13P-L": None,
-                     "C13P-B": None, "C23P-L": None, "C23P-B": None, "C26P-L": None, "C26P-B": None,
-                     "C46P-L": None, "C46P-B": None, "C43P-L": None, "C43P-B": None, "C33P-L": None,
-                     "C33P-B": None, "C36P-L": None, "C36P-B": None, "C46O-L": None, "C46O-B": None,
-                     "C36O-L": None, "C36O-B": None, "C46V-L": None, "C46V-B": None, "C43V-L": None,
-                     "C43V-B": None, "C33V-L": None, "C33V-B": None, "C36V-L": None, "C36V-B": None})
+                # ----(x,y)                                               (x,y)----- 
+                # teeth|      16      |     13     |     23     |    26     |maxillary                         
+                length_of_full_sextant = maxillary_second_teeth - maxillary_teeth
+                length_of_number_sextant = length_of_full_sextant / 4
+
+                sixteen_box = int(maxillary_teeth + (length_of_number_sextant / 2)) # to get the middle of '16' box
+                thirteen_box = int(sixteen_box + length_of_number_sextant) # to get the middle of '13' box
+                twenty_three_box = int(thirteen_box + length_of_number_sextant) # to get the middle of '23' box
+                twenty_six_box = int(twenty_three_box + length_of_number_sextant) # to get the middle of '26' box
+
+                print("sixteen_box: ", sixteen_box)
+                print("thirteen_box: ", thirteen_box)
+                print("twenty_three_box: ", twenty_three_box)
+                print("twenty_six_box: ", twenty_six_box)
+
+        # GRAL.update({"C16V-L": None, "C16V-B": None, "C13V-L": None, "C13V-B": None, "C23V-L": None,
+        #              "C23V-B": None, "C26V-L": None, "C26V-B": None, "C16O-L": None, "C16O-B": None,
+        #              "C26O-L": None, "C26O-B": None, "C16P-L": None, "C16P-B": None, "C13P-L": None,
+        #              "C13P-B": None, "C23P-L": None, "C23P-B": None, "C26P-L": None, "C26P-B": None,
+        #              "C46P-L": None, "C46P-B": None, "C43P-L": None, "C43P-B": None, "C33P-L": None,
+        #              "C33P-B": None, "C36P-L": None, "C36P-B": None, "C46O-L": None, "C46O-B": None,
+        #              "C36O-L": None, "C36O-B": None, "C46V-L": None, "C46V-B": None, "C43V-L": None,
+        #              "C43V-B": None, "C33V-L": None, "C33V-B": None, "C36V-L": None, "C36V-B": None})
         for number in numbers_info.keys():
 
             # buccal
             # use the height of the number box vs the word
             # L= number; 76,5 for first sample
             if get_number_upper_row(numbers_info, number, buccal_box, sixteen_box):
-                GRAL["C16V-L"] = numbers_info[number]["filtered_number"]
+                if "C16V-L" not in GRAL_color_dents: GRAL_color_dents["C16V-L"] = numbers_info[number]["filtered_number"]; continue
             # b= number; 26,8
             if get_number_lower_row(numbers_info, number, buccal_box, sixteen_box):
-                GRAL["C16V-B"] = numbers_info[number]["filtered_number"]
+                if "C16V-B" not in GRAL_color_dents: GRAL_color_dents["C16V-B"] = numbers_info[number]["filtered_number"]; continue
             # L= number; 69,9
             if get_number_upper_row(numbers_info, number, buccal_box, thirteen_box):
-                GRAL["C13V-L"] = numbers_info[number]["filtered_number"]
+                if "C13V-L" not in GRAL_color_dents: GRAL_color_dents["C13V-L"] = numbers_info[number]["filtered_number"]; continue
             # b= number; 25,8
             if get_number_lower_row(numbers_info, number, buccal_box, thirteen_box):
-                GRAL["C13V-B"] = numbers_info[number]["filtered_number"]
+                if "C13V-B" not in GRAL_color_dents: GRAL_color_dents["C13V-B"] = numbers_info[number]["filtered_number"]; continue
             # L= number; 74,0
             if get_number_upper_row(numbers_info, number, buccal_box, twenty_three_box):
-                GRAL["C23V-L"] = numbers_info[number]["filtered_number"]
+                if "C23V-L" not in GRAL_color_dents: GRAL_color_dents["C23V-L"] = numbers_info[number]["filtered_number"]; continue
             # b= number; 29,2
             if get_number_lower_row(numbers_info, number, buccal_box, twenty_three_box):
-                GRAL["C23V-B"] = numbers_info[number]["filtered_number"]
+                if "C23V-B" not in GRAL_color_dents: GRAL_color_dents["C23V-B"] = numbers_info[number]["filtered_number"]; continue
             # L= number; 66,8
             if get_number_upper_row(numbers_info, number, buccal_box, twenty_six_box):
-                GRAL["C26V-L"] = numbers_info[number]["filtered_number"]
+                if "C26V-L" not in GRAL_color_dents: GRAL_color_dents["C26V-L"] = numbers_info[number]["filtered_number"]; continue
             # b= number; 20,1
             if get_number_lower_row(numbers_info, number, buccal_box, twenty_six_box):
-                GRAL["C26V-B"] = numbers_info[number]["filtered_number"]
+                if "C26V-B" not in GRAL_color_dents: GRAL_color_dents["C26V-B"] = numbers_info[number]["filtered_number"]; continue
 
             # occlusal/incisal
             # L= number; 57,0 for first sample
             if get_number_upper_row(numbers_info, number, occlusal_box, sixteen_box):
-                GRAL["C16O-L"] = numbers_info[number]["filtered_number"]
+                if "C16O-L" not in GRAL_color_dents: GRAL_color_dents["C16O-L"] = numbers_info[number]["filtered_number"]; continue
             # b= number; 7,9
             if get_number_lower_row(numbers_info, number, occlusal_box, sixteen_box):
-                GRAL["C16O-B"] = numbers_info[number]["filtered_number"]
+                if "C16O-B" not in GRAL_color_dents: GRAL_color_dents["C16O-B"] = numbers_info[number]["filtered_number"]; continue
             # L= number; 62,2
             if get_number_upper_row(numbers_info, number, occlusal_box, twenty_six_box):
-                GRAL["C26O-L"] = numbers_info[number]["filtered_number"]
+                if "C26O-L" not in GRAL_color_dents: GRAL_color_dents["C26O-L"] = numbers_info[number]["filtered_number"]; continue
             # b= number; 6,9
             if get_number_lower_row(numbers_info, number, occlusal_box, twenty_six_box):
-                GRAL["C26O-B"] = numbers_info[number]["filtered_number"]
+                if "C26O-B" not in GRAL_color_dents: GRAL_color_dents["C26O-B"] = numbers_info[number]["filtered_number"]; continue
 
             # palatinal
             # L= number; 74,6 for first sample
             if get_number_upper_row(numbers_info, number, palatinal_box, sixteen_box):
-                GRAL["C16P-L"] = numbers_info[number]["filtered_number"]
+                if "C16P-L" not in GRAL_color_dents: GRAL_color_dents["C16P-L"] = numbers_info[number]["filtered_number"]; continue
             # b= number; 20,3
             if get_number_lower_row(numbers_info, number, palatinal_box, sixteen_box):
-                GRAL["C16P-B"] = numbers_info[number]["filtered_number"]
+                if "C16P-B" not in GRAL_color_dents: GRAL_color_dents["C16P-B"] = numbers_info[number]["filtered_number"]; continue
             # L= number; 75,0 (it reads it as 95)
             if get_number_upper_row(numbers_info, number, palatinal_box, thirteen_box):
-                GRAL["C13P-L"] = numbers_info[number]["filtered_number"]
+                if "C13P-L" not in GRAL_color_dents: GRAL_color_dents["C13P-L"] = numbers_info[number]["filtered_number"]; continue
             # b= number; 27,1
             if get_number_lower_row(numbers_info, number, palatinal_box, thirteen_box):
-                GRAL["C13P-B"] = numbers_info[number]["filtered_number"]
+                if "C13P-B" not in GRAL_color_dents: GRAL_color_dents["C13P-B"] = numbers_info[number]["filtered_number"]; continue
             # L= number; 74,9 (it reads it as 94,9)
             if get_number_upper_row(numbers_info, number, palatinal_box, twenty_three_box):
-                GRAL["C23P-L"] = numbers_info[number]["filtered_number"]
+                if "C23P-L" not in GRAL_color_dents: GRAL_color_dents["C23P-L"] = numbers_info[number]["filtered_number"]; continue
             # b= number; 26,6
             if get_number_lower_row(numbers_info, number, palatinal_box, twenty_three_box):
-                GRAL["C23P-B"] = numbers_info[number]["filtered_number"]
+                if "C23P-B" not in GRAL_color_dents: GRAL_color_dents["C23P-B"] = numbers_info[number]["filtered_number"]; continue
             # L= number; 68,0
             if get_number_upper_row(numbers_info, number, palatinal_box, twenty_six_box):
-                GRAL["C26P-L"] = numbers_info[number]["filtered_number"]
+                print(get_number_upper_row(numbers_info, number, palatinal_box, twenty_six_box), numbers_info[number]["filtered_number"])
+                if "C26P-L" not in GRAL_color_dents: GRAL_color_dents["C26P-L"] = numbers_info[number]["filtered_number"]; continue
+                #exit()
             # b= number; 15,1
             if get_number_lower_row(numbers_info, number, palatinal_box, twenty_six_box):
-                GRAL["C26P-B"] = numbers_info[number]["filtered_number"]
+                if "C26P-B" not in GRAL_color_dents: GRAL_color_dents["C26P-B"] = numbers_info[number]["filtered_number"]; continue
 
             # lingual
             # L= number; 77,3 for first sample
             if get_number_upper_row(numbers_info, number, lingual_box, sixteen_box):
-                GRAL["C46P-L"] = numbers_info[number]["filtered_number"]
+                if "C46P-L" not in GRAL_color_dents: GRAL_color_dents["C46P-L"] = numbers_info[number]["filtered_number"]; continue
             # b= number; 18,7
             if get_number_lower_row(numbers_info, number, lingual_box, sixteen_box):
-                GRAL["C46P-B"] = numbers_info[number]["filtered_number"]
+                if "C46P-B" not in GRAL_color_dents: GRAL_color_dents["C46P-B"] = numbers_info[number]["filtered_number"]; continue
             # L= number; 63,2
             if get_number_upper_row(numbers_info, number, lingual_box, thirteen_box):
-                GRAL["C43P-L"] = numbers_info[number]["filtered_number"]
+                if "C43P-L" not in GRAL_color_dents: GRAL_color_dents["C43P-L"] = numbers_info[number]["filtered_number"]; continue
             # b= number; 22,3
             if get_number_lower_row(numbers_info, number, lingual_box, thirteen_box):
-                GRAL["C43P-B"] = numbers_info[number]["filtered_number"]
+                if "C43P-B" not in GRAL_color_dents: GRAL_color_dents["C43P-B"] = numbers_info[number]["filtered_number"]; continue
             # L= number; 63,1
             if get_number_upper_row(numbers_info, number, lingual_box, twenty_three_box):
-                GRAL["C33P-L"] = numbers_info[number]["filtered_number"]
+                if "C33P-L" not in GRAL_color_dents: GRAL_color_dents["C33P-L"] = numbers_info[number]["filtered_number"]; continue
             # b= number; 19,9
             if get_number_lower_row(numbers_info, number, lingual_box, twenty_three_box):
-                GRAL["C33P-B"] = numbers_info[number]["filtered_number"]
+                if "C33P-B" not in GRAL_color_dents: GRAL_color_dents["C33P-B"] = numbers_info[number]["filtered_number"]; continue
             # L= number; 65,4
             if get_number_upper_row(numbers_info, number, lingual_box, twenty_six_box):
-                GRAL["C36P-L"] = numbers_info[number]["filtered_number"]
+                if "C36P-L" not in GRAL_color_dents: GRAL_color_dents["C36P-L"] = numbers_info[number]["filtered_number"]; continue
             # b= number; 17,0
             if get_number_lower_row(numbers_info, number, lingual_box, twenty_six_box):
-                GRAL["C36P-B"] = numbers_info[number]["filtered_number"]
+                if "C36P-B" not in GRAL_color_dents: GRAL_color_dents["C36P-B"] = numbers_info[number]["filtered_number"]; continue
 
             # occlusal/incisal second part
             # L= number; 65,5 for first sample
             if get_number_upper_row(numbers_info, number, occlusal_second_box, sixteen_box):
-                GRAL["C46O-L"] = numbers_info[number]["filtered_number"]
+                if "C46O-L" not in GRAL_color_dents: GRAL_color_dents["C46O-L"] = numbers_info[number]["filtered_number"]; continue
             # b= number; 8,7
             if get_number_lower_row(numbers_info, number, occlusal_second_box, sixteen_box):
-                GRAL["C46O-B"] = numbers_info[number]["filtered_number"]
+                if "C46O-B" not in GRAL_color_dents: GRAL_color_dents["C46O-B"] = numbers_info[number]["filtered_number"]; continue
             # L= number; 60,6
             if get_number_upper_row(numbers_info, number, occlusal_second_box, twenty_six_box):
-                GRAL["C36O-L"] = numbers_info[number]["filtered_number"]
+                if "C36O-L" not in GRAL_color_dents: GRAL_color_dents["C36O-L"] = numbers_info[number]["filtered_number"]; continue
             # b= number; 10,6
             if get_number_lower_row(numbers_info, number, occlusal_second_box, twenty_six_box):
-                GRAL["C36O-B"] = numbers_info[number]["filtered_number"]
+                if "C36O-B" not in GRAL_color_dents: GRAL_color_dents["C36O-B"] = numbers_info[number]["filtered_number"]; continue
 
             # buccal second part
             # L= number; 82,3 for first sample
             if get_number_upper_row(numbers_info, number, buccal_second_box, sixteen_box):
-                GRAL["C46V-L"] = numbers_info[number]["filtered_number"]
+                if "C46V-L" not in GRAL_color_dents: GRAL_color_dents["C46V-L"] = numbers_info[number]["filtered_number"]; continue
             # b= number; 23,0
             if get_number_lower_row(numbers_info, number, buccal_second_box, sixteen_box):
-                GRAL["C46V-B"] = numbers_info[number]["filtered_number"]
+                if "C46V-B" not in GRAL_color_dents: GRAL_color_dents["C46V-B"] = numbers_info[number]["filtered_number"]; continue
             # L= number; 79,8
             if get_number_upper_row(numbers_info, number, buccal_second_box, thirteen_box):
-                GRAL["C43V-L"] = numbers_info[number]["filtered_number"]
+                if "C43V-L" not in GRAL_color_dents: GRAL_color_dents["C43V-L"] = numbers_info[number]["filtered_number"]; continue
             # b= number; 27,8
             if get_number_lower_row(numbers_info, number, buccal_second_box, thirteen_box):
-                GRAL["C43V-B"] = numbers_info[number]["filtered_number"]
+                if "C43V-B" not in GRAL_color_dents: GRAL_color_dents["C43V-B"] = numbers_info[number]["filtered_number"]; continue
             # L= number; 80,6
             if get_number_upper_row(numbers_info, number, buccal_second_box, twenty_three_box):
-                GRAL["C33V-L"] = numbers_info[number]["filtered_number"]
+                if "C33V-L" not in GRAL_color_dents: GRAL_color_dents["C33V-L"] = numbers_info[number]["filtered_number"]; continue
             # b= number; 28,1
             if get_number_lower_row(numbers_info, number, buccal_second_box, twenty_three_box):
-                GRAL["C33V-B"] = numbers_info[number]["filtered_number"]
+                if "C33V-B" not in GRAL_color_dents: GRAL_color_dents["C33V-B"] = numbers_info[number]["filtered_number"]; continue
             # L= number; 75,8
             if get_number_upper_row(numbers_info, number, buccal_second_box, twenty_six_box):
-                GRAL["C36V-L"] = numbers_info[number]["filtered_number"]
+                if "C36V-L" not in GRAL_color_dents: GRAL_color_dents["C36V-L"] = numbers_info[number]["filtered_number"]; continue
             # b= number; 20,6
             if get_number_lower_row(numbers_info, number, buccal_second_box, twenty_six_box):
-                GRAL["C36V-B"] = numbers_info[number]["filtered_number"]
+                if "C36V-B" not in GRAL_color_dents: GRAL_color_dents["C36V-B"] = numbers_info[number]["filtered_number"]; continue
 
-        return GRAL
+        return GRAL_color_dents
+
 #read_and_extract_page_two(azure_vision_json)
 #read_and_extract_page_three(azure_page_3_json)
 #read_and_extract_page_four(azure_page_4_json)
 #read_and_extract_page_six(azure_page_6_json)
-#read_and_extract_page_seven(azure_page_7_json)
-read_and_extract_page_ten(azure_page_10_json)
+
+# PAGE 10
+# azure_page_10_test_4 = "/home/daniel_master/workspace/softprojects/desgast_scan_to_text/tests/page_10/pg_0007.json"
+
+# GRAL_returned = read_and_extract_page_ten(azure_page_10_test_4)
 
 
-print("GRAL: ", GRAL)
-print("GRAL length: ", len(GRAL.keys())-1) # remove the N
+# print("GRAL_returned: ", GRAL_returned)
+# print("GRAL length: ", len(GRAL_returned.keys())-1) # remove the N
+
+# # (\d+[,.]\d+) -> "$1",
+# # (\d+)\s      -> "$1",
+# # \s+          -> nothing
+# Cs = ["C16V-L","C16V-B","C16O-L","C16O-B","C16P-L","C16P-B","C13V-L","C13V-B","C13P-L","C13P-B","C23V-L","C23V-B","C23P-L","C23P-B","C26V-L","C26V-B","C26O-L","C26O-B","C26P-L","C26P-B","C36P-L","C36P-B","C36O-L","C36O-B","C36V-L","C36V-B","C33P-L","C33P-B","C33V-L","C33V-B","C43P-L","C43P-B","C43V-L","C43V-B","C46P-L","C46P-B","C46O-L","C46O-B","C46V-L","C46V-B"]
+
+# # first sample
+# #Ns = ["76,5","26,8","57","7,9","74,6","20,3","69,9","25,8","75","27,1","24","29,2","74,9","26,6","66,8","20,1","62,2","6,9","68","15,1","65,4","17","60,6","10,6","75,8","20,6","63,1","19,9","80,6","28,1","63,2","22,3","79,8","27,8","77,3","18,7","65,5","8,7","82,3","23"]
+
+# # test 6
+# Ns=["64,9","17,8","58,4","16,6","72,2","27,1","72,5","29,5","62,7","24,9","74,7","31,1","70,2","32,2","64,7","16,6","62,7","12,1","76,1","36,7","56,6","21,8","68,4","15,5","74","24,4","70,8","16,2","81,5","33,4","69,9","17,7","81,4","30,6","63,1","17,2","66,5","16,8","80,6","25,5"]
+
+# page_test_dict = dict(zip(Cs, Ns))
+
+# for c in Cs:
+
+#     if c in GRAL_returned:
+#         print("Column: ", c, "\t", "Ona version: ", page_test_dict[c], "\t", "AI version: ", GRAL_returned[c])
+#     else:
+#         print("Could not find: ", c)
