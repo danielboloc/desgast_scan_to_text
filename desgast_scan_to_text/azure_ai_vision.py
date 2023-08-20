@@ -807,9 +807,9 @@ def read_and_extract_page_six(azure_page_6_json):
 
         return GRAL_page_6
 
-azure_page_6_json = "/home/daniel_master/workspace/softprojects/desgast_scan_to_text/tests/page_6/pg_0005.json"
-GRAL_page_6 = read_and_extract_page_six(azure_page_6_json)
-print(GRAL_page_6)
+# azure_page_6_json = "/home/daniel_master/workspace/softprojects/desgast_scan_to_text/tests/page_6/pg_0005.json"
+# GRAL_page_6 = read_and_extract_page_six(azure_page_6_json)
+# print(GRAL_page_6)
 
 
 def read_and_extract_page_seven(azure_page_7_json):
@@ -838,6 +838,7 @@ def read_and_extract_page_seven(azure_page_7_json):
         menudo = []
         muy = []
         _a = []
+        q_numers_boxes = {}
         for idx, word in enumerate(words):
 
             if words[idx]["content"] == "Nunca":
@@ -867,23 +868,54 @@ def read_and_extract_page_seven(azure_page_7_json):
                 muy = words[idx]["boundingBox"]
                 _a = words[idx + 1]["boundingBox"]
 
-        for q,x in actividades_with_boxes.items():
-            if nunca_box[0] - 20 <= x[0] <= nunca_box[2] + 20:
-                GRAL_page_7[q] = 0
-            elif casi_nunca[0] - 20 <= x[0] <= casi_nunca[2] + 20:
-                GRAL_page_7[q] = 1
-            elif de_vez[0] - 20 <= x[0] <= en_cuando[2] + 20:
-                GRAL_page_7[q] = 2
-            elif a_[0] - 20 <= x[0] <= menudo[2] + 20:
-                GRAL_page_7[q] = 3
-            elif muy[0] - 50 <= x[0] <= _a[2] + 50: # add more because the box is smaller
-                GRAL_page_7[q] = 4
+            # get boxes for the different question numbers (when X cannot be read
+            # you have to be able to tell from where is missing)
+            for n in range(1,15):
+                if words[idx]["content"] == str(n) and words[idx]["confidence"] > 0.7:
+                    if str(n) not in q_numers_boxes:
+                        q_numers_boxes[str(n)] = {
+                            "box": words[idx]["boundingBox"]
+                        }
+
+        actividades_with_q = dict(zip(q_numers_boxes, stress))
+
+        # for q,x in actividades_with_boxes.items():
+        #     if nunca_box[0] - 20 <= x[0] <= nunca_box[2] + 20:
+        #         GRAL_page_7[q] = 0
+        #     elif casi_nunca[0] - 20 <= x[0] <= casi_nunca[2] + 20:
+        #         GRAL_page_7[q] = 1
+        #     elif de_vez[0] - 20 <= x[0] <= en_cuando[2] + 20:
+        #         GRAL_page_7[q] = 2
+        #     elif a_[0] - 20 <= x[0] <= menudo[2] + 20:
+        #         GRAL_page_7[q] = 3
+        #     elif muy[0] - 50 <= x[0] <= _a[2] + 50: # add more because the box is smaller
+        #         GRAL_page_7[q] = 4
+
+        for x in x_appearences:
+
+            for n in actividades_with_q.keys():
+
+                if nunca_box[0] - 20 <= x[0] <= nunca_box[2] + 20\
+                    and q_numers_boxes[n]["box"][1] - 40 <= ((x[1] + x[5]) / 2) <= q_numers_boxes[n]["box"][5] + 40:
+                    if n not in GRAL_page_7: GRAL_page_7[n] = 0; continue ; continue
+                elif casi_nunca[0] - 20 <= x[0] <= casi_nunca[2] + 20\
+                    and q_numers_boxes[n]["box"][1] - 40 <= ((x[1] + x[5]) / 2) <= q_numers_boxes[n]["box"][5] + 40:
+                    if n not in GRAL_page_7: GRAL_page_7[n] = 1; continue ; continue
+                elif de_vez[0] - 20 <= x[0] <= en_cuando[2] + 20\
+                    and q_numers_boxes[n]["box"][1] - 40 <= ((x[1] + x[5]) / 2) <= q_numers_boxes[n]["box"][5] + 40:
+                    if n not in GRAL_page_7: GRAL_page_7[n] = 2; continue ; continue
+                elif a_[0] - 20 <= x[0] <= menudo[2] + 20\
+                    and q_numers_boxes[n]["box"][1] - 40 <= ((x[1] + x[5]) / 2) <= q_numers_boxes[n]["box"][5] + 40:
+                    if n not in GRAL_page_7: GRAL_page_7[n] = 3; continue ; continue
+                elif muy[0] - 50 <= x[0] <= _a[2] + 50\
+                    and q_numers_boxes[n]["box"][1] - 50 <= ((x[1] + x[5]) / 2) <= q_numers_boxes[n]["box"][5] + 50:
+                    if n not in GRAL_page_7: GRAL_page_7[n] = 4; continue ; continue
 
         return GRAL_page_7
 
-# azure_page_7_json = "/home/daniel_master/workspace/softprojects/desgast_scan_to_text/tests/page_7/pg_0005.json"
-# GRAL_page_7 = read_and_extract_page_seven(azure_page_7_json)
-# print(GRAL_page_7)
+azure_page_7_json = "/home/daniel_master/workspace/softprojects/desgast_scan_to_text/tests/page_7/pg_0005.json"
+GRAL_page_7 = read_and_extract_page_seven(azure_page_7_json)
+print(GRAL_page_7)
 
 
 def get_number_upper_row(numbers_info, number, teeth_box, sextant_n):
