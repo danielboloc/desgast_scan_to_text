@@ -721,15 +721,11 @@ def read_and_extract_page_four(azure_page_4_json):
                 GRAL[q] = 4
 
 def read_and_extract_page_six(azure_page_6_json):
+    GRAL_page_6 = {}
     with open(azure_page_6_json) as json_file:
         data = json.load(json_file)
 
         words = data["words"]
-        lines = data["lines"]
-
-        print("Type:", type(data))
-        print("Type:", type(words))
-        print("Type:", type(lines))
 
         # Extract all "X" occurrences in order of appearance and then map them
         # It is easier and faster that trying to match every text.
@@ -740,47 +736,81 @@ def read_and_extract_page_six(azure_page_6_json):
             if words[i]["content"] == "×" or words[i]["content"] == "X" or words[i]["content"] == "x":
                 x_appearences.append(words[i]["boundingBox"])
         
-        actividades_with_boxes = dict(zip(actividades, x_appearences))
+        print("Found ", len(x_appearences), " from a total of 21 questions!")
 
         ninguna_box = []
         less_one = []
         noches_less_one = []
-        noches_1_3 = []
         noches_1_3_mes = []
-        noches_1_3_number = []
-        noches_1_3_semana = []
+        noches_1_3_semana_la = []
+        noches_1_3_semana_mayoria = []
         noches_4_7 = []
         noches_4_7_semana = []
+        q_numers_boxes = {}
         for idx, word in enumerate(words):
 
             if words[idx]["content"] == "Ninguna":
                 ninguna_box = words[idx]["boundingBox"]
                 less_one = words[idx + 1]["boundingBox"]
                 noches_less_one = words[idx + 2]["boundingBox"]
-            
-            if words[idx]["content"] == "|1-3":
-                noches_1_3 = words[idx]["boundingBox"]
-                noches_1_3_mes = words[idx + 1]["boundingBox"]
 
-            if words[idx]["content"] == "1-3":
-                noches_1_3_number = words[idx]["boundingBox"]
-                noches_1_3_semana = words[idx + 1]["boundingBox"]
+            if words[idx]["content"] == "Algunas":
+                noches_1_3_mes = words[idx]["boundingBox"]
+
+            if words[idx]["content"] == "La" and words[idx+1]["content"] == "mayoría":
+                # word "La"
+                noches_1_3_semana_la = words[idx]["boundingBox"]
+                # word "mayoria"
+                noches_1_3_semana_mayoria = words[idx+1]["boundingBox"]
 
             if words[idx]["content"] == "4-7":
                 noches_4_7 = words[idx]["boundingBox"]
                 noches_4_7_semana = words[idx + 1]["boundingBox"]
 
-        for q,x in actividades_with_boxes.items():
-            if ninguna_box[0] - 20 <= x[0] <= ninguna_box[2] + 20:
-                GRAL[q] = 0
-            elif less_one[0] - 20 <= x[0] <= noches_less_one[2] + 20:
-                GRAL[q] = 1
-            elif noches_1_3[0] - 20 <= x[0] <= noches_1_3_mes[2] + 20:
-                GRAL[q] = 2
-            elif noches_1_3_number[0] - 20 <= x[0] <= noches_1_3_semana[2] + 20:
-                GRAL[q] = 3
-            elif noches_4_7[0] - 20 <= x[0] <= noches_4_7_semana[2] + 20:
-                GRAL[q] = 4
+            # get boxes for the different question numbers (when X cannot be read
+            # you have to be able to tell from where is missing)
+            for n in range(1,22):
+                if words[idx]["content"] == str(n) and words[idx]["confidence"] > 0.7:
+                    if str(n) not in q_numers_boxes:
+                        q_numers_boxes[str(n)] = {
+                            "box": words[idx]["boundingBox"]
+                        }
+
+        actividades_with_q = dict(zip(q_numers_boxes, actividades))
+
+        for x in x_appearences:
+
+            #print("X: ", x)
+            for n in actividades_with_q.keys():
+                #print("n: ", n)
+                # check for each number "1", "2", etc box height if the medium height of the "X" box is in there
+                # add 50 of height padding
+                # ((x[1] + x[5]) / 2) calculates the medium height of the "X" box
+
+                if ninguna_box[0] - 20 <= x[0] <= ninguna_box[2] + 20\
+                    and q_numers_boxes[n]["box"][1] - 40 <= ((x[1] + x[5]) / 2) <= q_numers_boxes[n]["box"][5] + 40:
+                    if n not in GRAL_page_6: GRAL_page_6[n] = 0; continue ; continue
+                elif less_one[0] - 20 <= x[0] <= noches_less_one[2] + 20\
+                    and q_numers_boxes[n]["box"][1] - 40 <= ((x[1] + x[5]) / 2) <= q_numers_boxes[n]["box"][5] + 40:
+                    if n not in GRAL_page_6: GRAL_page_6[n] = 1; continue ; continue
+                elif noches_1_3_mes[0] - 45 <= x[0] <= noches_1_3_mes[2] + 45\
+                    and q_numers_boxes[n]["box"][1] - 40 <= ((x[1] + x[5]) / 2) <= q_numers_boxes[n]["box"][5] + 40:
+                    if n not in GRAL_page_6: GRAL_page_6[n] = 2; continue ; continue
+                elif noches_1_3_semana_la[0] - 30 <= x[0] <= noches_1_3_semana_mayoria[2] + 30\
+                    and q_numers_boxes[n]["box"][1] - 40 <= ((x[1] + x[5]) / 2) <= q_numers_boxes[n]["box"][5] + 40:
+                    if n not in GRAL_page_6: GRAL_page_6[n] = 3; continue ; continue
+                elif noches_4_7[0] - 20 <= x[0] <= noches_4_7_semana[2] + 20\
+                    and q_numers_boxes[n]["box"][1] - 40 <= ((x[1] + x[5]) / 2) <= q_numers_boxes[n]["box"][5] + 40:
+                    if n not in GRAL_page_6: GRAL_page_6[n] = 4; continue ; continue
+
+        print("Mapped 'X' ", len(GRAL_page_6.keys()), " from a total of 21 questions!")
+
+        return GRAL_page_6
+
+azure_page_6_json = "/home/daniel_master/workspace/softprojects/desgast_scan_to_text/tests/page_6/pg_0005.json"
+GRAL_page_6 = read_and_extract_page_six(azure_page_6_json)
+print(GRAL_page_6)
+
 
 def read_and_extract_page_seven(azure_page_7_json):
     GRAL_page_7 = {}
@@ -851,8 +881,9 @@ def read_and_extract_page_seven(azure_page_7_json):
 
         return GRAL_page_7
 
-GRAL_page_7 = read_and_extract_page_seven(azure_page_7_json)
-print(GRAL_page_7)
+# azure_page_7_json = "/home/daniel_master/workspace/softprojects/desgast_scan_to_text/tests/page_7/pg_0005.json"
+# GRAL_page_7 = read_and_extract_page_seven(azure_page_7_json)
+# print(GRAL_page_7)
 
 
 def get_number_upper_row(numbers_info, number, teeth_box, sextant_n):
