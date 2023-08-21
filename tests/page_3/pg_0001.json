@@ -1,0 +1,4693 @@
+  {
+    "height": 2464,
+    "width": 1760,
+    "angle": 0.7439,
+    "pageNumber": 1,
+    "words": [
+      {
+        "content": "albihnd",
+        "boundingBox": [
+          1062,
+          235,
+          1181,
+          228,
+          1181,
+          270,
+          1061,
+          276
+        ],
+        "confidence": 0.244,
+        "span": {
+          "offset": 0,
+          "length": 7
+        }
+      },
+      {
+        "content": "Work",
+        "boundingBox": [
+          1193,
+          228,
+          1288,
+          225,
+          1288,
+          267,
+          1192,
+          270
+        ],
+        "confidence": 0.058,
+        "span": {
+          "offset": 8,
+          "length": 4
+        }
+      },
+      {
+        "content": "in",
+        "boundingBox": [
+          1296,
+          225,
+          1355,
+          224,
+          1356,
+          266,
+          1296,
+          267
+        ],
+        "confidence": 0.058,
+        "span": {
+          "offset": 13,
+          "length": 2
+        }
+      },
+      {
+        "content": "bigoted",
+        "boundingBox": [
+          1372,
+          224,
+          1501,
+          227,
+          1504,
+          266,
+          1373,
+          266
+        ],
+        "confidence": 0.07,
+        "span": {
+          "offset": 16,
+          "length": 7
+        }
+      },
+      {
+        "content": "·",
+        "boundingBox": [
+          276,
+          271,
+          298,
+          271,
+          299,
+          315,
+          277,
+          316
+        ],
+        "confidence": 1,
+        "span": {
+          "offset": 24,
+          "length": 1
+        }
+      },
+      {
+        "content": "¿",
+        "boundingBox": [
+          314,
+          271,
+          322,
+          271,
+          322,
+          315,
+          315,
+          315
+        ],
+        "confidence": 1,
+        "span": {
+          "offset": 26,
+          "length": 1
+        }
+      },
+      {
+        "content": "En",
+        "boundingBox": [
+          329,
+          271,
+          362,
+          271,
+          363,
+          314,
+          330,
+          315
+        ],
+        "confidence": 1,
+        "span": {
+          "offset": 28,
+          "length": 2
+        }
+      },
+      {
+        "content": "qué",
+        "boundingBox": [
+          370,
+          271,
+          423,
+          271,
+          423,
+          313,
+          370,
+          314
+        ],
+        "confidence": 1,
+        "span": {
+          "offset": 31,
+          "length": 3
+        }
+      },
+      {
+        "content": "posición",
+        "boundingBox": [
+          431,
+          271,
+          540,
+          271,
+          540,
+          311,
+          431,
+          312
+        ],
+        "confidence": 1,
+        "span": {
+          "offset": 35,
+          "length": 8
+        }
+      },
+      {
+        "content": "suele",
+        "boundingBox": [
+          547,
+          271,
+          621,
+          271,
+          621,
+          309,
+          547,
+          311
+        ],
+        "confidence": 0.959,
+        "span": {
+          "offset": 44,
+          "length": 5
+        }
+      },
+      {
+        "content": "dormir",
+        "boundingBox": [
+          628,
+          271,
+          720,
+          271,
+          720,
+          308,
+          628,
+          309
+        ],
+        "confidence": 1,
+        "span": {
+          "offset": 50,
+          "length": 6
+        }
+      },
+      {
+        "content": "con",
+        "boundingBox": [
+          727,
+          271,
+          778,
+          271,
+          778,
+          308,
+          727,
+          308
+        ],
+        "confidence": 1,
+        "span": {
+          "offset": 57,
+          "length": 3
+        }
+      },
+      {
+        "content": "más",
+        "boundingBox": [
+          786,
+          271,
+          841,
+          272,
+          841,
+          308,
+          785,
+          308
+        ],
+        "confidence": 1,
+        "span": {
+          "offset": 61,
+          "length": 3
+        }
+      },
+      {
+        "content": "frecuencia?",
+        "boundingBox": [
+          849,
+          272,
+          1014,
+          273,
+          1014,
+          307,
+          849,
+          307
+        ],
+        "confidence": 1,
+        "span": {
+          "offset": 65,
+          "length": 11
+        }
+      },
+      {
+        "content": "Boca-arriba",
+        "boundingBox": [
+          550,
+          327,
+          695,
+          330,
+          694,
+          357,
+          548,
+          356
+        ],
+        "confidence": 0.992,
+        "span": {
+          "offset": 77,
+          "length": 11
+        }
+      },
+      {
+        "content": "Boca-abajo",
+        "boundingBox": [
+          757,
+          329,
+          899,
+          329,
+          897,
+          361,
+          757,
+          359
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 89,
+          "length": 10
+        }
+      },
+      {
+        "content": "Lado",
+        "boundingBox": [
+          946,
+          326,
+          1004,
+          326,
+          1004,
+          359,
+          946,
+          358
+        ],
+        "confidence": 0.989,
+        "span": {
+          "offset": 100,
+          "length": 4
+        }
+      },
+      {
+        "content": "derecho",
+        "boundingBox": [
+          1010,
+          326,
+          1118,
+          326,
+          1117,
+          357,
+          1010,
+          359
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 105,
+          "length": 7
+        }
+      },
+      {
+        "content": "Lado",
+        "boundingBox": [
+          1150,
+          325,
+          1209,
+          322,
+          1208,
+          355,
+          1150,
+          356
+        ],
+        "confidence": 0.989,
+        "span": {
+          "offset": 113,
+          "length": 4
+        }
+      },
+      {
+        "content": "izquierdo",
+        "boundingBox": [
+          1215,
+          322,
+          1344,
+          321,
+          1342,
+          353,
+          1214,
+          355
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 118,
+          "length": 9
+        }
+      },
+      {
+        "content": "Cabeza",
+        "boundingBox": [
+          415,
+          381,
+          508,
+          383,
+          507,
+          409,
+          416,
+          408
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 128,
+          "length": 6
+        }
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          1230,
+          368,
+          1258,
+          368,
+          1258,
+          411,
+          1230,
+          411
+        ],
+        "confidence": 0.658,
+        "span": {
+          "offset": 135,
+          "length": 1
+        }
+      },
+      {
+        "content": "Cuerpo",
+        "boundingBox": [
+          415,
+          425,
+          509,
+          425,
+          508,
+          454,
+          414,
+          453
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 137,
+          "length": 6
+        }
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          608,
+          417,
+          628,
+          417,
+          628,
+          456,
+          608,
+          456
+        ],
+        "confidence": 0.746,
+        "span": {
+          "offset": 144,
+          "length": 1
+        }
+      },
+      {
+        "content": "Hábitos",
+        "boundingBox": [
+          280,
+          527,
+          384,
+          526,
+          385,
+          562,
+          281,
+          563
+        ],
+        "confidence": 0.622,
+        "span": {
+          "offset": 146,
+          "length": 7
+        }
+      },
+      {
+        "content": "de",
+        "boundingBox": [
+          391,
+          526,
+          427,
+          526,
+          428,
+          562,
+          392,
+          562
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 154,
+          "length": 2
+        }
+      },
+      {
+        "content": "higiene",
+        "boundingBox": [
+          434,
+          526,
+          537,
+          527,
+          537,
+          563,
+          435,
+          562
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 157,
+          "length": 7
+        }
+      },
+      {
+        "content": "oral:",
+        "boundingBox": [
+          544,
+          527,
+          619,
+          528,
+          619,
+          565,
+          544,
+          563
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 165,
+          "length": 5
+        }
+      },
+      {
+        "content": ".",
+        "boundingBox": [
+          299,
+          575,
+          317,
+          576,
+          315,
+          606,
+          298,
+          605
+        ],
+        "confidence": 0.841,
+        "span": {
+          "offset": 171,
+          "length": 1
+        }
+      },
+      {
+        "content": "¿Cuántas",
+        "boundingBox": [
+          348,
+          572,
+          476,
+          574,
+          474,
+          611,
+          347,
+          610
+        ],
+        "confidence": 0.901,
+        "span": {
+          "offset": 173,
+          "length": 8
+        }
+      },
+      {
+        "content": "veces",
+        "boundingBox": [
+          483,
+          574,
+          557,
+          575,
+          556,
+          612,
+          481,
+          611
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 182,
+          "length": 5
+        }
+      },
+      {
+        "content": "al",
+        "boundingBox": [
+          565,
+          575,
+          586,
+          576,
+          585,
+          612,
+          564,
+          612
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 188,
+          "length": 2
+        }
+      },
+      {
+        "content": "día",
+        "boundingBox": [
+          594,
+          576,
+          635,
+          576,
+          634,
+          613,
+          593,
+          612
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 191,
+          "length": 3
+        }
+      },
+      {
+        "content": "se",
+        "boundingBox": [
+          642,
+          576,
+          673,
+          576,
+          672,
+          613,
+          641,
+          613
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 195,
+          "length": 2
+        }
+      },
+      {
+        "content": "cepilla",
+        "boundingBox": [
+          680,
+          577,
+          767,
+          577,
+          767,
+          614,
+          680,
+          613
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 198,
+          "length": 7
+        }
+      },
+      {
+        "content": "los",
+        "boundingBox": [
+          774,
+          577,
+          815,
+          578,
+          815,
+          614,
+          774,
+          614
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 206,
+          "length": 3
+        }
+      },
+      {
+        "content": "dientes?",
+        "boundingBox": [
+          822,
+          578,
+          944,
+          579,
+          944,
+          615,
+          822,
+          614
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 210,
+          "length": 8
+        }
+      },
+      {
+        "content": "2",
+        "boundingBox": [
+          1082,
+          567,
+          1110,
+          568,
+          1109,
+          612,
+          1081,
+          611
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 219,
+          "length": 1
+        }
+      },
+      {
+        "content": ".",
+        "boundingBox": [
+          299,
+          619,
+          317,
+          619,
+          315,
+          650,
+          297,
+          649
+        ],
+        "confidence": 0.677,
+        "span": {
+          "offset": 221,
+          "length": 1
+        }
+      },
+      {
+        "content": "¿Utiliza",
+        "boundingBox": [
+          348,
+          617,
+          449,
+          619,
+          447,
+          658,
+          346,
+          655
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 223,
+          "length": 8
+        }
+      },
+      {
+        "content": "cepillo",
+        "boundingBox": [
+          457,
+          619,
+          551,
+          620,
+          549,
+          660,
+          454,
+          658
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 232,
+          "length": 7
+        }
+      },
+      {
+        "content": "manual",
+        "boundingBox": [
+          559,
+          620,
+          654,
+          621,
+          652,
+          661,
+          557,
+          660
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 240,
+          "length": 6
+        }
+      },
+      {
+        "content": "o",
+        "boundingBox": [
+          662,
+          621,
+          674,
+          621,
+          672,
+          661,
+          660,
+          661
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 247,
+          "length": 1
+        }
+      },
+      {
+        "content": "eléctrico?",
+        "boundingBox": [
+          682,
+          621,
+          830,
+          621,
+          828,
+          661,
+          680,
+          661
+        ],
+        "confidence": 0.971,
+        "span": {
+          "offset": 249,
+          "length": 10
+        }
+      },
+      {
+        "content": "AMBOS",
+        "boundingBox": [
+          897,
+          621,
+          1009,
+          620,
+          1008,
+          658,
+          896,
+          660
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 260,
+          "length": 5
+        }
+      },
+      {
+        "content": ".",
+        "boundingBox": [
+          299,
+          665,
+          316,
+          665,
+          315,
+          693,
+          299,
+          693
+        ],
+        "confidence": 0.794,
+        "span": {
+          "offset": 266,
+          "length": 1
+        }
+      },
+      {
+        "content": "¿Utiliza",
+        "boundingBox": [
+          352,
+          663,
+          454,
+          666,
+          452,
+          702,
+          350,
+          699
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 268,
+          "length": 8
+        }
+      },
+      {
+        "content": "un",
+        "boundingBox": [
+          461,
+          666,
+          496,
+          666,
+          495,
+          703,
+          459,
+          702
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 277,
+          "length": 2
+        }
+      },
+      {
+        "content": "cepillo",
+        "boundingBox": [
+          503,
+          667,
+          591,
+          668,
+          589,
+          704,
+          502,
+          703
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 280,
+          "length": 7
+        }
+      },
+      {
+        "content": "de",
+        "boundingBox": [
+          598,
+          668,
+          633,
+          669,
+          632,
+          705,
+          596,
+          705
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 288,
+          "length": 2
+        }
+      },
+      {
+        "content": "cerdas",
+        "boundingBox": [
+          640,
+          669,
+          727,
+          670,
+          726,
+          706,
+          639,
+          705
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 291,
+          "length": 6
+        }
+      },
+      {
+        "content": "blandas,",
+        "boundingBox": [
+          734,
+          670,
+          859,
+          671,
+          858,
+          707,
+          733,
+          706
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 298,
+          "length": 8
+        }
+      },
+      {
+        "content": "medias",
+        "boundingBox": [
+          866,
+          671,
+          958,
+          671,
+          957,
+          707,
+          865,
+          707
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 307,
+          "length": 6
+        }
+      },
+      {
+        "content": "o",
+        "boundingBox": [
+          966,
+          671,
+          982,
+          671,
+          981,
+          707,
+          964,
+          707
+        ],
+        "confidence": 0.993,
+        "span": {
+          "offset": 314,
+          "length": 1
+        }
+      },
+      {
+        "content": "duras?",
+        "boundingBox": [
+          989,
+          671,
+          1088,
+          670,
+          1087,
+          706,
+          988,
+          707
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 316,
+          "length": 6
+        }
+      },
+      {
+        "content": "BLANDAS",
+        "boundingBox": [
+          1159,
+          669,
+          1314,
+          667,
+          1313,
+          702,
+          1158,
+          705
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 323,
+          "length": 7
+        }
+      },
+      {
+        "content": ".",
+        "boundingBox": [
+          301,
+          712,
+          317,
+          712,
+          316,
+          739,
+          300,
+          739
+        ],
+        "confidence": 0.75,
+        "span": {
+          "offset": 331,
+          "length": 1
+        }
+      },
+      {
+        "content": "¿En",
+        "boundingBox": [
+          351,
+          710,
+          398,
+          711,
+          397,
+          744,
+          350,
+          743
+        ],
+        "confidence": 0.979,
+        "span": {
+          "offset": 333,
+          "length": 3
+        }
+      },
+      {
+        "content": "una",
+        "boundingBox": [
+          405,
+          711,
+          459,
+          712,
+          459,
+          746,
+          404,
+          745
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 337,
+          "length": 3
+        }
+      },
+      {
+        "content": "escala",
+        "boundingBox": [
+          467,
+          712,
+          550,
+          713,
+          549,
+          748,
+          466,
+          746
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 341,
+          "length": 6
+        }
+      },
+      {
+        "content": "del",
+        "boundingBox": [
+          557,
+          713,
+          595,
+          714,
+          594,
+          750,
+          556,
+          749
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 348,
+          "length": 3
+        }
+      },
+      {
+        "content": "0",
+        "boundingBox": [
+          602,
+          714,
+          621,
+          714,
+          620,
+          750,
+          601,
+          750
+        ],
+        "confidence": 0.834,
+        "span": {
+          "offset": 352,
+          "length": 1
+        }
+      },
+      {
+        "content": "al",
+        "boundingBox": [
+          628,
+          714,
+          652,
+          714,
+          651,
+          751,
+          627,
+          750
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 354,
+          "length": 2
+        }
+      },
+      {
+        "content": "10",
+        "boundingBox": [
+          659,
+          715,
+          690,
+          715,
+          689,
+          752,
+          658,
+          751
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 357,
+          "length": 2
+        }
+      },
+      {
+        "content": "(siendo",
+        "boundingBox": [
+          697,
+          715,
+          797,
+          716,
+          796,
+          753,
+          696,
+          752
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 360,
+          "length": 7
+        }
+      },
+      {
+        "content": "0",
+        "boundingBox": [
+          804,
+          716,
+          820,
+          716,
+          820,
+          754,
+          803,
+          754
+        ],
+        "confidence": 0.605,
+        "span": {
+          "offset": 368,
+          "length": 1
+        }
+      },
+      {
+        "content": "ninguna",
+        "boundingBox": [
+          827,
+          717,
+          937,
+          718,
+          936,
+          755,
+          827,
+          754
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 370,
+          "length": 7
+        }
+      },
+      {
+        "content": "y",
+        "boundingBox": [
+          944,
+          718,
+          960,
+          718,
+          960,
+          756,
+          943,
+          755
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 378,
+          "length": 1
+        }
+      },
+      {
+        "content": "10",
+        "boundingBox": [
+          968,
+          718,
+          1001,
+          718,
+          1000,
+          756,
+          967,
+          756
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 380,
+          "length": 2
+        }
+      },
+      {
+        "content": "la",
+        "boundingBox": [
+          1008,
+          718,
+          1029,
+          719,
+          1029,
+          756,
+          1007,
+          756
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 383,
+          "length": 2
+        }
+      },
+      {
+        "content": "fuerza",
+        "boundingBox": [
+          1036,
+          719,
+          1124,
+          719,
+          1124,
+          757,
+          1036,
+          756
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 386,
+          "length": 6
+        }
+      },
+      {
+        "content": "máxima),",
+        "boundingBox": [
+          1131,
+          719,
+          1260,
+          720,
+          1259,
+          758,
+          1131,
+          757
+        ],
+        "confidence": 0.905,
+        "span": {
+          "offset": 393,
+          "length": 8
+        }
+      },
+      {
+        "content": "cuanta",
+        "boundingBox": [
+          1267,
+          720,
+          1364,
+          721,
+          1363,
+          758,
+          1266,
+          758
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 402,
+          "length": 6
+        }
+      },
+      {
+        "content": "presión",
+        "boundingBox": [
+          1371,
+          721,
+          1480,
+          722,
+          1479,
+          757,
+          1371,
+          758
+        ],
+        "confidence": 0.993,
+        "span": {
+          "offset": 409,
+          "length": 7
+        }
+      },
+      {
+        "content": "cree",
+        "boundingBox": [
+          351,
+          755,
+          412,
+          756,
+          411,
+          791,
+          349,
+          790
+        ],
+        "confidence": 0.993,
+        "span": {
+          "offset": 417,
+          "length": 4
+        }
+      },
+      {
+        "content": "que",
+        "boundingBox": [
+          420,
+          756,
+          471,
+          757,
+          469,
+          792,
+          418,
+          791
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 422,
+          "length": 3
+        }
+      },
+      {
+        "content": "realiza",
+        "boundingBox": [
+          478,
+          757,
+          569,
+          758,
+          568,
+          794,
+          476,
+          792
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 426,
+          "length": 7
+        }
+      },
+      {
+        "content": "al",
+        "boundingBox": [
+          576,
+          759,
+          598,
+          759,
+          597,
+          794,
+          574,
+          794
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 434,
+          "length": 2
+        }
+      },
+      {
+        "content": "cepillarse",
+        "boundingBox": [
+          605,
+          759,
+          733,
+          762,
+          731,
+          796,
+          604,
+          794
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 437,
+          "length": 10
+        }
+      },
+      {
+        "content": "los",
+        "boundingBox": [
+          739,
+          762,
+          782,
+          763,
+          780,
+          796,
+          738,
+          796
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 448,
+          "length": 3
+        }
+      },
+      {
+        "content": "dientes?",
+        "boundingBox": [
+          788,
+          763,
+          908,
+          766,
+          906,
+          797,
+          787,
+          796
+        ],
+        "confidence": 0.991,
+        "span": {
+          "offset": 452,
+          "length": 8
+        }
+      },
+      {
+        "content": "-1",
+        "boundingBox": [
+          1407,
+          843,
+          1443,
+          844,
+          1442,
+          883,
+          1407,
+          882
+        ],
+        "confidence": 0.774,
+        "span": {
+          "offset": 461,
+          "length": 2
+        }
+      },
+      {
+        "content": "0",
+        "boundingBox": [
+          453,
+          896,
+          468,
+          895,
+          470,
+          926,
+          453,
+          927
+        ],
+        "confidence": 0.905,
+        "span": {
+          "offset": 464,
+          "length": 1
+        }
+      },
+      {
+        "content": "1",
+        "boundingBox": [
+          554,
+          897,
+          572,
+          896,
+          574,
+          928,
+          555,
+          929
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 466,
+          "length": 1
+        }
+      },
+      {
+        "content": "2",
+        "boundingBox": [
+          646,
+          898,
+          669,
+          898,
+          669,
+          933,
+          646,
+          933
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 468,
+          "length": 1
+        }
+      },
+      {
+        "content": "3",
+        "boundingBox": [
+          744,
+          901,
+          762,
+          901,
+          762,
+          933,
+          744,
+          933
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 470,
+          "length": 1
+        }
+      },
+      {
+        "content": "4",
+        "boundingBox": [
+          838,
+          904,
+          855,
+          904,
+          855,
+          933,
+          838,
+          932
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 472,
+          "length": 1
+        }
+      },
+      {
+        "content": "5",
+        "boundingBox": [
+          932,
+          902,
+          951,
+          902,
+          951,
+          935,
+          932,
+          935
+        ],
+        "confidence": 0.992,
+        "span": {
+          "offset": 474,
+          "length": 1
+        }
+      },
+      {
+        "content": "6,",
+        "boundingBox": [
+          1027,
+          906,
+          1072,
+          910,
+          1069,
+          946,
+          1024,
+          942
+        ],
+        "confidence": 0.848,
+        "span": {
+          "offset": 476,
+          "length": 2
+        }
+      },
+      {
+        "content": "17",
+        "boundingBox": [
+          1108,
+          904,
+          1151,
+          903,
+          1150,
+          943,
+          1107,
+          945
+        ],
+        "confidence": 0.746,
+        "span": {
+          "offset": 479,
+          "length": 2
+        }
+      },
+      {
+        "content": "8",
+        "boundingBox": [
+          1227,
+          902,
+          1253,
+          902,
+          1252,
+          942,
+          1226,
+          942
+        ],
+        "confidence": 0.988,
+        "span": {
+          "offset": 482,
+          "length": 1
+        }
+      },
+      {
+        "content": "9",
+        "boundingBox": [
+          1318,
+          902,
+          1349,
+          903,
+          1348,
+          944,
+          1317,
+          943
+        ],
+        "confidence": 0.981,
+        "span": {
+          "offset": 484,
+          "length": 1
+        }
+      },
+      {
+        "content": "10",
+        "boundingBox": [
+          1409,
+          904,
+          1451,
+          905,
+          1450,
+          948,
+          1408,
+          946
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 486,
+          "length": 2
+        }
+      },
+      {
+        "content": "Ninguna",
+        "boundingBox": [
+          414,
+          987,
+          519,
+          988,
+          520,
+          1018,
+          413,
+          1014
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 489,
+          "length": 7
+        }
+      },
+      {
+        "content": "Leve",
+        "boundingBox": [
+          637,
+          996,
+          687,
+          997,
+          686,
+          1022,
+          637,
+          1021
+        ],
+        "confidence": 0.985,
+        "span": {
+          "offset": 497,
+          "length": 4
+        }
+      },
+      {
+        "content": "Moderada",
+        "boundingBox": [
+          881,
+          999,
+          1005,
+          1001,
+          1007,
+          1029,
+          880,
+          1025
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 502,
+          "length": 8
+        }
+      },
+      {
+        "content": "Excesiva",
+        "boundingBox": [
+          1228,
+          1002,
+          1331,
+          1001,
+          1333,
+          1028,
+          1228,
+          1028
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 511,
+          "length": 8
+        }
+      },
+      {
+        "content": "¿Con",
+        "boundingBox": [
+          354,
+          1114,
+          424,
+          1117,
+          422,
+          1154,
+          351,
+          1152
+        ],
+        "confidence": 0.962,
+        "span": {
+          "offset": 520,
+          "length": 4
+        }
+      },
+      {
+        "content": "qué",
+        "boundingBox": [
+          432,
+          1117,
+          485,
+          1118,
+          484,
+          1156,
+          430,
+          1154
+        ],
+        "confidence": 0.662,
+        "span": {
+          "offset": 525,
+          "length": 3
+        }
+      },
+      {
+        "content": "mano",
+        "boundingBox": [
+          493,
+          1119,
+          573,
+          1120,
+          572,
+          1157,
+          491,
+          1156
+        ],
+        "confidence": 0.989,
+        "span": {
+          "offset": 529,
+          "length": 4
+        }
+      },
+      {
+        "content": "se",
+        "boundingBox": [
+          580,
+          1120,
+          610,
+          1121,
+          609,
+          1158,
+          579,
+          1157
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 534,
+          "length": 2
+        }
+      },
+      {
+        "content": "cepilla",
+        "boundingBox": [
+          617,
+          1121,
+          703,
+          1122,
+          702,
+          1159,
+          616,
+          1158
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 537,
+          "length": 7
+        }
+      },
+      {
+        "content": "los",
+        "boundingBox": [
+          710,
+          1122,
+          749,
+          1123,
+          748,
+          1159,
+          709,
+          1159
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 545,
+          "length": 3
+        }
+      },
+      {
+        "content": "dientes?",
+        "boundingBox": [
+          756,
+          1123,
+          876,
+          1123,
+          876,
+          1160,
+          756,
+          1159
+        ],
+        "confidence": 0.993,
+        "span": {
+          "offset": 549,
+          "length": 8
+        }
+      },
+      {
+        "content": "Derecha",
+        "boundingBox": [
+          586,
+          1175,
+          689,
+          1176,
+          689,
+          1209,
+          586,
+          1207
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 558,
+          "length": 7
+        }
+      },
+      {
+        "content": "Izquierda",
+        "boundingBox": [
+          936,
+          1183,
+          1055,
+          1186,
+          1055,
+          1218,
+          937,
+          1215
+        ],
+        "confidence": 0.907,
+        "span": {
+          "offset": 566,
+          "length": 9
+        }
+      },
+      {
+        "content": "¿Por",
+        "boundingBox": [
+          353,
+          1247,
+          417,
+          1248,
+          417,
+          1286,
+          353,
+          1285
+        ],
+        "confidence": 0.971,
+        "span": {
+          "offset": 576,
+          "length": 4
+        }
+      },
+      {
+        "content": "qué",
+        "boundingBox": [
+          424,
+          1248,
+          478,
+          1249,
+          478,
+          1287,
+          424,
+          1286
+        ],
+        "confidence": 0.786,
+        "span": {
+          "offset": 581,
+          "length": 3
+        }
+      },
+      {
+        "content": "lado",
+        "boundingBox": [
+          486,
+          1249,
+          547,
+          1250,
+          547,
+          1288,
+          485,
+          1287
+        ],
+        "confidence": 0.986,
+        "span": {
+          "offset": 585,
+          "length": 4
+        }
+      },
+      {
+        "content": "mastica",
+        "boundingBox": [
+          554,
+          1251,
+          658,
+          1252,
+          657,
+          1289,
+          554,
+          1288
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 590,
+          "length": 7
+        }
+      },
+      {
+        "content": "la",
+        "boundingBox": [
+          665,
+          1252,
+          687,
+          1253,
+          686,
+          1290,
+          664,
+          1289
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 598,
+          "length": 2
+        }
+      },
+      {
+        "content": "comida",
+        "boundingBox": [
+          694,
+          1253,
+          798,
+          1255,
+          797,
+          1292,
+          694,
+          1290
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 601,
+          "length": 6
+        }
+      },
+      {
+        "content": "preferentemente?",
+        "boundingBox": [
+          805,
+          1255,
+          1054,
+          1259,
+          1052,
+          1297,
+          804,
+          1292
+        ],
+        "confidence": 0.991,
+        "span": {
+          "offset": 608,
+          "length": 16
+        }
+      },
+      {
+        "content": "ATAN",
+        "boundingBox": [
+          345,
+          1319,
+          408,
+          1320,
+          408,
+          1346,
+          345,
+          1345
+        ],
+        "confidence": 0.159,
+        "span": {
+          "offset": 625,
+          "length": 4
+        }
+      },
+      {
+        "content": "Derecha",
+        "boundingBox": [
+          524,
+          1331,
+          630,
+          1331,
+          629,
+          1357,
+          524,
+          1358
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 630,
+          "length": 7
+        }
+      },
+      {
+        "content": "MOI",
+        "boundingBox": [
+          649,
+          1331,
+          693,
+          1331,
+          692,
+          1355,
+          648,
+          1357
+        ],
+        "confidence": 0.01,
+        "span": {
+          "offset": 638,
+          "length": 3
+        }
+      },
+      {
+        "content": "..?",
+        "boundingBox": [
+          698,
+          1331,
+          744,
+          1330,
+          743,
+          1354,
+          697,
+          1355
+        ],
+        "confidence": 0.002,
+        "span": {
+          "offset": 642,
+          "length": 3
+        }
+      },
+      {
+        "content": "Izquierda",
+        "boundingBox": [
+          850,
+          1333,
+          971,
+          1332,
+          971,
+          1368,
+          852,
+          1367
+        ],
+        "confidence": 0.888,
+        "span": {
+          "offset": 646,
+          "length": 9
+        }
+      },
+      {
+        "content": "Por",
+        "boundingBox": [
+          1179,
+          1328,
+          1222,
+          1329,
+          1222,
+          1361,
+          1179,
+          1359
+        ],
+        "confidence": 0.993,
+        "span": {
+          "offset": 656,
+          "length": 3
+        }
+      },
+      {
+        "content": "igual",
+        "boundingBox": [
+          1229,
+          1329,
+          1296,
+          1328,
+          1295,
+          1363,
+          1228,
+          1362
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 660,
+          "length": 5
+        }
+      },
+      {
+        "content": "135",
+        "boundingBox": [
+          1300,
+          1370,
+          1348,
+          1370,
+          1347,
+          1396,
+          1299,
+          1395
+        ],
+        "confidence": 0.153,
+        "span": {
+          "offset": 666,
+          "length": 3
+        }
+      },
+      {
+        "content": "BAUTIA",
+        "boundingBox": [
+          1372,
+          1370,
+          1471,
+          1372,
+          1469,
+          1401,
+          1370,
+          1397
+        ],
+        "confidence": 0.606,
+        "span": {
+          "offset": 670,
+          "length": 6
+        }
+      },
+      {
+        "content": "·",
+        "boundingBox": [
+          301,
+          1425,
+          324,
+          1425,
+          322,
+          1466,
+          299,
+          1465
+        ],
+        "confidence": 1,
+        "span": {
+          "offset": 677,
+          "length": 1
+        }
+      },
+      {
+        "content": "¿",
+        "boundingBox": [
+          351,
+          1425,
+          361,
+          1425,
+          360,
+          1466,
+          349,
+          1466
+        ],
+        "confidence": 1,
+        "span": {
+          "offset": 679,
+          "length": 1
+        }
+      },
+      {
+        "content": "Qué",
+        "boundingBox": [
+          369,
+          1425,
+          427,
+          1425,
+          425,
+          1467,
+          368,
+          1466
+        ],
+        "confidence": 0.999,
+        "span": {
+          "offset": 681,
+          "length": 3
+        }
+      },
+      {
+        "content": "tipo",
+        "boundingBox": [
+          435,
+          1425,
+          492,
+          1425,
+          491,
+          1467,
+          433,
+          1467
+        ],
+        "confidence": 1,
+        "span": {
+          "offset": 685,
+          "length": 4
+        }
+      },
+      {
+        "content": "de",
+        "boundingBox": [
+          500,
+          1425,
+          534,
+          1426,
+          533,
+          1467,
+          499,
+          1467
+        ],
+        "confidence": 1,
+        "span": {
+          "offset": 690,
+          "length": 2
+        }
+      },
+      {
+        "content": "pasta",
+        "boundingBox": [
+          542,
+          1426,
+          615,
+          1426,
+          614,
+          1468,
+          541,
+          1467
+        ],
+        "confidence": 1,
+        "span": {
+          "offset": 693,
+          "length": 5
+        }
+      },
+      {
+        "content": "de",
+        "boundingBox": [
+          623,
+          1427,
+          657,
+          1427,
+          656,
+          1468,
+          622,
+          1468
+        ],
+        "confidence": 1,
+        "span": {
+          "offset": 699,
+          "length": 2
+        }
+      },
+      {
+        "content": "dientes",
+        "boundingBox": [
+          665,
+          1427,
+          768,
+          1429,
+          767,
+          1468,
+          664,
+          1468
+        ],
+        "confidence": 1,
+        "span": {
+          "offset": 702,
+          "length": 7
+        }
+      },
+      {
+        "content": "utiliza?",
+        "boundingBox": [
+          775,
+          1429,
+          876,
+          1432,
+          875,
+          1468,
+          774,
+          1468
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 710,
+          "length": 8
+        }
+      },
+      {
+        "content": "Pasta",
+        "boundingBox": [
+          354,
+          1514,
+          432,
+          1514,
+          431,
+          1552,
+          353,
+          1550
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 719,
+          "length": 5
+        }
+      },
+      {
+        "content": "fluorada",
+        "boundingBox": [
+          439,
+          1514,
+          566,
+          1516,
+          564,
+          1553,
+          438,
+          1552
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 725,
+          "length": 8
+        }
+      },
+      {
+        "content": "Pasta",
+        "boundingBox": [
+          679,
+          1518,
+          755,
+          1519,
+          754,
+          1555,
+          677,
+          1553
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 734,
+          "length": 5
+        }
+      },
+      {
+        "content": "no",
+        "boundingBox": [
+          762,
+          1519,
+          796,
+          1519,
+          796,
+          1555,
+          761,
+          1555
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 740,
+          "length": 2
+        }
+      },
+      {
+        "content": "fluorada",
+        "boundingBox": [
+          803,
+          1520,
+          924,
+          1523,
+          925,
+          1557,
+          803,
+          1556
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 743,
+          "length": 8
+        }
+      },
+      {
+        "content": "Pasta",
+        "boundingBox": [
+          1032,
+          1526,
+          1109,
+          1526,
+          1108,
+          1562,
+          1032,
+          1560
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 752,
+          "length": 5
+        }
+      },
+      {
+        "content": "blanqueadora",
+        "boundingBox": [
+          1116,
+          1526,
+          1314,
+          1534,
+          1312,
+          1568,
+          1115,
+          1562
+        ],
+        "confidence": 0.993,
+        "span": {
+          "offset": 758,
+          "length": 12
+        }
+      },
+      {
+        "content": "·",
+        "boundingBox": [
+          302,
+          1608,
+          324,
+          1609,
+          323,
+          1643,
+          301,
+          1642
+        ],
+        "confidence": 0.653,
+        "span": {
+          "offset": 771,
+          "length": 1
+        }
+      },
+      {
+        "content": "¿Alguna",
+        "boundingBox": [
+          352,
+          1607,
+          466,
+          1608,
+          466,
+          1646,
+          352,
+          1645
+        ],
+        "confidence": 0.971,
+        "span": {
+          "offset": 773,
+          "length": 7
+        }
+      },
+      {
+        "content": "vez",
+        "boundingBox": [
+          474,
+          1608,
+          520,
+          1608,
+          519,
+          1646,
+          473,
+          1646
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 781,
+          "length": 3
+        }
+      },
+      {
+        "content": "se",
+        "boundingBox": [
+          527,
+          1608,
+          556,
+          1608,
+          556,
+          1646,
+          527,
+          1646
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 785,
+          "length": 2
+        }
+      },
+      {
+        "content": "ha",
+        "boundingBox": [
+          564,
+          1608,
+          598,
+          1609,
+          597,
+          1646,
+          563,
+          1646
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 788,
+          "length": 2
+        }
+      },
+      {
+        "content": "blanqueado",
+        "boundingBox": [
+          605,
+          1609,
+          770,
+          1610,
+          769,
+          1647,
+          604,
+          1647
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 791,
+          "length": 10
+        }
+      },
+      {
+        "content": "los",
+        "boundingBox": [
+          777,
+          1610,
+          816,
+          1611,
+          815,
+          1647,
+          776,
+          1647
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 802,
+          "length": 3
+        }
+      },
+      {
+        "content": "dientes?",
+        "boundingBox": [
+          823,
+          1611,
+          947,
+          1612,
+          946,
+          1648,
+          822,
+          1647
+        ],
+        "confidence": 0.993,
+        "span": {
+          "offset": 806,
+          "length": 8
+        }
+      },
+      {
+        "content": "Sí",
+        "boundingBox": [
+          955,
+          1612,
+          989,
+          1613,
+          988,
+          1648,
+          953,
+          1648
+        ],
+        "confidence": 0.629,
+        "span": {
+          "offset": 815,
+          "length": 2
+        }
+      },
+      {
+        "content": "No",
+        "boundingBox": [
+          1101,
+          1617,
+          1145,
+          1617,
+          1145,
+          1654,
+          1101,
+          1654
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 818,
+          "length": 2
+        }
+      },
+      {
+        "content": "Historia",
+        "boundingBox": [
+          280,
+          1693,
+          393,
+          1694,
+          392,
+          1729,
+          281,
+          1729
+        ],
+        "confidence": 0.991,
+        "span": {
+          "offset": 821,
+          "length": 8
+        }
+      },
+      {
+        "content": "dental:",
+        "boundingBox": [
+          400,
+          1694,
+          511,
+          1698,
+          510,
+          1737,
+          399,
+          1730
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 830,
+          "length": 7
+        }
+      },
+      {
+        "content": "¿Ha",
+        "boundingBox": [
+          283,
+          1738,
+          336,
+          1738,
+          335,
+          1775,
+          282,
+          1775
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 838,
+          "length": 3
+        }
+      },
+      {
+        "content": "recibido",
+        "boundingBox": [
+          343,
+          1738,
+          460,
+          1740,
+          459,
+          1776,
+          342,
+          1775
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 842,
+          "length": 8
+        }
+      },
+      {
+        "content": "alguno",
+        "boundingBox": [
+          467,
+          1740,
+          561,
+          1742,
+          559,
+          1777,
+          465,
+          1776
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 851,
+          "length": 6
+        }
+      },
+      {
+        "content": "de",
+        "boundingBox": [
+          568,
+          1742,
+          602,
+          1742,
+          601,
+          1778,
+          566,
+          1777
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 858,
+          "length": 2
+        }
+      },
+      {
+        "content": "los",
+        "boundingBox": [
+          609,
+          1742,
+          648,
+          1743,
+          646,
+          1778,
+          607,
+          1778
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 861,
+          "length": 3
+        }
+      },
+      {
+        "content": "siguientes",
+        "boundingBox": [
+          655,
+          1743,
+          798,
+          1746,
+          795,
+          1780,
+          653,
+          1778
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 865,
+          "length": 10
+        }
+      },
+      {
+        "content": "tratamientos",
+        "boundingBox": [
+          804,
+          1746,
+          984,
+          1750,
+          981,
+          1783,
+          802,
+          1781
+        ],
+        "confidence": 0.993,
+        "span": {
+          "offset": 876,
+          "length": 12
+        }
+      },
+      {
+        "content": "dentales?",
+        "boundingBox": [
+          990,
+          1750,
+          1126,
+          1753,
+          1123,
+          1786,
+          988,
+          1783
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 889,
+          "length": 9
+        }
+      },
+      {
+        "content": "Tratamiento",
+        "boundingBox": [
+          299,
+          1784,
+          475,
+          1787,
+          473,
+          1821,
+          298,
+          1819
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 899,
+          "length": 11
+        }
+      },
+      {
+        "content": "dental:",
+        "boundingBox": [
+          481,
+          1787,
+          583,
+          1789,
+          581,
+          1824,
+          480,
+          1821
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 911,
+          "length": 7
+        }
+      },
+      {
+        "content": "NO",
+        "boundingBox": [
+          969,
+          1796,
+          1007,
+          1796,
+          1006,
+          1830,
+          969,
+          1827
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 919,
+          "length": 2
+        }
+      },
+      {
+        "content": "|",
+        "boundingBox": [
+          1026,
+          1796,
+          1037,
+          1796,
+          1035,
+          1832,
+          1024,
+          1831
+        ],
+        "confidence": 0.639,
+        "span": {
+          "offset": 922,
+          "length": 1
+        }
+      },
+      {
+        "content": "SI",
+        "boundingBox": [
+          1044,
+          1796,
+          1082,
+          1797,
+          1080,
+          1834,
+          1042,
+          1832
+        ],
+        "confidence": 0.932,
+        "span": {
+          "offset": 924,
+          "length": 2
+        }
+      },
+      {
+        "content": "Cuál:",
+        "boundingBox": [
+          1125,
+          1798,
+          1200,
+          1798,
+          1199,
+          1832,
+          1125,
+          1831
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 927,
+          "length": 5
+        }
+      },
+      {
+        "content": "Conservador",
+        "boundingBox": [
+          300,
+          1831,
+          482,
+          1831,
+          480,
+          1864,
+          299,
+          1859
+        ],
+        "confidence": 0.991,
+        "span": {
+          "offset": 933,
+          "length": 11
+        }
+      },
+      {
+        "content": "(p.e.",
+        "boundingBox": [
+          489,
+          1831,
+          554,
+          1831,
+          552,
+          1865,
+          486,
+          1864
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 945,
+          "length": 5
+        }
+      },
+      {
+        "content": "obturaciones)",
+        "boundingBox": [
+          561,
+          1831,
+          754,
+          1834,
+          751,
+          1867,
+          558,
+          1865
+        ],
+        "confidence": 0.992,
+        "span": {
+          "offset": 951,
+          "length": 13
+        }
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          1065,
+          1832,
+          1091,
+          1832,
+          1092,
+          1872,
+          1065,
+          1873
+        ],
+        "confidence": 0.781,
+        "span": {
+          "offset": 965,
+          "length": 1
+        }
+      },
+      {
+        "content": "Sellados",
+        "boundingBox": [
+          1128,
+          1838,
+          1247,
+          1840,
+          1246,
+          1873,
+          1126,
+          1873
+        ],
+        "confidence": 0.956,
+        "span": {
+          "offset": 967,
+          "length": 8
+        }
+      },
+      {
+        "content": "36,46,",
+        "boundingBox": [
+          1262,
+          1840,
+          1368,
+          1841,
+          1366,
+          1876,
+          1260,
+          1874
+        ],
+        "confidence": 0.891,
+        "span": {
+          "offset": 976,
+          "length": 6
+        }
+      },
+      {
+        "content": "endo",
+        "boundingBox": [
+          1382,
+          1841,
+          1455,
+          1842,
+          1454,
+          1879,
+          1381,
+          1876
+        ],
+        "confidence": 0.971,
+        "span": {
+          "offset": 983,
+          "length": 4
+        }
+      },
+      {
+        "content": "41",
+        "boundingBox": [
+          1474,
+          1842,
+          1516,
+          1843,
+          1515,
+          1882,
+          1474,
+          1880
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 988,
+          "length": 2
+        }
+      },
+      {
+        "content": "Ortodóntico",
+        "boundingBox": [
+          303,
+          1873,
+          474,
+          1875,
+          475,
+          1904,
+          301,
+          1902
+        ],
+        "confidence": 0.153,
+        "span": {
+          "offset": 991,
+          "length": 11
+        }
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          1075,
+          1878,
+          1095,
+          1878,
+          1096,
+          1916,
+          1076,
+          1916
+        ],
+        "confidence": 0.677,
+        "span": {
+          "offset": 1003,
+          "length": 1
+        }
+      },
+      {
+        "content": "Fija",
+        "boundingBox": [
+          1170,
+          1883,
+          1255,
+          1885,
+          1254,
+          1925,
+          1169,
+          1923
+        ],
+        "confidence": 0.846,
+        "span": {
+          "offset": 1005,
+          "length": 4
+        }
+      },
+      {
+        "content": "Quirúrgico",
+        "boundingBox": [
+          301,
+          1912,
+          453,
+          1915,
+          452,
+          1951,
+          300,
+          1949
+        ],
+        "confidence": 0.991,
+        "span": {
+          "offset": 1010,
+          "length": 10
+        }
+      },
+      {
+        "content": "(p.e.",
+        "boundingBox": [
+          460,
+          1915,
+          524,
+          1916,
+          523,
+          1951,
+          459,
+          1951
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 1021,
+          "length": 5
+        }
+      },
+      {
+        "content": "extracciones,",
+        "boundingBox": [
+          530,
+          1916,
+          715,
+          1920,
+          713,
+          1954,
+          529,
+          1951
+        ],
+        "confidence": 0.078,
+        "span": {
+          "offset": 1027,
+          "length": 13
+        }
+      },
+      {
+        "content": "implantes,",
+        "boundingBox": [
+          722,
+          1920,
+          872,
+          1924,
+          870,
+          1957,
+          720,
+          1954
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 1041,
+          "length": 10
+        }
+      },
+      {
+        "content": "etc)",
+        "boundingBox": [
+          879,
+          1924,
+          938,
+          1926,
+          937,
+          1958,
+          877,
+          1957
+        ],
+        "confidence": 0.99,
+        "span": {
+          "offset": 1052,
+          "length": 4
+        }
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          1064,
+          1928,
+          1086,
+          1927,
+          1087,
+          1961,
+          1065,
+          1962
+        ],
+        "confidence": 0.802,
+        "span": {
+          "offset": 1057,
+          "length": 1
+        }
+      },
+      {
+        "content": "Cordales",
+        "boundingBox": [
+          1162,
+          1933,
+          1307,
+          1934,
+          1307,
+          1968,
+          1160,
+          1969
+        ],
+        "confidence": 0.97,
+        "span": {
+          "offset": 1059,
+          "length": 8
+        }
+      },
+      {
+        "content": "Periodontal",
+        "boundingBox": [
+          304,
+          1956,
+          473,
+          1958,
+          474,
+          1993,
+          302,
+          1988
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 1068,
+          "length": 11
+        }
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          1072,
+          1978,
+          1089,
+          1977,
+          1091,
+          2009,
+          1074,
+          2009
+        ],
+        "confidence": 0.708,
+        "span": {
+          "offset": 1080,
+          "length": 1
+        }
+      },
+      {
+        "content": "Higienes",
+        "boundingBox": [
+          1161,
+          1972,
+          1290,
+          1978,
+          1289,
+          2010,
+          1160,
+          2004
+        ],
+        "confidence": 0.636,
+        "span": {
+          "offset": 1082,
+          "length": 8
+        }
+      },
+      {
+        "content": "Protésico",
+        "boundingBox": [
+          299,
+          2002,
+          433,
+          2002,
+          434,
+          2035,
+          299,
+          2033
+        ],
+        "confidence": 0.991,
+        "span": {
+          "offset": 1091,
+          "length": 9
+        }
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          997,
+          2009,
+          1019,
+          2010,
+          1018,
+          2044,
+          996,
+          2043
+        ],
+        "confidence": 0.634,
+        "span": {
+          "offset": 1101,
+          "length": 1
+        }
+      }
+    ],
+    "spans": [
+      {
+        "offset": 0,
+        "length": 1102
+      }
+    ],
+    "lines": [
+      {
+        "content": "albihnd Work in bigoted",
+        "boundingBox": [
+          1060,
+          229,
+          1504,
+          224,
+          1505,
+          266,
+          1060,
+          275
+        ],
+        "spans": [
+          {
+            "offset": 0,
+            "length": 23
+          }
+        ]
+      },
+      {
+        "content": "· ¿ En qué posición suele dormir con más frecuencia?",
+        "boundingBox": [
+          274,
+          271,
+          1015,
+          270,
+          1015,
+          311,
+          274,
+          315
+        ],
+        "spans": [
+          {
+            "offset": 24,
+            "length": 52
+          }
+        ]
+      },
+      {
+        "content": "Boca-arriba",
+        "boundingBox": [
+          548,
+          327,
+          698,
+          328,
+          698,
+          357,
+          548,
+          355
+        ],
+        "spans": [
+          {
+            "offset": 77,
+            "length": 11
+          }
+        ]
+      },
+      {
+        "content": "Boca-abajo",
+        "boundingBox": [
+          756,
+          328,
+          902,
+          328,
+          902,
+          360,
+          756,
+          359
+        ],
+        "spans": [
+          {
+            "offset": 89,
+            "length": 10
+          }
+        ]
+      },
+      {
+        "content": "Lado derecho",
+        "boundingBox": [
+          946,
+          326,
+          1121,
+          326,
+          1121,
+          357,
+          946,
+          358
+        ],
+        "spans": [
+          {
+            "offset": 100,
+            "length": 12
+          }
+        ]
+      },
+      {
+        "content": "Lado izquierdo",
+        "boundingBox": [
+          1149,
+          323,
+          1347,
+          320,
+          1347,
+          352,
+          1149,
+          356
+        ],
+        "spans": [
+          {
+            "offset": 113,
+            "length": 14
+          }
+        ]
+      },
+      {
+        "content": "Cabeza",
+        "boundingBox": [
+          415,
+          380,
+          508,
+          382,
+          508,
+          409,
+          415,
+          407
+        ],
+        "spans": [
+          {
+            "offset": 128,
+            "length": 6
+          }
+        ]
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          1212,
+          368,
+          1262,
+          368,
+          1265,
+          411,
+          1214,
+          411
+        ],
+        "spans": [
+          {
+            "offset": 135,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "Cuerpo",
+        "boundingBox": [
+          414,
+          424,
+          517,
+          425,
+          517,
+          454,
+          413,
+          453
+        ],
+        "spans": [
+          {
+            "offset": 137,
+            "length": 6
+          }
+        ]
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          593,
+          418,
+          633,
+          417,
+          632,
+          456,
+          592,
+          456
+        ],
+        "spans": [
+          {
+            "offset": 144,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "Hábitos de higiene oral:",
+        "boundingBox": [
+          280,
+          526,
+          621,
+          527,
+          621,
+          564,
+          280,
+          562
+        ],
+        "spans": [
+          {
+            "offset": 146,
+            "length": 24
+          }
+        ]
+      },
+      {
+        "content": ".",
+        "boundingBox": [
+          296,
+          575,
+          332,
+          577,
+          333,
+          607,
+          297,
+          605
+        ],
+        "spans": [
+          {
+            "offset": 171,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "¿Cuántas veces al día se cepilla los dientes?",
+        "boundingBox": [
+          347,
+          572,
+          944,
+          577,
+          944,
+          615,
+          346,
+          609
+        ],
+        "spans": [
+          {
+            "offset": 173,
+            "length": 45
+          }
+        ]
+      },
+      {
+        "content": "2",
+        "boundingBox": [
+          1081,
+          567,
+          1114,
+          568,
+          1115,
+          612,
+          1081,
+          611
+        ],
+        "spans": [
+          {
+            "offset": 219,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": ".",
+        "boundingBox": [
+          297,
+          619,
+          333,
+          621,
+          334,
+          651,
+          298,
+          650
+        ],
+        "spans": [
+          {
+            "offset": 221,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "¿Utiliza cepillo manual o eléctrico? AMBOS",
+        "boundingBox": [
+          346,
+          616,
+          1010,
+          619,
+          1010,
+          661,
+          346,
+          658
+        ],
+        "spans": [
+          {
+            "offset": 223,
+            "length": 42
+          }
+        ]
+      },
+      {
+        "content": ".",
+        "boundingBox": [
+          296,
+          665,
+          334,
+          666,
+          335,
+          693,
+          298,
+          693
+        ],
+        "spans": [
+          {
+            "offset": 266,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "¿Utiliza un cepillo de cerdas blandas, medias o duras? BLANDAS",
+        "boundingBox": [
+          350,
+          663,
+          1314,
+          666,
+          1314,
+          707,
+          350,
+          704
+        ],
+        "spans": [
+          {
+            "offset": 268,
+            "length": 62
+          }
+        ]
+      },
+      {
+        "content": ".",
+        "boundingBox": [
+          300,
+          712,
+          332,
+          713,
+          331,
+          740,
+          300,
+          739
+        ],
+        "spans": [
+          {
+            "offset": 331,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "¿En una escala del 0 al 10 (siendo 0 ninguna y 10 la fuerza máxima), cuanta presión",
+        "boundingBox": [
+          350,
+          710,
+          1485,
+          721,
+          1484,
+          758,
+          349,
+          748
+        ],
+        "spans": [
+          {
+            "offset": 333,
+            "length": 83
+          }
+        ]
+      },
+      {
+        "content": "cree que realiza al cepillarse los dientes?",
+        "boundingBox": [
+          349,
+          755,
+          908,
+          763,
+          908,
+          797,
+          349,
+          789
+        ],
+        "spans": [
+          {
+            "offset": 417,
+            "length": 43
+          }
+        ]
+      },
+      {
+        "content": "-1",
+        "boundingBox": [
+          1407,
+          843,
+          1445,
+          844,
+          1445,
+          883,
+          1407,
+          882
+        ],
+        "spans": [
+          {
+            "offset": 461,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "0",
+        "boundingBox": [
+          455,
+          896,
+          475,
+          895,
+          473,
+          926,
+          453,
+          928
+        ],
+        "spans": [
+          {
+            "offset": 464,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "1",
+        "boundingBox": [
+          555,
+          897,
+          577,
+          896,
+          576,
+          928,
+          554,
+          930
+        ],
+        "spans": [
+          {
+            "offset": 466,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "2",
+        "boundingBox": [
+          643,
+          898,
+          673,
+          898,
+          672,
+          933,
+          641,
+          933
+        ],
+        "spans": [
+          {
+            "offset": 468,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "3",
+        "boundingBox": [
+          742,
+          901,
+          764,
+          901,
+          764,
+          933,
+          742,
+          933
+        ],
+        "spans": [
+          {
+            "offset": 470,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "4",
+        "boundingBox": [
+          837,
+          904,
+          864,
+          905,
+          863,
+          933,
+          837,
+          933
+        ],
+        "spans": [
+          {
+            "offset": 472,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "5",
+        "boundingBox": [
+          927,
+          902,
+          962,
+          902,
+          962,
+          935,
+          926,
+          934
+        ],
+        "spans": [
+          {
+            "offset": 474,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "6,",
+        "boundingBox": [
+          1023,
+          906,
+          1072,
+          910,
+          1071,
+          946,
+          1021,
+          942
+        ],
+        "spans": [
+          {
+            "offset": 476,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "17 8 9 10",
+        "boundingBox": [
+          1107,
+          902,
+          1455,
+          903,
+          1455,
+          947,
+          1107,
+          945
+        ],
+        "spans": [
+          {
+            "offset": 479,
+            "length": 9
+          }
+        ]
+      },
+      {
+        "content": "Ninguna",
+        "boundingBox": [
+          412,
+          986,
+          525,
+          988,
+          524,
+          1017,
+          411,
+          1015
+        ],
+        "spans": [
+          {
+            "offset": 489,
+            "length": 7
+          }
+        ]
+      },
+      {
+        "content": "Leve",
+        "boundingBox": [
+          637,
+          996,
+          687,
+          997,
+          687,
+          1022,
+          637,
+          1021
+        ],
+        "spans": [
+          {
+            "offset": 497,
+            "length": 4
+          }
+        ]
+      },
+      {
+        "content": "Moderada",
+        "boundingBox": [
+          880,
+          998,
+          1010,
+          1000,
+          1009,
+          1028,
+          880,
+          1025
+        ],
+        "spans": [
+          {
+            "offset": 502,
+            "length": 8
+          }
+        ]
+      },
+      {
+        "content": "Excesiva",
+        "boundingBox": [
+          1224,
+          1000,
+          1340,
+          1000,
+          1340,
+          1028,
+          1224,
+          1027
+        ],
+        "spans": [
+          {
+            "offset": 511,
+            "length": 8
+          }
+        ]
+      },
+      {
+        "content": "¿Con qué mano se cepilla los dientes?",
+        "boundingBox": [
+          315,
+          1113,
+          876,
+          1122,
+          876,
+          1160,
+          315,
+          1152
+        ],
+        "spans": [
+          {
+            "offset": 520,
+            "length": 37
+          }
+        ]
+      },
+      {
+        "content": "Derecha",
+        "boundingBox": [
+          585,
+          1175,
+          690,
+          1176,
+          690,
+          1208,
+          585,
+          1206
+        ],
+        "spans": [
+          {
+            "offset": 558,
+            "length": 7
+          }
+        ]
+      },
+      {
+        "content": "Izquierda",
+        "boundingBox": [
+          936,
+          1183,
+          1057,
+          1185,
+          1056,
+          1217,
+          936,
+          1214
+        ],
+        "spans": [
+          {
+            "offset": 566,
+            "length": 9
+          }
+        ]
+      },
+      {
+        "content": "¿Por qué lado mastica la comida preferentemente?",
+        "boundingBox": [
+          319,
+          1246,
+          1054,
+          1258,
+          1054,
+          1296,
+          319,
+          1284
+        ],
+        "spans": [
+          {
+            "offset": 576,
+            "length": 48
+          }
+        ]
+      },
+      {
+        "content": "ATAN",
+        "boundingBox": [
+          344,
+          1319,
+          409,
+          1320,
+          409,
+          1346,
+          344,
+          1345
+        ],
+        "spans": [
+          {
+            "offset": 625,
+            "length": 4
+          }
+        ]
+      },
+      {
+        "content": "Derecha MOI ..?",
+        "boundingBox": [
+          522,
+          1331,
+          743,
+          1330,
+          744,
+          1355,
+          522,
+          1358
+        ],
+        "spans": [
+          {
+            "offset": 630,
+            "length": 15
+          }
+        ]
+      },
+      {
+        "content": "Izquierda",
+        "boundingBox": [
+          849,
+          1331,
+          972,
+          1331,
+          972,
+          1367,
+          849,
+          1366
+        ],
+        "spans": [
+          {
+            "offset": 646,
+            "length": 9
+          }
+        ]
+      },
+      {
+        "content": "Por igual",
+        "boundingBox": [
+          1179,
+          1327,
+          1296,
+          1328,
+          1295,
+          1363,
+          1179,
+          1360
+        ],
+        "spans": [
+          {
+            "offset": 656,
+            "length": 9
+          }
+        ]
+      },
+      {
+        "content": "135 BAUTIA",
+        "boundingBox": [
+          1298,
+          1369,
+          1478,
+          1371,
+          1477,
+          1400,
+          1298,
+          1396
+        ],
+        "spans": [
+          {
+            "offset": 666,
+            "length": 10
+          }
+        ]
+      },
+      {
+        "content": "· ¿ Qué tipo de pasta de dientes utiliza?",
+        "boundingBox": [
+          295,
+          1425,
+          876,
+          1428,
+          876,
+          1468,
+          294,
+          1464
+        ],
+        "spans": [
+          {
+            "offset": 677,
+            "length": 41
+          }
+        ]
+      },
+      {
+        "content": "Pasta fluorada",
+        "boundingBox": [
+          353,
+          1514,
+          567,
+          1515,
+          567,
+          1552,
+          353,
+          1550
+        ],
+        "spans": [
+          {
+            "offset": 719,
+            "length": 14
+          }
+        ]
+      },
+      {
+        "content": "Pasta no fluorada",
+        "boundingBox": [
+          677,
+          1517,
+          926,
+          1522,
+          925,
+          1557,
+          677,
+          1552
+        ],
+        "spans": [
+          {
+            "offset": 734,
+            "length": 17
+          }
+        ]
+      },
+      {
+        "content": "Pasta blanqueadora",
+        "boundingBox": [
+          1031,
+          1525,
+          1315,
+          1531,
+          1314,
+          1567,
+          1031,
+          1559
+        ],
+        "spans": [
+          {
+            "offset": 752,
+            "length": 18
+          }
+        ]
+      },
+      {
+        "content": "·",
+        "boundingBox": [
+          297,
+          1608,
+          342,
+          1610,
+          342,
+          1644,
+          297,
+          1642
+        ],
+        "spans": [
+          {
+            "offset": 771,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "¿Alguna vez se ha blanqueado los dientes? Sí",
+        "boundingBox": [
+          347,
+          1606,
+          990,
+          1611,
+          990,
+          1648,
+          347,
+          1644
+        ],
+        "spans": [
+          {
+            "offset": 773,
+            "length": 44
+          }
+        ]
+      },
+      {
+        "content": "No",
+        "boundingBox": [
+          1099,
+          1617,
+          1150,
+          1617,
+          1150,
+          1654,
+          1100,
+          1654
+        ],
+        "spans": [
+          {
+            "offset": 818,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "Historia dental:",
+        "boundingBox": [
+          279,
+          1693,
+          512,
+          1697,
+          510,
+          1736,
+          279,
+          1729
+        ],
+        "spans": [
+          {
+            "offset": 821,
+            "length": 16
+          }
+        ]
+      },
+      {
+        "content": "¿Ha recibido alguno de los siguientes tratamientos dentales?",
+        "boundingBox": [
+          281,
+          1737,
+          1126,
+          1750,
+          1126,
+          1786,
+          280,
+          1774
+        ],
+        "spans": [
+          {
+            "offset": 838,
+            "length": 60
+          }
+        ]
+      },
+      {
+        "content": "Tratamiento dental:",
+        "boundingBox": [
+          295,
+          1783,
+          584,
+          1788,
+          583,
+          1823,
+          294,
+          1818
+        ],
+        "spans": [
+          {
+            "offset": 899,
+            "length": 19
+          }
+        ]
+      },
+      {
+        "content": "NO | SI",
+        "boundingBox": [
+          969,
+          1795,
+          1104,
+          1797,
+          1103,
+          1834,
+          968,
+          1829
+        ],
+        "spans": [
+          {
+            "offset": 919,
+            "length": 7
+          }
+        ]
+      },
+      {
+        "content": "Cuál:",
+        "boundingBox": [
+          1126,
+          1798,
+          1202,
+          1798,
+          1202,
+          1832,
+          1125,
+          1830
+        ],
+        "spans": [
+          {
+            "offset": 927,
+            "length": 5
+          }
+        ]
+      },
+      {
+        "content": "Conservador (p.e. obturaciones)",
+        "boundingBox": [
+          298,
+          1830,
+          755,
+          1833,
+          754,
+          1867,
+          298,
+          1862
+        ],
+        "spans": [
+          {
+            "offset": 933,
+            "length": 31
+          }
+        ]
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          1050,
+          1833,
+          1094,
+          1832,
+          1092,
+          1873,
+          1048,
+          1873
+        ],
+        "spans": [
+          {
+            "offset": 965,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "Sellados 36,46, endo 41",
+        "boundingBox": [
+          1126,
+          1837,
+          1515,
+          1842,
+          1514,
+          1881,
+          1125,
+          1874
+        ],
+        "spans": [
+          {
+            "offset": 967,
+            "length": 23
+          }
+        ]
+      },
+      {
+        "content": "Ortodóntico",
+        "boundingBox": [
+          301,
+          1873,
+          482,
+          1874,
+          482,
+          1903,
+          300,
+          1902
+        ],
+        "spans": [
+          {
+            "offset": 991,
+            "length": 11
+          }
+        ]
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          1052,
+          1879,
+          1098,
+          1878,
+          1096,
+          1916,
+          1050,
+          1917
+        ],
+        "spans": [
+          {
+            "offset": 1003,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "Fija",
+        "boundingBox": [
+          1166,
+          1883,
+          1257,
+          1885,
+          1256,
+          1925,
+          1164,
+          1923
+        ],
+        "spans": [
+          {
+            "offset": 1005,
+            "length": 4
+          }
+        ]
+      },
+      {
+        "content": "Quirúrgico (p.e. extracciones, implantes, etc)",
+        "boundingBox": [
+          301,
+          1911,
+          939,
+          1923,
+          939,
+          1958,
+          300,
+          1948
+        ],
+        "spans": [
+          {
+            "offset": 1010,
+            "length": 46
+          }
+        ]
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          1055,
+          1928,
+          1091,
+          1927,
+          1091,
+          1961,
+          1055,
+          1962
+        ],
+        "spans": [
+          {
+            "offset": 1057,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "Cordales",
+        "boundingBox": [
+          1154,
+          1933,
+          1311,
+          1933,
+          1311,
+          1967,
+          1154,
+          1968
+        ],
+        "spans": [
+          {
+            "offset": 1059,
+            "length": 8
+          }
+        ]
+      },
+      {
+        "content": "Periodontal",
+        "boundingBox": [
+          302,
+          1956,
+          475,
+          1958,
+          474,
+          1992,
+          302,
+          1988
+        ],
+        "spans": [
+          {
+            "offset": 1068,
+            "length": 11
+          }
+        ]
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          1050,
+          1980,
+          1092,
+          1977,
+          1090,
+          2009,
+          1048,
+          2011
+        ],
+        "spans": [
+          {
+            "offset": 1080,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "Higienes",
+        "boundingBox": [
+          1160,
+          1972,
+          1293,
+          1978,
+          1291,
+          2010,
+          1159,
+          2003
+        ],
+        "spans": [
+          {
+            "offset": 1082,
+            "length": 8
+          }
+        ]
+      },
+      {
+        "content": "Protésico",
+        "boundingBox": [
+          298,
+          2001,
+          440,
+          2002,
+          440,
+          2034,
+          298,
+          2033
+        ],
+        "spans": [
+          {
+            "offset": 1091,
+            "length": 9
+          }
+        ]
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          966,
+          2008,
+          1020,
+          2010,
+          1019,
+          2044,
+          964,
+          2041
+        ],
+        "spans": [
+          {
+            "offset": 1101,
+            "length": 1
+          }
+        ]
+      }
+    ]
+  }

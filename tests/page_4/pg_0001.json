@@ -1,0 +1,2702 @@
+  {
+    "height": 2432,
+    "width": 1728,
+    "angle": -0.3452,
+    "pageNumber": 1,
+    "words": [
+      {
+        "content": "Cuestionario.",
+        "boundingBox": [
+          267,
+          261,
+          489,
+          266,
+          488,
+          306,
+          266,
+          300
+        ],
+        "confidence": 0.993,
+        "span": {
+          "offset": 0,
+          "length": 13
+        }
+      },
+      {
+        "content": "Bloque",
+        "boundingBox": [
+          497,
+          266,
+          614,
+          270,
+          613,
+          310,
+          496,
+          306
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 14,
+          "length": 6
+        }
+      },
+      {
+        "content": "2.",
+        "boundingBox": [
+          622,
+          270,
+          650,
+          271,
+          650,
+          311,
+          621,
+          310
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 21,
+          "length": 2
+        }
+      },
+      {
+        "content": "Dieta:",
+        "boundingBox": [
+          658,
+          271,
+          763,
+          276,
+          762,
+          315,
+          657,
+          311
+        ],
+        "confidence": 0.991,
+        "span": {
+          "offset": 24,
+          "length": 6
+        }
+      },
+      {
+        "content": "¿Sigue",
+        "boundingBox": [
+          307,
+          369,
+          398,
+          371,
+          398,
+          408,
+          306,
+          405
+        ],
+        "confidence": 0.991,
+        "span": {
+          "offset": 31,
+          "length": 6
+        }
+      },
+      {
+        "content": "una",
+        "boundingBox": [
+          406,
+          371,
+          452,
+          372,
+          452,
+          409,
+          405,
+          408
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 38,
+          "length": 3
+        }
+      },
+      {
+        "content": "dieta",
+        "boundingBox": [
+          460,
+          372,
+          531,
+          373,
+          531,
+          411,
+          459,
+          410
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 42,
+          "length": 5
+        }
+      },
+      {
+        "content": "crudivegana?",
+        "boundingBox": [
+          538,
+          373,
+          725,
+          374,
+          724,
+          412,
+          538,
+          411
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 48,
+          "length": 12
+        }
+      },
+      {
+        "content": "NO.",
+        "boundingBox": [
+          760,
+          374,
+          836,
+          374,
+          836,
+          412,
+          759,
+          412
+        ],
+        "confidence": 0.924,
+        "span": {
+          "offset": 61,
+          "length": 3
+        }
+      },
+      {
+        "content": "Desde",
+        "boundingBox": [
+          843,
+          374,
+          926,
+          373,
+          926,
+          411,
+          843,
+          412
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 65,
+          "length": 5
+        }
+      },
+      {
+        "content": "2-",
+        "boundingBox": [
+          965,
+          372,
+          1005,
+          372,
+          1005,
+          402,
+          965,
+          401
+        ],
+        "confidence": 0.528,
+        "span": {
+          "offset": 71,
+          "length": 2
+        }
+      },
+      {
+        "content": "hasta",
+        "boundingBox": [
+          1044,
+          378,
+          1119,
+          378,
+          1119,
+          408,
+          1044,
+          408
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 74,
+          "length": 5
+        }
+      },
+      {
+        "content": "97",
+        "boundingBox": [
+          1131,
+          373,
+          1156,
+          373,
+          1157,
+          400,
+          1131,
+          401
+        ],
+        "confidence": 0.065,
+        "span": {
+          "offset": 80,
+          "length": 2
+        }
+      },
+      {
+        "content": "-",
+        "boundingBox": [
+          1164,
+          373,
+          1183,
+          373,
+          1183,
+          400,
+          1165,
+          400
+        ],
+        "confidence": 0.917,
+        "span": {
+          "offset": 83,
+          "length": 1
+        }
+      },
+      {
+        "content": "inicio",
+        "boundingBox": [
+          309,
+          413,
+          383,
+          414,
+          382,
+          452,
+          309,
+          451
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 85,
+          "length": 6
+        }
+      },
+      {
+        "content": "y",
+        "boundingBox": [
+          390,
+          415,
+          405,
+          415,
+          404,
+          453,
+          389,
+          452
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 92,
+          "length": 1
+        }
+      },
+      {
+        "content": "finalización",
+        "boundingBox": [
+          412,
+          415,
+          568,
+          418,
+          566,
+          456,
+          411,
+          453
+        ],
+        "confidence": 0.941,
+        "span": {
+          "offset": 94,
+          "length": 12
+        }
+      },
+      {
+        "content": "si",
+        "boundingBox": [
+          575,
+          418,
+          597,
+          418,
+          595,
+          456,
+          573,
+          456
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 107,
+          "length": 2
+        }
+      },
+      {
+        "content": "procede).",
+        "boundingBox": [
+          605,
+          419,
+          734,
+          421,
+          731,
+          458,
+          603,
+          456
+        ],
+        "confidence": 0.959,
+        "span": {
+          "offset": 110,
+          "length": 9
+        }
+      },
+      {
+        "content": "(indicar",
+        "boundingBox": [
+          1239,
+          375,
+          1341,
+          374,
+          1342,
+          407,
+          1241,
+          408
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 120,
+          "length": 8
+        }
+      },
+      {
+        "content": "año",
+        "boundingBox": [
+          1347,
+          374,
+          1399,
+          373,
+          1400,
+          406,
+          1348,
+          407
+        ],
+        "confidence": 0.958,
+        "span": {
+          "offset": 129,
+          "length": 3
+        }
+      },
+      {
+        "content": "de",
+        "boundingBox": [
+          1406,
+          373,
+          1444,
+          372,
+          1444,
+          404,
+          1406,
+          405
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 133,
+          "length": 2
+        }
+      },
+      {
+        "content": "·",
+        "boundingBox": [
+          272,
+          508,
+          291,
+          508,
+          290,
+          543,
+          270,
+          542
+        ],
+        "confidence": 1,
+        "span": {
+          "offset": 136,
+          "length": 1
+        }
+      },
+      {
+        "content": "¿",
+        "boundingBox": [
+          310,
+          508,
+          321,
+          508,
+          319,
+          543,
+          308,
+          543
+        ],
+        "confidence": 1,
+        "span": {
+          "offset": 138,
+          "length": 1
+        }
+      },
+      {
+        "content": "Cuántas",
+        "boundingBox": [
+          328,
+          508,
+          435,
+          509,
+          434,
+          544,
+          326,
+          543
+        ],
+        "confidence": 1,
+        "span": {
+          "offset": 140,
+          "length": 7
+        }
+      },
+      {
+        "content": "veces",
+        "boundingBox": [
+          442,
+          509,
+          518,
+          510,
+          517,
+          545,
+          441,
+          544
+        ],
+        "confidence": 1,
+        "span": {
+          "offset": 148,
+          "length": 5
+        }
+      },
+      {
+        "content": "a",
+        "boundingBox": [
+          525,
+          510,
+          541,
+          510,
+          539,
+          545,
+          524,
+          545
+        ],
+        "confidence": 1,
+        "span": {
+          "offset": 154,
+          "length": 1
+        }
+      },
+      {
+        "content": "la",
+        "boundingBox": [
+          548,
+          510,
+          570,
+          510,
+          569,
+          545,
+          546,
+          545
+        ],
+        "confidence": 1,
+        "span": {
+          "offset": 156,
+          "length": 2
+        }
+      },
+      {
+        "content": "semana",
+        "boundingBox": [
+          577,
+          510,
+          682,
+          511,
+          681,
+          545,
+          575,
+          545
+        ],
+        "confidence": 1,
+        "span": {
+          "offset": 159,
+          "length": 6
+        }
+      },
+      {
+        "content": "consume",
+        "boundingBox": [
+          689,
+          511,
+          810,
+          511,
+          809,
+          545,
+          688,
+          545
+        ],
+        "confidence": 0.99,
+        "span": {
+          "offset": 166,
+          "length": 7
+        }
+      },
+      {
+        "content": "los",
+        "boundingBox": [
+          817,
+          511,
+          855,
+          511,
+          854,
+          545,
+          816,
+          545
+        ],
+        "confidence": 1,
+        "span": {
+          "offset": 174,
+          "length": 3
+        }
+      },
+      {
+        "content": "siguientes",
+        "boundingBox": [
+          862,
+          511,
+          997,
+          510,
+          995,
+          545,
+          861,
+          545
+        ],
+        "confidence": 1,
+        "span": {
+          "offset": 178,
+          "length": 10
+        }
+      },
+      {
+        "content": "productos?",
+        "boundingBox": [
+          1003,
+          510,
+          1151,
+          509,
+          1150,
+          543,
+          1002,
+          545
+        ],
+        "confidence": 0.999,
+        "span": {
+          "offset": 189,
+          "length": 10
+        }
+      },
+      {
+        "content": "Marque",
+        "boundingBox": [
+          1158,
+          509,
+          1264,
+          508,
+          1263,
+          542,
+          1157,
+          543
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 200,
+          "length": 6
+        }
+      },
+      {
+        "content": "con",
+        "boundingBox": [
+          1270,
+          508,
+          1317,
+          508,
+          1317,
+          541,
+          1269,
+          542
+        ],
+        "confidence": 1,
+        "span": {
+          "offset": 207,
+          "length": 3
+        }
+      },
+      {
+        "content": "una",
+        "boundingBox": [
+          1324,
+          508,
+          1376,
+          507,
+          1375,
+          540,
+          1323,
+          541
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 211,
+          "length": 3
+        }
+      },
+      {
+        "content": "cruz",
+        "boundingBox": [
+          1383,
+          507,
+          1446,
+          506,
+          1445,
+          539,
+          1382,
+          540
+        ],
+        "confidence": 1,
+        "span": {
+          "offset": 215,
+          "length": 4
+        }
+      },
+      {
+        "content": "la",
+        "boundingBox": [
+          310,
+          551,
+          334,
+          552,
+          335,
+          588,
+          311,
+          589
+        ],
+        "confidence": 0.991,
+        "span": {
+          "offset": 220,
+          "length": 2
+        }
+      },
+      {
+        "content": "casilla",
+        "boundingBox": [
+          341,
+          553,
+          426,
+          555,
+          427,
+          588,
+          342,
+          588
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 223,
+          "length": 7
+        }
+      },
+      {
+        "content": "correspondiente.",
+        "boundingBox": [
+          433,
+          555,
+          667,
+          555,
+          668,
+          591,
+          433,
+          588
+        ],
+        "confidence": 0.993,
+        "span": {
+          "offset": 231,
+          "length": 16
+        }
+      },
+      {
+        "content": "1-2",
+        "boundingBox": [
+          733,
+          631,
+          775,
+          631,
+          775,
+          660,
+          733,
+          660
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 248,
+          "length": 3
+        }
+      },
+      {
+        "content": "3-4",
+        "boundingBox": [
+          934,
+          632,
+          977,
+          631,
+          978,
+          657,
+          935,
+          658
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 252,
+          "length": 3
+        }
+      },
+      {
+        "content": "5-6",
+        "boundingBox": [
+          1131,
+          627,
+          1172,
+          627,
+          1172,
+          654,
+          1131,
+          654
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 256,
+          "length": 3
+        }
+      },
+      {
+        "content": "Cada",
+        "boundingBox": [
+          1266,
+          627,
+          1325,
+          625,
+          1325,
+          656,
+          1266,
+          659
+        ],
+        "confidence": 0.979,
+        "span": {
+          "offset": 260,
+          "length": 4
+        }
+      },
+      {
+        "content": "día",
+        "boundingBox": [
+          1331,
+          625,
+          1371,
+          624,
+          1371,
+          655,
+          1331,
+          656
+        ],
+        "confidence": 0.955,
+        "span": {
+          "offset": 265,
+          "length": 3
+        }
+      },
+      {
+        "content": "de",
+        "boundingBox": [
+          1377,
+          624,
+          1411,
+          624,
+          1411,
+          654,
+          1377,
+          654
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 269,
+          "length": 2
+        }
+      },
+      {
+        "content": "la",
+        "boundingBox": [
+          1417,
+          624,
+          1442,
+          624,
+          1441,
+          654,
+          1417,
+          654
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 272,
+          "length": 2
+        }
+      },
+      {
+        "content": "Nunca",
+        "boundingBox": [
+          534,
+          671,
+          618,
+          670,
+          618,
+          700,
+          534,
+          699
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 275,
+          "length": 5
+        }
+      },
+      {
+        "content": "veces/semana",
+        "boundingBox": [
+          662,
+          674,
+          846,
+          670,
+          846,
+          701,
+          661,
+          702
+        ],
+        "confidence": 0.991,
+        "span": {
+          "offset": 281,
+          "length": 12
+        }
+      },
+      {
+        "content": "veces/semana",
+        "boundingBox": [
+          863,
+          672,
+          1042,
+          669,
+          1040,
+          698,
+          861,
+          699
+        ],
+        "confidence": 0.991,
+        "span": {
+          "offset": 294,
+          "length": 12
+        }
+      },
+      {
+        "content": "|",
+        "boundingBox": [
+          1047,
+          669,
+          1056,
+          669,
+          1055,
+          698,
+          1046,
+          698
+        ],
+        "confidence": 0.023,
+        "span": {
+          "offset": 307,
+          "length": 1
+        }
+      },
+      {
+        "content": "veces/semana",
+        "boundingBox": [
+          1062,
+          669,
+          1245,
+          667,
+          1243,
+          694,
+          1060,
+          698
+        ],
+        "confidence": 0.991,
+        "span": {
+          "offset": 309,
+          "length": 12
+        }
+      },
+      {
+        "content": "semana",
+        "boundingBox": [
+          1301,
+          668,
+          1400,
+          665,
+          1401,
+          689,
+          1301,
+          691
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 322,
+          "length": 6
+        }
+      },
+      {
+        "content": "Bebidas",
+        "boundingBox": [
+          345,
+          722,
+          449,
+          722,
+          448,
+          748,
+          344,
+          750
+        ],
+        "confidence": 0.993,
+        "span": {
+          "offset": 329,
+          "length": 7
+        }
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          727,
+          722,
+          768,
+          722,
+          769,
+          784,
+          728,
+          785
+        ],
+        "confidence": 0.777,
+        "span": {
+          "offset": 337,
+          "length": 1
+        }
+      },
+      {
+        "content": "carbonatadas",
+        "boundingBox": [
+          311,
+          761,
+          484,
+          759,
+          483,
+          787,
+          309,
+          787
+        ],
+        "confidence": 0.991,
+        "span": {
+          "offset": 339,
+          "length": 12
+        }
+      },
+      {
+        "content": ".",
+        "boundingBox": [
+          541,
+          764,
+          541,
+          770,
+          530,
+          771,
+          530,
+          764
+        ],
+        "confidence": 0.762,
+        "span": {
+          "offset": 352,
+          "length": 1
+        }
+      },
+      {
+        "content": "Bebidas",
+        "boundingBox": [
+          349,
+          808,
+          449,
+          808,
+          447,
+          836,
+          347,
+          833
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 354,
+          "length": 7
+        }
+      },
+      {
+        "content": "deportivas",
+        "boundingBox": [
+          333,
+          845,
+          468,
+          845,
+          466,
+          872,
+          332,
+          871
+        ],
+        "confidence": 0.991,
+        "span": {
+          "offset": 362,
+          "length": 10
+        }
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          556,
+          820,
+          588,
+          820,
+          589,
+          868,
+          557,
+          869
+        ],
+        "confidence": 0.877,
+        "span": {
+          "offset": 373,
+          "length": 1
+        }
+      },
+      {
+        "content": "Bebidas",
+        "boundingBox": [
+          349,
+          892,
+          447,
+          893,
+          446,
+          924,
+          347,
+          921
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 375,
+          "length": 7
+        }
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          550,
+          892,
+          591,
+          890,
+          595,
+          952,
+          554,
+          955
+        ],
+        "confidence": 0.741,
+        "span": {
+          "offset": 383,
+          "length": 1
+        }
+      },
+      {
+        "content": "energéticas",
+        "boundingBox": [
+          324,
+          933,
+          474,
+          932,
+          474,
+          960,
+          322,
+          957
+        ],
+        "confidence": 0.981,
+        "span": {
+          "offset": 385,
+          "length": 11
+        }
+      },
+      {
+        "content": "Zumos",
+        "boundingBox": [
+          334,
+          979,
+          420,
+          980,
+          419,
+          1008,
+          334,
+          1006
+        ],
+        "confidence": 0.991,
+        "span": {
+          "offset": 397,
+          "length": 5
+        }
+      },
+      {
+        "content": "de",
+        "boundingBox": [
+          426,
+          980,
+          459,
+          981,
+          458,
+          1008,
+          424,
+          1008
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 403,
+          "length": 2
+        }
+      },
+      {
+        "content": "frutas",
+        "boundingBox": [
+          358,
+          1015,
+          438,
+          1015,
+          435,
+          1042,
+          358,
+          1042
+        ],
+        "confidence": 0.993,
+        "span": {
+          "offset": 406,
+          "length": 6
+        }
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          733,
+          985,
+          769,
+          986,
+          768,
+          1041,
+          732,
+          1040
+        ],
+        "confidence": 0.638,
+        "span": {
+          "offset": 413,
+          "length": 1
+        }
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          927,
+          1046,
+          978,
+          1047,
+          977,
+          1126,
+          925,
+          1125
+        ],
+        "confidence": 0.79,
+        "span": {
+          "offset": 415,
+          "length": 1
+        }
+      },
+      {
+        "content": "Cítricos",
+        "boundingBox": [
+          351,
+          1098,
+          447,
+          1098,
+          446,
+          1126,
+          349,
+          1126
+        ],
+        "confidence": 0.951,
+        "span": {
+          "offset": 417,
+          "length": 8
+        }
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          1129,
+          1131,
+          1178,
+          1129,
+          1181,
+          1204,
+          1132,
+          1206
+        ],
+        "confidence": 0.837,
+        "span": {
+          "offset": 426,
+          "length": 1
+        }
+      },
+      {
+        "content": "Vinagre",
+        "boundingBox": [
+          346,
+          1185,
+          443,
+          1186,
+          442,
+          1210,
+          346,
+          1209
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 428,
+          "length": 7
+        }
+      },
+      {
+        "content": "Bebidas",
+        "boundingBox": [
+          360,
+          1287,
+          463,
+          1286,
+          464,
+          1323,
+          361,
+          1323
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 436,
+          "length": 7
+        }
+      },
+      {
+        "content": "carbonatadas:",
+        "boundingBox": [
+          470,
+          1286,
+          662,
+          1284,
+          662,
+          1321,
+          471,
+          1323
+        ],
+        "confidence": 0.993,
+        "span": {
+          "offset": 444,
+          "length": 13
+        }
+      },
+      {
+        "content": "Coca-Cola,",
+        "boundingBox": [
+          669,
+          1284,
+          810,
+          1283,
+          810,
+          1320,
+          669,
+          1321
+        ],
+        "confidence": 0.992,
+        "span": {
+          "offset": 458,
+          "length": 10
+        }
+      },
+      {
+        "content": "Pepsi,",
+        "boundingBox": [
+          818,
+          1283,
+          892,
+          1283,
+          892,
+          1319,
+          818,
+          1320
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 469,
+          "length": 6
+        }
+      },
+      {
+        "content": "Sprite,",
+        "boundingBox": [
+          899,
+          1283,
+          985,
+          1282,
+          985,
+          1318,
+          899,
+          1319
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 476,
+          "length": 7
+        }
+      },
+      {
+        "content": "Red",
+        "boundingBox": [
+          992,
+          1282,
+          1043,
+          1282,
+          1042,
+          1318,
+          992,
+          1318
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 484,
+          "length": 3
+        }
+      },
+      {
+        "content": "Bull,",
+        "boundingBox": [
+          1050,
+          1282,
+          1107,
+          1281,
+          1107,
+          1317,
+          1049,
+          1318
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 488,
+          "length": 5
+        }
+      },
+      {
+        "content": "Fanta",
+        "boundingBox": [
+          1114,
+          1281,
+          1184,
+          1281,
+          1183,
+          1316,
+          1114,
+          1317
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 494,
+          "length": 5
+        }
+      },
+      {
+        "content": "...",
+        "boundingBox": [
+          1191,
+          1281,
+          1213,
+          1280,
+          1212,
+          1316,
+          1190,
+          1316
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 500,
+          "length": 3
+        }
+      },
+      {
+        "content": "Bebidas",
+        "boundingBox": [
+          359,
+          1333,
+          464,
+          1331,
+          464,
+          1367,
+          359,
+          1368
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 504,
+          "length": 7
+        }
+      },
+      {
+        "content": "deportivas:",
+        "boundingBox": [
+          471,
+          1331,
+          619,
+          1328,
+          620,
+          1365,
+          471,
+          1367
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 512,
+          "length": 11
+        }
+      },
+      {
+        "content": "Isostar,",
+        "boundingBox": [
+          626,
+          1328,
+          722,
+          1327,
+          723,
+          1364,
+          627,
+          1365
+        ],
+        "confidence": 0.883,
+        "span": {
+          "offset": 524,
+          "length": 8
+        }
+      },
+      {
+        "content": "Powarade,",
+        "boundingBox": [
+          729,
+          1327,
+          873,
+          1325,
+          874,
+          1362,
+          730,
+          1364
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 533,
+          "length": 9
+        }
+      },
+      {
+        "content": "Gatorade,",
+        "boundingBox": [
+          880,
+          1325,
+          1012,
+          1324,
+          1013,
+          1361,
+          881,
+          1362
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 543,
+          "length": 9
+        }
+      },
+      {
+        "content": "Aquarius",
+        "boundingBox": [
+          1019,
+          1324,
+          1127,
+          1324,
+          1128,
+          1359,
+          1020,
+          1361
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 553,
+          "length": 8
+        }
+      },
+      {
+        "content": "...",
+        "boundingBox": [
+          1134,
+          1324,
+          1158,
+          1324,
+          1160,
+          1359,
+          1135,
+          1359
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 562,
+          "length": 3
+        }
+      },
+      {
+        "content": "Bebidas",
+        "boundingBox": [
+          361,
+          1377,
+          461,
+          1375,
+          461,
+          1411,
+          360,
+          1412
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 566,
+          "length": 7
+        }
+      },
+      {
+        "content": "energéticas:",
+        "boundingBox": [
+          468,
+          1375,
+          633,
+          1372,
+          632,
+          1408,
+          468,
+          1410
+        ],
+        "confidence": 0.992,
+        "span": {
+          "offset": 574,
+          "length": 12
+        }
+      },
+      {
+        "content": "Monster,",
+        "boundingBox": [
+          640,
+          1372,
+          759,
+          1370,
+          759,
+          1406,
+          639,
+          1408
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 587,
+          "length": 8
+        }
+      },
+      {
+        "content": "Red-Bull",
+        "boundingBox": [
+          766,
+          1370,
+          870,
+          1369,
+          870,
+          1405,
+          766,
+          1406
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 596,
+          "length": 8
+        }
+      },
+      {
+        "content": "...",
+        "boundingBox": [
+          877,
+          1369,
+          906,
+          1369,
+          906,
+          1405,
+          877,
+          1405
+        ],
+        "confidence": 0.968,
+        "span": {
+          "offset": 605,
+          "length": 3
+        }
+      },
+      {
+        "content": "-",
+        "boundingBox": [
+          308,
+          1427,
+          323,
+          1426,
+          324,
+          1451,
+          309,
+          1452
+        ],
+        "confidence": 0.673,
+        "span": {
+          "offset": 609,
+          "length": 1
+        }
+      },
+      {
+        "content": "Cítricos:",
+        "boundingBox": [
+          357,
+          1420,
+          477,
+          1418,
+          477,
+          1454,
+          357,
+          1456
+        ],
+        "confidence": 0.991,
+        "span": {
+          "offset": 611,
+          "length": 9
+        }
+      },
+      {
+        "content": "Piña,",
+        "boundingBox": [
+          485,
+          1418,
+          557,
+          1416,
+          557,
+          1453,
+          485,
+          1454
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 621,
+          "length": 5
+        }
+      },
+      {
+        "content": "ciruela,",
+        "boundingBox": [
+          565,
+          1416,
+          666,
+          1415,
+          667,
+          1452,
+          565,
+          1453
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 627,
+          "length": 8
+        }
+      },
+      {
+        "content": "mora,",
+        "boundingBox": [
+          674,
+          1415,
+          753,
+          1414,
+          754,
+          1451,
+          674,
+          1452
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 636,
+          "length": 5
+        }
+      },
+      {
+        "content": "frambuesa,",
+        "boundingBox": [
+          761,
+          1413,
+          917,
+          1412,
+          917,
+          1450,
+          761,
+          1451
+        ],
+        "confidence": 0.993,
+        "span": {
+          "offset": 642,
+          "length": 10
+        }
+      },
+      {
+        "content": "naranja,",
+        "boundingBox": [
+          924,
+          1412,
+          1039,
+          1410,
+          1039,
+          1449,
+          925,
+          1450
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 653,
+          "length": 8
+        }
+      },
+      {
+        "content": "lima,",
+        "boundingBox": [
+          1046,
+          1410,
+          1116,
+          1410,
+          1116,
+          1448,
+          1047,
+          1449
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 662,
+          "length": 5
+        }
+      },
+      {
+        "content": "limón,",
+        "boundingBox": [
+          1123,
+          1410,
+          1207,
+          1409,
+          1208,
+          1448,
+          1124,
+          1448
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 668,
+          "length": 6
+        }
+      },
+      {
+        "content": "fresas,",
+        "boundingBox": [
+          1215,
+          1409,
+          1309,
+          1409,
+          1310,
+          1447,
+          1216,
+          1448
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 675,
+          "length": 7
+        }
+      },
+      {
+        "content": "níspero,",
+        "boundingBox": [
+          1317,
+          1408,
+          1426,
+          1408,
+          1427,
+          1447,
+          1317,
+          1447
+        ],
+        "confidence": 0.846,
+        "span": {
+          "offset": 683,
+          "length": 8
+        }
+      },
+      {
+        "content": "granada,",
+        "boundingBox": [
+          359,
+          1469,
+          484,
+          1462,
+          483,
+          1500,
+          358,
+          1505
+        ],
+        "confidence": 0.993,
+        "span": {
+          "offset": 692,
+          "length": 8
+        }
+      },
+      {
+        "content": "mandarina,",
+        "boundingBox": [
+          491,
+          1462,
+          646,
+          1460,
+          645,
+          1496,
+          491,
+          1499
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 701,
+          "length": 10
+        }
+      },
+      {
+        "content": "uva",
+        "boundingBox": [
+          653,
+          1460,
+          694,
+          1460,
+          693,
+          1495,
+          653,
+          1495
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 712,
+          "length": 3
+        }
+      },
+      {
+        "content": "...",
+        "boundingBox": [
+          701,
+          1460,
+          725,
+          1461,
+          725,
+          1495,
+          700,
+          1495
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 716,
+          "length": 3
+        }
+      }
+    ],
+    "spans": [
+      {
+        "offset": 0,
+        "length": 719
+      }
+    ],
+    "lines": [
+      {
+        "content": "Cuestionario. Bloque 2. Dieta:",
+        "boundingBox": [
+          264,
+          260,
+          763,
+          274,
+          762,
+          314,
+          264,
+          299
+        ],
+        "spans": [
+          {
+            "offset": 0,
+            "length": 30
+          }
+        ]
+      },
+      {
+        "content": "¿Sigue una dieta crudivegana? NO. Desde",
+        "boundingBox": [
+          306,
+          369,
+          929,
+          373,
+          929,
+          412,
+          306,
+          409
+        ],
+        "spans": [
+          {
+            "offset": 31,
+            "length": 39
+          }
+        ]
+      },
+      {
+        "content": "2-",
+        "boundingBox": [
+          967,
+          372,
+          1029,
+          372,
+          1027,
+          402,
+          965,
+          400
+        ],
+        "spans": [
+          {
+            "offset": 71,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "hasta",
+        "boundingBox": [
+          1038,
+          378,
+          1123,
+          378,
+          1123,
+          408,
+          1039,
+          408
+        ],
+        "spans": [
+          {
+            "offset": 74,
+            "length": 5
+          }
+        ]
+      },
+      {
+        "content": "97 -",
+        "boundingBox": [
+          1131,
+          373,
+          1194,
+          373,
+          1194,
+          398,
+          1132,
+          401
+        ],
+        "spans": [
+          {
+            "offset": 80,
+            "length": 4
+          }
+        ]
+      },
+      {
+        "content": "inicio y finalización si procede).",
+        "boundingBox": [
+          309,
+          413,
+          733,
+          420,
+          732,
+          458,
+          309,
+          450
+        ],
+        "spans": [
+          {
+            "offset": 85,
+            "length": 34
+          }
+        ]
+      },
+      {
+        "content": "(indicar año de",
+        "boundingBox": [
+          1237,
+          374,
+          1447,
+          372,
+          1447,
+          404,
+          1238,
+          408
+        ],
+        "spans": [
+          {
+            "offset": 120,
+            "length": 15
+          }
+        ]
+      },
+      {
+        "content": "· ¿ Cuántas veces a la semana consume los siguientes productos? Marque con una cruz",
+        "boundingBox": [
+          268,
+          507,
+          1446,
+          506,
+          1446,
+          543,
+          268,
+          545
+        ],
+        "spans": [
+          {
+            "offset": 136,
+            "length": 83
+          }
+        ]
+      },
+      {
+        "content": "la casilla correspondiente.",
+        "boundingBox": [
+          310,
+          551,
+          668,
+          554,
+          667,
+          591,
+          310,
+          587
+        ],
+        "spans": [
+          {
+            "offset": 220,
+            "length": 27
+          }
+        ]
+      },
+      {
+        "content": "1-2",
+        "boundingBox": [
+          732,
+          631,
+          777,
+          631,
+          776,
+          660,
+          730,
+          660
+        ],
+        "spans": [
+          {
+            "offset": 248,
+            "length": 3
+          }
+        ]
+      },
+      {
+        "content": "3-4",
+        "boundingBox": [
+          932,
+          632,
+          981,
+          631,
+          980,
+          657,
+          932,
+          658
+        ],
+        "spans": [
+          {
+            "offset": 252,
+            "length": 3
+          }
+        ]
+      },
+      {
+        "content": "5-6",
+        "boundingBox": [
+          1131,
+          628,
+          1180,
+          627,
+          1178,
+          654,
+          1130,
+          654
+        ],
+        "spans": [
+          {
+            "offset": 256,
+            "length": 3
+          }
+        ]
+      },
+      {
+        "content": "Cada día de la",
+        "boundingBox": [
+          1265,
+          626,
+          1442,
+          624,
+          1443,
+          654,
+          1266,
+          658
+        ],
+        "spans": [
+          {
+            "offset": 260,
+            "length": 14
+          }
+        ]
+      },
+      {
+        "content": "Nunca",
+        "boundingBox": [
+          532,
+          669,
+          622,
+          669,
+          622,
+          699,
+          532,
+          699
+        ],
+        "spans": [
+          {
+            "offset": 275,
+            "length": 5
+          }
+        ]
+      },
+      {
+        "content": "veces/semana",
+        "boundingBox": [
+          653,
+          672,
+          847,
+          670,
+          848,
+          700,
+          653,
+          702
+        ],
+        "spans": [
+          {
+            "offset": 281,
+            "length": 12
+          }
+        ]
+      },
+      {
+        "content": "veces/semana | veces/semana",
+        "boundingBox": [
+          858,
+          671,
+          1245,
+          667,
+          1245,
+          694,
+          858,
+          699
+        ],
+        "spans": [
+          {
+            "offset": 294,
+            "length": 27
+          }
+        ]
+      },
+      {
+        "content": "semana",
+        "boundingBox": [
+          1299,
+          667,
+          1408,
+          664,
+          1409,
+          688,
+          1300,
+          691
+        ],
+        "spans": [
+          {
+            "offset": 322,
+            "length": 6
+          }
+        ]
+      },
+      {
+        "content": "Bebidas",
+        "boundingBox": [
+          342,
+          722,
+          449,
+          721,
+          450,
+          748,
+          342,
+          749
+        ],
+        "spans": [
+          {
+            "offset": 329,
+            "length": 7
+          }
+        ]
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          701,
+          724,
+          782,
+          722,
+          785,
+          784,
+          703,
+          786
+        ],
+        "spans": [
+          {
+            "offset": 337,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "carbonatadas",
+        "boundingBox": [
+          309,
+          759,
+          485,
+          758,
+          485,
+          786,
+          309,
+          787
+        ],
+        "spans": [
+          {
+            "offset": 339,
+            "length": 12
+          }
+        ]
+      },
+      {
+        "content": ".",
+        "boundingBox": [
+          540,
+          755,
+          541,
+          773,
+          530,
+          777,
+          530,
+          758
+        ],
+        "spans": [
+          {
+            "offset": 352,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "Bebidas",
+        "boundingBox": [
+          347,
+          807,
+          454,
+          807,
+          454,
+          835,
+          347,
+          834
+        ],
+        "spans": [
+          {
+            "offset": 354,
+            "length": 7
+          }
+        ]
+      },
+      {
+        "content": "deportivas",
+        "boundingBox": [
+          331,
+          844,
+          470,
+          844,
+          470,
+          871,
+          331,
+          871
+        ],
+        "spans": [
+          {
+            "offset": 362,
+            "length": 10
+          }
+        ]
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          539,
+          822,
+          589,
+          820,
+          588,
+          869,
+          537,
+          870
+        ],
+        "spans": [
+          {
+            "offset": 373,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "Bebidas",
+        "boundingBox": [
+          347,
+          891,
+          448,
+          892,
+          447,
+          923,
+          346,
+          921
+        ],
+        "spans": [
+          {
+            "offset": 375,
+            "length": 7
+          }
+        ]
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          528,
+          893,
+          599,
+          890,
+          596,
+          952,
+          528,
+          957
+        ],
+        "spans": [
+          {
+            "offset": 383,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "energéticas",
+        "boundingBox": [
+          322,
+          931,
+          474,
+          932,
+          474,
+          960,
+          322,
+          959
+        ],
+        "spans": [
+          {
+            "offset": 385,
+            "length": 11
+          }
+        ]
+      },
+      {
+        "content": "Zumos de",
+        "boundingBox": [
+          332,
+          979,
+          460,
+          980,
+          460,
+          1007,
+          332,
+          1006
+        ],
+        "spans": [
+          {
+            "offset": 397,
+            "length": 8
+          }
+        ]
+      },
+      {
+        "content": "frutas",
+        "boundingBox": [
+          358,
+          1014,
+          441,
+          1014,
+          441,
+          1041,
+          358,
+          1042
+        ],
+        "spans": [
+          {
+            "offset": 406,
+            "length": 6
+          }
+        ]
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          705,
+          985,
+          775,
+          986,
+          775,
+          1041,
+          703,
+          1040
+        ],
+        "spans": [
+          {
+            "offset": 413,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          898,
+          1046,
+          987,
+          1048,
+          985,
+          1126,
+          893,
+          1124
+        ],
+        "spans": [
+          {
+            "offset": 415,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "Cítricos",
+        "boundingBox": [
+          348,
+          1098,
+          451,
+          1097,
+          452,
+          1125,
+          348,
+          1125
+        ],
+        "spans": [
+          {
+            "offset": 417,
+            "length": 8
+          }
+        ]
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          1101,
+          1132,
+          1186,
+          1129,
+          1188,
+          1204,
+          1101,
+          1208
+        ],
+        "spans": [
+          {
+            "offset": 426,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "Vinagre",
+        "boundingBox": [
+          346,
+          1184,
+          449,
+          1184,
+          449,
+          1209,
+          346,
+          1208
+        ],
+        "spans": [
+          {
+            "offset": 428,
+            "length": 7
+          }
+        ]
+      },
+      {
+        "content": "Bebidas carbonatadas: Coca-Cola, Pepsi, Sprite, Red Bull, Fanta ...",
+        "boundingBox": [
+          358,
+          1286,
+          1213,
+          1280,
+          1214,
+          1316,
+          358,
+          1323
+        ],
+        "spans": [
+          {
+            "offset": 436,
+            "length": 67
+          }
+        ]
+      },
+      {
+        "content": "Bebidas deportivas: Isostar, Powarade, Gatorade, Aquarius ...",
+        "boundingBox": [
+          358,
+          1331,
+          1159,
+          1323,
+          1159,
+          1358,
+          358,
+          1367
+        ],
+        "spans": [
+          {
+            "offset": 504,
+            "length": 61
+          }
+        ]
+      },
+      {
+        "content": "Bebidas energéticas: Monster, Red-Bull ...",
+        "boundingBox": [
+          360,
+          1376,
+          905,
+          1368,
+          906,
+          1403,
+          360,
+          1412
+        ],
+        "spans": [
+          {
+            "offset": 566,
+            "length": 42
+          }
+        ]
+      },
+      {
+        "content": "-",
+        "boundingBox": [
+          309,
+          1427,
+          341,
+          1426,
+          339,
+          1451,
+          308,
+          1453
+        ],
+        "spans": [
+          {
+            "offset": 609,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "Cítricos: Piña, ciruela, mora, frambuesa, naranja, lima, limón, fresas, níspero,",
+        "boundingBox": [
+          356,
+          1416,
+          1427,
+          1408,
+          1428,
+          1446,
+          356,
+          1456
+        ],
+        "spans": [
+          {
+            "offset": 611,
+            "length": 80
+          }
+        ]
+      },
+      {
+        "content": "granada, mandarina, uva ...",
+        "boundingBox": [
+          357,
+          1465,
+          725,
+          1459,
+          726,
+          1494,
+          357,
+          1504
+        ],
+        "spans": [
+          {
+            "offset": 692,
+            "length": 27
+          }
+        ]
+      }
+    ]
+  }

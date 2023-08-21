@@ -477,61 +477,71 @@ def read_and_extract_page_two(azure_vision_json):
                     GRAL["Q22_full_text"] = get_next_words(words, idx + len(nadador_pro), "(indicar")
 
 def read_and_extract_page_three(azure_page_3_json):
+    GRAL_page_3 = {}
     with open(azure_page_3_json) as json_file:
         data = json.load(json_file)
 
         words = data["words"]
         lines = data["lines"]
 
-        print("Type:", type(data))
-        print("Type:", type(words))
-        print("Type:", type(lines))
+        x_appearences = []
+        for i,x in enumerate(words):
+            if words[i]["content"] == "×" or words[i]["content"] == "X" or words[i]["content"] == "x":
+                x_appearences.append(words[i]["boundingBox"])
+        
+        print(x_appearences)
 
+        cabeza_x = []
+        cuerpo_x = []
+        boca_arriba_box = []
+        boca_abajo_box = []
+        lado_derecho_lado_box = []
+        lado_derecho_derecho_box = []
+        lado_izquierdo_lado_box = []
+        lado_izquierdo_izquierda_box = []
+        NO_box = []
+        SI_box = []
+        ortodontico = []
+        conservador = []
+        quirurgico = []
+        periodontal = []
+        protesico = []
         for idx, word in enumerate(words):
             # print("CONTENT: ", word['content'])
 
             # Q23, Dormir posicion
-            posicion_dormir = ["En","qué","posición","suele","dormir","con","más", "frecuencia?"]
-            if words[idx]["content"] == "En":
-                res = all(
-                    words[idx + index]["content"] == element
-                    for index,element in enumerate(posicion_dormir)
-                )
-                if res:
-                    boca_arriba_box = words[idx + len(posicion_dormir)]["boundingBox"]
-                    boca_abajo_box = words[idx + len(posicion_dormir) + 1]["boundingBox"]
-                    # "Lado"
-                    lado_derecho_lado_box = words[idx + len(posicion_dormir) + 2]["boundingBox"]
-                    # "derecho"
-                    lado_derecho_derecho_box = words[idx + len(posicion_dormir) + 3]["boundingBox"]
-                    # "Lado"
-                    lado_izquierdo_lado_box = words[idx + len(posicion_dormir) + 4]["boundingBox"]
-                    # "izquierdo"
-                    lado_izquierdo_izquierda_box = words[idx + len(posicion_dormir) + 5]["boundingBox"]
+            if words[idx]["content"] == "Cabeza":
+                cabeza_x = words[idx + 1]["boundingBox"] # get 'X'
 
-                    cabeza = words[idx + len(posicion_dormir) + 7]["boundingBox"]
-                    cuerpo = words[idx + len(posicion_dormir) + 9]["boundingBox"]
+            if words[idx]["content"] == "Cuerpo":
+                cuerpo_x = words[idx + 1]["boundingBox"] # get 'X'
                     
-                    if (boca_arriba_box[0] - 20) <= cabeza[0] <= (boca_arriba_box[2] + 20):
-                        Q23 = 1
-                    elif (boca_abajo_box[0] - 20) <= cabeza[0] <= (boca_abajo_box[2] + 20):
-                        Q23 = 2
-                    elif (lado_derecho_lado_box[0] - 20) <= cabeza[0] <= (lado_derecho_derecho_box[2] + 20):
-                        Q23 = 3
-                    elif (lado_izquierdo_lado_box[0] - 20) <= cabeza[0] <= (lado_izquierdo_izquierda_box[2] + 20):
-                        Q23 = 4
-                    print("Posicion dormir, cabeza: ", Q23)
-                    GRAL["Q23_posB"] = Q23
+            if (words[idx]["content"] == "¿En" or words[idx]["content"] == "En")\
+                and words[idx + 1]["content"] == "qué"\
+                and words[idx + 2]["content"] == "posición"\
+                and words[idx + 3]["content"] == "suele"\
+                and words[idx + 4]["content"] == "dormir"\
+                and words[idx + 5]["content"] == "con"\
+                and words[idx + 6]["content"] == "más"\
+                and (words[idx + 7]["content"] == "frecuencia?" or words[idx + 7]["content"] == "frecuencia"):
 
-                    if (boca_arriba_box[0] - 20) <= cuerpo[0] <= (boca_arriba_box[2] + 20):
-                        GRAL["Q23_posH"] = 1
-                    elif (boca_abajo_box[0] - 20) <= cuerpo[0] <= (boca_abajo_box[2] + 20):
-                        GRAL["Q23_posH"] = 2
-                    elif (lado_derecho_lado_box[0] - 20) <= cuerpo[0] <= (lado_derecho_derecho_box[2] + 20):
-                        GRAL["Q23_posH"] = 3
-                    elif (lado_izquierdo_lado_box[0] - 20) <= cuerpo[0] <= (lado_izquierdo_izquierda_box[2] + 20):
-                        GRAL["Q23_posH"] = 4
-                    print("Posicion dormir, cuerpo: ", GRAL["Q23_posH"])
+                idx_start_for_boxes = 0
+                if words[idx + 8]["content"] == "?":
+                    idx_start_for_boxes = idx + 9
+                else:
+                    idx_start_for_boxes = idx + 8
+
+                boca_arriba_box = words[idx_start_for_boxes]["boundingBox"]
+                boca_abajo_box = words[idx_start_for_boxes + 1]["boundingBox"]
+                # "Lado"
+                lado_derecho_lado_box = words[idx_start_for_boxes + 2]["boundingBox"]
+                # "derecho"
+                lado_derecho_derecho_box = words[idx_start_for_boxes + 3]["boundingBox"]
+                # "Lado"
+                lado_izquierdo_lado_box = words[idx_start_for_boxes + 4]["boundingBox"]
+                # "izquierdo"
+                lado_izquierdo_izquierda_box = words[idx_start_for_boxes + 5]["boundingBox"]
+
 
             # Q24, Higiene oral
             cepillar_dientes = ["¿Cuántas","veces","al","día","se","cepilla","los", "dientes?"]
@@ -542,7 +552,7 @@ def read_and_extract_page_three(azure_page_3_json):
                 )
                 if res:
                     print("Cuantas veces cepilla dientes: ", words[idx + len(cepillar_dientes)]["content"])
-                    GRAL["Q24"] = words[idx + len(cepillar_dientes)]["content"]
+                    GRAL_page_3["Q24"] = words[idx + len(cepillar_dientes)]["content"]
 
             # Q25, Cepillo manual
             cepillo_manual = ["¿Utiliza","cepillo","manual","o","eléctrico?"]
@@ -556,11 +566,11 @@ def read_and_extract_page_three(azure_page_3_json):
                     Q25 = words[idx + len(cepillo_manual)]["content"]
 
                     if re.search("manual", Q25, re.IGNORECASE):
-                        GRAL["Q25"] = 0
+                        GRAL_page_3["Q25"] = 0
                     elif re.search("ambos", Q25, re.IGNORECASE):
-                        GRAL["Q25"] = "0,5"
+                        GRAL_page_3["Q25"] = "0,5"
                     elif re.search("ctrico", Q25, re.IGNORECASE):
-                        GRAL["Q25"] = 1
+                        GRAL_page_3["Q25"] = 1
 
             # Q26, Blandas, medias o duras
             cerdas = ["¿Utiliza","un","cepillo","de","cerdas","blandas,","medias","o","duras?"]
@@ -574,102 +584,150 @@ def read_and_extract_page_three(azure_page_3_json):
                     Q26 = words[idx + len(cerdas)]["content"]
 
                     if re.search("blandas", Q26, re.IGNORECASE):
-                        GRAL["Q26"] = 0
+                        GRAL_page_3["Q26"] = 0
                     elif re.search("medias", Q26, re.IGNORECASE):
-                        GRAL["Q26"] = 1
+                        GRAL_page_3["Q26"] = 1
                     elif re.search("duras", Q26, re.IGNORECASE):
-                        GRAL["Q26"] = 2
+                        GRAL_page_3["Q26"] = 2
  
             # Q27, Presion
-            GRAL["Q27"] = "CANNOT_MAP_DATA"
+            GRAL_page_3["Q27"] = "CANNOT_MAP_DATA"
 
             # Q28, Mano cepillar dientes
-            GRAL["Q28"] = "CANNOT_MAP_DATA"
+            GRAL_page_3["Q28"] = "CANNOT_MAP_DATA"
 
             # Q29, Lado masticar
-            GRAL["Q29"] = "CANNOT_MAP_DATA"
+            GRAL_page_3["Q29"] = "CANNOT_MAP_DATA"
 
             # Q30, Que pasta dientes
-            GRAL["Q30"] = "CANNOT_MAP_DATA"
+            GRAL_page_3["Q30"] = "CANNOT_MAP_DATA"
 
             # Q31, Blanqueamiento dientes
-            GRAL["Q31"] = "CANNOT_MAP_DATA"
+            GRAL_page_3["Q31"] = "CANNOT_MAP_DATA"
 
             # Q25, Cepillo manual
-            historia_dental = ["Tratamiento","dental:"]
-            if words[idx]["content"] == "Tratamiento":
-                res = all(
-                    words[idx + index]["content"] == element
-                    for index,element in enumerate(historia_dental)
-                )
-                if res:
-                    #print(" ".join(historia_dental), words[idx + len(historia_dental)]["content"])
-                    NO_box = words[idx + len(historia_dental)]["boundingBox"]
-                    SI_box = words[idx + len(historia_dental) + 2]["boundingBox"]
+            if words[idx]["content"] == "Conservador":
+                conservador = words[idx]["boundingBox"]
 
-                    conservador = words[idx + len(historia_dental) + 7]["boundingBox"] # box of 'X'
-                    conservador_full_text = get_next_words(words, idx + len(historia_dental) + 7, "Ortodóntico") # words in 'Cual:'
-                    GRAL["conservador_full_text"] = conservador_full_text
 
-                    # since conservador can have a lot of text, look for the index of the next word
-                    ortodontico_idx = lookahead_and_get_index(words, idx, "Ortodóntico")
-                    ortodontico = words[ortodontico_idx + 1]["boundingBox"] # box of 'X'
-                    ortodontico_full_text = get_next_words(words, ortodontico_idx + 1, "Quirúrgico") # words in 'Cual:'
-                    GRAL["ortodontico_full_text"] = ortodontico_full_text
+            if words[idx]["content"] == "Ortodóntico":
+                ortodontico = words[idx]["boundingBox"]
 
-                    quirurjico_idx = lookahead_and_get_index(words, idx, "etc)")
-                    quirurjico = words[quirurjico_idx + 1]["boundingBox"] # box of 'X'
-                    quirurjico_full_text = get_next_words(words, quirurjico_idx + 1, "Periodontal") # words in 'Cual:'
-                    GRAL["quirurjico_full_text"] = quirurjico_full_text
+            if words[idx]["content"] == "Quirúrgico":
+                quirurgico = words[idx]["boundingBox"]
 
-                    periodontal_idx = lookahead_and_get_index(words, idx, "Periodontal")
-                    periodontal = words[periodontal_idx + 1]["boundingBox"] # box of 'X'
-                    periodontal_full_text = get_next_words(words, periodontal_idx + 1, "Protésico") # words in 'Cual:'
-                    GRAL["periodontal_full_text"] = periodontal_full_text
+            if words[idx]["content"] == "Periodontal":
+                periodontal = words[idx]["boundingBox"]
 
-                    protesico_idx = lookahead_and_get_index(words, idx, "Protésico")
-                    protesico = words[protesico_idx + 1]["boundingBox"] # box of 'X'
-                    try:
-                        protesico_full_text = get_next_words(words, protesico_idx + 1, "") # words in 'Cual:'
-                        GRAL["protesico_full_text"] = protesico_full_text
-                    except IndexError:
-                        GRAL["protesico_full_text"] = ""
+            if words[idx]["content"] == "Protésico" or words[idx]["content"] == "Protesico":
+                protesico = words[idx]["boundingBox"]
 
-                    if NO_box[0] - 20 <= conservador[0] <= NO_box[2] + 20:
-                        GRAL["conservador"] = 0
-                    elif SI_box[0] - 20 <= conservador[0] <= SI_box[2] + 20:
-                        GRAL["conservador"] = 1
 
-                    if NO_box[0] - 20 <= ortodontico[0] <= NO_box[2] + 20:
-                        GRAL["ortodontico"] = 0
-                    elif SI_box[0] - 20 <= ortodontico[0] <= SI_box[2] + 20:
-                        GRAL["ortodontico"] = 1
+            # historia_dental = ["Tratamiento","dental:"]
+            # if words[idx]["content"] == "Tratamiento":
+            #     res = all(
+            #         words[idx + index]["content"] == element
+            #         for index,element in enumerate(historia_dental)
+            #     )
+            #     if res:
+            #         NO_box = words[idx + len(historia_dental)]["boundingBox"]
+            #         SI_box = words[idx + len(historia_dental) + 2]["boundingBox"]
 
-                    if NO_box[0] - 20 <= quirurjico[0] <= NO_box[2] + 20:
-                        GRAL["quirurjico"] = 0
-                    elif SI_box[0] - 20 <= quirurjico[0] <= SI_box[2] + 20:
-                        GRAL["quirurjico"] = 1
+            if re.match("NO", words[idx]["content"]):
+                NO_box = words[idx]["boundingBox"]
 
-                    if NO_box[0] - 20 <= periodontal[0] <= NO_box[2] + 20:
-                        GRAL["periodontal"] = 0
-                    elif SI_box[0] - 20 <= periodontal[0] <= SI_box[2] + 20:
-                        GRAL["periodontal"] = 1
+            # need to escape the '|', bc will select all document
+            if re.match("SI", words[idx]["content"]) or re.match(r"\|SI", words[idx]["content"]):
+                SI_box = words[idx]["boundingBox"]
 
-                    if NO_box[0] - 20 <= protesico[0] <= NO_box[2] + 20:
-                        GRAL["protesico"] = 0
-                    elif SI_box[0] - 20 <= protesico[0] <= SI_box[2] + 20:
-                        GRAL["protesico"] = 1                      
+        for x in x_appearences:
+            # print("x: ", x)
+            # print("x[0]: ", x[0])
+            # print("NO_box[0] - 20: ", NO_box[0] - 20)
+            # print("NO_box[2] + 50: ", NO_box[2] + 50)
+            # print("SI_box: ", SI_box)
+            # print("NO_box: ", NO_box)
+            # print("SI_box[0] - 20: ", SI_box[0] - 20)
+            # print("SI_box[2] + 50: ", SI_box[2] + 50)
+            # print("((x[1] + x[5]) / 2): ", ((x[1] + x[5]) / 2))
+            # print("conservador[1] - 10: ", conservador[1] - 10)
+            # print("conservador[5] + 10: ", conservador[5] + 10)
+            # print("ortodontico[1] - 10: ", ortodontico[1] - 10)
+            # print("ortodontico[5] + 10: ", ortodontico[5] + 10)
+            # print("quirurgico[1] - 10: ", quirurgico[1] - 10)
+            # print("quirurgico[5] + 10: ", quirurgico[5] + 10)
+            # print("periodontal[1] - 10: ", periodontal[1] - 10)
+            # print("periodontal[5] + 10: ", periodontal[5] + 10)
+            # print("protesico[1] - 10: ", protesico[1] - 10)
+            # print("protesico[5] + 10: ", protesico[5] + 10)
+            if NO_box[0] - 20 <= x[0] <= NO_box[2] + 40\
+                and conservador[1] - 10 <= ((x[1] + x[5]) / 2) <= conservador[5] + 10:
+                GRAL_page_3["conservador"] = 0; continue
+            elif SI_box[0] - 20 <= x[0] <= SI_box[2] + 40\
+                and conservador[1] - 10 <= ((x[1] + x[5]) / 2) <= conservador[5] + 10:
+                GRAL_page_3["conservador"] = 1; continue
+
+            if NO_box[0] - 20 <= x[0] <= NO_box[2] + 40\
+                and ortodontico[1] - 10 <= ((x[1] + x[5]) / 2) <= ortodontico[5] + 10:
+                GRAL_page_3["ortodontico"] = 0; continue
+            elif SI_box[0] - 20 <= x[0]<= SI_box[2] + 40\
+                and ortodontico[1] - 10 <= ((x[1] + x[5]) / 2) <= ortodontico[5] + 10:
+                GRAL_page_3["ortodontico"] = 1; continue
+
+            if NO_box[0] - 20 <= x[0] <= NO_box[2] + 40\
+                and quirurgico[1] - 10 <= ((x[1] + x[5]) / 2) <= quirurgico[5] + 10:
+                GRAL_page_3["quirurgico"] = 0; continue
+            elif SI_box[0] - 20 <= x[0] <= SI_box[2] + 40\
+                and quirurgico[1] - 10 <= ((x[1] + x[5]) / 2) <= quirurgico[5] + 10:
+                GRAL_page_3["quirurgico"] = 1; continue
+
+            if NO_box[0] - 20 <= x[0] <= NO_box[2] + 50\
+                and periodontal[1] - 10 <= ((x[1] + x[5]) / 2) <= periodontal[5] + 10:
+                GRAL_page_3["periodontal"] = 0; continue
+            elif SI_box[0] - 20 <= x[0] <= SI_box[2] + 20\
+                and periodontal[1] - 10 <= ((x[1] + x[5]) / 2) <= periodontal[5] + 10:
+                GRAL_page_3["periodontal"] = 1; continue
+
+            if NO_box[0] - 20 <= x[0] <= NO_box[2] + 50\
+                and protesico[1] - 10 <= ((x[1] + x[5]) / 2) <= protesico[5] + 10:
+                GRAL_page_3["protesico"] = 0; continue
+            elif SI_box[0] - 20 <= x[0] <= SI_box[2] + 50\
+                and protesico[1] - 10 <= ((x[1] + x[5]) / 2) <= protesico[5] + 10:
+                GRAL_page_3["protesico"] = 1; continue                   
+
+        if (boca_arriba_box[0] - 20) <= cabeza_x[0] <= (boca_arriba_box[2] + 20):
+            Q23 = 1
+        elif (boca_abajo_box[0] - 20) <= cabeza_x[0] <= (boca_abajo_box[2] + 20):
+            Q23 = 2
+        elif (lado_derecho_lado_box[0] - 20) <= cabeza_x[0] <= (lado_derecho_derecho_box[2] + 20):
+            Q23 = 3
+        elif (lado_izquierdo_lado_box[0] - 20) <= cabeza_x[0] <= (lado_izquierdo_izquierda_box[2] + 20):
+            Q23 = 4
+        print("Posicion dormir, cabeza: ", Q23)
+        GRAL_page_3["Q23_posB"] = Q23
+
+        if (boca_arriba_box[0] - 20) <= cuerpo_x[0] <= (boca_arriba_box[2] + 20):
+            GRAL_page_3["Q23_posH"] = 1
+        elif (boca_abajo_box[0] - 20) <= cuerpo_x[0] <= (boca_abajo_box[2] + 20):
+            GRAL_page_3["Q23_posH"] = 2
+        elif (lado_derecho_lado_box[0] - 20) <= cuerpo_x[0] <= (lado_derecho_derecho_box[2] + 20):
+            GRAL_page_3["Q23_posH"] = 3
+        elif (lado_izquierdo_lado_box[0] - 20) <= cuerpo_x[0] <= (lado_izquierdo_izquierda_box[2] + 20):
+            GRAL_page_3["Q23_posH"] = 4
+
+        return GRAL_page_3
+
+azure_page_3_json = "/home/daniel_master/workspace/softprojects/desgast_scan_to_text/tests/page_3/pg_0004.json"
+GRAL_page_3 = read_and_extract_page_three(azure_page_3_json)
+print(GRAL_page_3)
 
 def read_and_extract_page_four(azure_page_4_json):
+    GRAL_page_4 = {}
     with open(azure_page_4_json) as json_file:
         data = json.load(json_file)
 
         words = data["words"]
         lines = data["lines"]
-
-        print("Type:", type(data))
-        print("Type:", type(words))
-        print("Type:", type(lines))
 
         # Extract all "X" occurrences in order of appearance and then map them
         # It is easier and faster that trying to match every text.
@@ -685,40 +743,60 @@ def read_and_extract_page_four(azure_page_4_json):
         veces_sem_1_2 = []
         veces_sem_3_4 = []
         veces_sem_5_6 = []
+        veces_semanas = []
         for idx, word in enumerate(words):
 
             # Q32, Dieta crudivegana
-            crudivegana = ["¿Sigue","una","dieta","crudivegana?"]
-            if words[idx]["content"] == "¿Sigue":
-                res = all(
-                    words[idx + index]["content"] == element
-                    for index,element in enumerate(crudivegana)
-                )
-                print(res)
-                if res:
-                    print(" ".join(crudivegana), words[idx + len(crudivegana)]["content"])
-                    Q32 = words[idx + len(crudivegana)]["content"]
+            crudivegana = ["Sigue","una","dieta","crudivegana?"]
+            if (words[idx]["content"] == "¿Sigue" or words[idx]["content"] == "Sigue")\
+                and words[idx + 1]["content"] == "una"\
+                and words[idx + 2]["content"] == "dieta"\
+                and (words[idx + 3]["content"] == "crudivegana?" or words[idx + 3]["content"] == "crudivegana"):
 
-                    GRAL["Q32"] = check_yes_no(Q32)
+                if words[idx + 4]["content"] == "?":
+                    Q32 = words[idx + 5]["content"]
+                else:
+                    Q32 = words[idx + 4]["content"]
+                print("Q32: ", Q32)
+                GRAL_page_4["Q32"] = check_yes_no(Q32)
+                # res = all(
+                #     words[idx + index]["content"] == element
+                #     for index,element in enumerate(crudivegana)
+                # )
+                # print(res)
+                # if res:
+                #     print(" ".join(crudivegana), words[idx + len(crudivegana)]["content"])
+                #     Q32 = words[idx + len(crudivegana)]["content"]
+                #     print("Q32: ", Q32)
+                #     GRAL_page_4["Q32"] = check_yes_no(Q32)
 
 
             if words[idx]["content"] == "Nunca":
                 nunca_box = words[idx]["boundingBox"]
-                veces_sem_1_2 = words[idx + 1]["boundingBox"]
-                veces_sem_3_4 = words[idx + 2]["boundingBox"]
-                veces_sem_5_6 = words[idx + 4]["boundingBox"]
+                # veces_sem_1_2 = words[idx + 1]["boundingBox"]
+                # veces_sem_3_4 = words[idx + 2]["boundingBox"]
+                # veces_sem_5_6 = words[idx + 4]["boundingBox"]
+            
+            if words[idx]["content"] == "veces/semana":
+                veces_semanas.append(words[idx]["boundingBox"])
 
         for q,x in bebidas_with_boxes.items():
             if nunca_box[0] - 20 <= x[0] <= nunca_box[2] + 20:
-                GRAL[q] = 0
-            elif veces_sem_1_2[0] - 20 <= x[0] <= veces_sem_1_2[2] + 20:
-                GRAL[q] = 1
-            elif veces_sem_3_4[0] - 20 <= x[0] <= veces_sem_3_4[2] + 20:
-                GRAL[q] = 2
-            elif veces_sem_5_6[0] - 20 <= x[0] <= veces_sem_5_6[2] + 20:
-                GRAL[q] = 3
-            else:
-                GRAL[q] = 4
+                GRAL_page_4[q] = 0
+            elif veces_semanas[0][0] - 20 <= x[0] <= veces_semanas[0][2] + 20:
+                GRAL_page_4[q] = 1
+            elif veces_semanas[1][0] - 20 <= x[0] <= veces_semanas[1][2] + 20:
+                GRAL_page_4[q] = 2
+            elif veces_semanas[2][0] - 20 <= x[0] <= veces_semanas[2][2] + 20:
+                GRAL_page_4[q] = 3
+            elif x[0] > veces_semanas[2][2]:
+                GRAL_page_4[q] = 4
+
+        return GRAL_page_4
+
+# azure_page_4_json = "/home/daniel_master/workspace/softprojects/desgast_scan_to_text/tests/page_4/pg_0005.json"
+# GRAL_page_4 = read_and_extract_page_four(azure_page_4_json)
+# print(GRAL_page_4)
 
 def read_and_extract_page_six(azure_page_6_json):
     GRAL_page_6 = {}
@@ -913,9 +991,9 @@ def read_and_extract_page_seven(azure_page_7_json):
 
         return GRAL_page_7
 
-azure_page_7_json = "/home/daniel_master/workspace/softprojects/desgast_scan_to_text/tests/page_7/pg_0005.json"
-GRAL_page_7 = read_and_extract_page_seven(azure_page_7_json)
-print(GRAL_page_7)
+# azure_page_7_json = "/home/daniel_master/workspace/softprojects/desgast_scan_to_text/tests/page_7/pg_0005.json"
+# GRAL_page_7 = read_and_extract_page_seven(azure_page_7_json)
+# print(GRAL_page_7)
 
 
 def get_number_upper_row(numbers_info, number, teeth_box, sextant_n):
