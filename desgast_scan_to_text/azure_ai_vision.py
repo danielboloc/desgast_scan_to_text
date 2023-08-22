@@ -1,5 +1,8 @@
 import json
 import re
+import os
+import pandas as pd
+import datetime as dt
 
 
 azure_vision_json = "/home/daniel_master/workspace/softprojects/desgast_scan_to_text/data/azure_ai_vision_studio/test_case_1.json"
@@ -1419,4 +1422,52 @@ def read_and_extract_page_one(azure_vision_json):
 # print(GRAL_page_1)
 
 def read_sample_jsons(path_to_sample_folders):
-    pass
+    
+    # r = []
+    # subdirs = [x[0] for x in os.walk(path_to_sample_folders)]
+    # for subdir in subdirs:
+    #     files = os.walk(subdir).__next__()[2]
+    #     for file in files:
+    #         r.append(os.path.join(subdir, file))
+    # print(subdirs)
+    # print(r)
+
+    THE_ONE_RING = dict()
+    for subdir in os.listdir(path_to_sample_folders):
+        subdir_path = os.path.join(path_to_sample_folders, subdir)
+        # checking if it is a dir
+        if os.path.isdir(subdir_path):
+            print(subdir_path)
+            if subdir not in THE_ONE_RING:
+                THE_ONE_RING[subdir] = {}
+            for file in os.listdir(subdir_path):
+                file_path = os.path.join(subdir_path, file)
+                # checking if it is a file
+                if os.path.isfile(file_path):
+                    print(file_path)
+                if file not in THE_ONE_RING[subdir]:
+                    if file == "page_1.json":
+                        THE_ONE_RING[subdir].update(read_and_extract_page_one(file_path))
+                    elif file == "page_2.json":
+                        THE_ONE_RING[subdir].update(read_and_extract_page_two(file_path))
+                    elif file == "page_3.json":
+                        THE_ONE_RING[subdir].update(read_and_extract_page_three(file_path))
+                    elif file == "page_4.json":
+                        THE_ONE_RING[subdir].update(read_and_extract_page_four(file_path))
+                    elif file == "page_6.json":
+                        THE_ONE_RING[subdir].update(read_and_extract_page_six(file_path))
+                    elif file == "page_7.json":
+                        THE_ONE_RING[subdir].update(read_and_extract_page_seven(file_path))
+                    elif file == "page_10.json":
+                        THE_ONE_RING[subdir].update(read_and_extract_page_ten(file_path))
+                    
+    df = pd.DataFrame.from_dict(THE_ONE_RING, orient='index')
+    today = dt.datetime.today().strftime("%m_%d_%Y_%s")
+    output_filename = f"samples_images_converted_to_table_{today}.tsv"
+    df.to_csv(os.path.join(path_to_sample_folders, output_filename), sep="\t")
+    #print(THE_ONE_RING)
+
+dir_path = os.path.dirname(os.path.realpath(__file__))
+data_path = os.path.realpath(os.path.join(dir_path, "../data/samples"))
+
+read_sample_jsons(data_path)
