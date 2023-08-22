@@ -1,0 +1,5007 @@
+  {
+    "height": 2540,
+    "width": 1804,
+    "angle": -0.5423,
+    "pageNumber": 1,
+    "words": [
+      {
+        "content": "Data:",
+        "boundingBox": [
+          265,
+          263,
+          348,
+          259,
+          349,
+          308,
+          266,
+          308
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 0,
+          "length": 5
+        }
+      },
+      {
+        "content": "28/2/22",
+        "boundingBox": [
+          359,
+          259,
+          577,
+          252,
+          577,
+          308,
+          360,
+          308
+        ],
+        "confidence": 0.855,
+        "span": {
+          "offset": 6,
+          "length": 7
+        }
+      },
+      {
+        "content": "Codi",
+        "boundingBox": [
+          587,
+          252,
+          634,
+          251,
+          634,
+          308,
+          588,
+          308
+        ],
+        "confidence": 0.989,
+        "span": {
+          "offset": 14,
+          "length": 4
+        }
+      },
+      {
+        "content": "d'identificació:",
+        "boundingBox": [
+          644,
+          251,
+          869,
+          247,
+          870,
+          306,
+          645,
+          308
+        ],
+        "confidence": 0.986,
+        "span": {
+          "offset": 19,
+          "length": 16
+        }
+      },
+      {
+        "content": "042",
+        "boundingBox": [
+          880,
+          247,
+          955,
+          247,
+          955,
+          306,
+          880,
+          306
+        ],
+        "confidence": 0.98,
+        "span": {
+          "offset": 36,
+          "length": 3
+        }
+      },
+      {
+        "content": "Grup:",
+        "boundingBox": [
+          966,
+          247,
+          1055,
+          247,
+          1055,
+          304,
+          966,
+          305
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 40,
+          "length": 5
+        }
+      },
+      {
+        "content": "TCA",
+        "boundingBox": [
+          1066,
+          247,
+          1134,
+          247,
+          1134,
+          303,
+          1066,
+          304
+        ],
+        "confidence": 0.754,
+        "span": {
+          "offset": 46,
+          "length": 3
+        }
+      },
+      {
+        "content": "Telèfon:",
+        "boundingBox": [
+          1145,
+          247,
+          1279,
+          249,
+          1279,
+          301,
+          1145,
+          303
+        ],
+        "confidence": 0.436,
+        "span": {
+          "offset": 50,
+          "length": 8
+        }
+      },
+      {
+        "content": "Cuestionario.",
+        "boundingBox": [
+          269,
+          360,
+          496,
+          355,
+          496,
+          397,
+          269,
+          398
+        ],
+        "confidence": 0.991,
+        "span": {
+          "offset": 59,
+          "length": 13
+        }
+      },
+      {
+        "content": "Bloque",
+        "boundingBox": [
+          505,
+          355,
+          626,
+          353,
+          625,
+          396,
+          504,
+          397
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 73,
+          "length": 6
+        }
+      },
+      {
+        "content": "1.",
+        "boundingBox": [
+          635,
+          352,
+          664,
+          352,
+          663,
+          396,
+          634,
+          396
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 80,
+          "length": 2
+        }
+      },
+      {
+        "content": "Información",
+        "boundingBox": [
+          672,
+          352,
+          883,
+          349,
+          882,
+          394,
+          672,
+          396
+        ],
+        "confidence": 0.926,
+        "span": {
+          "offset": 83,
+          "length": 11
+        }
+      },
+      {
+        "content": "demográfica",
+        "boundingBox": [
+          892,
+          349,
+          1105,
+          346,
+          1104,
+          392,
+          891,
+          394
+        ],
+        "confidence": 0.957,
+        "span": {
+          "offset": 95,
+          "length": 11
+        }
+      },
+      {
+        "content": "y",
+        "boundingBox": [
+          1114,
+          346,
+          1134,
+          346,
+          1133,
+          392,
+          1113,
+          392
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 107,
+          "length": 1
+        }
+      },
+      {
+        "content": "hábitos",
+        "boundingBox": [
+          1142,
+          346,
+          1269,
+          345,
+          1269,
+          391,
+          1142,
+          392
+        ],
+        "confidence": 0.991,
+        "span": {
+          "offset": 109,
+          "length": 7
+        }
+      },
+      {
+        "content": "de",
+        "boundingBox": [
+          1278,
+          345,
+          1321,
+          345,
+          1320,
+          391,
+          1277,
+          391
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 117,
+          "length": 2
+        }
+      },
+      {
+        "content": "salud:",
+        "boundingBox": [
+          1330,
+          344,
+          1443,
+          344,
+          1442,
+          390,
+          1329,
+          391
+        ],
+        "confidence": 0.991,
+        "span": {
+          "offset": 120,
+          "length": 6
+        }
+      },
+      {
+        "content": "Fecha",
+        "boundingBox": [
+          289,
+          460,
+          373,
+          458,
+          371,
+          491,
+          287,
+          491
+        ],
+        "confidence": 0.992,
+        "span": {
+          "offset": 127,
+          "length": 5
+        }
+      },
+      {
+        "content": "Nacimiento",
+        "boundingBox": [
+          381,
+          457,
+          549,
+          453,
+          547,
+          492,
+          379,
+          491
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 133,
+          "length": 10
+        }
+      },
+      {
+        "content": "28/10/93",
+        "boundingBox": [
+          565,
+          452,
+          716,
+          449,
+          714,
+          492,
+          563,
+          492
+        ],
+        "confidence": 0.731,
+        "span": {
+          "offset": 144,
+          "length": 8
+        }
+      },
+      {
+        "content": "Peso",
+        "boundingBox": [
+          723,
+          449,
+          782,
+          448,
+          780,
+          492,
+          722,
+          492
+        ],
+        "confidence": 0.991,
+        "span": {
+          "offset": 153,
+          "length": 4
+        }
+      },
+      {
+        "content": "(kg)",
+        "boundingBox": [
+          790,
+          448,
+          856,
+          447,
+          854,
+          492,
+          788,
+          492
+        ],
+        "confidence": 0.99,
+        "span": {
+          "offset": 158,
+          "length": 4
+        }
+      },
+      {
+        "content": "2",
+        "boundingBox": [
+          1603,
+          433,
+          1630,
+          433,
+          1629,
+          474,
+          1603,
+          474
+        ],
+        "confidence": 0.888,
+        "span": {
+          "offset": 163,
+          "length": 1
+        }
+      },
+      {
+        "content": "Sexo",
+        "boundingBox": [
+          304,
+          504,
+          371,
+          504,
+          371,
+          536,
+          304,
+          536
+        ],
+        "confidence": 0.991,
+        "span": {
+          "offset": 165,
+          "length": 4
+        }
+      },
+      {
+        "content": "7",
+        "boundingBox": [
+          629,
+          489,
+          659,
+          489,
+          659,
+          536,
+          628,
+          536
+        ],
+        "confidence": 0.279,
+        "span": {
+          "offset": 170,
+          "length": 1
+        }
+      },
+      {
+        "content": "Profesión",
+        "boundingBox": [
+          724,
+          496,
+          861,
+          496,
+          861,
+          534,
+          724,
+          533
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 172,
+          "length": 9
+        }
+      },
+      {
+        "content": "tresalle",
+        "boundingBox": [
+          1343,
+          492,
+          1462,
+          491,
+          1460,
+          528,
+          1342,
+          530
+        ],
+        "confidence": 0.75,
+        "span": {
+          "offset": 182,
+          "length": 8
+        }
+      },
+      {
+        "content": "Zava,",
+        "boundingBox": [
+          1481,
+          492,
+          1566,
+          495,
+          1565,
+          529,
+          1480,
+          528
+        ],
+        "confidence": 0.072,
+        "span": {
+          "offset": 191,
+          "length": 5
+        }
+      },
+      {
+        "content": "estudi",
+        "boundingBox": [
+          1594,
+          484,
+          1686,
+          480,
+          1687,
+          512,
+          1592,
+          518
+        ],
+        "confidence": 0.829,
+        "span": {
+          "offset": 197,
+          "length": 6
+        }
+      },
+      {
+        "content": "H.",
+        "boundingBox": [
+          1704,
+          479,
+          1737,
+          478,
+          1739,
+          508,
+          1705,
+          511
+        ],
+        "confidence": 0.727,
+        "span": {
+          "offset": 204,
+          "length": 2
+        }
+      },
+      {
+        "content": "Altura",
+        "boundingBox": [
+          286,
+          546,
+          374,
+          546,
+          375,
+          581,
+          286,
+          582
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 207,
+          "length": 6
+        }
+      },
+      {
+        "content": "(cm)",
+        "boundingBox": [
+          381,
+          545,
+          449,
+          544,
+          450,
+          580,
+          382,
+          581
+        ],
+        "confidence": 0.991,
+        "span": {
+          "offset": 214,
+          "length": 4
+        }
+      },
+      {
+        "content": "156",
+        "boundingBox": [
+          594,
+          546,
+          671,
+          546,
+          671,
+          585,
+          594,
+          585
+        ],
+        "confidence": 0.993,
+        "span": {
+          "offset": 219,
+          "length": 3
+        }
+      },
+      {
+        "content": "Nivel",
+        "boundingBox": [
+          723,
+          542,
+          796,
+          542,
+          797,
+          575,
+          724,
+          575
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 223,
+          "length": 5
+        }
+      },
+      {
+        "content": "de",
+        "boundingBox": [
+          803,
+          542,
+          841,
+          541,
+          841,
+          575,
+          804,
+          575
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 229,
+          "length": 2
+        }
+      },
+      {
+        "content": "estudios",
+        "boundingBox": [
+          847,
+          541,
+          969,
+          540,
+          969,
+          574,
+          848,
+          575
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 232,
+          "length": 8
+        }
+      },
+      {
+        "content": "más",
+        "boundingBox": [
+          976,
+          540,
+          1036,
+          539,
+          1036,
+          574,
+          976,
+          574
+        ],
+        "confidence": 0.624,
+        "span": {
+          "offset": 241,
+          "length": 3
+        }
+      },
+      {
+        "content": "alto",
+        "boundingBox": [
+          1043,
+          539,
+          1098,
+          539,
+          1098,
+          573,
+          1042,
+          574
+        ],
+        "confidence": 0.989,
+        "span": {
+          "offset": 245,
+          "length": 4
+        }
+      },
+      {
+        "content": "completado",
+        "boundingBox": [
+          1105,
+          539,
+          1279,
+          537,
+          1279,
+          571,
+          1104,
+          573
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 250,
+          "length": 10
+        }
+      },
+      {
+        "content": "batxillerat",
+        "boundingBox": [
+          1376,
+          534,
+          1560,
+          534,
+          1560,
+          572,
+          1374,
+          573
+        ],
+        "confidence": 0.667,
+        "span": {
+          "offset": 261,
+          "length": 11
+        }
+      },
+      {
+        "content": "art",
+        "boundingBox": [
+          1611,
+          517,
+          1662,
+          514,
+          1662,
+          544,
+          1612,
+          546
+        ],
+        "confidence": 0.434,
+        "span": {
+          "offset": 273,
+          "length": 3
+        }
+      },
+      {
+        "content": "+",
+        "boundingBox": [
+          1678,
+          513,
+          1697,
+          512,
+          1697,
+          542,
+          1678,
+          543
+        ],
+        "confidence": 0.901,
+        "span": {
+          "offset": 277,
+          "length": 1
+        }
+      },
+      {
+        "content": "psico",
+        "boundingBox": [
+          1705,
+          512,
+          1771,
+          507,
+          1770,
+          538,
+          1705,
+          542
+        ],
+        "confidence": 0.482,
+        "span": {
+          "offset": 279,
+          "length": 5
+        }
+      },
+      {
+        "content": "Historia",
+        "boundingBox": [
+          272,
+          636,
+          388,
+          636,
+          386,
+          672,
+          271,
+          676
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 285,
+          "length": 8
+        }
+      },
+      {
+        "content": "médica:",
+        "boundingBox": [
+          395,
+          636,
+          519,
+          637,
+          517,
+          671,
+          394,
+          672
+        ],
+        "confidence": 0.849,
+        "span": {
+          "offset": 294,
+          "length": 7
+        }
+      },
+      {
+        "content": "¿Presenta",
+        "boundingBox": [
+          346,
+          684,
+          487,
+          684,
+          486,
+          721,
+          345,
+          720
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 302,
+          "length": 9
+        }
+      },
+      {
+        "content": "alguna",
+        "boundingBox": [
+          495,
+          684,
+          595,
+          683,
+          593,
+          721,
+          494,
+          721
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 312,
+          "length": 6
+        }
+      },
+      {
+        "content": "patología",
+        "boundingBox": [
+          602,
+          683,
+          728,
+          680,
+          726,
+          719,
+          601,
+          720
+        ],
+        "confidence": 0.943,
+        "span": {
+          "offset": 319,
+          "length": 9
+        }
+      },
+      {
+        "content": "importante?",
+        "boundingBox": [
+          735,
+          680,
+          929,
+          672,
+          927,
+          714,
+          734,
+          719
+        ],
+        "confidence": 0.989,
+        "span": {
+          "offset": 329,
+          "length": 11
+        }
+      },
+      {
+        "content": "No",
+        "boundingBox": [
+          980,
+          669,
+          1026,
+          666,
+          1024,
+          710,
+          979,
+          712
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 341,
+          "length": 2
+        }
+      },
+      {
+        "content": "¿Ha",
+        "boundingBox": [
+          344,
+          733,
+          397,
+          733,
+          397,
+          770,
+          344,
+          770
+        ],
+        "confidence": 0.991,
+        "span": {
+          "offset": 344,
+          "length": 3
+        }
+      },
+      {
+        "content": "sido",
+        "boundingBox": [
+          405,
+          733,
+          467,
+          732,
+          467,
+          770,
+          405,
+          770
+        ],
+        "confidence": 0.991,
+        "span": {
+          "offset": 348,
+          "length": 4
+        }
+      },
+      {
+        "content": "operado",
+        "boundingBox": [
+          475,
+          732,
+          592,
+          730,
+          593,
+          769,
+          476,
+          770
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 353,
+          "length": 7
+        }
+      },
+      {
+        "content": "alguna",
+        "boundingBox": [
+          601,
+          730,
+          701,
+          729,
+          702,
+          769,
+          601,
+          769
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 361,
+          "length": 6
+        }
+      },
+      {
+        "content": "vez?",
+        "boundingBox": [
+          709,
+          729,
+          779,
+          727,
+          780,
+          769,
+          710,
+          769
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 368,
+          "length": 4
+        }
+      },
+      {
+        "content": "Auguest",
+        "boundingBox": [
+          813,
+          727,
+          964,
+          723,
+          965,
+          769,
+          813,
+          769
+        ],
+        "confidence": 0.748,
+        "span": {
+          "offset": 373,
+          "length": 7
+        }
+      },
+      {
+        "content": "de",
+        "boundingBox": [
+          987,
+          723,
+          1029,
+          722,
+          1030,
+          768,
+          987,
+          769
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 381,
+          "length": 2
+        }
+      },
+      {
+        "content": "pit",
+        "boundingBox": [
+          1041,
+          722,
+          1106,
+          720,
+          1106,
+          768,
+          1042,
+          768
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 384,
+          "length": 3
+        }
+      },
+      {
+        "content": "¿Presenta",
+        "boundingBox": [
+          346,
+          782,
+          485,
+          781,
+          485,
+          819,
+          345,
+          820
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 388,
+          "length": 9
+        }
+      },
+      {
+        "content": "alguna",
+        "boundingBox": [
+          493,
+          781,
+          592,
+          780,
+          591,
+          818,
+          492,
+          819
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 398,
+          "length": 6
+        }
+      },
+      {
+        "content": "alergia?",
+        "boundingBox": [
+          599,
+          780,
+          720,
+          778,
+          720,
+          817,
+          599,
+          818
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 405,
+          "length": 8
+        }
+      },
+      {
+        "content": "NO",
+        "boundingBox": [
+          772,
+          777,
+          817,
+          777,
+          816,
+          817,
+          771,
+          817
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 414,
+          "length": 2
+        }
+      },
+      {
+        "content": ".",
+        "boundingBox": [
+          297,
+          834,
+          313,
+          834,
+          312,
+          861,
+          296,
+          860
+        ],
+        "confidence": 0.804,
+        "span": {
+          "offset": 417,
+          "length": 1
+        }
+      },
+      {
+        "content": "¿Toma",
+        "boundingBox": [
+          343,
+          830,
+          439,
+          829,
+          440,
+          868,
+          344,
+          869
+        ],
+        "confidence": 0.992,
+        "span": {
+          "offset": 419,
+          "length": 5
+        }
+      },
+      {
+        "content": "alguna",
+        "boundingBox": [
+          448,
+          829,
+          554,
+          828,
+          554,
+          867,
+          448,
+          868
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 425,
+          "length": 6
+        }
+      },
+      {
+        "content": "medicación",
+        "boundingBox": [
+          562,
+          828,
+          717,
+          827,
+          718,
+          865,
+          563,
+          867
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 432,
+          "length": 10
+        }
+      },
+      {
+        "content": "de",
+        "boundingBox": [
+          725,
+          827,
+          766,
+          826,
+          767,
+          865,
+          726,
+          865
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 443,
+          "length": 2
+        }
+      },
+      {
+        "content": "manera",
+        "boundingBox": [
+          774,
+          826,
+          875,
+          824,
+          875,
+          863,
+          775,
+          865
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 446,
+          "length": 6
+        }
+      },
+      {
+        "content": "habitual?",
+        "boundingBox": [
+          883,
+          824,
+          1030,
+          821,
+          1030,
+          861,
+          884,
+          863
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 453,
+          "length": 9
+        }
+      },
+      {
+        "content": "Fluoxetina,",
+        "boundingBox": [
+          1063,
+          821,
+          1295,
+          815,
+          1294,
+          857,
+          1063,
+          861
+        ],
+        "confidence": 0.63,
+        "span": {
+          "offset": 463,
+          "length": 11
+        }
+      },
+      {
+        "content": "tranquirazón,",
+        "boundingBox": [
+          1303,
+          815,
+          1534,
+          808,
+          1534,
+          852,
+          1303,
+          857
+        ],
+        "confidence": 0.161,
+        "span": {
+          "offset": 475,
+          "length": 13
+        }
+      },
+      {
+        "content": "escitalopram.",
+        "boundingBox": [
+          1542,
+          807,
+          1765,
+          799,
+          1764,
+          848,
+          1542,
+          852
+        ],
+        "confidence": 0.587,
+        "span": {
+          "offset": 489,
+          "length": 13
+        }
+      },
+      {
+        "content": "¿Toma",
+        "boundingBox": [
+          349,
+          905,
+          448,
+          905,
+          448,
+          943,
+          349,
+          943
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 503,
+          "length": 5
+        }
+      },
+      {
+        "content": "alguna",
+        "boundingBox": [
+          455,
+          905,
+          552,
+          904,
+          552,
+          942,
+          455,
+          943
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 509,
+          "length": 6
+        }
+      },
+      {
+        "content": "medicación",
+        "boundingBox": [
+          559,
+          904,
+          721,
+          903,
+          721,
+          940,
+          559,
+          942
+        ],
+        "confidence": 0.966,
+        "span": {
+          "offset": 516,
+          "length": 10
+        }
+      },
+      {
+        "content": "o",
+        "boundingBox": [
+          728,
+          903,
+          747,
+          903,
+          747,
+          940,
+          728,
+          940
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 527,
+          "length": 1
+        }
+      },
+      {
+        "content": "suplemento",
+        "boundingBox": [
+          755,
+          903,
+          924,
+          901,
+          924,
+          937,
+          755,
+          940
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 529,
+          "length": 10
+        }
+      },
+      {
+        "content": "efervescentes?",
+        "boundingBox": [
+          931,
+          901,
+          1146,
+          898,
+          1146,
+          934,
+          931,
+          937
+        ],
+        "confidence": 0.991,
+        "span": {
+          "offset": 540,
+          "length": 14
+        }
+      },
+      {
+        "content": "Especifique",
+        "boundingBox": [
+          1153,
+          898,
+          1317,
+          895,
+          1317,
+          931,
+          1153,
+          934
+        ],
+        "confidence": 0.992,
+        "span": {
+          "offset": 555,
+          "length": 11
+        }
+      },
+      {
+        "content": "cuál:",
+        "boundingBox": [
+          1325,
+          895,
+          1395,
+          893,
+          1395,
+          930,
+          1325,
+          931
+        ],
+        "confidence": 0.883,
+        "span": {
+          "offset": 567,
+          "length": 5
+        }
+      },
+      {
+        "content": "No.",
+        "boundingBox": [
+          457,
+          948,
+          578,
+          950,
+          578,
+          988,
+          457,
+          986
+        ],
+        "confidence": 0.848,
+        "span": {
+          "offset": 573,
+          "length": 3
+        }
+      },
+      {
+        "content": "Desde",
+        "boundingBox": [
+          589,
+          950,
+          670,
+          951,
+          670,
+          984,
+          589,
+          987
+        ],
+        "confidence": 0.986,
+        "span": {
+          "offset": 577,
+          "length": 5
+        }
+      },
+      {
+        "content": "hasta",
+        "boundingBox": [
+          799,
+          949,
+          876,
+          949,
+          876,
+          983,
+          799,
+          983
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 583,
+          "length": 5
+        }
+      },
+      {
+        "content": ".",
+        "boundingBox": [
+          300,
+          1003,
+          316,
+          1003,
+          316,
+          1032,
+          300,
+          1032
+        ],
+        "confidence": 0.686,
+        "span": {
+          "offset": 589,
+          "length": 1
+        }
+      },
+      {
+        "content": "¿Consume",
+        "boundingBox": [
+          352,
+          999,
+          503,
+          999,
+          502,
+          1036,
+          351,
+          1035
+        ],
+        "confidence": 0.993,
+        "span": {
+          "offset": 591,
+          "length": 8
+        }
+      },
+      {
+        "content": "alcohol,",
+        "boundingBox": [
+          510,
+          999,
+          624,
+          999,
+          623,
+          1035,
+          509,
+          1036
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 600,
+          "length": 8
+        }
+      },
+      {
+        "content": "tabaco",
+        "boundingBox": [
+          631,
+          999,
+          727,
+          998,
+          727,
+          1035,
+          630,
+          1035
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 609,
+          "length": 6
+        }
+      },
+      {
+        "content": "u",
+        "boundingBox": [
+          735,
+          998,
+          753,
+          998,
+          753,
+          1034,
+          734,
+          1035
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 616,
+          "length": 1
+        }
+      },
+      {
+        "content": "otras",
+        "boundingBox": [
+          761,
+          998,
+          834,
+          997,
+          833,
+          1034,
+          760,
+          1034
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 618,
+          "length": 5
+        }
+      },
+      {
+        "content": "drogas",
+        "boundingBox": [
+          841,
+          997,
+          938,
+          996,
+          937,
+          1032,
+          840,
+          1033
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 624,
+          "length": 6
+        }
+      },
+      {
+        "content": "de",
+        "boundingBox": [
+          945,
+          995,
+          980,
+          995,
+          979,
+          1031,
+          944,
+          1032
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 631,
+          "length": 2
+        }
+      },
+      {
+        "content": "manera",
+        "boundingBox": [
+          987,
+          995,
+          1096,
+          992,
+          1095,
+          1028,
+          987,
+          1031
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 634,
+          "length": 6
+        }
+      },
+      {
+        "content": "habitual?",
+        "boundingBox": [
+          1103,
+          992,
+          1241,
+          989,
+          1240,
+          1024,
+          1102,
+          1028
+        ],
+        "confidence": 0.993,
+        "span": {
+          "offset": 641,
+          "length": 9
+        }
+      },
+      {
+        "content": "NO",
+        "boundingBox": [
+          946,
+          1092,
+          981,
+          1089,
+          983,
+          1118,
+          946,
+          1121
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 651,
+          "length": 2
+        }
+      },
+      {
+        "content": "SÍ",
+        "boundingBox": [
+          1026,
+          1087,
+          1058,
+          1084,
+          1061,
+          1115,
+          1027,
+          1118
+        ],
+        "confidence": 0.882,
+        "span": {
+          "offset": 654,
+          "length": 2
+        }
+      },
+      {
+        "content": "Cantidad",
+        "boundingBox": [
+          1112,
+          1088,
+          1240,
+          1083,
+          1238,
+          1117,
+          1113,
+          1119
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 657,
+          "length": 8
+        }
+      },
+      {
+        "content": "diaria",
+        "boundingBox": [
+          1134,
+          1132,
+          1217,
+          1131,
+          1219,
+          1159,
+          1134,
+          1161
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 666,
+          "length": 6
+        }
+      },
+      {
+        "content": "Alcohol",
+        "boundingBox": [
+          561,
+          1177,
+          669,
+          1175,
+          670,
+          1207,
+          561,
+          1209
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 673,
+          "length": 7
+        }
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          965,
+          1164,
+          991,
+          1162,
+          993,
+          1201,
+          969,
+          1204
+        ],
+        "confidence": 0.751,
+        "span": {
+          "offset": 681,
+          "length": 1
+        }
+      },
+      {
+        "content": "Tabaco",
+        "boundingBox": [
+          562,
+          1224,
+          662,
+          1223,
+          660,
+          1252,
+          563,
+          1252
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 683,
+          "length": 6
+        }
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          966,
+          1213,
+          993,
+          1213,
+          994,
+          1254,
+          967,
+          1255
+        ],
+        "confidence": 0.651,
+        "span": {
+          "offset": 690,
+          "length": 1
+        }
+      },
+      {
+        "content": "Otras",
+        "boundingBox": [
+          564,
+          1264,
+          638,
+          1265,
+          638,
+          1296,
+          564,
+          1294
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 692,
+          "length": 5
+        }
+      },
+      {
+        "content": "drogas",
+        "boundingBox": [
+          644,
+          1265,
+          745,
+          1265,
+          744,
+          1297,
+          644,
+          1296
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 698,
+          "length": 6
+        }
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          968,
+          1266,
+          998,
+          1265,
+          999,
+          1312,
+          969,
+          1313
+        ],
+        "confidence": 0.755,
+        "span": {
+          "offset": 705,
+          "length": 1
+        }
+      },
+      {
+        "content": "Especifique",
+        "boundingBox": [
+          565,
+          1307,
+          721,
+          1306,
+          720,
+          1339,
+          564,
+          1341
+        ],
+        "confidence": 0.992,
+        "span": {
+          "offset": 707,
+          "length": 11
+        }
+      },
+      {
+        "content": "cuáles:",
+        "boundingBox": [
+          728,
+          1306,
+          831,
+          1307,
+          830,
+          1338,
+          727,
+          1339
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 719,
+          "length": 7
+        }
+      },
+      {
+        "content": "Alguna",
+        "boundingBox": [
+          294,
+          1406,
+          396,
+          1404,
+          395,
+          1440,
+          293,
+          1441
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 727,
+          "length": 6
+        }
+      },
+      {
+        "content": "vez",
+        "boundingBox": [
+          403,
+          1404,
+          454,
+          1403,
+          454,
+          1439,
+          402,
+          1440
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 734,
+          "length": 3
+        }
+      },
+      {
+        "content": "ha",
+        "boundingBox": [
+          461,
+          1403,
+          496,
+          1403,
+          496,
+          1438,
+          461,
+          1439
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 738,
+          "length": 2
+        }
+      },
+      {
+        "content": "sufrido",
+        "boundingBox": [
+          502,
+          1403,
+          602,
+          1402,
+          603,
+          1437,
+          503,
+          1438
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 741,
+          "length": 7
+        }
+      },
+      {
+        "content": "...",
+        "boundingBox": [
+          609,
+          1402,
+          638,
+          1402,
+          638,
+          1437,
+          610,
+          1437
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 749,
+          "length": 3
+        }
+      },
+      {
+        "content": "NO",
+        "boundingBox": [
+          817,
+          1403,
+          855,
+          1402,
+          855,
+          1430,
+          817,
+          1431
+        ],
+        "confidence": 0.992,
+        "span": {
+          "offset": 753,
+          "length": 2
+        }
+      },
+      {
+        "content": "SI",
+        "boundingBox": [
+          916,
+          1401,
+          946,
+          1398,
+          948,
+          1427,
+          917,
+          1430
+        ],
+        "confidence": 0.942,
+        "span": {
+          "offset": 756,
+          "length": 2
+        }
+      },
+      {
+        "content": "AFECTACIÓN",
+        "boundingBox": [
+          983,
+          1382,
+          1149,
+          1377,
+          1149,
+          1409,
+          981,
+          1410
+        ],
+        "confidence": 0.815,
+        "span": {
+          "offset": 759,
+          "length": 10
+        }
+      },
+      {
+        "content": "AFECTACIÓN",
+        "boundingBox": [
+          1174,
+          1379,
+          1341,
+          1377,
+          1339,
+          1408,
+          1173,
+          1409
+        ],
+        "confidence": 0.703,
+        "span": {
+          "offset": 770,
+          "length": 10
+        }
+      },
+      {
+        "content": "|",
+        "boundingBox": [
+          1351,
+          1377,
+          1361,
+          1377,
+          1360,
+          1408,
+          1350,
+          1408
+        ],
+        "confidence": 0.595,
+        "span": {
+          "offset": 781,
+          "length": 1
+        }
+      },
+      {
+        "content": "AFECTACIÓN",
+        "boundingBox": [
+          1367,
+          1376,
+          1538,
+          1376,
+          1535,
+          1408,
+          1366,
+          1408
+        ],
+        "confidence": 0.603,
+        "span": {
+          "offset": 783,
+          "length": 10
+        }
+      },
+      {
+        "content": "LIGERA",
+        "boundingBox": [
+          1022,
+          1421,
+          1114,
+          1418,
+          1115,
+          1448,
+          1022,
+          1450
+        ],
+        "confidence": 0.993,
+        "span": {
+          "offset": 794,
+          "length": 6
+        }
+      },
+      {
+        "content": "MODERADA",
+        "boundingBox": [
+          1179,
+          1420,
+          1341,
+          1418,
+          1340,
+          1446,
+          1180,
+          1448
+        ],
+        "confidence": 0.991,
+        "span": {
+          "offset": 801,
+          "length": 8
+        }
+      },
+      {
+        "content": "SEVERA",
+        "boundingBox": [
+          1403,
+          1419,
+          1504,
+          1416,
+          1504,
+          1446,
+          1404,
+          1448
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 810,
+          "length": 6
+        }
+      },
+      {
+        "content": "Regurgitación/quemazón",
+        "boundingBox": [
+          298,
+          1488,
+          627,
+          1483,
+          627,
+          1518,
+          298,
+          1521
+        ],
+        "confidence": 0.961,
+        "span": {
+          "offset": 817,
+          "length": 22
+        }
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          826,
+          1466,
+          855,
+          1465,
+          856,
+          1509,
+          827,
+          1510
+        ],
+        "confidence": 0.804,
+        "span": {
+          "offset": 840,
+          "length": 1
+        }
+      },
+      {
+        "content": "Anorexia/",
+        "boundingBox": [
+          299,
+          1542,
+          425,
+          1538,
+          424,
+          1572,
+          298,
+          1573
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 842,
+          "length": 9
+        }
+      },
+      {
+        "content": "Bulimia",
+        "boundingBox": [
+          431,
+          1538,
+          529,
+          1536,
+          529,
+          1570,
+          431,
+          1571
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 852,
+          "length": 7
+        }
+      },
+      {
+        "content": "con",
+        "boundingBox": [
+          536,
+          1536,
+          585,
+          1536,
+          585,
+          1569,
+          536,
+          1570
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 860,
+          "length": 3
+        }
+      },
+      {
+        "content": "vómito",
+        "boundingBox": [
+          591,
+          1536,
+          685,
+          1536,
+          685,
+          1567,
+          591,
+          1569
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 864,
+          "length": 6
+        }
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          919,
+          1529,
+          941,
+          1530,
+          940,
+          1572,
+          918,
+          1571
+        ],
+        "confidence": 0.598,
+        "span": {
+          "offset": 871,
+          "length": 1
+        }
+      },
+      {
+        "content": "De",
+        "boundingBox": [
+          1558,
+          1501,
+          1600,
+          1498,
+          1597,
+          1534,
+          1554,
+          1536
+        ],
+        "confidence": 0.663,
+        "span": {
+          "offset": 873,
+          "length": 2
+        }
+      },
+      {
+        "content": "de",
+        "boundingBox": [
+          1610,
+          1497,
+          1662,
+          1493,
+          1660,
+          1530,
+          1608,
+          1533
+        ],
+        "confidence": 0.986,
+        "span": {
+          "offset": 876,
+          "length": 2
+        }
+      },
+      {
+        "content": "2013-",
+        "boundingBox": [
+          1677,
+          1492,
+          1785,
+          1484,
+          1786,
+          1519,
+          1675,
+          1529
+        ],
+        "confidence": 0.97,
+        "span": {
+          "offset": 879,
+          "length": 5
+        }
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          825,
+          1576,
+          854,
+          1576,
+          854,
+          1621,
+          825,
+          1621
+        ],
+        "confidence": 0.645,
+        "span": {
+          "offset": 885,
+          "length": 1
+        }
+      },
+      {
+        "content": "2021",
+        "boundingBox": [
+          1565,
+          1537,
+          1650,
+          1535,
+          1652,
+          1568,
+          1566,
+          1571
+        ],
+        "confidence": 0.918,
+        "span": {
+          "offset": 887,
+          "length": 4
+        }
+      },
+      {
+        "content": "Juego",
+        "boundingBox": [
+          298,
+          1596,
+          370,
+          1594,
+          371,
+          1627,
+          299,
+          1628
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 892,
+          "length": 5
+        }
+      },
+      {
+        "content": "patológico",
+        "boundingBox": [
+          377,
+          1594,
+          518,
+          1591,
+          517,
+          1624,
+          377,
+          1627
+        ],
+        "confidence": 0.965,
+        "span": {
+          "offset": 898,
+          "length": 10
+        }
+      },
+      {
+        "content": "Bruxismo",
+        "boundingBox": [
+          299,
+          1649,
+          418,
+          1649,
+          418,
+          1678,
+          299,
+          1678
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 909,
+          "length": 8
+        }
+      },
+      {
+        "content": "nocturno",
+        "boundingBox": [
+          425,
+          1649,
+          546,
+          1648,
+          545,
+          1677,
+          424,
+          1678
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 918,
+          "length": 8
+        }
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          918,
+          1633,
+          946,
+          1633,
+          946,
+          1677,
+          917,
+          1677
+        ],
+        "confidence": 0.644,
+        "span": {
+          "offset": 927,
+          "length": 1
+        }
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          1259,
+          1632,
+          1291,
+          1633,
+          1290,
+          1682,
+          1258,
+          1681
+        ],
+        "confidence": 0.766,
+        "span": {
+          "offset": 929,
+          "length": 1
+        }
+      },
+      {
+        "content": "Bruxismo",
+        "boundingBox": [
+          300,
+          1705,
+          416,
+          1703,
+          415,
+          1733,
+          302,
+          1734
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 931,
+          "length": 8
+        }
+      },
+      {
+        "content": "diurno",
+        "boundingBox": [
+          425,
+          1703,
+          513,
+          1702,
+          509,
+          1732,
+          423,
+          1733
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 940,
+          "length": 6
+        }
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          917,
+          1680,
+          942,
+          1679,
+          944,
+          1728,
+          918,
+          1729
+        ],
+        "confidence": 0.905,
+        "span": {
+          "offset": 947,
+          "length": 1
+        }
+      },
+      {
+        "content": "x",
+        "boundingBox": [
+          1260,
+          1683,
+          1292,
+          1683,
+          1292,
+          1732,
+          1260,
+          1732
+        ],
+        "confidence": 0.773,
+        "span": {
+          "offset": 949,
+          "length": 1
+        }
+      },
+      {
+        "content": "En",
+        "boundingBox": [
+          297,
+          1777,
+          331,
+          1776,
+          332,
+          1810,
+          298,
+          1811
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 951,
+          "length": 2
+        }
+      },
+      {
+        "content": "el",
+        "boundingBox": [
+          338,
+          1776,
+          364,
+          1776,
+          365,
+          1810,
+          339,
+          1810
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 954,
+          "length": 2
+        }
+      },
+      {
+        "content": "último",
+        "boundingBox": [
+          371,
+          1776,
+          469,
+          1775,
+          468,
+          1809,
+          371,
+          1810
+        ],
+        "confidence": 0.666,
+        "span": {
+          "offset": 957,
+          "length": 6
+        }
+      },
+      {
+        "content": "mes",
+        "boundingBox": [
+          476,
+          1775,
+          537,
+          1775,
+          536,
+          1808,
+          475,
+          1809
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 964,
+          "length": 3
+        }
+      },
+      {
+        "content": "ha",
+        "boundingBox": [
+          543,
+          1775,
+          580,
+          1775,
+          580,
+          1808,
+          543,
+          1808
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 968,
+          "length": 2
+        }
+      },
+      {
+        "content": "sufrido",
+        "boundingBox": [
+          587,
+          1775,
+          685,
+          1776,
+          684,
+          1808,
+          586,
+          1808
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 971,
+          "length": 7
+        }
+      },
+      {
+        "content": "...",
+        "boundingBox": [
+          692,
+          1776,
+          723,
+          1776,
+          721,
+          1808,
+          690,
+          1808
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 979,
+          "length": 3
+        }
+      },
+      {
+        "content": "NO",
+        "boundingBox": [
+          822,
+          1773,
+          857,
+          1771,
+          859,
+          1801,
+          822,
+          1803
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 983,
+          "length": 2
+        }
+      },
+      {
+        "content": "SI",
+        "boundingBox": [
+          921,
+          1770,
+          947,
+          1768,
+          949,
+          1798,
+          921,
+          1800
+        ],
+        "confidence": 0.886,
+        "span": {
+          "offset": 986,
+          "length": 2
+        }
+      },
+      {
+        "content": "AFECTACIÓN",
+        "boundingBox": [
+          987,
+          1749,
+          1155,
+          1748,
+          1155,
+          1781,
+          987,
+          1783
+        ],
+        "confidence": 0.901,
+        "span": {
+          "offset": 989,
+          "length": 10
+        }
+      },
+      {
+        "content": "|",
+        "boundingBox": [
+          1162,
+          1748,
+          1171,
+          1748,
+          1171,
+          1781,
+          1162,
+          1781
+        ],
+        "confidence": 0.108,
+        "span": {
+          "offset": 1000,
+          "length": 1
+        }
+      },
+      {
+        "content": "AFECTACIÓN",
+        "boundingBox": [
+          1177,
+          1748,
+          1347,
+          1747,
+          1347,
+          1779,
+          1177,
+          1781
+        ],
+        "confidence": 0.642,
+        "span": {
+          "offset": 1002,
+          "length": 10
+        }
+      },
+      {
+        "content": "|AFECTACIÓN",
+        "boundingBox": [
+          1357,
+          1747,
+          1540,
+          1746,
+          1540,
+          1778,
+          1357,
+          1779
+        ],
+        "confidence": 0.501,
+        "span": {
+          "offset": 1013,
+          "length": 11
+        }
+      },
+      {
+        "content": "LIGERA",
+        "boundingBox": [
+          1027,
+          1788,
+          1121,
+          1787,
+          1119,
+          1820,
+          1027,
+          1819
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 1025,
+          "length": 6
+        }
+      },
+      {
+        "content": "MODERADA",
+        "boundingBox": [
+          1184,
+          1788,
+          1345,
+          1786,
+          1344,
+          1818,
+          1184,
+          1818
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 1032,
+          "length": 8
+        }
+      },
+      {
+        "content": "SEVERA",
+        "boundingBox": [
+          1404,
+          1789,
+          1508,
+          1787,
+          1508,
+          1819,
+          1406,
+          1818
+        ],
+        "confidence": 0.992,
+        "span": {
+          "offset": 1041,
+          "length": 6
+        }
+      },
+      {
+        "content": "Regurgitación/quemazón",
+        "boundingBox": [
+          299,
+          1843,
+          627,
+          1842,
+          625,
+          1873,
+          299,
+          1876
+        ],
+        "confidence": 0.965,
+        "span": {
+          "offset": 1048,
+          "length": 22
+        }
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          831,
+          1834,
+          851,
+          1833,
+          852,
+          1872,
+          832,
+          1873
+        ],
+        "confidence": 0.759,
+        "span": {
+          "offset": 1071,
+          "length": 1
+        }
+      },
+      {
+        "content": "Anorexia/",
+        "boundingBox": [
+          300,
+          1890,
+          424,
+          1888,
+          425,
+          1920,
+          301,
+          1922
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 1073,
+          "length": 9
+        }
+      },
+      {
+        "content": "Bulimia",
+        "boundingBox": [
+          431,
+          1888,
+          530,
+          1887,
+          531,
+          1919,
+          431,
+          1920
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 1083,
+          "length": 7
+        }
+      },
+      {
+        "content": "con",
+        "boundingBox": [
+          537,
+          1887,
+          584,
+          1887,
+          585,
+          1919,
+          537,
+          1919
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 1091,
+          "length": 3
+        }
+      },
+      {
+        "content": "vómito",
+        "boundingBox": [
+          591,
+          1888,
+          686,
+          1889,
+          687,
+          1919,
+          591,
+          1919
+        ],
+        "confidence": 0.986,
+        "span": {
+          "offset": 1095,
+          "length": 6
+        }
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          925,
+          1882,
+          953,
+          1881,
+          955,
+          1924,
+          927,
+          1925
+        ],
+        "confidence": 0.627,
+        "span": {
+          "offset": 1102,
+          "length": 1
+        }
+      },
+      {
+        "content": "Juego",
+        "boundingBox": [
+          297,
+          1934,
+          370,
+          1934,
+          370,
+          1968,
+          298,
+          1968
+        ],
+        "confidence": 0.998,
+        "span": {
+          "offset": 1104,
+          "length": 5
+        }
+      },
+      {
+        "content": "patológico",
+        "boundingBox": [
+          376,
+          1934,
+          518,
+          1933,
+          519,
+          1967,
+          377,
+          1968
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 1110,
+          "length": 10
+        }
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          834,
+          1923,
+          862,
+          1923,
+          862,
+          1966,
+          834,
+          1966
+        ],
+        "confidence": 0.623,
+        "span": {
+          "offset": 1121,
+          "length": 1
+        }
+      },
+      {
+        "content": "XX",
+        "boundingBox": [
+          954,
+          1972,
+          958,
+          2042,
+          920,
+          2044,
+          916,
+          1973
+        ],
+        "confidence": 0.963,
+        "span": {
+          "offset": 1123,
+          "length": 2
+        }
+      },
+      {
+        "content": "Bruxismo",
+        "boundingBox": [
+          299,
+          1980,
+          418,
+          1979,
+          419,
+          2011,
+          301,
+          2012
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 1126,
+          "length": 8
+        }
+      },
+      {
+        "content": "nocturno",
+        "boundingBox": [
+          424,
+          1979,
+          547,
+          1982,
+          546,
+          2011,
+          425,
+          2011
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 1135,
+          "length": 8
+        }
+      },
+      {
+        "content": "Bruxismo",
+        "boundingBox": [
+          299,
+          2026,
+          417,
+          2023,
+          418,
+          2057,
+          301,
+          2059
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 1144,
+          "length": 8
+        }
+      },
+      {
+        "content": "diurno",
+        "boundingBox": [
+          424,
+          2023,
+          515,
+          2022,
+          515,
+          2059,
+          425,
+          2057
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 1153,
+          "length": 6
+        }
+      },
+      {
+        "content": "XA",
+        "boundingBox": [
+          1260,
+          2055,
+          1241,
+          1977,
+          1286,
+          1967,
+          1306,
+          2044
+        ],
+        "confidence": 0.692,
+        "span": {
+          "offset": 1160,
+          "length": 2
+        }
+      },
+      {
+        "content": "¿Es",
+        "boundingBox": [
+          325,
+          2118,
+          375,
+          2117,
+          376,
+          2155,
+          326,
+          2156
+        ],
+        "confidence": 0.952,
+        "span": {
+          "offset": 1163,
+          "length": 3
+        }
+      },
+      {
+        "content": "un",
+        "boundingBox": [
+          382,
+          2117,
+          425,
+          2117,
+          425,
+          2154,
+          383,
+          2155
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 1167,
+          "length": 2
+        }
+      },
+      {
+        "content": "entusiasta",
+        "boundingBox": [
+          432,
+          2116,
+          585,
+          2115,
+          585,
+          2151,
+          433,
+          2154
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 1170,
+          "length": 10
+        }
+      },
+      {
+        "content": "de",
+        "boundingBox": [
+          592,
+          2114,
+          630,
+          2114,
+          630,
+          2151,
+          592,
+          2151
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 1181,
+          "length": 2
+        }
+      },
+      {
+        "content": "la",
+        "boundingBox": [
+          637,
+          2114,
+          668,
+          2114,
+          668,
+          2150,
+          637,
+          2150
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 1184,
+          "length": 2
+        }
+      },
+      {
+        "content": "activada",
+        "boundingBox": [
+          675,
+          2114,
+          801,
+          2112,
+          801,
+          2148,
+          675,
+          2150
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 1187,
+          "length": 8
+        }
+      },
+      {
+        "content": "física",
+        "boundingBox": [
+          808,
+          2112,
+          886,
+          2112,
+          886,
+          2148,
+          808,
+          2148
+        ],
+        "confidence": 0.955,
+        "span": {
+          "offset": 1196,
+          "length": 6
+        }
+      },
+      {
+        "content": "(realiza",
+        "boundingBox": [
+          894,
+          2111,
+          1003,
+          2111,
+          1003,
+          2146,
+          894,
+          2147
+        ],
+        "confidence": 0.993,
+        "span": {
+          "offset": 1203,
+          "length": 8
+        }
+      },
+      {
+        "content": "deporte",
+        "boundingBox": [
+          1011,
+          2111,
+          1129,
+          2110,
+          1129,
+          2146,
+          1010,
+          2146
+        ],
+        "confidence": 0.995,
+        "span": {
+          "offset": 1212,
+          "length": 7
+        }
+      },
+      {
+        "content": "un",
+        "boundingBox": [
+          1137,
+          2110,
+          1177,
+          2110,
+          1176,
+          2145,
+          1136,
+          2146
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 1220,
+          "length": 2
+        }
+      },
+      {
+        "content": "mínimo",
+        "boundingBox": [
+          1184,
+          2110,
+          1298,
+          2109,
+          1297,
+          2145,
+          1184,
+          2145
+        ],
+        "confidence": 0.941,
+        "span": {
+          "offset": 1223,
+          "length": 6
+        }
+      },
+      {
+        "content": "de",
+        "boundingBox": [
+          1306,
+          2109,
+          1348,
+          2109,
+          1347,
+          2145,
+          1305,
+          2145
+        ],
+        "confidence": 0.993,
+        "span": {
+          "offset": 1230,
+          "length": 2
+        }
+      },
+      {
+        "content": "3",
+        "boundingBox": [
+          1356,
+          2109,
+          1376,
+          2109,
+          1376,
+          2145,
+          1355,
+          2145
+        ],
+        "confidence": 0.991,
+        "span": {
+          "offset": 1233,
+          "length": 1
+        }
+      },
+      {
+        "content": "veces",
+        "boundingBox": [
+          1384,
+          2109,
+          1470,
+          2109,
+          1469,
+          2145,
+          1384,
+          2145
+        ],
+        "confidence": 0.993,
+        "span": {
+          "offset": 1235,
+          "length": 5
+        }
+      },
+      {
+        "content": "a",
+        "boundingBox": [
+          1477,
+          2109,
+          1498,
+          2109,
+          1497,
+          2144,
+          1476,
+          2144
+        ],
+        "confidence": 0.993,
+        "span": {
+          "offset": 1241,
+          "length": 1
+        }
+      },
+      {
+        "content": "la",
+        "boundingBox": [
+          1505,
+          2109,
+          1536,
+          2109,
+          1535,
+          2144,
+          1505,
+          2144
+        ],
+        "confidence": 0.996,
+        "span": {
+          "offset": 1243,
+          "length": 2
+        }
+      },
+      {
+        "content": "semana)?",
+        "boundingBox": [
+          327,
+          2162,
+          471,
+          2161,
+          471,
+          2199,
+          327,
+          2199
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 1246,
+          "length": 8
+        }
+      },
+      {
+        "content": "51.",
+        "boundingBox": [
+          497,
+          2161,
+          592,
+          2160,
+          592,
+          2198,
+          497,
+          2199
+        ],
+        "confidence": 0.728,
+        "span": {
+          "offset": 1255,
+          "length": 3
+        }
+      },
+      {
+        "content": "Desde",
+        "boundingBox": [
+          599,
+          2160,
+          691,
+          2158,
+          692,
+          2197,
+          600,
+          2198
+        ],
+        "confidence": 0.987,
+        "span": {
+          "offset": 1259,
+          "length": 5
+        }
+      },
+      {
+        "content": "2020",
+        "boundingBox": [
+          712,
+          2158,
+          807,
+          2156,
+          808,
+          2196,
+          713,
+          2197
+        ],
+        "confidence": 0.989,
+        "span": {
+          "offset": 1265,
+          "length": 4
+        }
+      },
+      {
+        "content": "hasta",
+        "boundingBox": [
+          815,
+          2156,
+          902,
+          2153,
+          902,
+          2194,
+          816,
+          2196
+        ],
+        "confidence": 0.997,
+        "span": {
+          "offset": 1270,
+          "length": 5
+        }
+      },
+      {
+        "content": "2022",
+        "boundingBox": [
+          938,
+          2152,
+          1045,
+          2149,
+          1046,
+          2191,
+          939,
+          2193
+        ],
+        "confidence": 0.994,
+        "span": {
+          "offset": 1276,
+          "length": 4
+        }
+      }
+    ],
+    "spans": [
+      {
+        "offset": 0,
+        "length": 1280
+      }
+    ],
+    "lines": [
+      {
+        "content": "Data: 28/2/22 Codi d'identificació: 042 Grup: TCA Telèfon:",
+        "boundingBox": [
+          265,
+          253,
+          1279,
+          246,
+          1279,
+          301,
+          265,
+          308
+        ],
+        "spans": [
+          {
+            "offset": 0,
+            "length": 58
+          }
+        ]
+      },
+      {
+        "content": "Cuestionario. Bloque 1. Información demográfica y hábitos de salud:",
+        "boundingBox": [
+          268,
+          354,
+          1445,
+          343,
+          1445,
+          388,
+          268,
+          398
+        ],
+        "spans": [
+          {
+            "offset": 59,
+            "length": 67
+          }
+        ]
+      },
+      {
+        "content": "Fecha Nacimiento 28/10/93 Peso (kg)",
+        "boundingBox": [
+          281,
+          453,
+          860,
+          447,
+          860,
+          491,
+          281,
+          492
+        ],
+        "spans": [
+          {
+            "offset": 127,
+            "length": 35
+          }
+        ]
+      },
+      {
+        "content": "2",
+        "boundingBox": [
+          1598,
+          433,
+          1633,
+          434,
+          1631,
+          474,
+          1597,
+          474
+        ],
+        "spans": [
+          {
+            "offset": 163,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "Sexo",
+        "boundingBox": [
+          304,
+          505,
+          378,
+          504,
+          379,
+          536,
+          305,
+          535
+        ],
+        "spans": [
+          {
+            "offset": 165,
+            "length": 4
+          }
+        ]
+      },
+      {
+        "content": "7",
+        "boundingBox": [
+          609,
+          491,
+          678,
+          489,
+          675,
+          536,
+          609,
+          533
+        ],
+        "spans": [
+          {
+            "offset": 170,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "Profesión",
+        "boundingBox": [
+          723,
+          495,
+          863,
+          495,
+          863,
+          533,
+          723,
+          532
+        ],
+        "spans": [
+          {
+            "offset": 172,
+            "length": 9
+          }
+        ]
+      },
+      {
+        "content": "tresalle Zava,",
+        "boundingBox": [
+          1341,
+          490,
+          1566,
+          491,
+          1566,
+          530,
+          1341,
+          529
+        ],
+        "spans": [
+          {
+            "offset": 182,
+            "length": 14
+          }
+        ]
+      },
+      {
+        "content": "estudi H.",
+        "boundingBox": [
+          1591,
+          484,
+          1740,
+          477,
+          1742,
+          508,
+          1591,
+          517
+        ],
+        "spans": [
+          {
+            "offset": 197,
+            "length": 9
+          }
+        ]
+      },
+      {
+        "content": "Altura (cm)",
+        "boundingBox": [
+          281,
+          545,
+          450,
+          543,
+          450,
+          579,
+          281,
+          581
+        ],
+        "spans": [
+          {
+            "offset": 207,
+            "length": 11
+          }
+        ]
+      },
+      {
+        "content": "156",
+        "boundingBox": [
+          584,
+          547,
+          671,
+          546,
+          672,
+          585,
+          583,
+          583
+        ],
+        "spans": [
+          {
+            "offset": 219,
+            "length": 3
+          }
+        ]
+      },
+      {
+        "content": "Nivel de estudios más alto completado",
+        "boundingBox": [
+          721,
+          542,
+          1287,
+          536,
+          1288,
+          570,
+          721,
+          575
+        ],
+        "spans": [
+          {
+            "offset": 223,
+            "length": 37
+          }
+        ]
+      },
+      {
+        "content": "batxillerat",
+        "boundingBox": [
+          1342,
+          533,
+          1566,
+          533,
+          1566,
+          572,
+          1342,
+          573
+        ],
+        "spans": [
+          {
+            "offset": 261,
+            "length": 11
+          }
+        ]
+      },
+      {
+        "content": "art + psico",
+        "boundingBox": [
+          1606,
+          516,
+          1778,
+          506,
+          1779,
+          537,
+          1607,
+          546
+        ],
+        "spans": [
+          {
+            "offset": 273,
+            "length": 11
+          }
+        ]
+      },
+      {
+        "content": "Historia médica:",
+        "boundingBox": [
+          269,
+          636,
+          519,
+          635,
+          520,
+          672,
+          269,
+          675
+        ],
+        "spans": [
+          {
+            "offset": 285,
+            "length": 16
+          }
+        ]
+      },
+      {
+        "content": "¿Presenta alguna patología importante? No",
+        "boundingBox": [
+          345,
+          680,
+          1027,
+          666,
+          1028,
+          711,
+          345,
+          721
+        ],
+        "spans": [
+          {
+            "offset": 302,
+            "length": 41
+          }
+        ]
+      },
+      {
+        "content": "¿Ha sido operado alguna vez? Auguest de pit",
+        "boundingBox": [
+          344,
+          727,
+          1107,
+          719,
+          1107,
+          767,
+          344,
+          770
+        ],
+        "spans": [
+          {
+            "offset": 344,
+            "length": 43
+          }
+        ]
+      },
+      {
+        "content": "¿Presenta alguna alergia? NO",
+        "boundingBox": [
+          344,
+          781,
+          819,
+          776,
+          820,
+          816,
+          344,
+          820
+        ],
+        "spans": [
+          {
+            "offset": 388,
+            "length": 28
+          }
+        ]
+      },
+      {
+        "content": ".",
+        "boundingBox": [
+          296,
+          834,
+          335,
+          835,
+          335,
+          862,
+          297,
+          860
+        ],
+        "spans": [
+          {
+            "offset": 417,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "¿Toma alguna medicación de manera habitual? Fluoxetina, tranquirazón, escitalopram.",
+        "boundingBox": [
+          343,
+          825,
+          1764,
+          799,
+          1765,
+          847,
+          344,
+          869
+        ],
+        "spans": [
+          {
+            "offset": 419,
+            "length": 83
+          }
+        ]
+      },
+      {
+        "content": "¿Toma alguna medicación o suplemento efervescentes? Especifique cuál:",
+        "boundingBox": [
+          342,
+          904,
+          1395,
+          893,
+          1396,
+          931,
+          342,
+          943
+        ],
+        "spans": [
+          {
+            "offset": 503,
+            "length": 69
+          }
+        ]
+      },
+      {
+        "content": "No. Desde",
+        "boundingBox": [
+          422,
+          947,
+          672,
+          949,
+          672,
+          988,
+          422,
+          986
+        ],
+        "spans": [
+          {
+            "offset": 573,
+            "length": 9
+          }
+        ]
+      },
+      {
+        "content": "hasta",
+        "boundingBox": [
+          799,
+          950,
+          878,
+          949,
+          878,
+          983,
+          799,
+          982
+        ],
+        "spans": [
+          {
+            "offset": 583,
+            "length": 5
+          }
+        ]
+      },
+      {
+        "content": ".",
+        "boundingBox": [
+          300,
+          1003,
+          333,
+          1003,
+          333,
+          1032,
+          300,
+          1032
+        ],
+        "spans": [
+          {
+            "offset": 589,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "¿Consume alcohol, tabaco u otras drogas de manera habitual?",
+        "boundingBox": [
+          344,
+          999,
+          1241,
+          988,
+          1241,
+          1027,
+          344,
+          1036
+        ],
+        "spans": [
+          {
+            "offset": 591,
+            "length": 59
+          }
+        ]
+      },
+      {
+        "content": "NO",
+        "boundingBox": [
+          946,
+          1092,
+          989,
+          1089,
+          988,
+          1119,
+          946,
+          1122
+        ],
+        "spans": [
+          {
+            "offset": 651,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "SÍ",
+        "boundingBox": [
+          1027,
+          1087,
+          1060,
+          1084,
+          1056,
+          1116,
+          1026,
+          1119
+        ],
+        "spans": [
+          {
+            "offset": 654,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "Cantidad",
+        "boundingBox": [
+          1112,
+          1086,
+          1247,
+          1083,
+          1248,
+          1116,
+          1113,
+          1119
+        ],
+        "spans": [
+          {
+            "offset": 657,
+            "length": 8
+          }
+        ]
+      },
+      {
+        "content": "diaria",
+        "boundingBox": [
+          1132,
+          1131,
+          1221,
+          1130,
+          1221,
+          1159,
+          1132,
+          1160
+        ],
+        "spans": [
+          {
+            "offset": 666,
+            "length": 6
+          }
+        ]
+      },
+      {
+        "content": "Alcohol",
+        "boundingBox": [
+          558,
+          1176,
+          669,
+          1175,
+          670,
+          1206,
+          559,
+          1209
+        ],
+        "spans": [
+          {
+            "offset": 673,
+            "length": 7
+          }
+        ]
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          943,
+          1167,
+          992,
+          1162,
+          988,
+          1202,
+          942,
+          1206
+        ],
+        "spans": [
+          {
+            "offset": 681,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "Tabaco",
+        "boundingBox": [
+          560,
+          1222,
+          665,
+          1221,
+          665,
+          1251,
+          560,
+          1252
+        ],
+        "spans": [
+          {
+            "offset": 683,
+            "length": 6
+          }
+        ]
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          943,
+          1214,
+          994,
+          1213,
+          994,
+          1254,
+          944,
+          1256
+        ],
+        "spans": [
+          {
+            "offset": 690,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "Otras drogas",
+        "boundingBox": [
+          563,
+          1264,
+          744,
+          1265,
+          744,
+          1296,
+          563,
+          1294
+        ],
+        "spans": [
+          {
+            "offset": 692,
+            "length": 12
+          }
+        ]
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          949,
+          1266,
+          1005,
+          1265,
+          1005,
+          1312,
+          950,
+          1313
+        ],
+        "spans": [
+          {
+            "offset": 705,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "Especifique cuáles:",
+        "boundingBox": [
+          564,
+          1307,
+          831,
+          1306,
+          831,
+          1338,
+          564,
+          1340
+        ],
+        "spans": [
+          {
+            "offset": 707,
+            "length": 19
+          }
+        ]
+      },
+      {
+        "content": "Alguna vez ha sufrido ...",
+        "boundingBox": [
+          291,
+          1405,
+          637,
+          1402,
+          638,
+          1436,
+          291,
+          1440
+        ],
+        "spans": [
+          {
+            "offset": 727,
+            "length": 25
+          }
+        ]
+      },
+      {
+        "content": "NO",
+        "boundingBox": [
+          818,
+          1403,
+          863,
+          1402,
+          861,
+          1430,
+          817,
+          1431
+        ],
+        "spans": [
+          {
+            "offset": 753,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "SI",
+        "boundingBox": [
+          917,
+          1401,
+          947,
+          1398,
+          946,
+          1428,
+          916,
+          1431
+        ],
+        "spans": [
+          {
+            "offset": 756,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "AFECTACIÓN",
+        "boundingBox": [
+          979,
+          1379,
+          1160,
+          1377,
+          1161,
+          1408,
+          979,
+          1410
+        ],
+        "spans": [
+          {
+            "offset": 759,
+            "length": 10
+          }
+        ]
+      },
+      {
+        "content": "AFECTACIÓN | AFECTACIÓN",
+        "boundingBox": [
+          1171,
+          1377,
+          1548,
+          1376,
+          1549,
+          1407,
+          1171,
+          1409
+        ],
+        "spans": [
+          {
+            "offset": 770,
+            "length": 23
+          }
+        ]
+      },
+      {
+        "content": "LIGERA",
+        "boundingBox": [
+          1021,
+          1419,
+          1122,
+          1417,
+          1123,
+          1447,
+          1022,
+          1449
+        ],
+        "spans": [
+          {
+            "offset": 794,
+            "length": 6
+          }
+        ]
+      },
+      {
+        "content": "MODERADA",
+        "boundingBox": [
+          1178,
+          1419,
+          1347,
+          1417,
+          1347,
+          1445,
+          1179,
+          1448
+        ],
+        "spans": [
+          {
+            "offset": 801,
+            "length": 8
+          }
+        ]
+      },
+      {
+        "content": "SEVERA",
+        "boundingBox": [
+          1403,
+          1417,
+          1510,
+          1415,
+          1511,
+          1445,
+          1403,
+          1447
+        ],
+        "spans": [
+          {
+            "offset": 810,
+            "length": 6
+          }
+        ]
+      },
+      {
+        "content": "Regurgitación/quemazón",
+        "boundingBox": [
+          297,
+          1486,
+          629,
+          1483,
+          630,
+          1518,
+          297,
+          1521
+        ],
+        "spans": [
+          {
+            "offset": 817,
+            "length": 22
+          }
+        ]
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          815,
+          1467,
+          858,
+          1465,
+          859,
+          1509,
+          815,
+          1509
+        ],
+        "spans": [
+          {
+            "offset": 840,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "Anorexia/ Bulimia con vómito",
+        "boundingBox": [
+          298,
+          1540,
+          685,
+          1535,
+          686,
+          1566,
+          298,
+          1573
+        ],
+        "spans": [
+          {
+            "offset": 842,
+            "length": 28
+          }
+        ]
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          904,
+          1529,
+          946,
+          1531,
+          943,
+          1572,
+          901,
+          1571
+        ],
+        "spans": [
+          {
+            "offset": 871,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "De de 2013-",
+        "boundingBox": [
+          1549,
+          1501,
+          1787,
+          1483,
+          1789,
+          1519,
+          1549,
+          1536
+        ],
+        "spans": [
+          {
+            "offset": 873,
+            "length": 11
+          }
+        ]
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          812,
+          1576,
+          857,
+          1576,
+          857,
+          1621,
+          812,
+          1621
+        ],
+        "spans": [
+          {
+            "offset": 885,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "2021",
+        "boundingBox": [
+          1561,
+          1538,
+          1650,
+          1535,
+          1652,
+          1568,
+          1561,
+          1571
+        ],
+        "spans": [
+          {
+            "offset": 887,
+            "length": 4
+          }
+        ]
+      },
+      {
+        "content": "Juego patológico",
+        "boundingBox": [
+          297,
+          1595,
+          519,
+          1591,
+          519,
+          1623,
+          298,
+          1628
+        ],
+        "spans": [
+          {
+            "offset": 892,
+            "length": 16
+          }
+        ]
+      },
+      {
+        "content": "Bruxismo nocturno",
+        "boundingBox": [
+          299,
+          1648,
+          551,
+          1647,
+          551,
+          1676,
+          299,
+          1677
+        ],
+        "spans": [
+          {
+            "offset": 909,
+            "length": 17
+          }
+        ]
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          911,
+          1633,
+          949,
+          1634,
+          949,
+          1677,
+          912,
+          1677
+        ],
+        "spans": [
+          {
+            "offset": 927,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          1239,
+          1632,
+          1288,
+          1633,
+          1291,
+          1682,
+          1241,
+          1681
+        ],
+        "spans": [
+          {
+            "offset": 929,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "Bruxismo diurno",
+        "boundingBox": [
+          300,
+          1704,
+          514,
+          1702,
+          515,
+          1731,
+          300,
+          1734
+        ],
+        "spans": [
+          {
+            "offset": 931,
+            "length": 15
+          }
+        ]
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          911,
+          1680,
+          943,
+          1679,
+          943,
+          1729,
+          911,
+          1730
+        ],
+        "spans": [
+          {
+            "offset": 947,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "x",
+        "boundingBox": [
+          1247,
+          1683,
+          1296,
+          1683,
+          1295,
+          1732,
+          1246,
+          1732
+        ],
+        "spans": [
+          {
+            "offset": 949,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "En el último mes ha sufrido ...",
+        "boundingBox": [
+          297,
+          1775,
+          723,
+          1774,
+          723,
+          1808,
+          297,
+          1810
+        ],
+        "spans": [
+          {
+            "offset": 951,
+            "length": 31
+          }
+        ]
+      },
+      {
+        "content": "NO",
+        "boundingBox": [
+          822,
+          1774,
+          867,
+          1771,
+          866,
+          1801,
+          822,
+          1803
+        ],
+        "spans": [
+          {
+            "offset": 983,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "SI",
+        "boundingBox": [
+          921,
+          1770,
+          948,
+          1768,
+          948,
+          1799,
+          921,
+          1801
+        ],
+        "spans": [
+          {
+            "offset": 986,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "AFECTACIÓN | AFECTACIÓN |AFECTACIÓN",
+        "boundingBox": [
+          985,
+          1749,
+          1550,
+          1745,
+          1550,
+          1777,
+          985,
+          1782
+        ],
+        "spans": [
+          {
+            "offset": 989,
+            "length": 35
+          }
+        ]
+      },
+      {
+        "content": "LIGERA",
+        "boundingBox": [
+          1026,
+          1788,
+          1129,
+          1787,
+          1129,
+          1818,
+          1026,
+          1820
+        ],
+        "spans": [
+          {
+            "offset": 1025,
+            "length": 6
+          }
+        ]
+      },
+      {
+        "content": "MODERADA",
+        "boundingBox": [
+          1183,
+          1787,
+          1351,
+          1786,
+          1351,
+          1817,
+          1183,
+          1818
+        ],
+        "spans": [
+          {
+            "offset": 1032,
+            "length": 8
+          }
+        ]
+      },
+      {
+        "content": "SEVERA",
+        "boundingBox": [
+          1404,
+          1786,
+          1515,
+          1786,
+          1515,
+          1818,
+          1404,
+          1818
+        ],
+        "spans": [
+          {
+            "offset": 1041,
+            "length": 6
+          }
+        ]
+      },
+      {
+        "content": "Regurgitación/quemazón",
+        "boundingBox": [
+          298,
+          1843,
+          628,
+          1842,
+          628,
+          1874,
+          298,
+          1877
+        ],
+        "spans": [
+          {
+            "offset": 1048,
+            "length": 22
+          }
+        ]
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          815,
+          1834,
+          855,
+          1833,
+          856,
+          1872,
+          816,
+          1873
+        ],
+        "spans": [
+          {
+            "offset": 1071,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "Anorexia/ Bulimia con vómito",
+        "boundingBox": [
+          300,
+          1888,
+          689,
+          1887,
+          689,
+          1919,
+          300,
+          1921
+        ],
+        "spans": [
+          {
+            "offset": 1073,
+            "length": 28
+          }
+        ]
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          914,
+          1883,
+          957,
+          1881,
+          958,
+          1924,
+          915,
+          1926
+        ],
+        "spans": [
+          {
+            "offset": 1102,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "Juego patológico",
+        "boundingBox": [
+          296,
+          1934,
+          519,
+          1933,
+          519,
+          1967,
+          296,
+          1968
+        ],
+        "spans": [
+          {
+            "offset": 1104,
+            "length": 16
+          }
+        ]
+      },
+      {
+        "content": "X",
+        "boundingBox": [
+          816,
+          1923,
+          862,
+          1923,
+          863,
+          1966,
+          817,
+          1966
+        ],
+        "spans": [
+          {
+            "offset": 1121,
+            "length": 1
+          }
+        ]
+      },
+      {
+        "content": "XX",
+        "boundingBox": [
+          953,
+          1964,
+          958,
+          2059,
+          920,
+          2057,
+          916,
+          1964
+        ],
+        "spans": [
+          {
+            "offset": 1123,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "Bruxismo nocturno",
+        "boundingBox": [
+          299,
+          1978,
+          550,
+          1979,
+          550,
+          2011,
+          299,
+          2011
+        ],
+        "spans": [
+          {
+            "offset": 1126,
+            "length": 17
+          }
+        ]
+      },
+      {
+        "content": "Bruxismo diurno",
+        "boundingBox": [
+          299,
+          2023,
+          518,
+          2022,
+          519,
+          2058,
+          299,
+          2059
+        ],
+        "spans": [
+          {
+            "offset": 1144,
+            "length": 15
+          }
+        ]
+      },
+      {
+        "content": "XA",
+        "boundingBox": [
+          1267,
+          2068,
+          1240,
+          1976,
+          1286,
+          1967,
+          1305,
+          2059
+        ],
+        "spans": [
+          {
+            "offset": 1160,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "¿Es un entusiasta de la activada física (realiza deporte un mínimo de 3 veces a la",
+        "boundingBox": [
+          302,
+          2116,
+          1537,
+          2108,
+          1538,
+          2144,
+          302,
+          2155
+        ],
+        "spans": [
+          {
+            "offset": 1163,
+            "length": 82
+          }
+        ]
+      },
+      {
+        "content": "semana)? 51. Desde 2020 hasta 2022",
+        "boundingBox": [
+          326,
+          2159,
+          1046,
+          2148,
+          1047,
+          2191,
+          326,
+          2199
+        ],
+        "spans": [
+          {
+            "offset": 1246,
+            "length": 34
+          }
+        ]
+      }
+    ]
+  }

@@ -105,82 +105,96 @@ GRAL = {
 # Bloque 1, page 2 in file
 def read_and_extract_page_two(azure_vision_json):
 
+    GRAL_page_2 = {}
     with open(azure_vision_json) as json_file:
         data = json.load(json_file)
 
         words = data["words"]
         lines = data["lines"]
 
-        print("Type:", type(data))
-        print("Type:", type(words))
-        print("Type:", type(lines))
-
         for idx, word in enumerate(words):
-            # print("CONTENT: ", word['content'])
 
             # Data
             if word["content"] == "Data:":
                 print("Data: ", words[idx + 1]["content"])
-                GRAL["Data"] = words[idx + 1]["content"]
+                GRAL_page_2["Data"] = words[idx + 1]["content"]
 
             # Codi
             if word["content"] == "d'identificació:":
                 print("Codi: ", words[idx + 1]["content"])
-                GRAL["Q00"] = words[idx + 1]["content"]
+                GRAL_page_2["Q00"] = words[idx + 1]["content"]
 
             # Grup
             if word["content"] == "Grup:":
                 print("Grup: ", words[idx + 1]["content"])
-                GRAL["Grup"] = words[idx + 1]["content"]
+                GRAL_page_2["Grup"] = words[idx + 1]["content"]
 
             # Data Naix
             if word["content"] == "Nacimiento":
                 print("Data Naix: ", words[idx + 1]["content"])
-                GRAL["Data Naix"] = words[idx + 1]["content"]
+                GRAL_page_2["Data Naix"] = words[idx + 1]["content"]
 
             # Q02
             if word["content"] == "Sexo":
-                print("Sexo: ", words[idx + 1]["content"])
-                GRAL["Q02"] = words[idx + 1]["content"]
+                if re.match("mujer", words[idx + 1]["content"], re.IGNORECASE)\
+                    or re.match("hombre", words[idx + 1]["content"], re.IGNORECASE)\
+                    or re.match("dona", words[idx + 1]["content"], re.IGNORECASE)\
+                    or re.match("home", words[idx + 1]["content"], re.IGNORECASE):
+                    GRAL_page_2["Q02"] = words[idx + 1]["content"]
+                else:
+                    GRAL_page_2["Q02"] = None
+                print("Sexo: ", GRAL_page_2["Q02"])
 
             # Q03
             if word["content"] == "(cm)":
                 print("Altura: ", words[idx + 1]["content"])
-                GRAL["Q03"] = words[idx + 1]["content"]
+                GRAL_page_2["Q03"] = words[idx + 1]["content"]
 
             # Q04
             peso = re.compile(r"(kg)")
             if peso.search(word["content"]):
+                # if not re.match("\d{2,}", words[idx + 1]["content"]):
+                #     try_next_word = words[idx + 2]["content"]
+                # if re.match("\d{2,}", try_next_word):
+                #     GRAL_page_2["Q04"] = try_next_word
+                # else:
+                #     GRAL_page_2["Q04"] = None
                 print("Peso: ", words[idx + 1]["content"])
-                GRAL["Q04"] = words[idx + 1]["content"]
+                GRAL_page_2["Q04"] = words[idx + 1]["content"]
 
             # Q05, patologia importante
             if word["content"] == "importante?":
                 print("Patología: ", words[idx + 1]["content"])
                 Q05 = words[idx + 1]["content"]
 
-                GRAL["Q05"] = check_yes_no(Q05)
-                GRAL["Q05_full_text"] = get_next_words(words, idx, "¿Ha")
+                GRAL_page_2["Q05_full_text"] = get_next_words(words, idx, "¿Ha")
+                if GRAL_page_2["Q05_full_text"] is not None:
+                    GRAL_page_2["Q05"] = 1
+                else:
+                    GRAL_page_2["Q05"] = check_yes_no(Q05)
 
             # Q06, operado
             if word["content"] == "vez?":
                 print("Operado: ", words[idx + 1]["content"])
                 Q06 = words[idx + 1]["content"]
 
-                GRAL["Q06"] = check_yes_no(Q06)
-                GRAL["Q06_full_text"] = get_next_words(words, idx, "¿Presenta")
+                GRAL_page_2["Q06_full_text"] = get_next_words(words, idx, "¿Presenta")
+                if GRAL_page_2["Q06_full_text"] is not None:
+                    GRAL_page_2["Q06"] = 1
+                else:
+                    GRAL_page_2["Q06"] = check_yes_no(Q06)
 
             # Q07, alergia
             if word["content"] == "alergia?":
                 print("Alergia: ", words[idx + 1]["content"])
                 Q07 = words[idx + 1]["content"]
 
-                GRAL["Q07"] = check_yes_no(Q07)
-                GRAL["Q07_full_text"] = get_next_words(words, idx, "¿Toma")
+                GRAL_page_2["Q07"] = check_yes_no(Q07)
+                GRAL_page_2["Q07_full_text"] = get_next_words(words, idx, "¿Toma")
 
                 # if there is no 'NO' or 'SI', but there is text, assign to 'SI'/1
-                if GRAL["Q07"] == None and GRAL["Q07_full_text"] is not None:
-                    GRAL["Q07"] = 1
+                if GRAL_page_2["Q07"] == None and GRAL_page_2["Q07_full_text"] is not None:
+                    GRAL_page_2["Q07"] = 1
 
             # Q08, medicacion
             if (
@@ -192,24 +206,24 @@ def read_and_extract_page_two(azure_vision_json):
                 print("Medicacion: ", words[idx + 1]["content"])
                 Q08 = words[idx + 1]["content"]
 
-                GRAL["Q08"] = check_yes_no(Q08)
-                GRAL["Q08_full_text"] = get_next_words(words, idx, "¿Toma")
+                GRAL_page_2["Q08"] = check_yes_no(Q08)
+                GRAL_page_2["Q08_full_text"] = get_next_words(words, idx, "¿Toma")
 
                 # if there is no 'NO' or 'SI', but there is text, assign to 'SI'/1
-                if GRAL["Q08"] == None and GRAL["Q08_full_text"] is not None:
-                    GRAL["Q08"] = 1
+                if GRAL_page_2["Q08"] == None and GRAL_page_2["Q08_full_text"] is not None:
+                    GRAL_page_2["Q08"] = 1
 
             # Q09, medicacion
             if word["content"] == "cuál:":
                 print("Efervescentes: ", words[idx + 1]["content"])
                 Q09 = words[idx + 1]["content"]
 
-                GRAL["Q09"] = check_yes_no(Q09)
-                GRAL["Q09_full_text"] = get_next_words(words, idx, "¿Consume")
+                GRAL_page_2["Q09"] = check_yes_no(Q09)
+                GRAL_page_2["Q09_full_text"] = get_next_words(words, idx, "¿Consume")
 
                 # if there is no 'NO' or 'SI', but there is text, assign to 'SI'/1
-                if GRAL["Q09"] == None and GRAL["Q09_full_text"] is not None:
-                    GRAL["Q09"] = 1
+                if GRAL_page_2["Q09"] == None and GRAL_page_2["Q09_full_text"] is not None:
+                    GRAL_page_2["Q09"] = 1
 
             # Q10, alcohol
             if (
@@ -259,9 +273,9 @@ def read_and_extract_page_two(azure_vision_json):
                 alcohol_response = words[idx + 6]["content"]
                 alcohol_box = words[idx + 6]["boundingBox"]
                 if ax <= alcohol_box[0] <= bx:
-                    GRAL["Q10"] = 0
+                    GRAL_page_2["Q10"] = 0
                 elif ax_si <= alcohol_box[0] <= bx_si:
-                    GRAL["Q10"] = 1
+                    GRAL_page_2["Q10"] = 1
 
             # Q11, Tabaco
             if word["content"] == "Tabaco":
@@ -271,9 +285,9 @@ def read_and_extract_page_two(azure_vision_json):
                 tabaco_response = words[idx + 1]["content"]
                 tabaco_box = words[idx + 1]["boundingBox"]
                 if ax <= tabaco_box[0] <= bx:
-                    GRAL["Q11"] = 0
+                    GRAL_page_2["Q11"] = 0
                 elif ax_si <= tabaco_box[0] <= bx_si:
-                    GRAL["Q11"] = 1
+                    GRAL_page_2["Q11"] = 1
 
             # Q12, Otras drogas
             if word["content"] == "Otras" and words[idx + 1]["content"] == "drogas":
@@ -283,9 +297,9 @@ def read_and_extract_page_two(azure_vision_json):
                 drogas_response = words[idx + 2]["content"]
                 drogas_box = words[idx + 2]["boundingBox"]
                 if ax <= drogas_box[0] <= bx:
-                    GRAL["Q12"] = 0
+                    GRAL_page_2["Q12"] = 0
                 elif ax_si <= drogas_box[0] <= bx_si:
-                    GRAL["Q12"] = 1
+                    GRAL_page_2["Q12"] = 1
 
             # Q13, GERD (to be reviewed)
             # Q14, TCA (to be reviewed)
@@ -334,7 +348,7 @@ def read_and_extract_page_two(azure_vision_json):
                             <= Q13_box[0]
                             <= (NO_alguna_vez_sufrido_box[2] + 20)
                         ):
-                            GRAL["Q13"] = 0
+                            GRAL_page_2["Q13"] = 0
                         elif (
                             (SI_alguna_vez_sufrido_box[0] - 20)
                             <= Q13_box[0]
@@ -346,25 +360,25 @@ def read_and_extract_page_two(azure_vision_json):
                                 <= Q13_box_afectacion[0]
                                 <= (AFECTACION_LIGERA_alguna_vez_box[2] + 20)
                             ):
-                                GRAL["Q13"] = 1
+                                GRAL_page_2["Q13"] = 1
                             if (
                                 (AFECTACION_MODERADA_alguna_vez_box[0] - 20)
                                 <= Q13_box_afectacion[0]
                                 <= (AFECTACION_MODERADA_alguna_vez_box[2] + 20)
                             ):
-                                GRAL["Q13"] = 2
+                                GRAL_page_2["Q13"] = 2
                             if (
                                 (AFECTACION_SEVERA_alguna_vez_box[0] - 20)
                                 <= Q13_box_afectacion[0]
                                 <= (AFECTACION_SEVERA_alguna_vez_box[2] + 20)
                             ):
-                                GRAL["Q13"] = 3
+                                GRAL_page_2["Q13"] = 3
 
                         break
 
                 # Q14, TCA
 
-                GRAL["Q14"] = determine_afectacion(
+                GRAL_page_2["Q14"] = determine_afectacion(
                                 NO_alguna_vez_sufrido_box,
                                 SI_alguna_vez_sufrido_box,
                                 AFECTACION_LIGERA_alguna_vez_box,
@@ -378,7 +392,7 @@ def read_and_extract_page_two(azure_vision_json):
                                 )
 
                 # Q15, JOC
-                GRAL["Q15"] = determine_afectacion(
+                GRAL_page_2["Q15"] = determine_afectacion(
                                 NO_alguna_vez_sufrido_box,
                                 SI_alguna_vez_sufrido_box,
                                 AFECTACION_LIGERA_alguna_vez_box,
@@ -393,10 +407,10 @@ def read_and_extract_page_two(azure_vision_json):
 
                 # Q17, Bdi
                 # To be reviewed
-                GRAL["Q17_Bdi"] = GRAL["Q15"]
+                GRAL_page_2["Q17_Bdi"] = GRAL_page_2["Q15"]
 
                 # Q16, Bso
-                GRAL["Q16_Bso"] = determine_afectacion(
+                GRAL_page_2["Q16_Bso"] = determine_afectacion(
                                 NO_alguna_vez_sufrido_box,
                                 SI_alguna_vez_sufrido_box,
                                 AFECTACION_LIGERA_alguna_vez_box,
@@ -427,17 +441,17 @@ def read_and_extract_page_two(azure_vision_json):
                 AFECTACION_SEVERA_ultimo_mes_box = words[idx + 13]["boundingBox"]
 
                 # Q17, GERD
-                GRAL["Q17"] = GRAL["Q13"]
+                GRAL_page_2["Q17"] = GRAL_page_2["Q13"]
                 # Q18, TCA
-                GRAL["Q17"] = GRAL["Q14"]
+                GRAL_page_2["Q17"] = GRAL_page_2["Q14"]
                 # Q19, JOC
-                GRAL["Q17"] = GRAL["Q15"]
+                GRAL_page_2["Q17"] = GRAL_page_2["Q15"]
                 # Q20, Bdo
-                GRAL["Q20"] = GRAL["Q16_Bso"]
+                GRAL_page_2["Q20"] = GRAL_page_2["Q16_Bso"]
 
             # Q21, Entusiasta deporte
             if (
-                word["content"] == "Es"
+                (word["content"] == "Es" or word["content"] == "¿Es")
                 and words[idx + 1]["content"] == "un"
                 and words[idx + 2]["content"] == "entusiasta"
                 and words[idx + 3]["content"] == "de"
@@ -458,8 +472,12 @@ def read_and_extract_page_two(azure_vision_json):
                 print("Entusiasta deporte: ", words[idx + 17]["content"])
                 Q21 = words[idx + 17]["content"]
 
-                GRAL["Q21"] = check_yes_no(Q21)
-                GRAL["Q21_full_text"] = get_next_words(words, idx + 17, "Es")
+                GRAL_page_2["Q21"] = check_yes_no(Q21)
+                # try:
+                #     GRAL_page_2["Q21_full_text"] = get_next_words(words, idx + 17, "Es")
+                # except IndexError:
+                #     GRAL_page_2["Q21_full_text"] = get_next_words(words, idx + 17, "¿Es")
+
 
             # Q22, Nadador Profesional
             nadador_pro = ["Es","o","ha","sido","nadador/a","profesional","o","ha",
@@ -473,8 +491,14 @@ def read_and_extract_page_two(azure_vision_json):
                     print("Entusiasta deporte: ", words[idx + len(nadador_pro)]["content"])
                     Q22 = words[idx + len(nadador_pro)]["content"]
 
-                    GRAL["Q22"] = check_yes_no(Q22)
-                    GRAL["Q22_full_text"] = get_next_words(words, idx + len(nadador_pro), "(indicar")
+                    GRAL_page_2["Q22"] = check_yes_no(Q22)
+                    GRAL_page_2["Q22_full_text"] = get_next_words(words, idx + len(nadador_pro), "(indicar")
+
+        return GRAL_page_2
+
+# azure_page_2_json = "/home/daniel_master/workspace/softprojects/desgast_scan_to_text/tests/page_2/pg_0002.json"
+# GRAL_page_2 = read_and_extract_page_two(azure_page_2_json)
+# print(GRAL_page_2)
 
 def read_and_extract_page_three(azure_page_3_json):
     GRAL_page_3 = {}
@@ -717,9 +741,9 @@ def read_and_extract_page_three(azure_page_3_json):
 
         return GRAL_page_3
 
-azure_page_3_json = "/home/daniel_master/workspace/softprojects/desgast_scan_to_text/tests/page_3/pg_0004.json"
-GRAL_page_3 = read_and_extract_page_three(azure_page_3_json)
-print(GRAL_page_3)
+# azure_page_3_json = "/home/daniel_master/workspace/softprojects/desgast_scan_to_text/tests/page_3/pg_0004.json"
+# GRAL_page_3 = read_and_extract_page_three(azure_page_3_json)
+# print(GRAL_page_3)
 
 def read_and_extract_page_four(azure_page_4_json):
     GRAL_page_4 = {}
@@ -1355,3 +1379,44 @@ def read_and_extract_page_ten(azure_page_10):
 #         print("Column: ", c, "\t", "Ona version: ", page_test_dict[c], "\t", "AI version: ", GRAL_returned[c])
 #     else:
 #         print("Could not find: ", c)
+
+def read_and_extract_page_one(azure_vision_json):
+
+    GRAL_page_1 = {}
+    with open(azure_vision_json) as json_file:
+        data = json.load(json_file)
+
+        words = data["words"]
+        lines = data["lines"]
+
+        for word in lines:
+
+            # Name
+            if re.match(r"El/La Sr./Sra", word["content"]):
+                sample_name = re.sub(r"El/La Sr./Sra[\.,]\s*","",word["content"])
+                if "name" not in GRAL_page_1:
+                    GRAL_page_1["name"] = sample_name
+                print("Name: ", sample_name)
+
+        for idx,word in enumerate(words):
+
+            # dni
+            if re.match("dni", word["content"], re.IGNORECASE):
+
+                # now go over the next indices until you get at least 7 numbers
+                for i in range(1,20):
+
+                    if re.match(r"\d{7,}\w+\s*", words[idx + i]["content"]):
+                        if "DNI" not in GRAL_page_1:
+                            GRAL_page_1["DNI"] = words[idx + i]["content"]
+                        print("DNI: ", words[idx + i]["content"])
+
+
+        return GRAL_page_1
+
+# azure_page_1_json = "/home/daniel_master/workspace/softprojects/desgast_scan_to_text/tests/page_1/pg_0001.json"
+# GRAL_page_1 = read_and_extract_page_one(azure_page_1_json)
+# print(GRAL_page_1)
+
+def read_sample_jsons(path_to_sample_folders):
+    pass

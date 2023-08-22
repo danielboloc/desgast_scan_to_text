@@ -55,6 +55,19 @@ Tests
 
 	python -m pytest -v --disable-warnings
 
+Example sample ordering with test data
+--------------------------------------
+
+for page in 1 2 3 4 6 7 10;
+do 
+	for sample in 1 2 3 4 5;
+	do
+		cp ../../tests/page_"$page"/pg_000"$sample".json sample_"$sample"/
+		mv sample_"$sample"/pg_000"$sample".json sample_"$sample"/page_"$page".json
+	done
+done
+
+
 Credits
 -------
 
