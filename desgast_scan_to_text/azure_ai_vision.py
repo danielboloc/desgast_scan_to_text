@@ -446,9 +446,9 @@ def read_and_extract_page_two(azure_vision_json):
                 # Q17, GERD
                 GRAL_page_2["Q17"] = GRAL_page_2["Q13"]
                 # Q18, TCA
-                GRAL_page_2["Q17"] = GRAL_page_2["Q14"]
+                GRAL_page_2["Q18"] = GRAL_page_2["Q14"]
                 # Q19, JOC
-                GRAL_page_2["Q17"] = GRAL_page_2["Q15"]
+                GRAL_page_2["Q19"] = GRAL_page_2["Q15"]
                 # Q20, Bdo
                 GRAL_page_2["Q20"] = GRAL_page_2["Q16_Bso"]
 
@@ -618,19 +618,19 @@ def read_and_extract_page_three(azure_page_3_json):
                         GRAL_page_3["Q26"] = 2
  
             # Q27, Presion
-            GRAL_page_3["Q27"] = "CANNOT_MAP_DATA"
+            GRAL_page_3["Q27"] = None
 
             # Q28, Mano cepillar dientes
-            GRAL_page_3["Q28"] = "CANNOT_MAP_DATA"
+            GRAL_page_3["Q28"] = None
 
             # Q29, Lado masticar
-            GRAL_page_3["Q29"] = "CANNOT_MAP_DATA"
+            GRAL_page_3["Q29"] = None
 
             # Q30, Que pasta dientes
-            GRAL_page_3["Q30"] = "CANNOT_MAP_DATA"
+            GRAL_page_3["Q30"] = None
 
             # Q31, Blanqueamiento dientes
-            GRAL_page_3["Q31"] = "CANNOT_MAP_DATA"
+            GRAL_page_3["Q31"] = None
 
             # Q25, Cepillo manual
             if words[idx]["content"] == "Conservador":
@@ -834,6 +834,9 @@ def read_and_extract_page_six(azure_page_6_json):
 
         # Extract all "X" occurrences in order of appearance and then map them
         # It is easier and faster that trying to match every text.
+        oral_dict = {"1": "Q39","2": "Q40","3": "Q41","4": "Q42","5": "Q43","6": "Q44","7": "Q45",
+                     "8": "Q46","9": "Q47","10": "Q48","11": "Q49","12": "Q50","13": "Q51","14": "Q52",
+                     "15": "Q53","16": "Q54","17": "Q55","18": "Q56","19": "Q57","20": "Q58","21": "Q59"}
         actividades = ["Q39", "Q40", "Q41", "Q42", "Q43", "Q44", "Q45","Q46","Q47","Q48","Q49","Q50","Q51","Q52","Q53","Q54","Q55","Q56","Q57","Q58","Q59"]
         x_appearences = []
         for i,x in enumerate(words):
@@ -894,19 +897,19 @@ def read_and_extract_page_six(azure_page_6_json):
 
                 if ninguna_box[0] - 20 <= x[0] <= ninguna_box[2] + 20\
                     and q_numers_boxes[n]["box"][1] - 40 <= ((x[1] + x[5]) / 2) <= q_numers_boxes[n]["box"][5] + 40:
-                    if n not in GRAL_page_6: GRAL_page_6[n] = 0; continue ; continue
+                    if oral_dict[n] not in GRAL_page_6: GRAL_page_6[oral_dict[n]] = 0; continue ; continue
                 elif less_one[0] - 20 <= x[0] <= noches_less_one[2] + 20\
                     and q_numers_boxes[n]["box"][1] - 40 <= ((x[1] + x[5]) / 2) <= q_numers_boxes[n]["box"][5] + 40:
-                    if n not in GRAL_page_6: GRAL_page_6[n] = 1; continue ; continue
+                    if oral_dict[n] not in GRAL_page_6: GRAL_page_6[oral_dict[n]] = 1; continue ; continue
                 elif noches_1_3_mes[0] - 45 <= x[0] <= noches_1_3_mes[2] + 45\
                     and q_numers_boxes[n]["box"][1] - 40 <= ((x[1] + x[5]) / 2) <= q_numers_boxes[n]["box"][5] + 40:
-                    if n not in GRAL_page_6: GRAL_page_6[n] = 2; continue ; continue
+                    if oral_dict[n] not in GRAL_page_6: GRAL_page_6[oral_dict[n]] = 2; continue ; continue
                 elif noches_1_3_semana_la[0] - 30 <= x[0] <= noches_1_3_semana_mayoria[2] + 30\
                     and q_numers_boxes[n]["box"][1] - 40 <= ((x[1] + x[5]) / 2) <= q_numers_boxes[n]["box"][5] + 40:
-                    if n not in GRAL_page_6: GRAL_page_6[n] = 3; continue ; continue
+                    if oral_dict[n] not in GRAL_page_6: GRAL_page_6[oral_dict[n]] = 3; continue ; continue
                 elif noches_4_7[0] - 20 <= x[0] <= noches_4_7_semana[2] + 20\
                     and q_numers_boxes[n]["box"][1] - 40 <= ((x[1] + x[5]) / 2) <= q_numers_boxes[n]["box"][5] + 40:
-                    if n not in GRAL_page_6: GRAL_page_6[n] = 4; continue ; continue
+                    if oral_dict[n] not in GRAL_page_6: GRAL_page_6[oral_dict[n]] = 4; continue ; continue
 
         print("Mapped 'X' ", len(GRAL_page_6.keys()), " from a total of 21 questions!")
 
@@ -926,6 +929,8 @@ def read_and_extract_page_seven(azure_page_7_json):
 
         # Extract all "X" occurrences in order of appearance and then map them
         # It is easier and faster that trying to match every text.
+        stress_dict = {"1": "Q60","2": "Q61","3": "Q62","4": "Q63","5": "Q64","6": "Q65","7": "Q66",
+                       "8": "Q67","9": "Q68","10": "Q69","11": "Q70","12": "Q71","13": "Q72","14": "Q73"}
         stress = ["Q60", "Q61", "Q62", "Q63", "Q64", "Q65", "Q66","Q67","Q68","Q69","Q70","Q71","Q72","Q73"]
         x_appearences = []
         for i,x in enumerate(words):
@@ -1002,19 +1007,19 @@ def read_and_extract_page_seven(azure_page_7_json):
 
                 if nunca_box[0] - 20 <= x[0] <= nunca_box[2] + 20\
                     and q_numers_boxes[n]["box"][1] - 40 <= ((x[1] + x[5]) / 2) <= q_numers_boxes[n]["box"][5] + 40:
-                    if n not in GRAL_page_7: GRAL_page_7[n] = 0; continue ; continue
+                    if stress_dict[n] not in GRAL_page_7: GRAL_page_7[stress_dict[n]] = 0; continue ; continue
                 elif casi_nunca[0] - 20 <= x[0] <= casi_nunca[2] + 20\
                     and q_numers_boxes[n]["box"][1] - 40 <= ((x[1] + x[5]) / 2) <= q_numers_boxes[n]["box"][5] + 40:
-                    if n not in GRAL_page_7: GRAL_page_7[n] = 1; continue ; continue
+                    if stress_dict[n] not in GRAL_page_7: GRAL_page_7[stress_dict[n]] = 1; continue ; continue
                 elif de_vez[0] - 20 <= x[0] <= en_cuando[2] + 20\
                     and q_numers_boxes[n]["box"][1] - 40 <= ((x[1] + x[5]) / 2) <= q_numers_boxes[n]["box"][5] + 40:
-                    if n not in GRAL_page_7: GRAL_page_7[n] = 2; continue ; continue
+                    if stress_dict[n] not in GRAL_page_7: GRAL_page_7[stress_dict[n]] = 2; continue ; continue
                 elif a_[0] - 20 <= x[0] <= menudo[2] + 20\
                     and q_numers_boxes[n]["box"][1] - 40 <= ((x[1] + x[5]) / 2) <= q_numers_boxes[n]["box"][5] + 40:
-                    if n not in GRAL_page_7: GRAL_page_7[n] = 3; continue ; continue
+                    if stress_dict[n] not in GRAL_page_7: GRAL_page_7[stress_dict[n]] = 3; continue ; continue
                 elif muy[0] - 50 <= x[0] <= _a[2] + 50\
                     and q_numers_boxes[n]["box"][1] - 50 <= ((x[1] + x[5]) / 2) <= q_numers_boxes[n]["box"][5] + 50:
-                    if n not in GRAL_page_7: GRAL_page_7[n] = 4; continue ; continue
+                    if stress_dict[n] not in GRAL_page_7: GRAL_page_7[stress_dict[n]] = 4; continue ; continue
 
         return GRAL_page_7
 
@@ -1464,7 +1469,20 @@ def read_sample_jsons(path_to_sample_folders):
     df = pd.DataFrame.from_dict(THE_ONE_RING, orient='index')
     today = dt.datetime.today().strftime("%m_%d_%Y_%s")
     output_filename = f"samples_images_converted_to_table_{today}.tsv"
-    df.to_csv(os.path.join(path_to_sample_folders, output_filename), sep="\t")
+    columns_to_save = ["Data", "Grup", "name", "DNI", "Data Naix", "Q02", "Q03", "Q04", "Q05", "Q06", "Q07",
+                       "Q08", "Q09", "Q10", "Q11", "Q12", "Q13", "Q14", "Q15", "Q17_Bdi", "Q16_Bso", "Q17",
+                       "Q18", "Q19", "Q20", "Q21", "Q22", "Q23_posB", "Q23_posH", "Q24", "Q25", "Q26",
+                       "Q27", "Q28", "Q29", "Q30", "Q31", "Q32", "Q33", "Q34", "Q35", "Q36", "Q37", "Q38",
+                       "Q39", "Q40", "Q41", "Q42", "Q43", "Q44", "Q45","Q46","Q47","Q48","Q49","Q50","Q51","Q52",
+                       "Q53","Q54","Q55","Q56","Q57","Q58","Q59", "Q60", "Q61", "Q62", "Q63", "Q64", "Q65", "Q66",
+                       "Q67","Q68",
+                       "Q69","Q70","Q71","Q72","Q73", "C16V-L", "C16V-B", "C16O-L", "C16O-B", "C16P-L", "C16P-B",
+                       "C13V-L", "C13V-B", "C13P-L", "C13P-B", "C23V-L", "C23V-B", "C23P-L", "C23P-B", "C26V-L",
+                       "C26V-B", "C26O-L", "C26O-B", "C26P-L", "C26P-B", "C36P-L", "C36P-B", "C36O-L", "C36O-B",
+                       "C36V-L", "C36V-B", "C33P-L", "C33P-B", "C33V-L", "C33V-B", "C43P-L", "C43P-B", "C43V-L",
+                       "C43V-B", "C46P-L", "C46P-B", "C46O-L", "C46O-B", "C46V-L", "C46V-B", "conservador",
+                       "ortodontico", "quirurgico", "periodontal", "protesico"]
+    df.to_csv(os.path.join(path_to_sample_folders, output_filename), columns=columns_to_save, sep="\t")
     #print(THE_ONE_RING)
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
