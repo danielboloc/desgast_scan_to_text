@@ -49,8 +49,8 @@ def connect_to_azure():
     import requests
 
     AZURE_ENDPOINT = "https://desgast-scan-to-text.cognitiveservices.azure.com/"
-    AZURE_API_KEY1 = "d29eadcdbc1e459ca47fed82d450e656"
-    AZURE_API_KEY2 = "243d4104aaa34d8a9d7a9ca6b4f339ef"
+    AZURE_API_KEY1 = "****"
+    AZURE_API_KEY2 = "****"
     AZURE_REGION   = "eastus"
 
     # Add your Computer Vision subscription key and endpoint to your environment variables.
