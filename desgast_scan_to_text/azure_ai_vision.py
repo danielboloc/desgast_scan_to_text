@@ -3,6 +3,7 @@ import re
 import os
 import pandas as pd
 import datetime as dt
+from natsort import natsorted
 
 
 azure_vision_json = "/home/daniel_master/workspace/softprojects/desgast_scan_to_text/data/azure_ai_vision_studio/test_case_1.json"
@@ -1448,28 +1449,51 @@ def read_sample_jsons(path_to_sample_folders):
             for file in os.listdir(subdir_path):
                 file_path = os.path.join(subdir_path, file)
                 # checking if it is a file
-                if os.path.isfile(file_path):
+                if os.path.isfile(file_path) and file.endswith(".json"):
                     print(file_path)
+                else:
+                    continue
                 if file not in THE_ONE_RING[subdir]:
-                    if file == "page_1.json":
-                        THE_ONE_RING[subdir].update(read_and_extract_page_one(file_path))
-                    elif file == "page_2.json":
-                        THE_ONE_RING[subdir].update(read_and_extract_page_two(file_path))
-                    elif file == "page_3.json":
-                        THE_ONE_RING[subdir].update(read_and_extract_page_three(file_path))
-                    elif file == "page_4.json":
-                        THE_ONE_RING[subdir].update(read_and_extract_page_four(file_path))
-                    elif file == "page_6.json":
-                        THE_ONE_RING[subdir].update(read_and_extract_page_six(file_path))
-                    elif file == "page_7.json":
-                        THE_ONE_RING[subdir].update(read_and_extract_page_seven(file_path))
-                    elif file == "page_10.json":
-                        THE_ONE_RING[subdir].update(read_and_extract_page_ten(file_path))
+                    if file == "pg_0001.json":
+                        try:
+                            THE_ONE_RING[subdir].update(read_and_extract_page_one(file_path))
+                        except:
+                            THE_ONE_RING[subdir].update({"name": None, "DNI": None})
+                    elif file == "pg_0002.json":
+                        try:
+                            THE_ONE_RING[subdir].update(read_and_extract_page_two(file_path))
+                        except:
+                            THE_ONE_RING[subdir].update({'Data': None, 'Q00': None, 'Grup': None, 'Data Naix': None, 'Q04': None, 'Q02': None, 'Q03': None, 'Q05_full_text': None, 'Q05': None, 'Q06_full_text': None, 'Q06': None, 'Q07': None, 'Q07_full_text': None, 'Q08': None, 'Q08_full_text': None, 'Q09': None, 'Q09_full_text': None, 'Q10': None, 'Q11': None, 'Q12': None, 'Q13': None, 'Q14': None, 'Q15': None, 'Q17_Bdi': None, 'Q16_Bso': None, 'Q17': None, 'Q20':None, 'Q21': None, 'Q22': None, 'Q22_full_text': None})
+                    elif file == "pg_0003.json":
+                        try:
+                            THE_ONE_RING[subdir].update(read_and_extract_page_three(file_path))
+                        except:
+                            THE_ONE_RING[subdir].update({'Q27': None, 'Q28': None, 'Q29': None, 'Q30': None, 'Q31': None, 'Q24': None, 'Q25': None, 'Q26': None, 'conservador': None, 'ortodontico': None, 'quirurgico': None, 'periodontal': None, 'protesico': None, 'Q23_posB': None, 'Q23_posH': None})
+                    elif file == "pg_0004.json":
+                        try:
+                            THE_ONE_RING[subdir].update(read_and_extract_page_four(file_path))
+                        except:
+                            THE_ONE_RING[subdir].update({'Q32': None, 'Q33': None, 'Q34': None, 'Q35': None, 'Q36': None, 'Q37': None, 'Q38': None})
+                    elif file == "pg_0005.json":
+                        try:
+                            THE_ONE_RING[subdir].update(read_and_extract_page_six(file_path))
+                        except:
+                            THE_ONE_RING[subdir].update({"Q39": None, "Q40": None, "Q41": None, "Q42": None, "Q43": None, "Q44": None, "Q45": None,"Q46": None,"Q47": None,"Q48": None,"Q49": None,"Q50": None,"Q51": None,"Q52": None,"Q53": None,"Q54": None,"Q55": None,"Q56": None,"Q57": None,"Q58": None,"Q59": None})
+                    elif file == "pg_0006.json":
+                        try:
+                            THE_ONE_RING[subdir].update(read_and_extract_page_seven(file_path))
+                        except:
+                            THE_ONE_RING[subdir].update({"Q60": None, "Q61": None, "Q62": None, "Q63": None, "Q64": None, "Q65": None, "Q66": None,"Q67": None,"Q68": None,"Q69": None,"Q70": None,"Q71": None,"Q72": None,"Q73": None})
+                    elif file == "pg_0007.json":
+                        try:
+                            THE_ONE_RING[subdir].update(read_and_extract_page_ten(file_path))
+                        except:
+                            THE_ONE_RING[subdir].update({'C16V-L': None, 'C16V-B': None, 'C13V-L': None, 'C23V-L': None, 'C26V-L': None, 'C13V-B': None, 'C23V-B': None, 'C26V-B': None, 'C16O-L': None, 'C16O-B': None, 'C26O-L': None, 'C26O-B': None, 'C16P-L': None, 'C16P-B': None, 'C13P-L': None, 'C23P-L': None, 'C26P-L': None, 'C13P-B': None, 'C23P-B': None, 'C26P-B': None, 'C46P-L': None, 'C46P-B': None, 'C43P-L': None, 'C33P-L': None, 'C36P-L': None, 'C43P-B': None, 'C33P-B': None, 'C36P-B': None, 'C46O-L': None, 'C36O-L': None, 'C46O-B': None, 'C36O-B': None, 'C46V-L': None, 'C43V-L': None, 'C33V-L': None, 'C36V-L': None, 'C46V-B': None, 'C43V-B': None, 'C33V-B': None, 'C36V-B': None})
                     
     df = pd.DataFrame.from_dict(THE_ONE_RING, orient='index')
     today = dt.datetime.today().strftime("%m_%d_%Y_%s")
     output_filename = f"samples_images_converted_to_table_{today}.tsv"
-    columns_to_save = ["Data", "Grup", "name", "DNI", "Data Naix", "Q02", "Q03", "Q04", "Q05", "Q06", "Q07",
+    columns_to_save = ["Data", "Grup", "name", "DNI", "Data Naix", "Q00", "Q02", "Q03", "Q04", "Q05", "Q06", "Q07",
                        "Q08", "Q09", "Q10", "Q11", "Q12", "Q13", "Q14", "Q15", "Q17_Bdi", "Q16_Bso", "Q17",
                        "Q18", "Q19", "Q20", "Q21", "Q22", "Q23_posB", "Q23_posH", "Q24", "Q25", "Q26",
                        "Q27", "Q28", "Q29", "Q30", "Q31", "Q32", "Q33", "Q34", "Q35", "Q36", "Q37", "Q38",
@@ -1482,10 +1506,14 @@ def read_sample_jsons(path_to_sample_folders):
                        "C36V-L", "C36V-B", "C33P-L", "C33P-B", "C33V-L", "C33V-B", "C43P-L", "C43P-B", "C43V-L",
                        "C43V-B", "C46P-L", "C46P-B", "C46O-L", "C46O-B", "C46V-L", "C46V-B", "conservador",
                        "ortodontico", "quirurgico", "periodontal", "protesico"]
+
+    df = df.reindex(natsorted(df.index))
     df.to_csv(os.path.join(path_to_sample_folders, output_filename), columns=columns_to_save, sep="\t")
+    df.to_excel(os.path.join(path_to_sample_folders, f"samples_images_converted_to_table_{today}.xlsx"), columns=columns_to_save)
     #print(THE_ONE_RING)
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
-data_path = os.path.realpath(os.path.join(dir_path, "../data/samples"))
+#data_path = os.path.realpath(os.path.join(dir_path, "../data/samples"))
+data_path = os.path.realpath(os.path.join(dir_path, "../data/samples_39_to_80"))
 
 read_sample_jsons(data_path)
